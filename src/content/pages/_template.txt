@@ -1,0 +1,29 @@
+---
+title: 'Meet The Team | Aurum Health'
+description: 'TODO'
+permalink: 'about/'
+eleventyNavigation:
+    key: Meet The Team
+    order: 200
+    parent: Optional - Put another page's "key" here to create a dropdown
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+{% block body %}
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+{% endblock %}
+
+TODO: 
+-Lazy load all images below the fold
+-Remove all references to code stitch
+- Ensure all images have alt description
+- Remove CMS capability, if not being used
+- Delete this text file
