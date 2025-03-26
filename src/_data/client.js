@@ -1,20 +1,12 @@
 module.exports = {
-    "name": "New Growth Web Services",
-    "email": "newgrowthweb@gmail.com",
-    "phoneForTel": "613-857-9828",
-    "phoneFormatted": "(613) 857-9828",
-    "address": {
-        "lineOne": "123 Fake Street",
-        "city": "Ottawa",
-        "province": "ON",
-        "postalCode": "K0A1X0",
-        "country": "Canada",
-        "mapLink": "https://maps.app.goo.gl/5y6iGEJqFwFWFt9i9"
-    },
+    "name": "Oasis Painting",
+    "email": "manager@oasispainting.ca",
+    "phoneForTel": "613-795-6277",
+    "phoneFormatted": "(613) 795-6277",
     "socials": {
-        "facebook": "https://www.facebook.com/",
-        "instagram": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/oasispaintingcan/",
+        "instagram": "https://www.instagram.com/oasispainting",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://oasispainting.ca"
 };

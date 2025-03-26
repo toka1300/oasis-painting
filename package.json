@@ -8,7 +8,6 @@
         "build:sass": "sass src/assets/sass:./src/assets/css",
         "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve",
         "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
-        "watch:cms": "npx decap-server",
         "start": "del-cli ./public --force && npm-run-all --parallel watch:*",
         "build": "run-s build:*"
     },
@@ -30,7 +29,6 @@
         "@codestitchofficial/eleventy-plugin-sharp-images": "^1.0.7",
         "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
         "cross-env": "^7.0.3",
-        "decap-server": "^3.0.1",
         "del-cli": "^5.0.0",
         "esbuild": "^0.21.4",
         "netlify-plugin-cache": "^1.0.3",
