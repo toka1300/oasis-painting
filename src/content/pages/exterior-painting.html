@@ -1,0 +1,38 @@
+---
+title: 'Exterior Painting | Oasis Painting'
+description: 'TODO'
+permalink: 'exterior-painting/'
+eleventyNavigation:
+    key: Exterior Painting
+    order: 200
+    parent: Optional - Put another page's "key" here to create a dropdown
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+{% block body %}
+<div id="banner-1519">
+    <div class="cs-container">
+        <span class="cs-int-title">Exterior Painting</span>
+    </div>
+
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/banner.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/banner.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/banner.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/banner.png" | resize({ width: 2000, height: 982, position: "top" }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/banner.png" | resize({ width: 2000, height: 982 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/banner.png" | resize({ width: 2000, height: 982 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/exterior/banner.png" | resize({ width: 2000, height: 982 }) | jpeg %}" alt="Person rolling stain on fence" width="2000" height="982" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
+</div>
+{% endblock %}

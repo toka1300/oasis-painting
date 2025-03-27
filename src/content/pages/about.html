@@ -1,5 +1,5 @@
 ---
-title: 'About | Code Stitch Web Designs'
+title: 'About | Oasis Painting'
 description: 'Meta description for the page'
 permalink: 'about/'
 eleventyNavigation:
@@ -11,10 +11,218 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
     {# <link rel="preload" as="image" href="{% getUrl '/assets/images/cabinets2.jpg' | resize({ width: 720, height: 774 }) | avif %}"/> #}
 {% endblock %}
 
 {% block body %}
- 
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
+<div id="banner-1519">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/banner.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/banner.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/banner.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/banner-1.png" | resize({ width: 2800, height: 983, position: "top" }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/banner.png" | resize({ width: 2800, height: 982 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/about/banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Person rolling stain on fence" width="2000" height="982" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
+</div>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-865">
+    <div class="cs-container">
+        <div class="cs-image-group">
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/matt-will.jpg" | resize({ width: 1100, height: 826 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/matt-will.jpg" | resize({ width: 1100, height: 826 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/matt-will.jpg" | resize({ width: 1100, height: 826 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/matt-will.jpg" | resize({ width: 1260, height: 1550 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/matt-will.jpg" | resize({ width: 1260, height: 1550 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/matt-will.jpg" | resize({ width: 1260, height: 1550 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/about/matt-will.jpg" | resize({ width: 1260, height: 1550 }) | jpeg %}" alt="Owners, Matt and Will posing with client's dog" width="1260" height="1550" loading="eager" decoding="async" aria-hidden="true">
+        </picture>
+            <div class="cs-box">
+                <img src="../../assets/svgs/five-stars.svg" alt="five stars and thumbs up">
+                <span class="cs-number">5/5</span>
+                <span class="cs-desc">
+                    on all 30+ Google Reviews
+                </span>
+            </div>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Meet your painting partners</span>
+            <h2 class="cs-title">Ottawa's Trusted Professional Painting Contractors</h2>
+            <p class="cs-text">
+                Welcome to Oasis Painting, co-founded by Matt McNamee and Will Dorken, our dynamic duo brings a wealth of experience and a shared commitment to delivering top-notch services. Oasis Painting is not just about transforming spaces; we're dedicated to creating vibrant, lasting impressions. With a perfect blend of motivation and expertise, Matt and Will lead the charge, ensuring every stroke of paint reflects our dedication to quality.
+            </p>
+            <p class="cs-text">
+                As your trusted professionals, we invite you to explore our portfolio and witness the transformative touch that Oasis Painting provides to the Ottawa area. Our commitment is more than a promise; it's a brushstroke toward enhancing the beauty of your space.
+            </p>
+            <a href="/contact" class="cs-button-solid">Get Started Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-1141">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Expert Team</span>
+                <h2 class="cs-title">Meet Your Expert Painting Partners</h2>
+            </div>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/matt.jpeg" | resize({ width: 1100, height: 1344 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/matt.jpeg" | resize({ width: 1100, height: 1344 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/matt.jpeg" | resize({ width: 1100, height: 1344 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/matt.jpeg" | resize({ width: 610, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/matt.jpeg" | resize({ width: 610, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/matt.jpeg" | resize({ width: 610, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/about/matt.jpeg" | resize({ width: 610, height: 814 }) | jpeg %}" alt="Headshot of co-owner, Matt" width="610" height="814" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+
+                <div class="cs-info">
+                    <span class="cs-name">Matt McNamee</span>
+                    <span class="cs-job">Co-owner/Operator</span>
+                    <span class="cs-phone"><img src="../../assets/svgs/phone.svg" alt="phone icon">(613) 795-6277</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/will.jpg" | resize({ width: 1100, height: 1344 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/will.jpg" | resize({ width: 1100, height: 1344 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/will.jpg" | resize({ width: 1100, height: 1344 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/will.jpg" | resize({ width: 610, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/will.jpg" | resize({ width: 610, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/will.jpg" | resize({ width: 610, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/about/will.jpg" | resize({ width: 610, height: 814 }) | jpeg %}" alt="Headshot of co-owner, Will" width="610" height="814" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-name">William Dorken</span>
+                    <span class="cs-job">Co-owner/Operator</span>
+                    <span class="cs-phone"><img src="../../assets/svgs/phone.svg" alt="phone icon">(613) 408-4432</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-12">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">The Oasis Difference</span>
+            <h2 class="cs-title">An Ottawa Company That Cares</h2>
+            <p class="cs-text">
+                We are guided by these values, which have resulted in us building long-lasting relationships with customers all over the Ottawa area.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="../../assets/svgs/shield-heart.svg" alt="heart icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Communication & Respect</h3>
+                <p class="cs-item-text">
+                    Our team maintains clear, consistent communication at every stage, ensuring you're informed and comfortable with all aspects of your project.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="../../assets/svgs/professionalism.svg" alt="toolbox icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Customer Service</h3>
+                <p class="cs-item-text">
+                    We prioritize your vision and needs throughout the entire painting process, from the initial free quote to the final walkthrough.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="../../assets/svgs/award.svg" alt="ribbon icon" width="32" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Quality Craftsmanship</h3>
+                <p class="cs-item-text">
+                    We use premium materials and proven techniques to create beautiful, long-lasting finishes that enhance your property's value and appearance.
+                </p>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid">Get A Free Quote</a>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                Side By Side Reverse          -->
+<!-- ============================================ -->
+
+<section id="sbs-865" class="reverse">
+    <div class="cs-container">
+        <div class="cs-image-group">
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/parliament.png" | resize({ width: 1100, height: 826 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/parliament.png" | resize({ width: 1100, height: 826 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about/parliament.png" | resize({ width: 1100, height: 826 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/parliament.png" | resize({ width: 1260, height: 1550 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/parliament.png" | resize({ width: 1260, height: 1550 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about/parliament.png" | resize({ width: 1260, height: 1550 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/about/parliament.png" | resize({ width: 1260, height: 1550 }) | jpeg %}" alt="Owners, Matt and Will posing with client's dog" width="1260" height="1550" loading="eager" decoding="async" aria-hidden="true">
+        </picture>
+            <div class="cs-box">
+                <img src="../../assets/svgs/pin-yellow.svg" alt="Map pin">
+                <span class="cs-desc">Born & Raised</span>
+            </div>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Roots</span>
+            <h2 class="cs-title">Local Ottawa Painting Experts Serving the National Capital Region</h2>
+            <p class="cs-text">
+                Oasis Painting's roots are local, through and through. Our founders Matt and Will grew up and have lived their entire lives in the Ottawa area, in North Grenville. This is why we bring our best to every project, striving to rise to the top of the Ottawa painting industry.
+            </p>
+            <p class="cs-text">
+                Since our inception, our commitment to customer service, knowledge of best products and best practices, and our detail-oriented approach have made Oasis Painting a respected and trusted name in Ottawa. Growing up in the area, we understand the painting needs of houses that endure Canadian winters and can recommend the proper process and paint products for maximum durability.
+            </p>
+            <p class="cs-text">
+                We are proud to serve the city of Ottawa and surrounding areas including <a href="/kanata">Kanata</a>, <a href="/orleans">Orléans</a>, <a href="/kemptville">Kemptville</a>, and <a href="/contact">Brockville</a>.
+            </p>
+            <a href="/contact" class="cs-button-solid">Get Started Now</a>
+        </div>
+    </div>
+</section>
+
+{% include 'components/faq.html' %}
+{% include 'components/reviews.html' %}                                  
 {% endblock %}
