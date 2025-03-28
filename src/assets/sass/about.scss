@@ -151,6 +151,7 @@
         }
 
         &.reverse {
+            background-color: #f7f7f7;
             .cs-image-group {
                 order: 2;
             }
@@ -167,6 +168,7 @@
     #meet-team-1141 {
         padding: var(--sectionPadding);
         overflow: hidden;
+        background-color: #f7f7f7;
 
         .cs-container {
             width: 100%;

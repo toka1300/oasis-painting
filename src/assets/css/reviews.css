@@ -36,7 +36,7 @@
     max-width: 56.25rem;
     display: flex;
     flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
+    margin-bottom: 2rem;
     align-items: center;
   }
   #reviews-864 .cs-title {
