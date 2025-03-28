@@ -5,34 +5,431 @@ permalink: 'exterior-painting/'
 eleventyNavigation:
     key: Exterior Painting
     order: 200
-    parent: Optional - Put another page's "key" here to create a dropdown
+    parent: Services
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+    <link rel="stylesheet" href="/assets/css/interior-painting.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
 {% endblock %}
 
 {% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
 <div id="banner-1519">
     <div class="cs-container">
         <span class="cs-int-title">Exterior Painting</span>
     </div>
-
+    <!--Background Image-->
     <picture class="cs-background">
        <!--Mobile Image-->
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 2000, height: 982, position: "top" }) | avif %}" type="image/avif">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 2000, height: 982 }) | webp %}" type="image/webp">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 2000, height: 982 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 2000, height: 982 }) | jpeg %}" alt="Person rolling stain on fence" width="2000" height="982" loading="lazy" decoding="async" aria-hidden="true">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 2800, height: 983 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 2800, height: 982 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Person rolling stain on fence" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
     </picture>
     <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
     </svg>
 </div>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/house-white.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/house-white.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/house-white.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/house-white.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/house-white.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/house-white.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/exterior/house-white.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Bedroom" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Transform Your Space</span>
+            <h2 class="cs-title">Ottawa's <span class="highlight">Interior Paint</span> Experts</h2>
+            <p class="cs-text">
+                Ready to refresh your Ottawa home's interior? Oasis Painting delivers flawless interior painting results that transform your living spaces with premium materials and expert craftsmanship. Our professional Ottawa painters bring new life to every room, creating beautiful, long-lasting finishes you'll love coming home to. Contact us today for your free, no-obligation quote!
+            </p>
+            <ul class="cs-list">
+                <li class="cs-li">Free in-home colour consultations with every project</li>
+                <li class="cs-li">Premium paints and materials for lasting results</li>
+                <li class="cs-li">Meticulous preparation and flawless finishes</li>
+                <li class="cs-li">5-star rated Ottawa painting professionals</li>
+                <li class="cs-li">100% satisfaction guarantee on all work</li>
+            </ul>
+            <div class="cs-info">
+                <div class="cs-flex">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 104, height: 104 }) | avif %}" type="image/jpg" alt="profile">
+                    <div class="cs-name-desc">
+                        <span class="cs-name">Matt McNamee</span>
+                        <span class="cs-desc">Co-owner of Oasis Painting</span>
+                    </div>
+                </div>
+                <div class="cs-flex">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/will.jpg" | resize({ width: 104, height: 104, position: "top" }) | avif %}" type="image/jpg" alt="profile">
+                    <div class="cs-name-desc">
+                        <span class="cs-name">William Dorken</span>
+                        <span class="cs-desc">Co-owner of Oasis Painting</span>
+                    </div>
+                </div>
+            </div>
+            <a href="/contact" class="cs-button-solid">Get Started Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-1100" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/painter-green.jpg" | resize({ width: 488, height: 707 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/painter-green.jpg" | resize({ width: 488, height: 707 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/painter-green.jpg" | resize({ width: 488, height: 707 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/painter-green.jpg" | resize({ width: 610, height: 882 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/painter-green.jpg" | resize({ width: 610, height: 882 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/painter-green.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/exterior/painter-green.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Man painting a white wall" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/house-green.jpg" | resize({ width: 488, height: 707 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/house-green.jpg" | resize({ width: 488, height: 707 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/house-green.jpg" | resize({ width: 488, height: 707 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/house-green.jpg" | resize({ width: 610, height: 882 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/house-green.jpg" | resize({ width: 610, height: 882 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/house-green.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/exterior/house-green.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Man painting a white wall" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-short.svg" alt="stripes" width="548" height="487" aria-hidden="true">
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/eclipses.svg" alt="stripes" width="140" height="140" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Elevate Your property's appeal</span>
+            <h2 class="cs-title">Ottawa's Trusted Exterior Painting Professionals</h2>
+            <p class="cs-text">
+                Our exterior painters can be a game-changer for your home's curb appeal and overall value. If you're aiming to refresh your Ottawa property and boost its market appeal, Oasis Painting has you covered. Our team specializes in transforming exteriors with precision and care to ensure that you get long-term, aesthetically pleasing results. 
+            </p>
+            <p class="cs-text">
+                Additionally, we provide complimentary colour consultations for all our clients, offering paint samples to test on your home before the project kicks off. This hands-on approach ensures you make informed colour decisions tailored to your home's unique features. Kickstart your project today with a free quote and complimentary colour consultation!
+            </p>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Steps                     -->
+<!-- ============================================ -->
+
+<section id="steps-1376">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Process</span>
+            <h2 class="cs-title">We’re Committed to Maintain Standard Work Process</h2>
+        </div>
+        <!--
+            We had to use a div here because of the grouping we had to do to make the staggerd design work. We needed to create two groups, one with 3 cards and one with 2 cards so we can arrange the cards separately to create the design we need to create. 
+        -->
+       <div class="cs-card-group">
+       <div class="cs-group1">
+            <div class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="../../assets/svgs/clipboard.svg" alt="Thorough Preparation icon"
+                        width="48" height="48"/>
+                </picture>
+                <h3 class="cs-h3">Thorough Preparation</h3>
+                <p class="cs-item-text">
+                    All areas are properly sanded, cleaned and prepared so they are ready for all Canadian seasons
+                </p>
+            </div>
+            <div class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="../../assets/svgs/target.svg" alt="Expert Application icon" width="32" height="32"/>
+                </picture>
+                <h3 class="cs-h3">Expert Application</h3>
+                <p class="cs-item-text">
+                    Our experienced painters apply paint with precision, ensuring even coverage and clean lines.
+                </p>
+            </div>
+            <div class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="../../assets/svgs/clean.svg" alt="Complete Cleanup icon" width="32" height="32"/>
+                </picture>
+                <h3 class="cs-h3">Complete Cleanup</h3>
+                <p class="cs-item-text">
+                    We leave your space spotless, removing all painting materials and equipment.
+                </p>
+            </div>
+        </div>
+        <div class="cs-group2">
+            <div class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="../../assets/svgs/paint-can-open.svg" alt="Premium Materials icon" width="32" height="32"/>
+                </picture>
+                <h3 class="cs-h3">Premium Materials</h3>
+                <p class="cs-item-text">
+                    We use only high-quality paints and primers specially selected for Ottawa's climate conditions.
+                </p>
+            </div>
+            <div class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" loading="lazy" decoding="async"
+                        src="../../assets/svgs/magnifying-glass.svg" alt="Detailed Inspection icon" width="32" height="32"/>
+                </picture>
+                <h3 class="cs-h3">Detailed Inspection</h3>
+                <p class="cs-item-text">
+                    We conduct a comprehensive quality check before considering the job complete.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-342">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Comprehensive Exterior Solutions</span>
+            <h2 class="cs-title">Exterior Painting Services That Deliver Results</h2>
+            <p class="cs-text">
+                Our full-spectrum exterior painting services protect and beautify every outside surface of your Ottawa home. From siding and trim to decks and fences, our weather-resistant techniques and premium materials ensure your property maintains its curb appeal through Ottawa's challenging seasons while providing long-lasting protection against the elements.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <!--Mobile Image-->
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/siding-paint.png" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/siding-paint.png" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/siding-paint.png" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <!--Desktop Image-->
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/siding-paint.png" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/siding-paint.png" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/siding-paint.png" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/exterior/siding-paint.png" | resize({ width: 816, height: 480 }) | jpeg %}" alt="For sale sign in front of house" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Siding Services</h3>
+                    <p class="cs-item-text">
+                        Our exterior painters in Ottawa can help you transform the look of your vinyl, aluminum or wood siding! Contact us today to arrange your free estimate to refresh the face of your home.
+                    </p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/stairs.png" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/stairs.png" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/stairs.png" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/stairs.png" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/stairs.png" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/stairs.png" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/exterior/stairs.png" | resize({ width: 816, height: 480 }) | jpeg %}" alt="For sale sign in front of house" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Decks and Fences</h3>
+                <p class="cs-item-text">
+                    Whether you are looking for a new look for your weathered decks and fences or if you are looking to increase the lifespan of your exterior wood surfaces - our team will help you get the most of your home’s exterior!
+                </p>
+            </li>
+        </ul>
+        <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section id="sbsr-1076">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/exterior-1.png" | resize({ width: 318, height: 645 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/exterior-1.png" | resize({ width: 318, height: 645 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/exterior-1.png" | resize({ width: 318, height: 645 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/exterior-1.png" | resize({ width: 436, height: 880 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/exterior-1.png" | resize({ width: 436, height: 880 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/exterior-1.png" | resize({ width: 436, height: 880 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/exterior/exterior-1.png" | resize({ width: 436, height: 880 }) | jpeg %}" alt="Kitchen cupboards, counter and sink" width="436" height="880" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Middle image-->
+            <picture class="cs-picture cs-picture2">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/exterior-2.jpg" | resize({ width: 318, height: 645 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/exterior-2.jpg" | resize({ width: 318, height: 645 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/exterior-2.jpg" | resize({ width: 318, height: 645 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/exterior-2.jpg" | resize({ width: 436, height: 880 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/exterior-2.jpg" | resize({ width: 436, height: 880 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/exterior-2.jpg" | resize({ width: 436, height: 880 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/exterior/exterior-2.jpg" | resize({ width: 436, height: 880 }) | jpeg %}" alt="Kitchen cupboards, counter and sink" width="436" height="880" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+
+            <!--Bottom right image-->
+            <picture class="cs-picture cs-picture3">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/exterior-3.jpg" | resize({ width: 318, height: 645 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/exterior-3.jpg" | resize({ width: 318, height: 645 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior/exterior-3.jpg" | resize({ width: 318, height: 645 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/exterior-3.jpg" | resize({ width: 436, height: 880 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/exterior-3.jpg" | resize({ width: 436, height: 880 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior/exterior-3.jpg" | resize({ width: 436, height: 880 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/exterior/exterior-3.jpg" | resize({ width: 436, height: 880 }) | jpeg %}" alt="Kitchen cupboards, counter and sink" width="436" height="880" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="509" height="535" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Transparent Value Pricing</span>
+            <h2 class="cs-title">Interior Painting Costs in Ottawa: What to Expect</h2>
+            <p class="cs-text">
+                Understanding the cost factors for interior painting helps Ottawa homeowners plan their projects more effectively. At Oasis Painting, we provide transparent pricing based on these and other factors.
+            </p>
+            <ul class="cs-list">
+                <li class="cs-li"><strong>Square Footage:</strong> The total paintable surface area serves as our baseline measurement</li>
+                <li class="cs-li"><strong>Project Scope:</strong> Painting ceilings, trim, doors, and baseboards increases the scope</li>
+                <li class="cs-li"><strong>Surface Condition:</strong> Exterior surfaces get beat up from our harsh weather in Ottawa and can need lots of preparation work before painting, depending on their age</li>
+                <li class="cs-li"><strong>Paint Application:</strong> Multiple coats or primer requirements affect overall project duration</li>
+                <li class="cs-li"><strong>Accessibility Challenges:</strong> Work at heights requiring ladders or scaffolding increases cost per square foot</li>
+                <li class="cs-li"><strong>Paint Quality:</strong> Premium paints and specialty products like oil stains or rustproof metal paints influence total cost</li>
+            </ul>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a> 
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1458">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" alt="Living room with gold and white paint" width="1196" height="1782" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Why should I hire an exterior painting company?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Exterior painting jobs can be the most labour-intensive painting work there is. This is for a variety of reasons, including our Ottawa winters that are tough on exterior surfaces. Exposure to the elements means that surfaces need to be prepared with even more care. Oasis Painting will take care of all the tedious preparation work for you. We transform your exterior without you having to do anything you are unfamiliar with. You can rest assured that with our years of experience in the Ottawa area and commitment to top results, we are the right exterior painting company for the job!
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Which paint products are best for painting and staining?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    At Oasis Painting, we typically use either Sherwin-Williams or Cloverdale paint for exterior projects. Sherwin-Williams is an internationally trusted paint brand that offers a large selection of different durable and quality paints. Cloverdale Paint is a Canadian paint manufacturer and distributor based out of British Columbia. Cloverdale Paint has exterior paint and stain products that are uniquely designed to combat harsh Canadian winters and provide a stunning aesthetic. With either of these brands, Sherwin-Williams or Cloverdale, you can trust that you are getting a top-quality result!
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long does exterior painting usually last in the Ottawa region?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    The longevity of exterior paint depends on a couple factors, including exposure to sun, rain, snow and high moisture levels. Typically speaking however, exterior paint lasts somewhere between 5 and 10 years depending on traffic level and exposure to elements. Our experts painters will prepare your exterior space the rightway  to keep the job looking great for as long as possible despite our Ottawa winters!
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What kinds of exterior surfaces can be painted?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    At Oasis Painting, we paint house siding and other outdoor surfaces including wood, brick, concrete, stucco and vinyl. Each different type of surface requires a different preparation and different manner of paint application. Our exterior painters in Ottawa are deeply knowledgeable about choosing the right process for preparation and the right product for any project!
+                </p>
+            </li>
+        </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-865" class="reverse">
+    <div class="cs-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4lMFxJ4PDXY?si=idjBbtx8UFgxXe9w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="cs-content">
+            <span class="cs-topper">Preview It Before We Paint</span>
+            <h2 class="cs-title">Visualize Your Home's New Look Before Painting</h2>
+            <p class="cs-text">
+                Take the guesswork out of colour selection with Dulux Paints' interactive Paint Visualizer Tool. Upload photos of your Ottawa home's interior spaces and experiment with different colours and combinations to find your perfect palette. This valuable tool helps you confidently make design decisions before we begin your painting project.
+            </p>
+            <p class="cs-text">
+                Once you've explored your options and have some favourites in mind, contact Ottawa's interior painting experts at Oasis Painting for your free, no-obligation quote. We'll help bring your vision to life with professional results you'll love!
+            </p>
+            <a href="https://www.visualizecolor.com/dulux#/" target="_blank" class="cs-button-solid">Try It Now</a>
+        </div>
+    </div>
+</section>
+
+{% include 'components/reviews.html' %}
+
 {% endblock %}
