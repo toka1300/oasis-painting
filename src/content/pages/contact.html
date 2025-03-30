@@ -1,6 +1,6 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
+title: 'Contact | Oasis Painting'
+description: 'TODO'
 permalink: 'contact/'
 eleventyNavigation:
     key: Contact Us
@@ -17,5 +17,102 @@ eleventyNavigation:
 
 {% block body %}
 
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1519">
+    <div class="cs-container">
+        <span class="cs-int-title">Contact Us</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-banner.png" | resize({ width: 1200, height: 982, position: "top" }) |  avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-banner.png" | resize({ width: 1200, height: 982, position: "top" }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-banner.png" | resize({ width: 1200, height: 982, position: "top" }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/contact-banner-2.jpg" | resize({ width: 2800, height: 983 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/contact-banner.png" | resize({ width: 2800, height: 982, position: "top" }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/contact-banner.png" | resize({ width: 2800, height: 982, position: "top" }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/contact-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Person rolling stain on fence" width="2000" height="982" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
+</div>
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1600">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get In Touch</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1600" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-1600" name="name" placeholder="Hue Jackson">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" id="email-1600" name="email" placeholder="name@email.ca">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="phone" id="phone-1600" name="phone" placeholder="613-623-9274">
+                </label>
+                <label class="cs-label cs-phone">
+                    Location
+                    <input class="cs-input" required type="text" id="location-1600" name="location" placeholder="Kanata, Orléans, Kemptville, etc.">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1600" placeholder="Please let us know a little about your project. If you have any questions for us, please ask us here and we will get back to you as soon as possible!"></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Submit Now</button>
+            </form>
+        </div>
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-header">Book Consultation Now</span>
+                    <a href="" class="cs-item-text">
+                        Click here to book a free consultation with us            
+                    </a>
+                    {# <p class="cs-item-text">
+                    </p> #}
+                </li>
+                <li class="cs-item">
+                    <span class="cs-header">Email Us</span>
+                    <p class="cs-item-text">
+                        Email your questions at
+                        <a class="cs-link" href="mailto:info@invetexfinance.com">info@invetexfinance.com</a>     
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-header">Reviews</span>
+                    <p class="cs-item-text">
+                        See Our reviews on Google or leave a review
+                        <a href="" class="cs-link">
+                            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/google-1a.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">
+                            Google Reviews
+                        </a>                   
+                    </p>
+                </li>
+            </ul>
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg" alt="people" width="522" height="771">
+            </picture>
+        </div>
+    </div>
+</section>
  
 {% endblock %}

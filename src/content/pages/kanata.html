@@ -1,0 +1,98 @@
+---
+title: 'Kanata | Oasis Painting'
+description: 'TODO'
+permalink: 'kanata/'
+eleventyNavigation:
+    key: Kanata
+    order: 100
+    parent: Locations
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+    <link rel="stylesheet" href="/assets/css/kanata.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1519">
+    <div class="cs-container">
+        <span class="cs-int-title">Kanata</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2800, height: 983, position: "bottom" }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2800, height: 982 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Person rolling stain on fence" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
+</div>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Bedroom" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Kanata Painting Services</h2>
+            <h3 class="cs-h3">Interior Painting Services</h3>
+            <p class="cs-text">
+                Ready to refresh your Kanata home's interior? Oasis Painting delivers flawless interior painting results that transform your living spaces with premium materials and expert craftsmanship. Our professional Kanata painters bring new life to every room, creating beautiful, long-lasting finishes you'll love coming home to. Contact us today for your free, no-obligation quote!
+            </p>
+            <h3 class="cs-h3">Exterior Painting Services</h3>
+            <p class="cs-text">
+                Rejuvenate the look of your home with our expert and quality exterior painting services across the Ottawa region. Let our skilled painters help you transform the aesthetic of your home's exterior and increase its curb appeal and value!
+            </p>
+            <p class="cs-text">
+                Our exterior painters can be a game-changer for your home's curb appeal and overall value. If you're aiming to refresh your Kanata property and boost its market appeal, Oasis Painting has you covered. Our team specializes in transforming exteriors with precision and care to ensure that you get long-term, aesthetically pleasing results. 
+            </p>
+            <h3 class="cs-h3">Deck Staining Services</h3>
+            <p class="cs-text">
+                Your trusted deck staining professionals will help protect your exterior from the elements of Kanata weather! From pressure washing to sanding and staining, we do it all to make sure you get the most out of your deck investment. Winters in Kanata are harsh, extend the lifespan and improve the look of your deck with Oasis Painting!
+            </p>
+            <h3 class="cs-h3">Commercial Painting Services</h3>
+            <p class="cs-text">
+                Oasis Painting is your best choice for a reliable commercial painting company in Kanata. Our commercial painters are known for great craftsmanship, attention to detail and customer service across the Kanata area. Our team of experts would be happy to get you started today, reach out!
+            </p>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+{% include 'components/why-choose-us.html' %}
+{% include 'components/reviews.html' %}
+
+{% endblock %}

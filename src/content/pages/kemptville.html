@@ -1,0 +1,171 @@
+---
+title: 'Kemptville | Oasis Painting'
+description: 'TODO'
+permalink: 'kemptville/'
+eleventyNavigation:
+    key: Kemptville
+    order: 100
+    parent: Locations
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1519">
+    <div class="cs-container">
+        <span class="cs-int-title">Kemptville</span>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 })  | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 })  | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 983 }) | extend({ top: 550 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 982 }) | extend({ top: 550 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 982 }) | extend({ top: 550 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Person rolling stain on fence" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
+</div>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/kemptville.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Bedroom" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Your Kemptville Painting Company</h2>
+            <p class="cs-text">
+                Oasis Painting's origins in the painting industry start in the Kemptville and North Grenville area. That is why we are proud to be some of the most trusted painters in the town of Kemptville. From staining decks to complete home refreshes, our painting company has helped Kemptville residents transform their spaces for years. Whether you are looking to change the look of your home's interior, clean up your outside look or bring life to a commercial space - our painters can help you achieve your dream space in Kemptville!
+            </p>
+            <p class="cs-text">
+                When you choose Oasis Painting, you are getting top-of-the-line customer service, attention to detail, and some of the finest craftsmanship in our industry. That is how again and again Oasis Painting is chosen for repeat business  and consistently generates excellent reviews. Give us a chance and you won't be disappointed!
+            </p>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side Reverse          -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="reverse grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Bedroom" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Our Roots in Kemptville</h2>
+            <p class="cs-text">
+                The founders of Oasis Painting, Matt and Will, both grew up and went to school in Kemptville. From the time as a child playing in Riverside Park to high-school years at St. Michael's High School, our founders have lived and breathed Kemptville life. As such, Oasis Painting commits to providing a superior painting service to North Grenville and all of its residents. Locally owned, and operated, we are a business you can rely on again and again because we are more than just painters, we are neighbours. We understand your painting needs and are always close by if anything is needed!
+            </p>
+            <p class="cs-text">
+                Choosing Oasis Painting isn't just about choosing top-quality and customer service, but supporting a local business with deep roots in the area. Don't hesitate to reach out to get started on your project!
+            </p>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Bedroom" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Kemptville Painting Services</h2>
+            <h3 class="cs-h3">Interior Painting Services</h3>
+            <p class="cs-text">
+                Ready to refresh your Kemptville home's interior? Oasis Painting delivers flawless interior painting results that transform your living spaces with premium materials and expert craftsmanship. Our professional Kemptville painters bring new life to every room, creating beautiful, long-lasting finishes you'll love coming home to. Contact us today for your free, no-obligation quote!
+            </p>
+            <h3 class="cs-h3">Exterior Painting Services</h3>
+            <p class="cs-text">
+                Rejuvenate the look of your home with our expert and quality exterior painting services across the Ottawa region. Let our skilled painters help you transform the aesthetic of your home's exterior and increase its curb appeal and value!
+            </p>
+            <p class="cs-text">
+                Our exterior painters can be a game-changer for your home's curb appeal and overall value. If you're aiming to refresh your Kemptville property and boost its market appeal, Oasis Painting has you covered. Our team specializes in transforming exteriors with precision and care to ensure that you get long-term, aesthetically pleasing results. 
+            </p>
+            <h3 class="cs-h3">Deck Staining Services</h3>
+            <p class="cs-text">
+                Your trusted deck staining professionals will help protect your exterior from the elements of Kemptville weather! From pressure washing to sanding and staining, we do it all to make sure you get the most out of your deck investment. Winters in Kemptville are harsh, extend the lifespan and improve the look of your deck with Oasis Painting!
+            </p>
+            <h3 class="cs-h3">Commercial Painting Services</h3>
+            <p class="cs-text">
+                Oasis Painting is your best choice for a reliable commercial painting company in Kemptville. Our commercial painters are known for great craftsmanship, attention to detail and customer service across the Kemptville area. Our team of experts would be happy to get you started today, reach out!
+            </p>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+{% include 'components/why-choose-us.html' %}
+{% include 'components/reviews.html' %}
+
+{% endblock %}
