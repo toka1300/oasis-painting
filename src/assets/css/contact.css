@@ -146,58 +146,30 @@
     z-index: 1;
   }
   #contact-1600 .cs-item {
+    display: flex;
+    gap: 2rem;
     text-align: left;
     list-style: none;
     width: 100%;
     margin: 0;
-    /* 16px - 40px top & Bottom */
-    /* 24px - 40px left & right */
     padding: clamp(1rem, 4vw, 2.5rem) clamp(1.5rem, 5vw, 2.5rem);
-    /* prevents padding from affecting height and width */
     box-sizing: border-box;
     border: 1px solid #E8E8E8;
     background-color: #fff;
     position: relative;
     z-index: 1;
+    text-decoration: none;
+    transition: 0.4s;
   }
-  #contact-1600 .cs-item:hover:before {
-    opacity: 1;
-  }
-  #contact-1600 .cs-item:hover .cs-header {
-    color: var(--primary);
-  }
-  #contact-1600 .cs-item:hover .cs-item-text, #contact-1600 .cs-item:hover .cs-link {
-    color: var(--bodyTextColorWhite);
-  }
-  #contact-1600 .cs-item:hover .cs-text, #contact-1600 .cs-item:hover .cs-link {
-    opacity: 0.8;
-  }
-  #contact-1600 .cs-item:hover .cs-link:hover {
-    color: var(--primary);
-  }
-  #contact-1600 .cs-item:hover .cs-icon {
-    filter: grayscale(1) brightness(1000%);
-  }
-  #contact-1600 .cs-item:before {
-    /* hover border and background */
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #1a1a1a;
-    opacity: 0;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: opacity 0.3s;
+  #contact-1600 .cs-item:hover {
+    scale: 1.05;
   }
   #contact-1600 .cs-header {
     font-size: 1.25rem;
     line-height: 1.2em;
     text-align: inherit;
     font-weight: 700;
-    /* 12px - 16px */
+    color: initial;
     margin: 0 0 clamp(0.75rem, 1.6vw, 1rem);
     display: block;
     transition: color 0.3s;

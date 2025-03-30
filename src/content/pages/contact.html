@@ -78,38 +78,44 @@ eleventyNavigation:
         </div>
         <div class="cs-wrapper">
             <ul class="cs-card-group">
-                <li class="cs-item">
-                    <span class="cs-header">Book Consultation Now</span>
-                    <a href="" class="cs-item-text">
-                        Click here to book a free consultation with us            
-                    </a>
-                    {# <p class="cs-item-text">
-                    </p> #}
-                </li>
-                <li class="cs-item">
-                    <span class="cs-header">Email Us</span>
-                    <p class="cs-item-text">
-                        Email your questions at
-                        <a class="cs-link" href="mailto:info@invetexfinance.com">info@invetexfinance.com</a>     
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <span class="cs-header">Reviews</span>
-                    <p class="cs-item-text">
-                        See Our reviews on Google or leave a review
-                        <a href="" class="cs-link">
-                            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/google-1a.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">
-                            Google Reviews
-                        </a>                   
-                    </p>
-                </li>
+                <a href="{{ client.bookingLink }}" target="_blank" class="cs-item">
+                    <img src="../../assets/svgs/calendar.svg" alt="calendar icon">
+                    <div class="info">
+                        <span class="cs-header">Book Consultation Now</span>
+                        <span class="cs-item-text">
+                            Click here to book a free consultation with us            
+                        </span>
+                    </div>
+                </a>
+                <a href="email:{{client.email}}" class="cs-item">
+                    <img src="../../assets/svgs/gmail.svg" alt="calendar icon">
+                    <div class="info">
+                        <span class="cs-header">Email Us</span>
+                        <span class="cs-item-text">
+                            Click here to email your questions to {{client.email}}
+                        </span>
+                    </div>
+                </a>
+                <a href="tel:{{client.phoneForTel}}" class="cs-item">
+                    <img src="../../assets/svgs/phone-blue.svg" alt="calendar icon">
+                    <div class="info">
+                        <span class="cs-header">Call Us</span>
+                        <span class="cs-item-text">
+                            Click here or dial {{ client.phoneFormatted }}     
+                        </span>
+                    </div>
+                </a>
             </ul>
             <picture class="cs-background">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg" alt="people" width="522" height="771">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/palm.jpg" | resize({ width: 1044, height: 980 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/palm.jpg" | resize({ width: 1044, height: 980 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/palm.jpg" | resize({ width: 1044, height: 980 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/palm.jpg" | resize({ width: 1044, height: 1494 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/palm.jpg" | resize({ width: 1044, height: 1494 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/palm.jpg" | resize({ width: 1044, height: 1494 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/palm.jpg" | resize({ width: 1044, height: 1494 }) | jpeg %}" alt="" width="1044" height="1494" loading="eager" decoding="async" aria-hidden="true">
             </picture>
         </div>
     </div>
