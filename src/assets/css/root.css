@@ -945,7 +945,10 @@
     top: 0;
     left: 0;
     z-index: -1;
-    transition: width 0.3s;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 48px;
+    transform: scaleX(0);
+    transform-origin: left;
   }
   #cs-navigation .cs-button-solid:hover {
     color: #fff;
@@ -1037,8 +1040,11 @@
     perspective: 200px;
     gap: 1rem;
   }
-  #cs-navigation .cs-call:hover:hover .cs-wrapper {
+  #cs-navigation .cs-call:hover .cs-wrapper {
     transform: rotateY(180deg);
+  }
+  #cs-navigation .cs-call:hover .cs-icon {
+    transform: rotate(-90deg);
   }
   #cs-navigation .cs-call .cs-wrapper {
     width: 3.5rem;

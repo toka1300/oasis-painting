@@ -1129,7 +1129,10 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                transition: width 0.3s;
+                transition: transform 0.3s ease-in-out;
+                border-radius: 48px;
+                transform: scaleX(0);
+                transform-origin: left;
             }
 
             &:hover {
@@ -1235,12 +1238,14 @@
             gap: calc(16 / 16 * 1rem);
 
             &:hover {
-                &:hover {
-                    .cs-wrapper {
-                        transform: rotateY(180deg);
-                    }
-                }
-            }
+                .cs-wrapper {
+                    transform: rotateY(180deg);
+                  }
+    
+                .cs-icon {
+                    transform: rotate(-90deg);
+                  }
+            } 
 
             .cs-wrapper {
                 width: calc(56 / 16 * 1rem);
