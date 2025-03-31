@@ -1103,13 +1103,11 @@
         .cs-button-solid {
             font-size: calc(16 / 16 * 1rem);
             font-weight: 700;
-            /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
             text-align: center;
             text-decoration: none;
             min-width: calc(150 / 16 * 1rem);
             margin: 0;
-            /* prevents padding from adding to the width */
             box-sizing: border-box;
             padding: 0 calc(48 / 16 * 1rem);
             color: #1a1a1a;
@@ -1117,14 +1115,15 @@
             display: inline-block;
             position: relative;
             z-index: 1;
-            transition: color 0.3s;
-
+            transition: color 0.1s;
+            border-radius: 48px;
+            overflow: hidden; /* Ensures the pseudo-element stays within bounds */
+        
             &:before {
                 content: "";
-                width: 0%;
+                width: 100%;
                 height: 100%;
                 background: #000;
-                opacity: 1;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -1134,11 +1133,11 @@
                 transform: scaleX(0);
                 transform-origin: left;
             }
-
+        
             &:hover {
                 color: #fff;
                 &:before {
-                    width: 100%;
+                    transform: scaleX(1);
                 }
             }
         }
@@ -1457,7 +1456,7 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
-                /* Makes img tag act as a background image */
+                object-position: right;
                 object-fit: cover;
             }
         }
@@ -1867,7 +1866,7 @@
         }
 
         .cs-logo {
-            width: 15rem;
+            width: 13rem;
             height: auto;
             display: block;
             /* 20px - 24px */
@@ -1883,7 +1882,7 @@
             }
         }
         .cs-link {
-            font-size: calc(14 / 16 * 1rem);
+            font-size: 1rem;
             line-height: 1.5em;
             text-decoration: none;
             margin: 0;
@@ -1932,7 +1931,7 @@
         }
 
         .cs-nav-link {
-            font-size: calc(14 / 16 * 1rem);
+            font-size: 1rem;
             text-decoration: none;
             line-height: 1.5em;
             width: auto;
@@ -1976,7 +1975,7 @@
             align-items: center;
             flex-wrap: wrap;
             column-gap: calc(36 / 16 * 1rem);
-            row-gap: calc(12 / 16 * 1rem);
+            row-gap: 0.15rem;
         }
 
         .cs-copyright,
@@ -2040,6 +2039,32 @@
             }
         }
     }
+
+    .credit {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: auto;
+        gap: 0.25rem;
+        font-size: 14px;
+        margin-right: 0;
+
+        a {
+            display: block;
+            text-decoration: none;
+            font-size: 0.875rem;
+            color: var(--primaryLight);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .copyright {
+            display: block;
+            font-size: calc(16 / 16 * 1rem);
+        }
+    }
 }
 
 /* Tablet - 768px */
@@ -2059,6 +2084,7 @@
         }
 
         .cs-bottom {
+            flex-direction: column;
             flex-wrap: nowrap;
             justify-content: flex-start;
         }
@@ -2071,6 +2097,21 @@
 
         .cs-floater {
             display: block;
+        }
+
+        .credit {
+            flex-direction: row;
+            justify-content: center;
+            margin-right: auto;
+            align-items: flex-start;
+
+            span {
+                line-height: 1.25rem;
+            }
+        }
+
+        .credit a {
+            display: unset;
         }
     }
 }
@@ -2096,6 +2137,10 @@
         .cs-text {
             width: 100%;
             margin-bottom: 2rem;
+        }
+
+        .credit {
+            margin-right: auto;
         }
 
         .cs-graphic {
@@ -2207,7 +2252,7 @@
         }
 
         .cs-nav-link {
-            font-size: calc(14/16 * 1rem);
+            font-size: 1rem;
             text-decoration: none;
             line-height: 1.5em;
             width: auto;

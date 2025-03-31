@@ -348,7 +348,6 @@
 @media only screen and (min-width: 0rem) {
     #steps-1376 {
         padding: var(--sectionPadding);
-        background-color: #f7f7f7;
         /* clips the waves and lines from cause overflow issues */
         overflow: hidden;
 
@@ -785,6 +784,10 @@
             /* 16px - 24px */
             padding: 0 clamp(1rem, 2.2vw, 1.5rem);
         }
+
+        .cs-button-solid {
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -1102,6 +1105,10 @@
             overflow: hidden;
             position: relative;
         }
+
+        &.white {
+            background-color: white;
+        }
     }
 }
 
@@ -1119,6 +1126,10 @@
             iframe {
                 order: 2;
             }
+        }
+
+        &.white {
+            background-color: white;
         }
     }
 }

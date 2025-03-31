@@ -17,7 +17,7 @@
                         <span class="cs-link-content">{{ client.email }}</span>
                     </div>
                 </a>
-                <a class="cs-contact-link" href="mailto:Info@health&wellness.com">
+                <a class="cs-contact-link" href="{{ client.mapLink }}" target="_blank">
                     <picture class="cs-wrapper">
                         <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/yellow-pin.svg" alt="icon" width="24" height="24">
                     </picture>
@@ -105,7 +105,7 @@
                 </ul>
             </div>
             </nav>
-            <a class="cs-call" href="/contact">
+            <a class="cs-call" href="tel:{{ client.phoneForTel }}">
                 <picture class="cs-wrapper">
                     <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/phone.svg" alt="icon" width="24" height="24">
                 </picture>

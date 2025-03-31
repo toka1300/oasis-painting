@@ -28,14 +28,14 @@ eleventyNavigation:
     <!--Background Image-->
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 982, position: "top" }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 982, position: "top" }) | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 982, position: "top" }) | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 754, position: "right top" }) | extend({ top: 100 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 754, position: "right top" }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 754, position: "right top" }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 2800, height: 983, position: "top" }) | avif %}" type="image/avif">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 2800, height: 982, position: "top" }) | webp %}" type="image/webp">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 2800, height: 982, position: "top" }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/about-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Person rolling stain on fence" width="2000" height="982" loading="lazy" decoding="async" aria-hidden="true">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 3800, height: 963, position: "top" }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 3800, height: 962, position: "top" }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 3800, height: 962, position: "top" }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/about-banner.png" | resize({ width: 3800, height: 962 }) | jpeg %}" class="justify-right" alt="Person rolling stain on fence" width="3800" height="962" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
     <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
@@ -92,23 +92,28 @@ eleventyNavigation:
             <div class="cs-flex">
                 <span class="cs-topper">Our Expert Team</span>
                 <h2 class="cs-title">Meet Your Expert Painting Partners</h2>
+                <p class="cs-text">Local, trusted and professional - we strive to ensure all our clients are thrilled with their results. No matter the job, we paint it right every time!</p>
             </div>
             <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
+
                 <picture class="cs-picture">
                    <!--Mobile Image-->
                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 1100, height: 1344 }) | avif %}" type="image/avif">
                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 1100, height: 1344 }) | webp %}" type="image/webp">
                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 1100, height: 1344 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 899px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 1100, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 899px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 1100, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 899px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 1100, height: 814 }) | jpeg %}" type="image/jpeg">
                    <!--Desktop Image-->
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 610, height: 814 }) | avif %}" type="image/avif">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 610, height: 814 }) | webp %}" type="image/webp">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 610, height: 814 }) | jpeg %}" type="image/jpeg">
-                   <img src="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 610, height: 814 }) | jpeg %}" alt="Headshot of co-owner, Matt" width="610" height="814" loading="lazy" decoding="async" aria-hidden="true">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 610, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 610, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 610, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 610, height: 814 }) | jpeg %}" alt="Headshot of the co-owner, Matt" width="1100" height="814" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
-
                 <div class="cs-info">
                     <span class="cs-name">Matt McNamee</span>
                     <span class="cs-job">Co-owner/Operator</span>
@@ -121,11 +126,15 @@ eleventyNavigation:
                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 1100, height: 1344 }) | avif %}" type="image/avif">
                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 1100, height: 1344 }) | webp %}" type="image/webp">
                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 1100, height: 1344 }) | jpeg %}" type="image/jpeg">
+                   <!--Tablet Image-->
+                   <source media="(max-width: 899px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 1100, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 899px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 1100, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 899px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 1100, height: 814 }) | jpeg %}" type="image/jpeg">
                    <!--Desktop Image-->
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 610, height: 814 }) | avif %}" type="image/avif">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 610, height: 814 }) | webp %}" type="image/webp">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 610, height: 814 }) | jpeg %}" type="image/jpeg">
-                   <img src="{% getUrl "/assets/images/will.jpg" | resize({ width: 610, height: 814 }) | jpeg %}" alt="Headshot of co-owner, Will" width="610" height="814" loading="lazy" decoding="async" aria-hidden="true">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 610, height: 814 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 610, height: 814 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/will.jpg" | resize({ width: 610, height: 814 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/will.jpg" | resize({ width: 610, height: 814 }) | jpeg %}" alt="Headshot of the co-owner, Matt" width="1100" height="814" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
                 <div class="cs-info">
                     <span class="cs-name">William Dorken</span>
@@ -179,7 +188,7 @@ eleventyNavigation:
                 </p>
             </li>
         </ul>
-        <a href="" class="cs-button-solid">Get A Free Quote</a>
+        <a href="/contact" class="cs-button-solid">Get A Free Quote</a>
     </div>
 </section>
 

@@ -173,6 +173,9 @@
   #meet-team-1141 .cs-title {
     max-width: 20ch;
   }
+  #meet-team-1141 .cs-text {
+    margin-bottom: 2rem;
+  }
   #meet-team-1141 .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */

@@ -94,17 +94,17 @@ eleventyNavigation:
 
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right" }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right" }) | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right" }) | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | jpeg %}" type="image/jpeg">
        <!--Tablet Image-->
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right" }) | avif %}" type="image/avif">
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right" }) | webp %}" type="image/webp">
-       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right" }) | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | extend({ top: 200 }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | extend({ top: 200 }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | extend({ top: 200 }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right" }) | avif %}" type="image/avif">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right" }) | webp %}" type="image/webp">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right" }) | jpeg %}" type="image/jpeg">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | extend({ top: 600 }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | jpeg %}" type="image/jpeg">
        <img src="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900 }) | jpeg %}" alt="Beautiful kitchen with yellow and brown paint" width="3000" height="1900" loading="eager" decoding="async" aria-hidden="true">
     </picture>
 </section>
@@ -166,7 +166,7 @@ eleventyNavigation:
                 </p>
             </a>
         </div>
-        <div class="cs-button-solid">Get a Free Quote</div>
+        <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
     </div>
 </section>
 
@@ -216,7 +216,7 @@ eleventyNavigation:
                 Oasis Painting is your trusted Ottawa painting contractor offering reasonable pricing and quality work. With our experienced team and friendly staff, we are your best painters in Ottawa. At Oasis Painting, customer satisfaction is always our highest priority and we are committed to providing a superior customer experience. We are proud to serve the entire Ottawa Valley, bringing our quality work to all surrounding areas.
             </p>
             <p class="cs-text">
-                Oasis Painting is your trusted Ottawa painting contractor offering reasonable pricing and quality work. With our experienced team and friendly staff, we are your best painters in Ottawa. At Oasis Painting, customer satisfaction is always our highest priority and we are committed to providing a superior customer experience. We are proud to serve the entire Ottawa Valley, bringing our quality work to all surrounding areas.
+                Let us transform your space, into your oasis! We use high-quality and low-VOC paints such as Sherwin-Williams, Dulux, Benjamin Moore and Cloverdale Paint, to be sure that we are eco-friendly while we complete your house painting project! Our house painters take pride in our competitive pricing, professional response times and friendly service. At Oasis Painting, we look forward to helping with all your painting needs in Ottawa! Whether it is big or small, we do it all! Contact us today!
             </p>
             <a href="/about" class="cs-button-solid">More About Us</a>
         </div>
@@ -251,7 +251,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Ottawa homeowners choose our professional painting services for our attention to detail, clean workspaces, and commitment to minimal disruption. Beyond walls and ceilings, our specialized services include stair and banister refinishing, floor painting, and trim work that adds the perfect finishing touch to your home. Our exterior painters use weather-resistant products specifically formulated for Ottawa's climate, protecting your siding, trim, and exterior surfaces from freezing winters and hot summers. From Barrhaven to Orléans, Westboro to Riverside South, our 5-star rated painting team brings expertise and dedication to every Ottawa home painting project.
             </p>
-            <a class="cs-button-solid" aria-label="read more about our services" href="">Read More</a>
+            <a class="cs-button-solid" aria-label="read more about our services" href="/about">Read More</a>
         </div>
     </div>
 </section>
@@ -283,7 +283,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Ottawa businesses rely on our commercial painting contractors for our comprehensive services that include interior office painting, exterior facade refreshes, and specialized commercial applications. We use low-VOC, durable paints that maintain their appearance despite heavy traffic and regular cleaning. Our team works closely with property managers and business owners throughout Ottawa to understand specific requirements, adhere to corporate colour standards, and meet strict project timelines. With proper preparation, premium products, and professional application, Oasis Painting has become the trusted commercial painting company for businesses across Ottawa's diverse commercial districts, from downtown high-rises to industrial parks and retail centers in Nepean, Orléans, and beyond.
             </p>
-            <a class="cs-button-solid" aria-label="read more about our services" href="">Read More</a>
+            <a class="cs-button-solid" aria-label="read more about our services" href="/about">Read More</a>
         </div>
     </div>
 </section>
@@ -394,7 +394,7 @@ eleventyNavigation:
                 <span class="cs-stat-text">Free Quotes</span>
             </li>
         </ul>
-        <a href="" class="cs-button-solid">Get A Free Quote</a>
+        <a href="/contact" class="cs-button-solid">Get A Free Quote</a>
     </div>
 </section>
 

@@ -301,7 +301,6 @@
 @media only screen and (min-width: 0rem) {
   #steps-1376 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
     /* clips the waves and lines from cause overflow issues */
     overflow: hidden;
     /* setting the row groups to display: contents causes the child cs-items to "appear" as direct children of the parent .cs-card-group */
@@ -677,6 +676,9 @@
     /* 16px - 24px */
     padding: 0 clamp(1rem, 2.2vw, 1.5rem);
   }
+  #services-342 .cs-button-solid {
+    margin-bottom: 2rem;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
@@ -951,6 +953,9 @@
     overflow: hidden;
     position: relative;
   }
+  #sbs-865.white {
+    background-color: white;
+  }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
@@ -964,6 +969,9 @@
   }
   #sbs-865.reverse iframe {
     order: 2;
+  }
+  #sbs-865.white {
+    background-color: white;
   }
 }
 /*-- -------------------------- -->
