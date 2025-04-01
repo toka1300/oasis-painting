@@ -73,8 +73,9 @@
             width: 100%;
             /* 46px - 56px */
             height: clamp(2.875rem, 4vw, 3.5rem);
-            padding: 0;
-            padding-left: calc(24 / 16 * 1rem);
+            // padding: 0;
+            // padding-left: calc(24 / 16 * 1rem);
+            padding: 0 0.75rem 0 1.5rem;
             color: var(--headerColor);
             background-color: #f7f7f7;
             border: none;
@@ -132,7 +133,7 @@
         }
 
         .cs-card-group {
-            width: 75%;
+            width: 90%;
             max-width: calc(413 / 16 * 1rem);
             margin: 0;
             padding: 0;

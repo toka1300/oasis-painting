@@ -149,11 +149,11 @@
     z-index: -2;
   }
   #sbs-1095 .cs-graphic {
-    width: 9rem;
+    width: 7rem;
     height: auto;
     display: block;
     position: absolute;
-    bottom: 5em;
+    top: 5em;
     right: 0;
   }
   #sbs-1095.reverse .cs-image-group {

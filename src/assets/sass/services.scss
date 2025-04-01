@@ -155,7 +155,7 @@
         }
 
         .cs-graphic {
-            width: 9rem;
+            width: 6rem;
             height: auto;
             display: block;
             position: absolute;
@@ -305,7 +305,7 @@
             height: auto;
             display: block;
             position: absolute;
-            top: calc(80 / 16 * 1em);
+            top: 0;
             left: calc(40 / 16 * 1em);
             z-index: -1;
         }
@@ -436,11 +436,9 @@
             max-width: calc(240/16 * 1rem);
             height: calc(240/16 * 1rem);
             margin: 0;
-            /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
-            padding: calc(24/16 * 1rem);
+            padding: 2rem;
             background-color: #f4f4f4;
-            /* clips the :before element from being clickable when it's outside the item and triggering the hover animation */
             overflow: hidden;
             border: 1px solid #e8e8e8;
             border-radius: 50%;
@@ -782,7 +780,7 @@
             color: var(--bodyTextColor);
             margin: 0;
             /* 16px - 24px */
-            padding: 0 clamp(1rem, 2.2vw, 1.5rem);
+            padding: 0 clamp(1rem, 2.2vw, 1.5rem) 1rem clamp(1rem, 2.2vw, 1.5rem);
         }
 
         .cs-button-solid {
@@ -1109,6 +1107,12 @@
         &.white {
             background-color: white;
         }
+
+        iframe {
+            width: 100%;
+            max-width: 32rem;
+            height: 18rem;
+        }
     }
 }
 
@@ -1212,7 +1216,7 @@
 
         .cs-tag {
             /* 14px - 24px */
-            font-size: clamp(0.875rem, 1.4vw, 1.5rem);
+            font-size: clamp(1rem, 1.4vw, 1.5rem);
             font-weight: 700;
             line-height: 1.2em;
             text-align: center;

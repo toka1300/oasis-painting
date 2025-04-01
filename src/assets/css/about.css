@@ -121,6 +121,9 @@
     top: 0rem;
     right: 3.125rem;
   }
+  #sbs-865.grey {
+    background-color: #f7f7f7;
+  }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
@@ -131,9 +134,6 @@
   }
   #sbs-865 .cs-floater {
     display: block;
-  }
-  #sbs-865.reverse {
-    background-color: #f7f7f7;
   }
   #sbs-865.reverse .cs-image-group {
     order: 2;
@@ -445,6 +445,9 @@
     flex-direction: row;
     justify-content: space-between;
   }
+}
+#reviews-864 {
+  background-color: #f7f7f7;
 }
 
 /*# sourceMappingURL=about.css.map */

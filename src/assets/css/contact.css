@@ -66,8 +66,7 @@
     width: 100%;
     /* 46px - 56px */
     height: clamp(2.875rem, 4vw, 3.5rem);
-    padding: 0;
-    padding-left: 1.5rem;
+    padding: 0 0.75rem 0 1.5rem;
     color: var(--headerColor);
     background-color: #f7f7f7;
     border: none;
@@ -117,7 +116,7 @@
     z-index: 1;
   }
   #contact-1600 .cs-card-group {
-    width: 75%;
+    width: 90%;
     max-width: 25.8125rem;
     margin: 0;
     padding: 0;
