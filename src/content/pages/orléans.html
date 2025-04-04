@@ -13,6 +13,7 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+    <link rel="stylesheet" href="/assets/css/orleans.css">
 {% endblock %}
 
 {% block body %}
@@ -59,7 +60,44 @@ eleventyNavigation:
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="House from outside" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Kemptville town sign" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Oasis Professional Painting in Orléans</h2>
+            <p class="cs-text">
+                Oasis Painting stands as the premier choice for Orléans, property owners, and businesses seeking quality painting work. We are happy to extend our expertise in the house painting industry to the vibrant community of Orléans. As a leading painting company in town, we have earned a solid reputation for our ability to breathe new life into spaces, whether through staining decks, painting siding, or providing complete home makeovers. Orléans residents have come to rely on Oasis Painting for our years of experience and dedication to transforming spaces with care.
+            </p>
+            <p class="cs-text">
+                Our experienced and friendly teams are known for their attention to detail, ensuring that each project is handled with professionalism and expertise. Oasis Painting commits to using eco-friendly paint brands. This offers a healthy and environmentally aware painting approach with low or no VOCs. Our commitment to excellence is not just a promise; it is a guarantee shown in our amazing customer service, keen eye for detail, and great craftsmanship. This commitment has earned Oasis Painting repeat business, referrals, and glowing reviews from satisfied clients in Orléans and beyond. Choose Oasis Painting for a painting experience that exceeds what is expected. We provide incredible results and refresh your space with passion.
+            </p>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="grey reverse">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="House with beige siding" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
             <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
