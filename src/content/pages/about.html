@@ -1,6 +1,6 @@
 ---
 title: 'About | Oasis Painting'
-description: 'Meta description for the page'
+description: "Learn about Oasis Painting's commitment to excellence, experienced team, and dedication to quality residential & commercial painting services."
 permalink: 'about/'
 eleventyNavigation:
     key: About Us
@@ -12,7 +12,7 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/about.css">
     <link rel="stylesheet" href="/assets/css/faq.css">
-    {# <link rel="preload" as="image" href="{% getUrl '/assets/images/cabinets2.jpg' | resize({ width: 720, height: 774 }) | avif %}"/> #}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -29,8 +29,8 @@ eleventyNavigation:
     <picture class="cs-background">
        <!--Mobile Image-->
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 754, position: "right top" }) | extend({ top: 100 }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 754, position: "right top" }) | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 754, position: "right top" }) | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 754, position: "right top" }) | extend({ top: 100 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 1200, height: 754, position: "right top" }) | extend({ top: 100 }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 3800, height: 963, position: "top" }) | avif %}" type="image/avif">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/about-banner.png" | resize({ width: 3800, height: 962, position: "top" }) | webp %}" type="image/webp">
