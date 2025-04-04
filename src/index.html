@@ -18,6 +18,7 @@ eleventyNavigation:
 <noscript>
     <link rel="stylesheet" href="/assets/css/local.css">
 </noscript>
+<link rel="preload" as="image" href="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | avif %}"/>
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -95,16 +96,16 @@ eleventyNavigation:
     <picture class="cs-background">
        <!--Mobile Image-->
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | jpeg %}" type="image/jpeg">
        <!--Tablet Image-->
        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | extend({ top: 200 }) | avif %}" type="image/avif">
        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | extend({ top: 200 }) | webp %}" type="image/webp">
        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | extend({ top: 200 }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | extend({ top: 600 }) | avif %}" type="image/avif">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | webp %}" type="image/webp">
-       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | jpeg %}" type="image/jpeg">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | extend({ top: 600 }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | extend({ top: 600 }) | jpeg %}" type="image/jpeg">
        <img src="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900 }) | jpeg %}" alt="Beautiful kitchen with yellow and brown paint" width="3000" height="1900" loading="eager" decoding="async" aria-hidden="true">
     </picture>
 </section>
@@ -271,7 +272,7 @@ eleventyNavigation:
            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting.png" | resize({ width: 910, height: 564 }) | avif %}" type="image/avif">
            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting.png" | resize({ width: 910, height: 564 }) | webp %}" type="image/webp">
            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting.png" | resize({ width: 910, height: 564 }) | jpeg %}" type="image/jpeg">
-           <img src="{% getUrl "/assets/images/commercial-painting.png" | resize({ width: 910, height: 564 }) | jpeg %}" alt="Living room filled with plants" width="910" height="564" loading="lazy" decoding="async" aria-hidden="true">
+           <img src="{% getUrl "/assets/images/commercial-painting.png" | resize({ width: 910, height: 564 }) | jpeg %}" alt="Worker on a left, painting the outside of an commercial building" width="910" height="564" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
         <!-- Right Content Section-->
         <div class="cs-content">
@@ -346,7 +347,7 @@ eleventyNavigation:
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/house-blue.jpg" | resize({ width: 610, height: 574 }) | avif %}" type="image/avif">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/house-blue.jpg" | resize({ width: 610, height: 574 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/house-blue.jpg" | resize({ width: 610, height: 574 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/gallery/house-blue.jpg" | resize({ width: 610, height: 574 }) | jpeg %}" alt="Freshly painted basement" width="610" height="574" loading="lazy" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/gallery/house-blue.jpg" | resize({ width: 610, height: 574 }) | jpeg %}" alt="Freshly painted blue house" width="610" height="574" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <picture class="cs-picture cs-picture4">
                <!--Mobile Image-->
@@ -357,7 +358,7 @@ eleventyNavigation:
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 610, height: 874 }) | avif %}" type="image/avif">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 610, height: 874 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 610, height: 874 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 610, height: 874 }) | jpeg %}" alt="Freshly painted stairs" width="610" height="874" loading="lazy" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 610, height: 874 }) | jpeg %}" alt="Freshly stained brown front door" width="610" height="874" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
         </div>
     </div>

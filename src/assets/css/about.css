@@ -170,6 +170,11 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
+  #meet-team-1141 .cs-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #meet-team-1141 .cs-title {
     max-width: 20ch;
   }

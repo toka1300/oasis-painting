@@ -1693,6 +1693,7 @@
     left: 50%;
     top: 0;
     z-index: -1;
+    opacity: 0.4;
   }
   #cs-footer-1292 .cs-floater:before {
     content: "";

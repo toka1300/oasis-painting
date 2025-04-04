@@ -196,6 +196,12 @@
             align-items: center;
         }
 
+        .cs-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .cs-title {
             max-width: 20ch;
         }
