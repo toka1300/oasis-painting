@@ -157,7 +157,7 @@
     right: 0;
   }
   #sbs-1095.reverse .cs-image-group {
-    order: 2;
+    order: 0;
   }
 }
 /* Small Desktop - 1024px */
@@ -171,6 +171,9 @@
   #sbs-1095 .cs-image-group {
     font-size: min(1.2vw, 1em);
     flex: none;
+  }
+  #sbs-1095.reverse .cs-image-group {
+    order: 1;
   }
 }
 

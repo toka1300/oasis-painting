@@ -4,10 +4,10 @@ const moreButton = document.querySelector(".read-more")
 moreButton.addEventListener("click", () => {
     hiddenReviews.classList.toggle("hidden")
     moreButton.classList.add("expanded")
-    if (moreButton.innerHTML === "Read More") {
+    if (moreButton.innerHTML === "More Reviews") {
         console.log("I will change it to less")
-        moreButton.innerHTML = "Read Less"
+        moreButton.innerHTML = "Less Reviews"
     } else {
-        moreButton.innerHTML = "Read More"
+        moreButton.innerHTML = "More Reviews"
     }
 })

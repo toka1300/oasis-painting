@@ -176,7 +176,7 @@
 
         &.reverse {
             .cs-image-group {
-                order: 2;
+                order: 0;
             }
         }
     }
@@ -195,6 +195,12 @@
         .cs-image-group {
             font-size: min(1.2vw, 1em);
             flex: none;
+        }
+
+        &.reverse {
+            .cs-image-group {
+                order: 1;
+            }
         }
     }
 }
