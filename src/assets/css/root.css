@@ -1105,6 +1105,7 @@
   #banner-1519 {
     padding: var(--sectionPadding);
     padding-top: clamp(13.875rem, 42vw, 15.75rem);
+    margin-top: clamp(5.875rem, 23vw, 10.5rem);
     padding-bottom: 0;
     overflow: hidden;
     position: relative;
