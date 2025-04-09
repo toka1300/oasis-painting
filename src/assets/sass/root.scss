@@ -1322,13 +1322,13 @@
 @media only screen and (min-width: 0rem) {
     #banner-1519 {
         padding: var(--sectionPadding);
-        padding-top: clamp(13.875rem, 42vw, 15.75rem);
-        margin-top: clamp(5.875rem, 23vw, 10.5rem);
-        padding-bottom: 0;
+        padding-top: clamp(11.875rem, 25vw, 16.75rem);
+        margin-top: clamp(2.875rem, 7vw, 10.5rem);
+        padding-bottom: clamp(6.25rem, 12vw, 9.375rem);
         overflow: hidden;
         position: relative;
         z-index: 1;
-
+        
         .cs-container {
             text-align: center;
             width: 100%;
@@ -1339,18 +1339,16 @@
             justify-content: center;
             align-items: flex-start;
             flex-direction: column;
-            /* 8px - 12px */
-            gap: clamp(0.5rem, 1vw, 0.75rem);
+            gap: clamp(.5rem, 1vw, .75rem);
         }
-
+    
         .cs-int-title {
-            /* 39px - 61px */
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
             font-weight: 900;
             line-height: 1.2em;
             text-align: inherit;
             margin: 0;
-            color: var(--bodyTextColorWhite);
+            color: white;
             position: relative;
         }
 
@@ -1364,7 +1362,7 @@
             font-size: calc(16 / 16 * 1rem);
             line-height: 1.2em;
             text-decoration: none;
-            color: var(--bodyTextColorWhite);
+            color: var(--bodyTextColor);
             position: relative;
             display: flex;
             justify-content: center;
@@ -1379,11 +1377,11 @@
 
             &:after {
                 /* chevron */
-                content: "";
+                content: '';
                 width: calc(7 / 16 * 1rem);
                 height: calc(12 / 16 * 1rem);
                 margin: 0 calc(16 / 16 * 1rem);
-                background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/white-chev.svg");
+                background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-chevron.svg");
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -1454,16 +1452,21 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
+                /* Makes img tag act as a background image */
                 object-fit: cover;
-
-                &.justify-left {
-                    object-position: left;
-                }
             }
         }
 
         .cs-mask {
-            height: 5rem;
+            --maskBG: #ffffff;
+
+            width: 100%;
+            height: auto;
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            z-index: 100;
         }
     }
 }
@@ -1497,10 +1500,11 @@
         }
 
         .cs-mask {
-            height: 8.5rem;
+            --maskBG: var(--dark);
         }
     }
 }
+                                
 
 /*-- -------------------------- -->
 <---            CTA             -->
