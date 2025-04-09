@@ -93,7 +93,7 @@
 
         .cs-box {
             text-align: center;
-            padding: clamp(2.5rem, 5vw, 2.1875rem) clamp(1.25rem, 2vw, 1.75rem);
+            padding: clamp(0.5rem, 2vw, 2.1875rem) clamp(0.5rem, 2vw, 1.75rem);
             background-color: black;
             border-radius: 1rem;
             display: flex;
@@ -101,13 +101,17 @@
             align-items: center;
             gap: calc(8 / 16 * 1rem);
             position: absolute;
-            right: clamp(1rem, 2vw, 1.25rem);
-            bottom: clamp(1rem, 2vw, 1.25rem);
+            right: 0.75rem;
+            top: 0.75rem;
+
+            img {
+                width: clamp(3.5rem, 10vw, 5rem);
+            }
         }
 
         .cs-number {
             /* 31px - 39px */
-            font-size: clamp(1.9375rem, 3vw, 2.4375rem);
+            font-size: clamp(1.25rem, 3vw, 2.4375rem);
             line-height: 1.2em;
             font-weight: 900;
             text-align: inherit;
@@ -116,7 +120,7 @@
         }
 
         .cs-desc {
-            font-size: calc(16 / 16 * 1rem);
+            font-size: 0.875rem;
             line-height: 1.2em;
             text-align: inherit;
             font-weight: 700;
@@ -158,6 +162,21 @@
             .cs-image-group {
                 order: 2;
             }
+        }
+
+        .cs-box {
+            padding: clamp(1.5rem, 5vw, 1.1875rem) clamp(1.25rem, 2vw, 1.75rem);
+            right: clamp(1rem, 2vw, 1.25rem);
+            bottom: clamp(1rem, 2vw, 1.25rem);
+            top: unset;
+
+            img {
+                width: 5rem;
+            }
+        }
+
+        .cs-desc {
+            font-size: 1rem;
         }
     }
 }
