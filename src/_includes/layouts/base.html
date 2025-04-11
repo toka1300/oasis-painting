@@ -29,24 +29,20 @@
         <!-- Preloads -->
         <link rel="preload" as="image" href="/assets/svgs/logo.svg">
 
-        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
-        {% if preloadImg != '' %}
-            <link rel="preload" as="image" href="{{ preloadImg }}"/>
-        {% endif %}
-
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css">
         <link rel="stylesheet" href="/assets/css/reviews.css">
         <script defer src="/assets/js/nav.js"></script>
         <script defer src="/assets/js/faq.js"></script>
-        <script defer src="/assets/js/reviews.js"></script>
+        {% if page.url != '/contact/' %}
+            <script defer src="/assets/js/reviews.js"></script>
+        {% endif %}
 
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
     </head>
     <body>
-        <!--Screen reader skip main nav-->
         <a class="skip" aria-label="skip to main content" href="#main" tabindex="0">Click To Skip To Main Content</a>
 
         {% include "components/header.html" %}
