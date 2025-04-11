@@ -62,7 +62,7 @@
                         {% endif %}
 
                         {# If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes #}
-                        <li class="cs-li {% if hasChild %} cs-dropdown {% endif %} {{ hideClasses | join(" ") }}">
+                        <li class="cs-li {% if hasChild %} cs-dropdown {% endif %} {{ hideClasses | join(" ") }}" role="menubar">
 
                             {# If the page has child dropdown pages, render it as a <button> tag with the appropriate dropdown HTML #}
                             {% if hasChild %}
