@@ -12,7 +12,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
-    {# <link rel="preload" as="image" href="{% getUrl '/assets/images/cabinets2.jpg' | resize({ width: 720, height: 774 }) | avif %}"/> #}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/contact-banner.jpg" | resize({ width: 1200, height: 982, position: "top" }) |  avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -88,7 +88,7 @@ eleventyNavigation:
                     </div>
                 </a>
                 <a href="mailto:{{client.email}}" class="cs-item">
-                    <img src="../../assets/svgs/gmail.svg" alt="calendar icon">
+                    <img src="../../assets/svgs/gmail.svg" alt="gmail icon">
                     <div class="info">
                         <span class="cs-header">Email Us</span>
                         <span class="cs-item-text">
@@ -97,7 +97,7 @@ eleventyNavigation:
                     </div>
                 </a>
                 <a href="tel:{{client.phoneForTel}}" class="cs-item">
-                    <img src="../../assets/svgs/phone-blue.svg" alt="calendar icon">
+                    <img src="../../assets/svgs/phone-blue.svg" alt="phone icon">
                     <div class="info">
                         <span class="cs-header">Call Us</span>
                         <span class="cs-item-text">

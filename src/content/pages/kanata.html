@@ -14,6 +14,7 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
     <link rel="stylesheet" href="/assets/css/kanata.css">
+        <link rel="preload" as="image" href="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -59,10 +60,10 @@ eleventyNavigation:
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Kemptville town sign" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="House with Beige Siding" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
             <!--Stripe background-->
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
@@ -96,10 +97,10 @@ eleventyNavigation:
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="House with beige siding" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Man rolling white paint onto wall" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
             <!--Stripe background-->
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>

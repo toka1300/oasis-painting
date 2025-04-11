@@ -13,6 +13,7 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/services.css">
     <link rel="stylesheet" href="/assets/css/faq.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -61,7 +62,7 @@ eleventyNavigation:
                <img src="{% getUrl "/assets/images/deck/deck-staining.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Deck in the back of a house" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
             <!--Stripe background-->
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
@@ -80,14 +81,14 @@ eleventyNavigation:
             </ul>
             <div class="cs-info">
                 <div class="cs-flex">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 104, height: 104 }) | avif %}" type="image/jpg" alt="profile">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 104, height: 104 }) | avif %}" type="image/jpg" alt="Headshot of co-owner, Matt">
                     <div class="cs-name-desc">
                         <span class="cs-name">Matt McNamee</span>
                         <span class="cs-desc">Co-owner of Oasis Painting</span>
                     </div>
                 </div>
                 <div class="cs-flex">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/will.jpg" | resize({ width: 104, height: 104, position: "top" }) | avif %}" type="image/jpg" alt="profile">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/will.jpg" | resize({ width: 104, height: 104, position: "top" }) | avif %}" type="image/jpg" alt="Headshot of co-owner, Will">
                     <div class="cs-name-desc">
                         <span class="cs-name">William Dorken</span>
                         <span class="cs-desc">Co-owner of Oasis Painting</span>
@@ -258,9 +259,9 @@ eleventyNavigation:
                <img src="{% getUrl "/assets/images/deck/cleaning.png" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Person cleaning a piece of wood" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Stripe background-->
-            <img class="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-short.svg" alt="stripes" width="548" height="487" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="548" height="487" aria-hidden="true">
             <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/eclipses.svg" alt="stripes" width="140" height="140" aria-hidden="true">
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="elipsis graphic" width="140" height="140" aria-hidden="true">
         </div>
         <div class="cs-content">
             <span class="cs-topper">The Foundation of Quality Results</span>
@@ -309,9 +310,9 @@ eleventyNavigation:
                <img src="{% getUrl "/assets/images/deck/staining-products.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Various deck-staining products" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Stripe background-->
-            <img class="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-short.svg" alt="stripes" width="548" height="487" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes graphic" width="548" height="487" aria-hidden="true">
             <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/eclipses.svg" alt="stripes" width="140" height="140" aria-hidden="true">
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="elipsis graphic" width="140" height="140" aria-hidden="true">
         </div>
         <div class="cs-content">
             <span class="cs-topper">Superior Materials For Exceptional Results</span>

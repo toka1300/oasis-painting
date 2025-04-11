@@ -14,6 +14,7 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/services.css">
     <link rel="stylesheet" href="/assets/css/faq.css">
     <link rel="stylesheet" href="/assets/css/interior-painting.css">
+        <link rel="preload" as="image" href="{% getUrl "/assets/images/interior-banner.png" | resize({ width: 1200, height: 764 })  | extend({ top: 250 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -38,7 +39,7 @@ eleventyNavigation:
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/interior-banner.png" | resize({ width: 3000, height: 930 }) | extend({ top: 350 }) | avif %}" type="image/avif">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/interior-banner.png" | resize({ width: 3000, height: 930 }) | extend({ top: 350 }) | webp %}" type="image/webp">
        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/interior-banner.png" | resize({ width: 3000, height: 930 }) | extend({ top: 350 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/interior-banner.png" | resize({ width: 3000, height: 930 }) | jpeg %}" class="justify-left" alt="yellow background and yellow paint can" width="2048" height="930" loading="eager" decoding="async" aria-hidden="true">
+       <img src="{% getUrl "/assets/images/interior-banner.png" | resize({ width: 3000, height: 930 }) | jpeg %}" class="justify-left" alt="yellow background and yellow paint can with brush sitting on top" width="2048" height="930" loading="eager" decoding="async" aria-hidden="true">
     </picture>
     <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="white"/>
@@ -62,10 +63,10 @@ eleventyNavigation:
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior/bedroom.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior/bedroom.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior/bedroom.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/interior/bedroom.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Bedroom" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/interior/bedroom.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Bedroom with beige walls" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
             <!--Stripe background-->
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
@@ -84,14 +85,14 @@ eleventyNavigation:
             </ul>
             <div class="cs-info">
                 <div class="cs-flex">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 104, height: 104 }) | avif %}" type="image/jpg" alt="profile">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 104, height: 104 }) | avif %}" type="image/jpg" alt="Headshot of co-owner, Matt">
                     <div class="cs-name-desc">
                         <span class="cs-name">Matt McNamee</span>
                         <span class="cs-desc">Co-owner of Oasis Painting</span>
                     </div>
                 </div>
                 <div class="cs-flex">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/will.jpg" | resize({ width: 104, height: 104, position: "top" }) | avif %}" type="image/jpg" alt="profile">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/will.jpg" | resize({ width: 104, height: 104, position: "top" }) | avif %}" type="image/jpg" alt="Headshot of co-owner, Will">
                     <div class="cs-name-desc">
                         <span class="cs-name">William Dorken</span>
                         <span class="cs-desc">Co-owner of Oasis Painting</span>
@@ -130,10 +131,10 @@ eleventyNavigation:
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior/worker.jpg" | resize({ width: 610, height: 882 }) | avif %}" type="image/avif">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior/worker.jpg" | resize({ width: 610, height: 882 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior/worker.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/interior/worker.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Man painting a white wall" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/interior/worker.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Living room with coffee table and couch" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
             <!--Stripe background-->
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
@@ -161,9 +162,6 @@ eleventyNavigation:
             <span class="cs-topper">Our Process</span>
             <h2 class="cs-title">We're Committed to Maintain Standard Work Process</h2>
         </div>
-        <!--
-            We had to use a div here because of the grouping we had to do to make the staggerd design work. We needed to create two groups, one with 3 cards and one with 2 cards so we can arrange the cards separately to create the design we need to create. 
-        -->
        <div class="cs-card-group">
        <div class="cs-group1">
             <div class="cs-item">
@@ -224,14 +222,14 @@ eleventyNavigation:
                 <source media="(max-width: 1023px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-tablet.svg">
                 <!--Tablet and above Image-->
                 <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-desktop.svg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-desktop.svg" alt="wave" width="1280" height="568">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-desktop.svg" alt="wave graphic" width="1280" height="568">
             </picture>
             <picture class="cs-waves">
                 <!--Mobile Image-->
                 <source media="(max-width: 1023px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-tablet.svg">
                 <!--Tablet and above Image-->
                 <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-desktop.svg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-desktop.svg" alt="wave" width="1280" height="568">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-desktop.svg" alt="wave graphic" width="1280" height="568">
             </picture>
         </div>
     </div>
@@ -300,7 +298,7 @@ eleventyNavigation:
                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior/paint-brush.png" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior/paint-brush.png" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
                        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior/paint-brush.png" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
-                       <img src="{% getUrl "/assets/images/interior/paint-brush.png" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Hand painting wood white" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                       <img src="{% getUrl "/assets/images/interior/paint-brush.png" | resize({ width: 816, height: 480 }) | jpeg %}" alt="A hand using a brush to paint wood with white paint" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
                     </picture>
                     <h3 class="cs-h3">Flooring Services</h3>
                     <p class="cs-item-text">

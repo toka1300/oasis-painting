@@ -14,6 +14,7 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/services.css">
     <link rel="stylesheet" href="/assets/css/faq.css">
     <link rel="stylesheet" href="/assets/css/interior-painting.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/exterior-banner.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -62,7 +63,7 @@ eleventyNavigation:
                <img src="{% getUrl "/assets/images/exterior/house-white.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Bedroom" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="profile" width="184" height="184" aria-hidden="true">
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
             <!--Stripe background-->
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
@@ -130,9 +131,9 @@ eleventyNavigation:
                <img src="{% getUrl "/assets/images/exterior/house-green.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Green house" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Stripe background-->
-            <img class="cs-stripes" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/stripes-short.svg" alt="stripes" width="548" height="487" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="548" height="487" aria-hidden="true">
             <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/eclipses.svg" alt="stripes" width="140" height="140" aria-hidden="true">
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="stripes" width="140" height="140" aria-hidden="true">
         </div>
         <div class="cs-content">
             <span class="cs-topper">Elevate Your property's appeal</span>
@@ -156,7 +157,7 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Our Process</span>
-            <h2 class="cs-title">We’re Committed to Maintain Standard Work Process</h2>
+            <h2 class="cs-title">We're Committed to Maintain Standard Work Process</h2>
         </div>
         <!--
             We had to use a div here because of the grouping we had to do to make the staggerd design work. We needed to create two groups, one with 3 cards and one with 2 cards so we can arrange the cards separately to create the design we need to create. 
