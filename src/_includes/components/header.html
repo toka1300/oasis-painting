@@ -43,7 +43,7 @@
                 </button>
                 <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
                 <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul">
+                <ul id="cs-expanded" role="menubar" class="cs-ul">
                     {% set navPages = collections.all | eleventyNavigation %}
 
                     {# Loop through all pages with a eleventyNavigation in the frontmatter #}
@@ -62,7 +62,7 @@
                         {% endif %}
 
                         {# If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes #}
-                        <li class="cs-li {% if hasChild %} cs-dropdown {% endif %} {{ hideClasses | join(" ") }}" role="menubar">
+                        <li class="cs-li {% if hasChild %} cs-dropdown {% endif %} {{ hideClasses | join(" ") }}">
 
                             {# If the page has child dropdown pages, render it as a <button> tag with the appropriate dropdown HTML #}
                             {% if hasChild %}
@@ -81,24 +81,24 @@
                                     aria-expanded="false"
                                     aria-controls="dropdown-{{ entry.key }}"
                                     aria-label="dropdown-{{ entry.key }}"
-                                    role="menuitem"
-                                    aria-haspopup="true"
+                                    role="button"
+                                    aria-haspopup="menu"
                                 >
                                     {{ entry.key }}
                                     <img class="cs-drop-icon" src="../../assets/svgs/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                                 </div>
 
                                 {# Dropdowns have another ul/li set up within the parent li, which gets rendered in the same way as a normal link #}
-                                <ul class="cs-drop-ul" id="dropdown-{{ entry.key }}">
+                                <ul class="cs-drop-ul" id="dropdown-{{ entry.key }}" role="menu">
                                     {% for child in entry.children %}
                                         <li class="cs-drop-li">
-                                            <a href="{{ child.url }}" class="cs-li-link cs-drop-link">{{ child.key }}</a>
+                                            <a href="{{ child.url }}"  role="menuitem" class="cs-li-link cs-drop-link">{{ child.key }}</a>
                                         </li>
                                     {% endfor %}
                                 </ul>
                             {% else %}
                                 {# Normal pages are rendered as <a> tags, in the normal way you'd expect #}
-                                <a href="{{ entry.url }}" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
+                                <a href="{{ entry.url }}" role="menuitem" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
                                     {{ entry.key }}
                                 </a>
                             {% endif %}
