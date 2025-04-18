@@ -38,6 +38,9 @@
   #sbs-865 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
+  #sbs-865 .cs-text a {
+    color: unset;
+  }
   #sbs-865 .cs-button-solid {
     font-size: 1rem;
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -188,7 +191,7 @@
   #meet-team-1141 .cs-flex {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
   #meet-team-1141 .cs-title {
     max-width: 20ch;

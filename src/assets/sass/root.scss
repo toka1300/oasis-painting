@@ -5,7 +5,7 @@
 @media only screen and (min-width: 0rem) {
     :root {
         --primary: #FBC324;
-        --primaryLight: #725009;
+        --primaryLight: #D69811;
         --secondary: #07A5C3;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
@@ -1390,6 +1390,10 @@
         overflow: hidden;
         z-index: 1;
 
+        .cs-topper {
+            color: var(--primary);
+        }
+
         .cs-container {
             width: 100%;
             /* changes to 1280px at 768px */
@@ -1422,11 +1426,7 @@
         }
 
         .cs-title, .cs-text {
-            color: var(--bodyTextColorWhite);
-        }
-
-        .cs-text {
-            opacity: .8;
+            color: white;
         }
 
         .cs-call {
