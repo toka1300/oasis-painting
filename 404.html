@@ -1,0 +1,47 @@
+---
+title: '404 | Oasis Painting'
+description: "Learn about Oasis Painting's commitment to excellence, experienced team, and dedication to quality residential & commercial painting services."
+permalink: 'error/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/critical.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/about-banner.jpg" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | avif %}"/>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1950">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Whoops! Looks like you have landed on a page that does not exist.</h1>
+            <div class="cs-flex-group">
+                <!-- <p class="cs-text">We are your local, Ottawa painters that you can rely on for quality and professionalism.</p> -->
+                <a href="/contact" class="cs-button-solid">Go To Homepage</a>
+            </div>
+        </div>
+    </div>
+
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | extend({ top: 200 }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | extend({ top: 200 }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | extend({ top: 200 }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | extend({ top: 200 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | extend({ top: 600 }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | extend({ top: 600 }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | extend({ top: 600 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900 }) | jpeg %}" alt="Beautiful kitchen with yellow and brown paint" width="3000" height="1900" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+</section>                             
+{% endblock %}
