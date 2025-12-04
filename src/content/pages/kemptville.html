@@ -14,6 +14,30 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}"/>
+    <!-- JSON Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Oasis Painting - Kemptville",
+            "url": "https://oasispainting.ca/kemptville-painting/",
+            "telephone": "(613) 408-4432",
+            "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "17 Aberdeen St",
+                "addressLocality": "Ottawa",
+                "addressRegion": "ON",
+                "postalCode": "K1S 3J3",
+                "addressCountry": "CA"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Kemptville, ON, Canada"
+            }
+        }
+    </script>
 {% endblock %}
 
 {% block body %}

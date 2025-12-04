@@ -14,6 +14,36 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/services.css">
     <link rel="stylesheet" href="/assets/css/faq.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <!-- JSON Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Deck Staining Ottawa",
+            "url": "https://oasispainting.ca/deck-staining-ottawa/",
+            "serviceType": "Deck Staining",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Oasis Painting",
+                "url": "https://oasispainting.ca/",
+                "telephone": "(613) 408-4432",
+                "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "17 Aberdeen St",
+                    "addressLocality": "Ottawa",
+                    "addressRegion": "ON",
+                    "postalCode": "K1S 3J3",
+                    "addressCountry": "CA"
+                }
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Ottawa, ON, Canada"
+            }
+        }
+    </script>
 {% endblock %}
 
 {% block body %}

@@ -40,40 +40,35 @@ eleventyNavigation:
 
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
-            "name": "{{ client.name }}",
-            {% if preloadImg %}"image": "{{ preloadImg }}",{% endif %}
-            {% if client.phoneFormatted %}"telephone": "{{ client.phoneFormatted }}",{% endif %}
-            {% if client.email %}"email": "{{ client.email }}",{% endif %}
-            {% if client.address %}
-                "address": {
-                    "@type": "PostalAddress"{% if client.address.lineOne %},
-                        "streetAddress": "{{ client.address.lineOne }}"
-                    {% endif %}
-                    {% if client.address.city %},
-                        "addressLocality": "{{ client.address.city }}"
-                    {% endif %}
-                    {% if client.address.province %},
-                        "addressRegion": "{{ client.address.province }}"
-                    {% endif %}
-                    {% if client.address.postalCode %},
-                        "postalCode": "{{ client.address.postalCode }}"
-                    {% endif %}
-                    {% if client.address.country %},
-                        "addressCountry": "{{ client.address.country }}"
-                    {% endif %}
-                },
-            {% endif %}
-            {% if client.domain and page.url %}"url": "{{ client.domain }}{{ page.url }}",{% endif %}
-            {% if client.socials %}
-                "sameAs": [{% for platform, url in client.socials %}
-                        {% if not loop.first %},{% endif %}
-                        "{{ url }}"
-                    {% endfor %}]
-            {% endif %}
-        }
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://oasispainting.ca/#oasis-painting",
+        "name": "Oasis Painting",
+        "url": "https://oasispainting.ca/",
+        "telephone": "(613) 408-4432",
+        "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+        "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17 Aberdeen St",
+            "addressLocality": "Ottawa",
+            "addressRegion": "ON",
+            "postalCode": "K1S 3J3",
+            "addressCountry": "CA"
+        },
+        "serviceArea": [
+            { "@type": "Place", "name": "Ottawa, ON, Canada" },
+            { "@type": "Place", "name": "Kanata, ON, Canada" },
+            { "@type": "Place", "name": "Orléans, ON, Canada" },
+            { "@type": "Place", "name": "Kemptville, ON, Canada" }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/oasispaintingcan/",
+            "https://www.instagram.com/oasispainting/#"
+        ]
+    }
     </script>
 {% endblock %}
 

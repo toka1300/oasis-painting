@@ -15,6 +15,30 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
     <link rel="stylesheet" href="/assets/css/orleans.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}"/>
+    <!-- JSON Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Oasis Painting - Orléans",
+            "url": "https://oasispainting.ca/house-painters-orleans/",
+            "telephone": "(613) 408-4432",
+            "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "17 Aberdeen St",
+                "addressLocality": "Ottawa",
+                "addressRegion": "ON",
+                "postalCode": "K1S 3J3",
+                "addressCountry": "CA"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Orléans, Ottawa, ON, Canada"
+            }
+        }
+    </script>
 {% endblock %}
 
 {% block body %}
