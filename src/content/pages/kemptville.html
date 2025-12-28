@@ -1,7 +1,7 @@
 ---
-title: 'Kemptville | Oasis Painting'
-description: 'Expert residential & commercial painting in Kemptville. Trust Oasis Painting for flawless finishes, premium materials, and reliable service. Free estimates!'
-permalink: 'kemptville-painting/'
+title: 'Kemptville Painting - Residential & Commercial Painters | Oasis Painting'
+description: 'Professional residential and commercial painting in Kemptville. Premium materials, expert workmanship, and friendly service. Get a free quote!'
+permalink: 'house-painters-kemptville/'
 eleventyNavigation:
     key: Kemptville
     order: 100
@@ -14,6 +14,30 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}"/>
+    <!-- JSON Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Oasis Painting - Kemptville",
+            "url": "https://oasispainting.ca/house-painters-kemptville/",
+            "telephone": "(613) 408-4432",
+            "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "17 Aberdeen St",
+                "addressLocality": "Ottawa",
+                "addressRegion": "ON",
+                "postalCode": "K1S 3J3",
+                "addressCountry": "CA"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Kemptville, ON, Canada"
+            }
+        }
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -67,14 +91,14 @@ eleventyNavigation:
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <h2 class="cs-title">Your Kemptville Professional Painting Company</h2>
+            <h1 class="cs-title">Professional Painting Services in Kemptville</h1>
             <p class="cs-text">
                 Oasis Painting's origins in the painting industry start in the Kemptville and North Grenville area. That is why we are proud to be some of the most trusted painters in the town of Kemptville. From staining decks to complete home refreshes, our painting company has helped Kemptville residents transform their spaces for years. Whether you are looking to change the look of your home's interior, clean up your outside look or bring life to a commercial space - our painters can help you achieve your dream space in Kemptville!
             </p>
             <p class="cs-text">
                 When you choose Oasis Painting, you are getting top-of-the-line customer service, attention to detail, and some of the finest craftsmanship in our industry. That is how again and again Oasis Painting is chosen for repeat business  and consistently generates excellent reviews. Give us a chance and you won't be disappointed!
             </p>
-            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
         </div>
     </div>
 </section>
@@ -111,7 +135,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Choosing Oasis Painting isn't just about choosing top-quality and customer service, but supporting a local business with deep roots in the area. Don't hesitate to reach out to get started on your project!
             </p>
-            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
         </div>
     </div>
 </section>
@@ -161,7 +185,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Oasis Painting is your best choice for a reliable commercial painting company in Kemptville. Our commercial painters are known for great craftsmanship, attention to detail and customer service across the Kemptville area. Our team of experts would be happy to get you started today, reach out!
             </p>
-            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
         </div>
     </div>
 </section>

@@ -1,6 +1,6 @@
 ---
-title: 'Your Trusted Ottawa Painters | Oasis Painting'
-description: 'Oasis Painting offers expert residential & commercial painting services. Quality finishes, reliable professionals, and stunning results. Get a free quote today!'
+title: "Oasis Painting - Ottawa's Professional Painters | Oasis Painting"
+description: 'Trusted Ottawa painters for interior, exterior, and commercial work. Quality finishes, reliable service, and great results. Get a free quote!'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -37,42 +37,101 @@ eleventyNavigation:
                 });
         }
     </script>
-
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
+            "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "{{ client.name }}",
-            {% if preloadImg %}"image": "{{ preloadImg }}",{% endif %}
-            {% if client.phoneFormatted %}"telephone": "{{ client.phoneFormatted }}",{% endif %}
-            {% if client.email %}"email": "{{ client.email }}",{% endif %}
-            {% if client.address %}
-                "address": {
-                    "@type": "PostalAddress"{% if client.address.lineOne %},
-                        "streetAddress": "{{ client.address.lineOne }}"
-                    {% endif %}
-                    {% if client.address.city %},
-                        "addressLocality": "{{ client.address.city }}"
-                    {% endif %}
-                    {% if client.address.province %},
-                        "addressRegion": "{{ client.address.province }}"
-                    {% endif %}
-                    {% if client.address.postalCode %},
-                        "postalCode": "{{ client.address.postalCode }}"
-                    {% endif %}
-                    {% if client.address.country %},
-                        "addressCountry": "{{ client.address.country }}"
-                    {% endif %}
+            "@id": "https://oasispainting.ca/#oasis-painting",
+            "name": "Oasis Painting",
+            "url": "https://oasispainting.ca/",
+            "telephone": "(613) 408-4432",
+            "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "17 Aberdeen St",
+                "addressLocality": "Ottawa",
+                "addressRegion": "ON",
+                "postalCode": "K1S 3J3",
+                "addressCountry": "CA"
+            },
+            "serviceArea": [
+                { "@type": "Place", "name": "Ottawa, ON, Canada" },
+                { "@type": "Place", "name": "Kanata, ON, Canada" },
+                { "@type": "Place", "name": "Orléans, ON, Canada" },
+                { "@type": "Place", "name": "Kemptville, ON, Canada" }
+            ],
+            "sameAs": [
+                "https://www.facebook.com/oasispaintingcan/",
+                "https://www.instagram.com/oasispainting/#"
+            ]
+        }
+    </script>
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How can I request a painting quote?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "To request a quote for your Ottawa house painting project, simply go to our website and locate one of our buttons called 'Get a Quote', 'Contact Us' or 'Get Started' shown through the pages. Clicking on this button will direct you to a dedicated form where you can provide details about your project, such as project type, desired paint colours, and your contact information. Fill out the form with your information, and our team will review your form as soon as possible and contact you to arrange an in-person quote to get you started! With our commitment to customer satisfaction, obtaining a painting quote is an easy process."
+                    }
                 },
-            {% endif %}
-            {% if client.domain and page.url %}"url": "{{ client.domain }}{{ page.url }}",{% endif %}
-            {% if client.socials %}
-                "sameAs": [{% for platform, url in client.socials %}
-                        {% if not loop.first %},{% endif %}
-                        "{{ url }}"
-                    {% endfor %}]
-            {% endif %}
+                {
+                    "@type": "Question",
+                    "name": "What types of house painting do you offer in Ottawa?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our painting company specializes in a diverse range of painting projects in Ottawa, catering to the unique needs of our clients. For residential painting, we excel in providing custom solutions, transforming homes from the inside out. Our skilled team of house painters has dealt with every type of painting project in Ottawa ranging from painting brick siding to full home refreshes to the full sanding and painting of a wood house's siding.\nOur experience extends to cabinetry, giving a cost-effective way to refresh kitchens and bathrooms without a full renovation. We also excel in wallpaper removal and wall restoration, making sure you can get rid of your old wallpaper and get your walls looking brand new.\nOasis Painting is adept at handling commercial projects as well, improving the aesthetic appeal of various places of business. In the realm of new construction, we offer a broad range of house painting services to Ottawa home builders, contributing to the completion of projects with precision and finesse."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Are your professional painters licensed and insured?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "All of our professional painters are licensed and fully insured with comprehensive coverage of up to $5 million in general liability. This coverage applies to every project from residential painting to new construction, providing you with peace of mind throughout the house painting process. Oasis Painting and all of our house painters are fully compliant with the Workplace Safety and Insurance Board (WSIB) regulations, ensuring a secure working environment for everyone. Our commitment to safety is further emphasized by the training our house painters undergo in heights and safety protocols, meeting all safety requirements mandated by Ontario and the city of Ottawa. When you choose Oasis Painting as your Ottawa painting contractor, you can trust that our insured house painters prioritize not only the quality of their work but also the safety and protection of your property and everyone involved in the project."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do you determine the cost of a residential painting project?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The cost of a residential painting project is determined by many factors, all of which contribute to the overall estimation. The time needed for the project is the main factor. Factors such as the size of the area to be painted, level of detail, and ease of access influence the time commitment. The state of the walls plays a crucial role, as areas requiring a lot of preparation or prep work will demand more time and resources.\nThe number of coats needed is another factor; while some projects may only require a single coat, others, especially when changing between colours or dealing with specific surfaces, might need multiple layers. The type of paint chosen is another factor, with premium or specialty paints adding to the overall cost. Additionally, the scope of the work, whether it's limited to a single room or the entire property, impacts the quote.\nOur detailed cost assessment takes all these factors into account, ensuring transparency and accuracy in our quotes. By evaluating the unique aspects of each project, we provide a customized estimate that shows the specific requirements and ensures the highest quality results for your residential painting investment."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you provide colour consultation services?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Certainly! Yes, we offer colour consultation services to assist our clients in choosing the perfect palette of paint colours for their spaces. Our experienced team understands the impact of lighting on colour perception, and to ensure the best decision-making process, we provide colour samples that clients can test directly on their walls. This hands-on approach allows our clients to witness firsthand how different lighting conditions within their homes may affect the appearance of the chosen colours. We believe that this personalized and hands-on approach to colour consultation not only allows informed decision-making but also ensures that the selected colours work well with the unique lighting of each environment. Oasis Painting, your trusted Ottawa painting company, prioritizes your satisfaction and strives to make choosing a colour as stress-free as possible."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What sets you apart from other Ottawa painters?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "What sets Oasis Painting apart from any other painting company in Ottawa is our commitment to phenomenal customer experience. As your trusted Ottawa painting company, we take immense pride in our deep-rooted connection to the local community and understanding the needs of Ontario homeowners. Our team of professional painters in Ottawa is not only skilled but also dedicated to delivering a quality and friendly service, ensuring your residential painting experience is both easy and enjoyable.\nOur exceptional track record on residential painting projects speaks volumes about the quality and reliability of our services. With a history of success, we have become a trusted name in the Ottawa house painting community. We understand that choosing the right colours is a crucial aspect of any interior or exterior painting project. That's why we offer personalized colour consultations, offering clients a hands-on experience using samples on their walls to make informed decisions.\nFrom outdoor painting to detailed interior work, our team of professional painters is driven by a passion for transforming your living spaces. Our commitment to excellence, coupled with a focus on local understanding and customer satisfaction, sets us apart as the go-to painting company in Ottawa."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How far in advance should I schedule a residential painting project?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "For optimal scheduling with Oasis Painting, it is advisable to plan ahead, especially considering seasonal variations. In winter months, we typically recommend reaching out a month or so in advance to secure your preferred slot. However, during the summer, our schedule tends to fill up quickly, and the waitlist can extend to a few months. To ensure your house painting project aligns with your timeline, contacting us well in advance is key. As a trusted Ottawa painting company, Oasis Painting prioritizes delivering high-quality house painting in Ottawa and surrounding areas. By proactively reaching out, you not only secure your spot in our schedule but also guarantee the timely transformation of your space with our professional and reliable interior and exterior painting services."
+                    }
+                }
+            ]
         }
     </script>
 {% endblock %}
@@ -85,10 +144,11 @@ eleventyNavigation:
 <section id="hero-1950">
     <div class="cs-container">
         <div class="cs-content">
-            <h1 class="cs-title">Your Trusted Ottawa Painting Company</h1>
+            {# TODO: This looks weird to me #}
+            <h1 class="cs-title">Ottawa's Trusted Professional Painters</h1> 
             <div class="cs-flex-group">
                 <p class="cs-text">We are your local, Ottawa painters that you can rely on for quality and professionalism.</p>
-                <a href="/contact" class="cs-button-solid">Get Started Now</a>
+                <a href="/contact/" class="cs-button-solid">Get Started Now</a>
             </div>
         </div>
     </div>
@@ -124,42 +184,42 @@ eleventyNavigation:
             </p>
         </div>
         <div class="cs-card-group">
-            <a href="/interior-painting" class="cs-item">
+            <a href="/interior-painting-ottawa/" class="cs-item">
                 <img class="cs-icon" src="./assets/svgs/interior-icon.svg" alt="paint roller icon" width="61" height="58" loading="lazy" decoding="async" aria-hidden="true">
                 <h3 class="cs-h3">Interior Painting</h3>
                 <p class="cs-item-text">
                     A fresh new look may be exactly what your home needs. Oasis Painting offers clean, quick and professional painting in Ottawa.
                 </p>
             </a>
-            <a href="/commercial-painting" class="cs-item">
+            <a href="/commercial-painting-ottawa/" class="cs-item">
                 <img class="cs-icon" src="./assets/svgs/commercial-icon.svg" alt="office building icon" width="61" height="58" loading="lazy" decoding="async" aria-hidden="true">
                 <h3 class="cs-h3">Commercial Painting</h3>
                 <p class="cs-item-text">
                     Elevate your business space with our premium commercial painting services, delivering flawless finishes, minimal disruption, and tailored solutions
                 </p>
             </a>
-            <a href="/deck-staining" class="cs-item">
+            <a href="/deck-staining-ottawa/" class="cs-item">
                 <img class="cs-icon" src="./assets/svgs/deck-icon.svg" alt="fence icon" width="61" height="58" loading="lazy" decoding="async" aria-hidden="true">
                 <h3 class="cs-h3">Deck & Fence Staining</h3>
                 <p class="cs-item-text">
                     Transform the look of your old wood with our deck and fence services! Protect your wood decks and fences by having them professionally done by our experienced house painters!
                 </p>
             </a>
-            <a href="/exterior-painting" class="cs-item">
+            <a href="/exterior-painting-ottawa/" class="cs-item">
                 <img class="cs-icon" src="./assets/svgs/exterior-icon.svg" alt="paint roller on house icon" width="61" height="58" loading="lazy" decoding="async" aria-hidden="true">
                 <h3 class="cs-h3">Exterior Painting</h3>
                 <p class="cs-item-text">
                     From siding to brick to wood and beyond - our team of professional Ottawa painters will deliver amazing, long-lasting results every time!
                 </p>
             </a>
-            <a href="/contact" class="cs-item">
+            <a href="/contact/" class="cs-item">
                 <img class="cs-icon" src="./assets/svgs/realtor-icon.svg" alt="for sale icon" width="61" height="58" loading="lazy" decoding="async" aria-hidden="true">
                 <h3 class="cs-h3">Realtor Services</h3>
                 <p class="cs-item-text">
                     Looking to sell? A fresh coat of paint can liven any space! Our realtor painting services can help with any house painting job to prepare your home for sale!
                 </p>
             </a>
-            <a href="/contact" class="cs-item">
+            <a href="/contact/" class="cs-item">
                 <img class="cs-icon" src="./assets/svgs/consultation-icon.svg" alt="colour pallette icon" width="61" height="58" loading="lazy" decoding="async" aria-hidden="true">
                 <h3 class="cs-h3">Colour consultations</h3>
                 <p class="cs-item-text">
@@ -167,7 +227,7 @@ eleventyNavigation:
                 </p>
             </a>
         </div>
-        <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
     </div>
 </section>
 
@@ -219,7 +279,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Let us transform your space, into your oasis! We use high-quality and low-VOC paints such as Sherwin-Williams, Dulux, Benjamin Moore and Cloverdale Paint, to be sure that we are eco-friendly while we complete your house painting project! Our house painters take pride in our competitive pricing, professional response times and friendly service. At Oasis Painting, we look forward to helping with all your painting needs in Ottawa! Whether it is big or small, we do it all! Contact us today!
             </p>
-            <a href="/about" class="cs-button-solid">More About Us</a>
+            <a href="/about/" class="cs-button-solid">More About Us</a>
         </div>
     </div>
 </section>
@@ -252,7 +312,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Ottawa homeowners choose our professional painting services for our attention to detail, clean workspaces, and commitment to minimal disruption. Beyond walls and ceilings, our specialized services include stair and banister refinishing, floor painting, and trim work that adds the perfect finishing touch to your home. Our exterior painters use weather-resistant products specifically formulated for Ottawa's climate, protecting your siding, trim, and exterior surfaces from freezing winters and hot summers. From Barrhaven to Orléans, Westboro to Riverside South, our 5-star rated painting team brings expertise and dedication to every Ottawa home painting project.
             </p>
-            <a class="cs-button-solid" aria-label="read more about our services" href="/about">More About Us</a>
+            <a class="cs-button-solid" aria-label="read more about our services" href="/about/">More About Us</a>
         </div>
     </div>
 </section>
@@ -284,7 +344,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Ottawa businesses rely on our commercial painting contractors for our comprehensive services that include interior office painting, exterior facade refreshes, and specialized commercial applications. We use low-VOC, durable paints that maintain their appearance despite heavy traffic and regular cleaning. Our team works closely with property managers and business owners throughout Ottawa to understand specific requirements, adhere to corporate colour standards, and meet strict project timelines. With proper preparation, premium products, and professional application, Oasis Painting has become the trusted commercial painting company for businesses across Ottawa's diverse commercial districts, from downtown high-rises to industrial parks and retail centers in Nepean, Orléans, and beyond.
             </p>
-            <a class="cs-button-solid" aria-label="read more about our services" href="/about">More About Us</a>
+            <a class="cs-button-solid" aria-label="read more about our services" href="/about/">More About Us</a>
         </div>
     </div>
 </section>
@@ -395,7 +455,7 @@ eleventyNavigation:
                 <span class="cs-stat-text">Free Quotes</span>
             </li>
         </ul>
-        <a href="/contact" class="cs-button-solid">Get A Free Quote</a>
+        <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
     </div>
 </section>
 

@@ -1,7 +1,7 @@
 ---
-title: 'Interior Painting | Oasis Painting'
-description: 'Transform your home with flawless interior painting. Professional prep, premium paints & meticulous finishes. Free estimates in Ottawa regions!'
-permalink: 'interior-painting/'
+title: 'Interior Painters Ottawa - Professional House Painting | Oasis Painting'
+description: 'Transform your home with professional interior painters in Ottawa. Premium prep, expert finishes, and fast, reliable service. Get a free quote!'
+permalink: 'interior-painting-ottawa/'
 eleventyNavigation:
     key: Interior Painting
     order: 100
@@ -14,7 +14,78 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/services.css">
     <link rel="stylesheet" href="/assets/css/faq.css">
     <link rel="stylesheet" href="/assets/css/interior-painting.css">
-        <link rel="preload" as="image" href="{% getUrl "/assets/images/interior-banner.png" | resize({ width: 1200, height: 764 })  | extend({ top: 250 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/interior-banner.png" | resize({ width: 1200, height: 764 })  | extend({ top: 250 }) | avif %}"/>
+    <!-- JSON Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Ottawa Interior House Painters",
+            "url": "https://oasispainting.ca/interior-painting-ottawa/",
+            "serviceType": "Interior Painting",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Oasis Painting",
+                "url": "https://oasispainting.ca/",
+                "telephone": "(613) 408-4432",
+                "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "17 Aberdeen St",
+                    "addressLocality": "Ottawa",
+                    "addressRegion": "ON",
+                    "postalCode": "K1S 3J3",
+                    "addressCountry": "CA"
+                }
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Ottawa, ON, Canada"
+            }
+        }
+    </script>
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Do your interior painters clean the walls before painting?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Our experienced team of interior painters in Ottawa ensures that walls are properly cleaned, patched and primed before any paint is applied. This ensures the best look possible when we are finished! Similarly, we will clean off all baseboards and trim before painting to get the best and longest-lasting results we can!"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can old paint be painted over?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It is very common to paint over old paint, but a few precautions must be taken. We make sure that any surface being painted over is clean, without any grease/dirt spots that will affect the application of the new paint. Our next step is to ensure there is no chipped or peeling paint- if there is, we will sand the area and apply primer. Then we will patch any holes, or dents in the walls, sand them, and prime them as well. Finally, we are ready to apply the new paint. For any interior painting job for your Ottawa property, you can be sure that we will ensure it is done right!"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How to choose a colour for interior painting?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Choosing a paint colour truly is a matter of personal preference but there are a few important things to consider. It's important to think about natural lighting and how a colour will bring out or take away from the lighting in the space. For example, some rooms with lots of light can look great with dark-coloured walls, while rooms with less light can look much darker when you change the walls to a darker colour. If you'd like to experiment with different colours in your space, you can try the paint visualizer from Dulux on our webpage!"
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Should I hire interior painters to paint my house?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "By hiring interior painters, like Oasis Painting, to paint your house, you can rest easy knowing that all aspects of the project are being handled the right way. Our team at OASIS Painting will help get your painting work done quickly and to the highest standard in Ottawa!"
+                    }
+                }
+            ]
+        }
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -72,7 +143,7 @@ eleventyNavigation:
         </div>
         <div class="cs-content">
             <span class="cs-topper">Transform Your Home</span>
-            <h2 class="cs-title">Ottawa's <span class="highlight">Interior Paint</span> Experts</h2>
+            <h1 class="cs-title">Ottawa's Interior<span class="highlight"> House Painters</span></h1>
             <p class="cs-text">
                 Ready to refresh your Ottawa home's interior? Oasis Painting delivers flawless interior painting results that transform your living spaces with premium materials and expert craftsmanship. Our professional Ottawa painters bring new life to every room, creating beautiful, long-lasting finishes you'll love coming home to. Contact us today for your free, no-obligation quote!
             </p>
@@ -99,7 +170,7 @@ eleventyNavigation:
                     </div>
                 </div>
             </div>
-            <a href="/contact" class="cs-button-solid">Get Started Now</a>
+            <a href="/contact/" class="cs-button-solid">Get Started Now</a>
         </div>
     </div>
 </section>
@@ -147,7 +218,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Our complimentary colour consultations help you navigate the many options available, ensuring your newly painted rooms reflect your personal style while complementing your home's unique architecture and lighting. We provide actual paint samples for you to test on your walls, allowing you to confidently select the perfect palette for your Ottawa home before we begin painting.
             </p>
-            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
         </div>
     </div>
 </section>
@@ -307,7 +378,7 @@ eleventyNavigation:
                 </div>
             </li>
         </ul>
-    <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+    <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
     </div>
 </section>
 
@@ -376,7 +447,7 @@ eleventyNavigation:
             <p class="cs-text">
                 At Oasis Painting, we understand that every interior painting project is unique. The cost of your painting service depends on the factors above along with many others. While most Ottawa interior painting projects typically range between $3.00-$6.00 per square foot, your final quote will be tailored to your specific requirements.
             </p>
-            <a href="/contact" class="cs-button-solid">Get a Free Quote</a> 
+            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a> 
         </div>
     </div>
 </section>

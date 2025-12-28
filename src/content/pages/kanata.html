@@ -1,7 +1,7 @@
 ---
-title: 'Kanata | Oasis Painting'
-description: 'Expert residential & commercial painting in Kanata. Trust Oasis Painting for flawless finishes, premium materials, and reliable service. Free estimates!'
-permalink: 'kanata/'
+title: 'House Painters Kanata - Professional Painting Services | Oasis Painting'
+description: 'Expert house painters in Kanata delivering flawless finishes, premium materials, and reliable service for every project. Get a free quote!'
+permalink: 'house-painters-kanata/'
 eleventyNavigation:
     key: Kanata
     order: 100
@@ -14,7 +14,31 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
     <link rel="stylesheet" href="/assets/css/kanata.css">
-        <link rel="preload" as="image" href="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <!-- JSON Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Oasis Painting - Kanata",
+            "url": "https://oasispainting.ca/house-painters-kanata/",
+            "telephone": "(613) 408-4432",
+            "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "17 Aberdeen St",
+                "addressLocality": "Ottawa",
+                "addressRegion": "ON",
+                "postalCode": "K1S 3J3",
+                "addressCountry": "CA"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Kanata, ON, Canada"
+            }
+        }
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -68,14 +92,14 @@ eleventyNavigation:
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <h2 class="cs-title">Oasis Professional Painting in Kanata</h2>
+            <h1 class="cs-title">Professional House Painters in Kanata</h1>
             <p class="cs-text">
                 Oasis Painting stands as the premier choice for Kanata property owners and businesses seeking quality painting work. We are happy to extend our expertise in the house painting industry to the vibrant community of Kanata. As a leading painting company in town, we have earned a solid reputation for our ability to breathe new life into spaces, whether through staining decks, painting siding, or providing complete home makeovers. Kanata residents have come to rely on Oasis Painting for our years of experience and dedication to transforming spaces with care.
             </p>
             <p class="cs-text">
                 Our experienced and friendly teams are known for their attention to detail, ensuring that each project is handled with professionalism and expertise. Oasis Painting commits to using eco-friendly paint brands. This offers a healthy and environmentally aware painting approach with low or no VOCs. Our commitment to excellence is not just a promise; it is a guarantee shown in our amazing customer service, keen eye for detail, and great craftsmanship. This commitment has earned Oasis Painting repeat business, referrals, and glowing reviews from satisfied clients in Kanata and beyond. Choose Oasis Painting for a painting experience that exceeds what is expected. We provide incredible results and refresh your space with passion.
             </p>
-            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
         </div>
     </div>
 </section>
@@ -125,7 +149,7 @@ eleventyNavigation:
             <p class="cs-text">
                 Oasis Painting is your best choice for a reliable commercial painting company in Kanata. Our commercial painters are known for great craftsmanship, attention to detail and customer service across the Kanata area. Our team of experts would be happy to get you started today, reach out!
             </p>
-            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
         </div>
     </div>
 </section>

@@ -13,6 +13,31 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/contact-banner.jpg" | resize({ width: 1200, height: 982, position: "top" }) |  avif %}"/>
+    <!-- JSON Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Oasis Painting",
+            "url": "https://oasispainting.ca/contact/",
+            "about": {
+                "@type": "LocalBusiness",
+                "name": "Oasis Painting",
+                "url": "https://oasispainting.ca/contact/",
+                "telephone": "(613) 408-4432",
+                "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "17 Aberdeen St",
+                    "addressLocality": "Ottawa",
+                    "addressRegion": "ON",
+                    "postalCode": "K1S 3J3",
+                    "addressCountry": "CA"
+                }
+            }
+        }
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -23,7 +48,7 @@ eleventyNavigation:
 
 <div id="banner-1519">
     <div class="cs-container">
-        <span class="cs-int-title">Contact Us</span>
+        <h1 class="cs-int-title">Contact Oasis Painting</h1>
     </div>
     <!--Background Image-->
     <picture class="cs-background">
@@ -120,5 +145,42 @@ eleventyNavigation:
         </div>
     </div>
 </section>
+                            
+<section id="content-page-716">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2>Serving Ottawa & Surrounding Areas — We're Here to Help</h2>
+            <p>
+                At Oasis Painting, we proudly serve homeowners and businesses across Ottawa and nearby
+                communities, including Kanata, Orléans, Kemptville, and more. Whether you're planning an
+                interior refresh or a full exterior transformation, our team is ready to guide you every step of
+                the way.
+            </p>
+            <h2>What to Expect When You Contact Us</h2>
+            <p>
+                Once you reach out, our team responds quickly — typically within the same day — to learn
+                more about your project and answer any questions you may have. From there, we schedule
+                an in-person quote at your convenience, walk you through the best paint options, and
+                provide a clear, transparent estimate. We believe in making the process simple, honest, and
+                stress-free from start to finish.
+            </p>
+            <h2>Business Hours & Availability</h2>
+            <p>
+               We operate Monday through Saturday and always do our best to accommodate your
+                schedule. If you prefer to speak directly with a member of our team, you can call us anytime
+                during regular business hours for fast assistance.
+            </p>
+            <h2>Ways to Reach Us</h2>
+            <p>
+                Use the contact form for project requests or detailed questions, email us for documentation
+                or follow-ups, or call if you need immediate support. No matter how you get in touch, you can
+                expect friendly communication and dependable service — that's our promise as your trusted
+                Ottawa painters.
+            </p>
+
+        </div>
+    </div>
+</section>
+                                
  
 {% endblock %}
