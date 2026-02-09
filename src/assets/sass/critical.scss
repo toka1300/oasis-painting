@@ -191,13 +191,53 @@
             }
         }
 
+        .cs-logo-content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+
+            &::before,
+            &::after {
+                content: "";
+                flex: 1;
+                height: 2px;
+                background: linear-gradient(90deg, transparent, var(--primary));
+            }
+
+            &::after {
+                background: linear-gradient(90deg, var(--primary), transparent);
+            }
+        }
+
         .cs-logo-title {
             font-size: calc(20/16 * 1rem);
             text-transform: initial;
             font-weight: 700;
             margin: 0;
-            width: 100%;
+            padding: 0 0.5rem;
             color: var(--headerColor);
+            white-space: nowrap;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "★";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 0.875rem;
+                color: var(--primary);
+                line-height: 1;
+            }
+
+            &::before {
+                left: -0.75rem;
+            }
+
+            &::after {
+                right: -0.75rem;
+            }
         }
 
         .cs-logo-wrapper {
@@ -239,16 +279,16 @@
         }
 
         .cs-logo-wrapper {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 5rem;
-            justify-content: space-between;
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 2rem;
+            justify-content: center;
         }
 
         .cs-logo {
-            width: 100%;
-            grid-column: span 3;
-            max-width: max-content;
+            width: auto;
+            max-width: 8rem;
+            flex-shrink: 1;
         }
     }
 }
@@ -257,7 +297,12 @@
 @media only screen and (min-width: 81.25rem) {
     #logos-2335 {
         .cs-logo-wrapper {
-            justify-content: space-between;
+            gap: 5rem;
+            justify-content: center;
+        }
+
+        .cs-logo {
+            max-width: 10rem;
         }
 
         .cs-logo-title {
