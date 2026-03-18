@@ -62,7 +62,9 @@
         <!-- End Google Tag Manager (noscript) -->
         <a class="skip" aria-label="skip to main content" href="#main" tabindex="0">Click To Skip To Main Content</a>
 
-        {% include "components/header.html" %}
+        {% if not hideHeader %}
+            {% include "components/header.html" %}
+        {% endif %}
         <main id="main">
             {% block body %}{% endblock %}
         </main>

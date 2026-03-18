@@ -1,0 +1,64 @@
+/*-- -------------------------- -->
+<---         Thank You          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #thank-you {
+    padding: var(--sectionPadding);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+  }
+  #thank-you .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #thank-you .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 39.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #thank-you .cs-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 1.5rem 0;
+    color: var(--headerColor);
+  }
+  #thank-you .cs-text {
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    margin: 4rem 0 2rem 0;
+    color: var(--bodyTextColor);
+  }
+  #thank-you .cs-button-solid {
+    font-size: 1rem;
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: black;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  #thank-you .cs-button-solid:hover {
+    color: white;
+    background-color: black;
+  }
+}
+
+/*# sourceMappingURL=thank-you.css.map */

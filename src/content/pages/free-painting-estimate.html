@@ -1,0 +1,195 @@
+---
+title: 'Free Painting Estimate - Trusted Local Painters | Oasis Painting'
+description: 'Trusted Ottawa painters for interior, exterior, and commercial work. Quality finishes, reliable service, and great results. Get a free quote!'
+permalink: 'free-painting-estimate/'
+hideHeader: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+    <link rel="stylesheet" href="/assets/css/free-painting-estimate.css">
+    <!-- JSON Schema Markup TODO -->
+    {# <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Oasis Painting - Orléans",
+            "url": "https://oasispainting.ca/house-painters-orléans/",
+            "telephone": "(613) 408-4432",
+            "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "17 Aberdeen St",
+                "addressLocality": "Ottawa",
+                "addressRegion": "ON",
+                "postalCode": "K1S 3J3",
+                "addressCountry": "CA"
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Orléans, Ottawa, ON, Canada"
+            }
+        }
+    </script> #}
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1950">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Professional <span class="cs-accent">House Painters</span> in Ottawa</h1>
+            <p class="cs-text">5-Star Rated Ottawa Interior Painting Specialists Serving Local Homeowners</p>
+            <ul class="cs-ul">
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="24" height="24" aria-hidden="true"> Licensed & Fully Insured</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="24" height="24" aria-hidden="true"> Clean & Respectful Worksites</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="24" height="24" aria-hidden="true"> Free On-Site Painting Estimates</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="24" height="24" aria-hidden="true"> 5-Star Rated by Ottawa Homeowners</li>
+            </ul>
+            <a href="tel:{{client.phoneForTel}}" class="cs-cta-phone">
+                <img src="/assets/svgs/phone.svg" alt="phone icon" width="20" height="20" aria-hidden="true">
+                {{client.phoneFormatted}}
+            </a>
+            <p class="cs-cta-sub">Call Now for Same-Week Estimates</p>
+        </div>
+        <div class="cs-form-card">
+            <img class="cs-form-logo" src="/assets/svgs/logo.svg" alt="Oasis Painting logo" width="160" height="48" loading="eager" decoding="async">
+            <h2 class="cs-form-title">Get My Free Painting Estimate</h2>
+            <form class="cs-form" id="cs-form-estimate" name="Estimate Form" method="post" data-netlify="true" action="/thank-you/">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-estimate" name="name" placeholder="Hue Jackson">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" id="email-estimate" name="email" placeholder="name@email.ca">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="phone" id="phone-estimate" name="phone" placeholder="613-623-9274">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-estimate" placeholder="Tell us a little about your project..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Get My Free Estimate</button>
+            </form>
+        </div>
+    </div>
+
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | avif %}" type="image/avif">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | webp %}" type="image/webp">
+       <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 2000, height: 1388, position: "right top" }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900, position: "right top" }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/home-banner.png" | resize({ width: 3000, height: 1900 }) | jpeg %}" alt="Beautiful kitchen with yellow and brown paint" width="3000" height="1900" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Kemptville town sign" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h1 class="cs-title">Professional House Painters in Orléans</h1>
+            <p class="cs-text">
+                Oasis Painting stands as the premier choice for Orléans property owners, and businesses seeking quality painting work. We are happy to extend our expertise in the house painting industry to the vibrant community of Orléans. As a leading painting company in town, we have earned a solid reputation for our ability to breathe new life into spaces, whether through staining decks, painting siding, or providing complete home makeovers. Orléans residents have come to rely on Oasis Painting for our years of experience and dedication to transforming spaces with care.
+            </p>
+            <p class="cs-text">
+                Our experienced and friendly teams are known for their attention to detail, ensuring that each project is handled with professionalism and expertise. Oasis Painting commits to using eco-friendly paint brands. This offers a healthy and environmentally aware painting approach with low or no VOCs. Our commitment to excellence is not just a promise; it is a guarantee shown in our amazing customer service, keen eye for detail, and great craftsmanship. This commitment has earned Oasis Painting repeat business, referrals, and glowing reviews from satisfied clients in Orléans and beyond. Choose Oasis Painting for a painting experience that exceeds what is expected. We provide incredible results and refresh your space with passion.
+            </p>
+            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="grey reverse">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Man rolling white paint onto wall" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Orléans Painting Services</h2>
+            <h3 class="cs-h3">Interior Painting Services</h3>
+            <p class="cs-text">
+                Ready to refresh your Orléans home's interior? Oasis Painting delivers flawless interior painting results that transform your living spaces with premium materials and expert craftsmanship. Our professional Orléans painters bring new life to every room, creating beautiful, long-lasting finishes you'll love coming home to. Contact us today for your free, no-obligation quote!
+            </p>
+            <h3 class="cs-h3">Exterior Painting Services</h3>
+            <p class="cs-text">
+                Rejuvenate the look of your home with our expert and quality exterior painting services across the Ottawa region. Let our skilled painters help you transform the aesthetic of your home's exterior and increase its curb appeal and value!
+            </p>
+            <p class="cs-text">
+                Our exterior painters can be a game-changer for your home's curb appeal and overall value. If you're aiming to refresh your Orléans property and boost its market appeal, Oasis Painting has you covered. Our team specializes in transforming exteriors with precision and care to ensure that you get long-term, aesthetically pleasing results. 
+            </p>
+            <h3 class="cs-h3">Deck Staining Services</h3>
+            <p class="cs-text">
+                Your trusted deck staining professionals will help protect your exterior from the elements of Orléans weather! From pressure washing to sanding and staining, we do it all to make sure you get the most out of your deck investment. Winters in Orléans are harsh, extend the lifespan and improve the look of your deck with Oasis Painting!
+            </p>
+            <h3 class="cs-h3">Commercial Painting Services</h3>
+            <p class="cs-text">
+                Oasis Painting is your best choice for a reliable commercial painting company in Orléans. Our commercial painters are known for great craftsmanship, attention to detail and customer service across the Orléans area. Our team of experts would be happy to get you started today, reach out!
+            </p>
+            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+{% include 'components/why-choose-us.html' %}
+{% include 'components/reviews.html' %}
+
+{% endblock %}
