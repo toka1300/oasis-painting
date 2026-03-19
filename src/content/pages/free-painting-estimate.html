@@ -11,6 +11,7 @@ hideHeader: true
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
     <link rel="stylesheet" href="/assets/css/free-painting-estimate.css">
+    {# <link rel="stylesheet" href="/assets/css/critical.css"> #}
     <!-- JSON Schema Markup TODO -->
     {# <script type="application/ld+json">
         {
@@ -87,7 +88,7 @@ hideHeader: true
 
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "attention" }) | avif %}" type="image/avif">
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | webp %}" type="image/webp">
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | jpeg %}" type="image/jpeg">
        <!--Tablet Image-->
@@ -103,93 +104,314 @@ hideHeader: true
 </section>
 
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--                    Badges                    -->
 <!-- ============================================ -->
 
-<section id="sbs-1095">
+<section id="hero-2335">
+    <section id="logos-2335">
+        <div class="cs-logo-container">
+            <div class="cs-logo-content">
+                <h2 class="cs-title cs-logo-title">Our Awards & Recognition</h2>
+            </div>
+            <div class="cs-logo-wrapper">
+                <a href="{{ client.mapLink }}" target="_blank" class="cs-logo">
+                    <img src="../assets/svgs/badge-google.svg" alt="5 Stars Google Maps logo" width="150" height="150" loading="lazy" decoding="async">
+                </a>
+                <a href="https://trustedpros.ca/company/oasis-painting" target="_blank" class="cs-logo">
+                    <img src="../assets/images/badge-trustedpros.png" alt="Best Of TrustedPros.ca 2025" width="125" height="125" loading="lazy" decoding="async">
+                </a>
+                <a href="https://www.bestinottawa.com/top-painters-ottawa/" target="_blank" class="cs-logo">
+                    <img src="../assets/images/badge-best-ottawa.png" alt="best in Ottawa logo" width="125" height="125" loading="lazy" decoding="async">
+                </a>
+                <a href="https://www.daslokalottawa.com/top-painters-ottawa/" target="_blank" class="cs-logo">
+                    <img src="../assets/images/badge-das-local.png" alt="Das Loka logo" width="125" height="125" loading="lazy" decoding="async">
+                </a>
+                <a href="https://www.ottawalife.com/article/oasis-painting-finding-the-perfect-paint-colour/" target="_blank" class="cs-logo">
+                    <img src="../assets/images/badge-olm.png" alt="Ottawa Life logo" width="125" height="125" loading="lazy" decoding="async">
+                </a>
+            </div>
+        </div>
+    </section>
+</section>
+
+<!-- ============================================ -->
+<!--                 Why Choose                   -->
+<!-- ============================================ -->
+
+<section id="why-choose-12">
     <div class="cs-container">
-        <div class="cs-image-group">
-            <!--Top left image-->
-            <picture class="cs-picture">
-               <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Kemptville town sign" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
-            </picture>
-            <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
-            <!--Stripe background-->
-            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
-        </div>
         <div class="cs-content">
-            <h1 class="cs-title">Professional House Painters in Orléans</h1>
+            <span class="cs-topper">Your Home Deserves It</span>
+            <h2 class="cs-title">Why Ottawa Homeowners Choose Oasis Painting</h2>
             <p class="cs-text">
-                Oasis Painting stands as the premier choice for Orléans property owners, and businesses seeking quality painting work. We are happy to extend our expertise in the house painting industry to the vibrant community of Orléans. As a leading painting company in town, we have earned a solid reputation for our ability to breathe new life into spaces, whether through staining decks, painting siding, or providing complete home makeovers. Orléans residents have come to rely on Oasis Painting for our years of experience and dedication to transforming spaces with care.
+                Transforming houses into stunning homes with meticulous attention to detail and exceptional service that sets us apart in Ottawa.
             </p>
-            <p class="cs-text">
-                Our experienced and friendly teams are known for their attention to detail, ensuring that each project is handled with professionalism and expertise. Oasis Painting commits to using eco-friendly paint brands. This offers a healthy and environmentally aware painting approach with low or no VOCs. Our commitment to excellence is not just a promise; it is a guarantee shown in our amazing customer service, keen eye for detail, and great craftsmanship. This commitment has earned Oasis Painting repeat business, referrals, and glowing reviews from satisfied clients in Orléans and beyond. Choose Oasis Painting for a painting experience that exceeds what is expected. We provide incredible results and refresh your space with passion.
-            </p>
-            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
         </div>
+        <ul class="cs-card-group">
+             <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/shield-heart.svg" alt="Shield with heart icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Client-Oriented</h3>
+                <p class="cs-item-text">
+                    Our team takes the time to understand your exact needs, communicates clearly throughout the project, and adjusts to your schedule.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/professionalism.svg" alt="briefcase icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Professionalism</h3>
+                <p class="cs-item-text">
+                    With years of industry experience, our skilled painters bring expertise and reliability to every project. We arrive on time, work efficiently, and maintain a tidy workspace.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/award.svg" alt="Ribbon icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">High-Quality Work</h3>
+                <p class="cs-item-text">
+                    We never cut corners. Using premium paints and materials, our meticulous preparation and application techniques ensure a flawless finish that stands the test of time.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/check.svg" alt="Shield with check icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Fully Insured Painters</h3>
+                <p class="cs-item-text">
+                    We are WSIB compliant and are a fully insured painting company. We have liability coverage up to 5 million dollars to protect you.
+                </p>
+            </li>
+        </ul>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/competitive-pricing.svg" alt="Coin and thumbs up icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Competitive Pricing</h3>
+                <p class="cs-item-text">
+                    Our competitive pricing and quality services make Oasis Painting the best bang for your buck painters in the Ottawa area.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/healthy.svg" alt="Low-VOC Paint Products icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Low-VOC Paint Products</h3>
+                <p class="cs-item-text">
+                    We are proud to be an eco-friendly painting contractor, using environmentally friendly, low-VOC paint products and safely disposing of all waste in a green way.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/certificate.svg" alt="Workplace & Heights Safety Trained icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Workplace & Heights Safety Trained</h3>
+                <p class="cs-item-text">
+                    All of our painters have workplace and height safety licenses per Ottawa, Ontario and Canadian regulations.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img loading="lazy" decoding="async" src="/assets/svgs/schedule.svg" alt="Calendar icon" width="42" height="42" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Flexible Scheduling</h3>
+                <p class="cs-item-text">
+                    We offer flexible scheduling to serve all client needs. If you have strict scheduling needs, simply ask and we will try our best to get our house painters there at an ideal time for you!
+                </p>
+            </li>
+        </ul>
+        <a href="#hero-1950" class="cs-button-solid">Get Free Quote</a>
     </div>
 </section>
 
 <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!--              Winter Benefits                 -->
 <!-- ============================================ -->
 
-<section id="sbs-1095" class="grey reverse">
+<section id="services-1301">
     <div class="cs-container">
-        <div class="cs-image-group">
-            <!--Top left image-->
-            <picture class="cs-picture">
-               <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Man rolling white paint onto wall" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
-            <!--Stripe background-->
-            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
-        </div>
         <div class="cs-content">
-            <h2 class="cs-title">Orléans Painting Services</h2>
-            <h3 class="cs-h3">Interior Painting Services</h3>
+            <h2 class="cs-title">Why Winter Is the Perfect Time for <span class="cs-accent">Interior Painting in Ottawa</span></h2>
             <p class="cs-text">
-                Ready to refresh your Orléans home's interior? Oasis Painting delivers flawless interior painting results that transform your living spaces with premium materials and expert craftsmanship. Our professional Orléans painters bring new life to every room, creating beautiful, long-lasting finishes you'll love coming home to. Contact us today for your free, no-obligation quote!
+                Beat the spring rush and refresh your home before the busy season.
             </p>
-            <h3 class="cs-h3">Exterior Painting Services</h3>
-            <p class="cs-text">
-                Rejuvenate the look of your home with our expert and quality exterior painting services across the Ottawa region. Let our skilled painters help you transform the aesthetic of your home's exterior and increase its curb appeal and value!
-            </p>
-            <p class="cs-text">
-                Our exterior painters can be a game-changer for your home's curb appeal and overall value. If you're aiming to refresh your Orléans property and boost its market appeal, Oasis Painting has you covered. Our team specializes in transforming exteriors with precision and care to ensure that you get long-term, aesthetically pleasing results. 
-            </p>
-            <h3 class="cs-h3">Deck Staining Services</h3>
-            <p class="cs-text">
-                Your trusted deck staining professionals will help protect your exterior from the elements of Orléans weather! From pressure washing to sanding and staining, we do it all to make sure you get the most out of your deck investment. Winters in Orléans are harsh, extend the lifespan and improve the look of your deck with Oasis Painting!
-            </p>
-            <h3 class="cs-h3">Commercial Painting Services</h3>
-            <p class="cs-text">
-                Oasis Painting is your best choice for a reliable commercial painting company in Orléans. Our commercial painters are known for great craftsmanship, attention to detail and customer service across the Orléans area. Our team of experts would be happy to get you started today, reach out!
-            </p>
-            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
         </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/svgs/calendar-generic.svg" loading="lazy" decoding="async" alt="calendar icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Faster Scheduling</h3>
+                <p class="cs-item-text">
+                    Winter is our slowest exterior season, so you get flexible interior booking dates.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/svgs/home-eco.svg" loading="lazy" decoding="async" alt="home icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Comfortable Indoor Work</h3>
+                <p class="cs-item-text">
+                    Low-odor paints and quick cleanup so your family can enjoy the space the same day.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/svgs/leaf.svg" loading="lazy" decoding="async" alt="refresh icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Beat the Spring Rush</h3>
+                <p class="cs-item-text">
+                    Refresh your home now and avoid long waitlists when the weather warms up.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="/assets/svgs/droplets.svg" loading="lazy" decoding="async" alt="dry air icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Dry Winter Air</h3>
+                <p class="cs-item-text">
+                    Ideal indoor conditions help interior paint cure properly for a lasting finish.
+                </p>
+            </li>
+        </ul>
+        <a href="#hero-1950" class="cs-button-solid">Get My Free Painting Estimate</a>
     </div>
 </section>
 
-{% include 'components/why-choose-us.html' %}
+<!-- ============================================ -->
+<!--            Painting Services                 -->
+<!-- ============================================ -->
+
+<section id="painting-services">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Professional House Painting Services in <span class="cs-accent">Ottawa</span></h2>
+            <p class="cs-text">
+                Oasis Painting provides professional house painting services across Ottawa. Our experienced painters specialize in interior painting projects, delivering clean work and long-lasting finishes for local homeowners.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item cs-popular">
+                <picture class="cs-picture">
+                    <img src="/assets/svgs/interior-icon.svg" loading="lazy" decoding="async" alt="house icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <span class="cs-badge">Most Popular</span>
+                <h3 class="cs-h3">Interior Painting</h3>
+                <ul class="cs-ul">
+                    <li class="cs-li">Walls, ceilings, trim</li>
+                    <li class="cs-li">Bedrooms, living rooms, basements</li>
+                    <li class="cs-li">Occupied homes, clean and respectful crews</li>
+                    <li class="cs-li">Cabinet refinishing</li>
+                    <li class="cs-li">Staircases &amp; railings</li>
+                    <li class="cs-li">Drywall repair &amp; prep</li>
+                </ul>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img src="/assets/svgs/exterior-icon.svg" loading="lazy" decoding="async" alt="exterior painting icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Exterior Painting</h3>
+                <ul class="cs-ul">
+                    <li class="cs-li">Siding, brick, wood</li>
+                    <li class="cs-li">Weather-resistant coatings</li>
+                    <li class="cs-li">Surface preparation</li>
+                </ul>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img src="/assets/svgs/commercial-icon.svg" loading="lazy" decoding="async" alt="commercial painting icon" width="40" height="40" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Commercial Painting</h3>
+                <ul class="cs-ul">
+                    <li class="cs-li">Offices &amp; retail</li>
+                    <li class="cs-li">Minimal disruption</li>
+                    <li class="cs-li">Flexible scheduling</li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#hero-1950" class="cs-button-solid">Get My Free Painting Estimate</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Painting Process                  -->
+<!-- ============================================ -->
+
+<section id="process-steps">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Simple, Professional <span class="cs-accent">Painting Process</span></h2>
+            <p class="cs-text">
+                We've refined our approach after years of serving Ottawa homeowners. Here's what you can expect when working with Oasis Painting.
+            </p>
+        </div>
+        <ol class="cs-step-group">
+            <li class="cs-step">
+                <span class="cs-number">1</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/consultation-icon.svg" loading="lazy" decoding="async" alt="consultation icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Free On-Site Consultation</h3>
+                    <p class="cs-step-text">We visit your home to assess the project, discuss your vision, and provide a clear, transparent estimate.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">2</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/paint-can-open.svg" loading="lazy" decoding="async" alt="paint can icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Colour Selection &amp; Planning</h3>
+                    <p class="cs-step-text">We help you choose colours, finishes, and products that match your space and style.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">3</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/craftsmanship.svg" loading="lazy" decoding="async" alt="surface prep icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Surface Preparation</h3>
+                    <p class="cs-step-text">We repair surfaces, sand walls, clean areas, and apply primers to ensure lasting results.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">4</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/paint-brush.svg" loading="lazy" decoding="async" alt="paint brush icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Professional Painting</h3>
+                    <p class="cs-step-text">Our experienced painters apply your chosen colours with precision for smooth, even coverage.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">5</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/magnifying-glass.svg" loading="lazy" decoding="async" alt="inspection icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Quality Inspection</h3>
+                    <p class="cs-step-text">Every surface is inspected carefully and touched up if needed.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">6</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clean.svg" loading="lazy" decoding="async" alt="cleanup icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Cleanup &amp; Final Walkthrough</h3>
+                    <p class="cs-step-text">We clean the workspace and walk through the project with you to confirm everything meets expectations.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">7</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/shield-heart.svg" loading="lazy" decoding="async" alt="support icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Follow-Up Support</h3>
+                    <p class="cs-step-text">We're always available if you have questions after the project is completed.</p>
+                </div>
+            </li>
+        </ol>
+        <p class="cs-footer-text">
+            Our professional house painters follow this process on every interior painting project across Ottawa.
+        </p>
+    </div>
+</section>
+
 {% include 'components/reviews.html' %}
 
 {% endblock %}
