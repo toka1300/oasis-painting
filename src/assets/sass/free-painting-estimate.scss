@@ -644,7 +644,6 @@
         .cs-title {
             .cs-accent {
                 color: var(--primary);
-                font-style: italic;
             }
         }
 
@@ -787,7 +786,7 @@
 @media only screen and (min-width: 0rem) {
     #process-steps {
         padding: var(--sectionPadding);
-        background-color: #fff;
+        background-color: #f7f7f7;
 
         .cs-container {
             width: 100%;
@@ -810,7 +809,6 @@
         .cs-title {
             .cs-accent {
                 color: var(--primary);
-                font-style: italic;
             }
         }
 
@@ -914,4 +912,221 @@
             max-width: calc(800 / 16 * 1rem);
         }
     }
+}
+
+/*-- -------------------------- -->
+<---       Service Areas        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #service-areas {
+        /* 32px - 60px */
+        padding: clamp(2rem, 4vw, 3.75rem) calc(16 / 16 * 1rem);
+        background-color: #eef2f4;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(1rem, 2.5vw, 1.75rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            max-width: calc(800 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-title {
+            .cs-accent {
+                color: var(--primary);
+            }
+        }
+
+        .cs-text {
+            margin-bottom: 0;
+        }
+
+        .cs-area-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: calc(12 / 16 * 1rem);
+        }
+
+        .cs-area {
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            font-weight: 600;
+            line-height: 1;
+            color: var(--headerColor);
+            background-color: #fff;
+            padding: calc(10 / 16 * 1rem) calc(20 / 16 * 1rem);
+            border-radius: calc(24 / 16 * 1rem);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            display: inline-flex;
+            align-items: center;
+            gap: calc(8 / 16 * 1rem);
+        }
+
+        .cs-area-icon {
+            width: calc(16 / 16 * 1rem);
+            height: auto;
+            flex: none;
+        }
+
+        .cs-button-solid {
+            font-size: clamp(0.8125rem, 2vw, 1rem);
+            font-weight: 700;
+            line-height: 1;
+            text-decoration: none;
+            text-align: center;
+            margin: 0;
+            padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 3rem);
+            background-color: var(--primary);
+            color: #1a1a1a;
+            border-radius: calc(8 / 16 * 1rem);
+            display: inline-block;
+            box-sizing: border-box;
+            transition: 0.3s;
+
+            &:hover {
+                color: #fff;
+                background-color: #1a1a1a;
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cta-51 {
+        padding: var(--sectionPadding);
+        position: relative;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title {
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-text {
+            margin-bottom: calc(16 / 16 * 1rem);
+            color: var(--bodyTextColorWhite);
+            opacity: 0.8;
+            &:last-of-type {
+                margin-bottom: calc(32 / 16 * 1rem);
+            }
+        }
+
+        .cs-button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: black;
+            min-width: calc(150 / 16 * 1rem);
+            padding: 0 calc(24 / 16 * 1rem);
+            background-color: var(--primary);
+            border-radius: calc(4 / 16 * 1rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: calc(4 / 16 * 1rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                color: #fff;
+                background-color: #1a1a1a;
+            }
+        }
+
+        .cs-picture {
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &:before {
+                /* black color overlay */
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #000;
+                opacity: 0.8;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+#cta-461 {
+    margin-bottom: 0;
 }

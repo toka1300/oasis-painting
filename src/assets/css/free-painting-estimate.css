@@ -553,7 +553,6 @@
   }
   #painting-services .cs-title .cs-accent {
     color: var(--primary);
-    font-style: italic;
   }
   #painting-services .cs-card-group {
     width: 100%;
@@ -675,7 +674,7 @@
 @media only screen and (min-width: 0rem) {
   #process-steps {
     padding: var(--sectionPadding);
-    background-color: #fff;
+    background-color: #f7f7f7;
   }
   #process-steps .cs-container {
     width: 100%;
@@ -695,7 +694,6 @@
   }
   #process-steps .cs-title .cs-accent {
     color: var(--primary);
-    font-style: italic;
   }
   #process-steps .cs-step-group {
     width: 100%;
@@ -784,6 +782,197 @@
   #process-steps .cs-container {
     max-width: 50rem;
   }
+}
+/*-- -------------------------- -->
+<---       Service Areas        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #service-areas {
+    /* 32px - 60px */
+    padding: clamp(2rem, 4vw, 3.75rem) 1rem;
+    background-color: #eef2f4;
+  }
+  #service-areas .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(1rem, 2.5vw, 1.75rem);
+  }
+  #service-areas .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #service-areas .cs-title .cs-accent {
+    color: var(--primary);
+  }
+  #service-areas .cs-text {
+    margin-bottom: 0;
+  }
+  #service-areas .cs-area-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  #service-areas .cs-area {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--headerColor);
+    background-color: #fff;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #service-areas .cs-area-icon {
+    width: 1rem;
+    height: auto;
+    flex: none;
+  }
+  #service-areas .cs-button-solid {
+    font-size: clamp(0.8125rem, 2vw, 1rem);
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: clamp(0.75rem, 2vw, 1rem) clamp(1.5rem, 4vw, 3rem);
+    background-color: var(--primary);
+    color: #1a1a1a;
+    border-radius: 0.5rem;
+    display: inline-block;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  #service-areas .cs-button-solid:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+  }
+}
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-51 {
+    padding: var(--sectionPadding);
+    position: relative;
+  }
+  #cta-51 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #cta-51 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #cta-51 .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+  #cta-51 .cs-text {
+    margin-bottom: 1rem;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+  #cta-51 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #cta-51 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: black;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #cta-51 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #cta-51 .cs-button-solid:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+  }
+  #cta-51 .cs-picture {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta-51 .cs-picture:before {
+    /* black color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #cta-51 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+#cta-461 {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=free-painting-estimate.css.map */

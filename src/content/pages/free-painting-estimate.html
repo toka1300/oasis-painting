@@ -3,6 +3,8 @@ title: 'Free Painting Estimate - Trusted Local Painters | Oasis Painting'
 description: 'Trusted Ottawa painters for interior, exterior, and commercial work. Quality finishes, reliable service, and great results. Get a free quote!'
 permalink: 'free-painting-estimate/'
 hideHeader: true
+hideFooter: true
+hideCta: true
 ---
 
 {% extends "layouts/base.html" %}
@@ -11,7 +13,7 @@ hideHeader: true
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
     <link rel="stylesheet" href="/assets/css/free-painting-estimate.css">
-    {# <link rel="stylesheet" href="/assets/css/critical.css"> #}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | jpeg %}"/>
     <!-- JSON Schema Markup TODO -->
     {# <script type="application/ld+json">
         {
@@ -75,7 +77,7 @@ hideHeader: true
                 </label>
                 <label class="cs-label cs-phone">
                     Phone
-                    <input class="cs-input" required type="phone" id="phone-estimate" name="phone" placeholder="613-623-9274">
+                    <input class="cs-input" required type="tel" id="phone-estimate" name="phone" placeholder="613-623-9274">
                 </label>
                 <label class="cs-label">
                     Message
@@ -124,7 +126,7 @@ hideHeader: true
                     <img src="../assets/images/badge-best-ottawa.png" alt="best in Ottawa logo" width="125" height="125" loading="lazy" decoding="async">
                 </a>
                 <a href="https://www.daslokalottawa.com/top-painters-ottawa/" target="_blank" class="cs-logo">
-                    <img src="../assets/images/badge-das-local.png" alt="Das Loka logo" width="125" height="125" loading="lazy" decoding="async">
+                    <img src="../assets/images/badge-das-local.png" alt="Das Lokal logo" width="125" height="125" loading="lazy" decoding="async">
                 </a>
                 <a href="https://www.ottawalife.com/article/oasis-painting-finding-the-perfect-paint-colour/" target="_blank" class="cs-logo">
                     <img src="../assets/images/badge-olm.png" alt="Ottawa Life logo" width="125" height="125" loading="lazy" decoding="async">
@@ -296,7 +298,7 @@ hideHeader: true
         <ul class="cs-card-group">
             <li class="cs-item cs-popular">
                 <picture class="cs-picture">
-                    <img src="/assets/svgs/interior-icon.svg" loading="lazy" decoding="async" alt="house icon" width="40" height="40" aria-hidden="true">
+                    <img src="/assets/svgs/door-enter.svg" loading="lazy" decoding="async" alt="house icon" width="40" height="40" aria-hidden="true">
                 </picture>
                 <span class="cs-badge">Most Popular</span>
                 <h3 class="cs-h3">Interior Painting</h3>
@@ -311,7 +313,7 @@ hideHeader: true
             </li>
             <li class="cs-item">
                 <picture class="cs-picture">
-                    <img src="/assets/svgs/exterior-icon.svg" loading="lazy" decoding="async" alt="exterior painting icon" width="40" height="40" aria-hidden="true">
+                    <img src="/assets/svgs/home.svg" loading="lazy" decoding="async" alt="exterior painting icon" width="40" height="40" aria-hidden="true">
                 </picture>
                 <h3 class="cs-h3">Exterior Painting</h3>
                 <ul class="cs-ul">
@@ -322,7 +324,7 @@ hideHeader: true
             </li>
             <li class="cs-item">
                 <picture class="cs-picture">
-                    <img src="/assets/svgs/commercial-icon.svg" loading="lazy" decoding="async" alt="commercial painting icon" width="40" height="40" aria-hidden="true">
+                    <img src="/assets/svgs/building.svg" loading="lazy" decoding="async" alt="commercial painting icon" width="40" height="40" aria-hidden="true">
                 </picture>
                 <h3 class="cs-h3">Commercial Painting</h3>
                 <ul class="cs-ul">
@@ -352,7 +354,7 @@ hideHeader: true
             <li class="cs-step">
                 <span class="cs-number">1</span>
                 <div class="cs-step-card">
-                    <img class="cs-step-icon" src="/assets/svgs/consultation-icon.svg" loading="lazy" decoding="async" alt="consultation icon" width="24" height="24" aria-hidden="true">
+                    <img class="cs-step-icon" src="/assets/svgs/clipboard-check.svg" loading="lazy" decoding="async" alt="consultation icon" width="24" height="24" aria-hidden="true">
                     <h3 class="cs-h3">Free On-Site Consultation</h3>
                     <p class="cs-step-text">We visit your home to assess the project, discuss your vision, and provide a clear, transparent estimate.</p>
                 </div>
@@ -360,15 +362,15 @@ hideHeader: true
             <li class="cs-step">
                 <span class="cs-number">2</span>
                 <div class="cs-step-card">
-                    <img class="cs-step-icon" src="/assets/svgs/paint-can-open.svg" loading="lazy" decoding="async" alt="paint can icon" width="24" height="24" aria-hidden="true">
-                    <h3 class="cs-h3">Colour Selection &amp; Planning</h3>
+                    <img class="cs-step-icon" src="/assets/svgs/palette.svg" loading="lazy" decoding="async" alt="paint can icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Colour Selection & Planning</h3>
                     <p class="cs-step-text">We help you choose colours, finishes, and products that match your space and style.</p>
                 </div>
             </li>
             <li class="cs-step">
                 <span class="cs-number">3</span>
                 <div class="cs-step-card">
-                    <img class="cs-step-icon" src="/assets/svgs/craftsmanship.svg" loading="lazy" decoding="async" alt="surface prep icon" width="24" height="24" aria-hidden="true">
+                    <img class="cs-step-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="surface prep icon" width="24" height="24" aria-hidden="true">
                     <h3 class="cs-h3">Surface Preparation</h3>
                     <p class="cs-step-text">We repair surfaces, sand walls, clean areas, and apply primers to ensure lasting results.</p>
                 </div>
@@ -376,7 +378,7 @@ hideHeader: true
             <li class="cs-step">
                 <span class="cs-number">4</span>
                 <div class="cs-step-card">
-                    <img class="cs-step-icon" src="/assets/svgs/paint-brush.svg" loading="lazy" decoding="async" alt="paint brush icon" width="24" height="24" aria-hidden="true">
+                    <img class="cs-step-icon" src="/assets/svgs/briefcase.svg" loading="lazy" decoding="async" alt="briefcase icon" width="24" height="24" aria-hidden="true">
                     <h3 class="cs-h3">Professional Painting</h3>
                     <p class="cs-step-text">Our experienced painters apply your chosen colours with precision for smooth, even coverage.</p>
                 </div>
@@ -384,7 +386,7 @@ hideHeader: true
             <li class="cs-step">
                 <span class="cs-number">5</span>
                 <div class="cs-step-card">
-                    <img class="cs-step-icon" src="/assets/svgs/magnifying-glass.svg" loading="lazy" decoding="async" alt="inspection icon" width="24" height="24" aria-hidden="true">
+                    <img class="cs-step-icon" src="/assets/svgs/zoom-check.svg" loading="lazy" decoding="async" alt="inspection icon" width="24" height="24" aria-hidden="true">
                     <h3 class="cs-h3">Quality Inspection</h3>
                     <p class="cs-step-text">Every surface is inspected carefully and touched up if needed.</p>
                 </div>
@@ -392,7 +394,7 @@ hideHeader: true
             <li class="cs-step">
                 <span class="cs-number">6</span>
                 <div class="cs-step-card">
-                    <img class="cs-step-icon" src="/assets/svgs/clean.svg" loading="lazy" decoding="async" alt="cleanup icon" width="24" height="24" aria-hidden="true">
+                    <img class="cs-step-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="cleanup icon" width="24" height="24" aria-hidden="true">
                     <h3 class="cs-h3">Cleanup &amp; Final Walkthrough</h3>
                     <p class="cs-step-text">We clean the workspace and walk through the project with you to confirm everything meets expectations.</p>
                 </div>
@@ -400,7 +402,7 @@ hideHeader: true
             <li class="cs-step">
                 <span class="cs-number">7</span>
                 <div class="cs-step-card">
-                    <img class="cs-step-icon" src="/assets/svgs/shield-heart.svg" loading="lazy" decoding="async" alt="support icon" width="24" height="24" aria-hidden="true">
+                    <img class="cs-step-icon" src="/assets/svgs/mail-heart.svg" loading="lazy" decoding="async" alt="support icon" width="24" height="24" aria-hidden="true">
                     <h3 class="cs-h3">Follow-Up Support</h3>
                     <p class="cs-step-text">We're always available if you have questions after the project is completed.</p>
                 </div>
@@ -412,6 +414,110 @@ hideHeader: true
     </div>
 </section>
 
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-51">
+    <div class="cs-container">
+        <div class="cs-content">
+            {# <span class="cs-topper">Contact Us</span> #}
+            <h2 class="cs-title">Ready to Refresh Your Home?</h2>
+            <p class="cs-text">
+                Interior painting slots are filling quickly. Get your free estimate today.
+            </p>
+            <a href="#hero-1950" class="cs-button-solid">Get My Free Painting Estimate</a>
+        </div>
+    </div>
+    <!-- Background Image-->
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1100, height: 620 }) | avif %}" type="image/avif">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1100, height: 620 }) | webp %}" type="image/webp">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1100, height: 620 }) | jpeg %}" type="image/jpeg">
+        <!--Desktop Image-->
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1920, height: 1280 }) | avif %}" type="image/avif">
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1920, height: 1280 }) | webp %}" type="image/webp">
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1920, height: 1280 }) | jpeg %}" type="image/jpeg">
+        <img loading="lazy" decoding="async" src="{% getUrl "/assets/images/living-room.jpg" | resize({ width: 1920, height: 1280 }) | jpeg %}" alt="Beautifully painted living room" width="1920" height="1280" aria-hidden="true">
+    </picture>
+</section>
 {% include 'components/reviews.html' %}
+
+<!-- ============================================ -->
+<!--               Service Areas                  -->
+<!-- ============================================ -->
+
+<section id="service-areas">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">House Painters Serving Ottawa & <span class="cs-accent">Nearby Areas</span></h2>
+            <p class="cs-text">
+                Our professional house painters proudly serve homeowners across Ottawa and surrounding neighborhoods.
+            </p>
+        </div>
+        <ul class="cs-area-group">
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Kanata
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Barrhaven
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Orléans
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Nepean
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Downtown Ottawa
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Gloucester
+            </li>
+        </ul>
+        <a href="#hero-1950" class="cs-button-solid">Get My Free Painting Estimate</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
+
+<section id="cta-461">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact</span>
+            <h2 class="cs-title">Give Us A Call!</h2>
+            <a class="cs-call" href="tel:{{ client.phoneForTel }}">
+                <picture class="cs-wrapper">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/phone.svg" alt="phone icon" width="24" height="24">
+                </picture>
+                <div class="cs-info">
+                    <span class="cs-header">Call Now</span>
+                    <span class="cs-link-content">{{ client.phoneFormatted }}</span>
+                </div>
+            </a>
+            <p class="cs-text">
+                Get in touch with us to book a free quote or to ask any questions that you may have.
+            </p>
+        </div>
+        <a href="#hero-1950" class="cs-cta">
+            <!--Arrow Right-->
+            <svg class="cs-arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><path fill="black" d="M24.55 31.367c-.317 0-.633-.117-.883-.367a1.258 1.258 0 0 1 0-1.767L32.9 20l-9.233-9.233a1.258 1.258 0 0 1 0-1.767 1.258 1.258 0 0 1 1.766 0L35.55 19.117a1.258 1.258 0 0 1 0 1.766L25.433 31c-.25.25-.566.367-.883.367Z"/><path fill="black" d="M34.383 21.25H6.333A1.26 1.26 0 0 1 5.083 20c0-.683.567-1.25 1.25-1.25h28.05c.684 0 1.25.567 1.25 1.25a1.26 1.26 0 0 1-1.25 1.25Z"/></svg>
+            <!--Wrapped in a span so it can be animated-->
+            <span class="cs-cta-text">Get Free<br> Quote</span>
+        </a>
+    </div>
+    <!--Palm Decoration-->
+    <img class="cs-decoration" aria-hidden="true" src="../../assets/svgs/palm.svg" loading="lazy" decoding="async" alt="Palm tree silhouette" width="735" height="803">
+</section>
+                                
 
 {% endblock %}
