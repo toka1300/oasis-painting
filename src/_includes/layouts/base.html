@@ -68,8 +68,13 @@
         <main id="main">
             {% block body %}{% endblock %}
         </main>
-        {% include 'components/cta.html' %}
-        {% include "components/footer.html" %}
+        {% if not hideCta %}
+            {% include 'components/cta.html' %}
+        {% endif %}
+
+        {% if not hideFooter %}
+            {% include "components/footer.html" %}
+        {% endif %}
 
     </body>
 </html>
