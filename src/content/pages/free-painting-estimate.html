@@ -13,34 +13,22 @@ hideCta: true
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
     <link rel="stylesheet" href="/assets/css/free-painting-estimate.css">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/home-banner.png" | resize({ width: 1200, height: 1521, position: "right top" }) | jpeg %}"/>
-    <!-- JSON Schema Markup TODO -->
-    {# <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Oasis Painting - Orléans",
-            "url": "https://oasispainting.ca/house-painters-orléans/",
-            "telephone": "(613) 408-4432",
-            "image": "https://oasispainting.ca/assets/svgs/logo.svg",
-            "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "17 Aberdeen St",
-                "addressLocality": "Ottawa",
-                "addressRegion": "ON",
-                "postalCode": "K1S 3J3",
-                "addressCountry": "CA"
-            },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Orléans, Ottawa, ON, Canada"
-            }
-        }
-    </script> #}
 {% endblock %}
 
 {% block body %}
+
+<!-- ============================================ -->
+<!--             Landing Top Bar                  -->
+<!-- ============================================ -->
+
+<div class="cs-landing-banner">
+    Serving Ottawa and the surrounding areas
+</div>
+<div class="cs-landing-topbar">
+    <img src="/assets/svgs/logo.svg" alt="Oasis Painting logo" width="160" height="48" loading="eager" decoding="async">
+</div>
 
 <!-- ============================================ -->
 <!--                    Hero                      -->
@@ -59,7 +47,8 @@ hideCta: true
             </ul>
             <a href="tel:{{client.phoneForTel}}" class="cs-cta-phone">
                 <img src="/assets/svgs/phone.svg" alt="phone icon" width="20" height="20" aria-hidden="true">
-                {{client.phoneFormatted}}
+                <span class="cs-cta-mobile-text">Call Now</span>
+                <span class="cs-cta-desktop-text">{{client.phoneFormatted}}</span>
             </a>
             <p class="cs-cta-sub">Call Now for Same-Week Estimates</p>
         </div>
@@ -411,6 +400,91 @@ hideCta: true
         <p class="cs-footer-text">
             Our professional house painters follow this process on every interior painting project across Ottawa.
         </p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Recent Projects                   -->
+<!-- ============================================ -->
+
+<section id="recent-projects">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Recent Interior Painting Projects in <span class="cs-accent">Ottawa</span></h2>
+            <p class="cs-text">
+                See real interior painting projects completed for Ottawa homeowners.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Freshly painted bedroom in Kanata" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Bedroom Refresh - Kanata</h3>
+                    <p class="cs-item-text">Complete interior bedroom repaint with modern colour palette.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/gallery/front-door.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Refinished front entry door in Barrhaven" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Front Entry Refinishing - Barrhaven</h3>
+                    <p class="cs-item-text">Bold front door and exterior wood siding refresh.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/stairs.png" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/stairs.png" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/stairs.png" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/stairs.png" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/stairs.png" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/stairs.png" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/gallery/stairs.png" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="White staircase repaint in Orléans" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Staircase Repaint - Orléans</h3>
+                    <p class="cs-item-text">Clean white stairway transformation with interior trim detailing.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/basement.png" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/basement.png" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gallery/basement.png" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/basement.png" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/basement.png" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/gallery/basement.png" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/gallery/basement.png" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Basement renovation painting in Stittsville" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Basement Renovation - Stittsville</h3>
+                    <p class="cs-item-text">Full townhome walls and trim painted for a fresh new living space.</p>
+                </div>
+            </li>
+        </ul>
     </div>
 </section>
 

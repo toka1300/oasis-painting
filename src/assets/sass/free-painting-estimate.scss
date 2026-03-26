@@ -1,14 +1,50 @@
 /*-- -------------------------- -->
+<---       Landing Top Bar      -->
+<--- -------------------------- -*/
+
+.cs-landing-banner {
+    font-size: calc(13/16 * 1rem);
+    line-height: 1.5em;
+    text-align: center;
+    color: #fff;
+    background-color: #1a1a1a;
+    padding: calc(8/16 * 1rem) calc(16/16 * 1rem);
+}
+
+.cs-landing-topbar {
+    background-color: #fff;
+    padding: calc(12/16 * 1rem) calc(16/16 * 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 10;
+
+    img {
+        width: clamp(8rem, 20vw, 10rem);
+        height: auto;
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    .cs-landing-banner,
+    .cs-landing-topbar {
+        display: none;
+    }
+}
+
+/*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero-1950 {
-      min-height: 100dvh;
-      padding: clamp(2rem, 8vw, 8rem) calc(16/16 * 1rem) clamp(3rem, 5vw, 4rem) calc(16/16 * 1rem);
+      padding: clamp(2rem, 6vw, 4rem) calc(16/16 * 1rem) clamp(2rem, 4vw, 3rem) calc(16/16 * 1rem);
       display: flex;
-      align-items: center;
+      align-items: stretch;
       position: relative;
       z-index: 1;
 
@@ -18,19 +54,17 @@
           margin: 0 auto;
           display: flex;
           flex-direction: column;
-          justify-content: flex-end;
+          justify-content: flex-start;
           align-items: stretch;
-          /* 32px - 48px */
           gap: clamp(2rem, 4vw, 3rem);
       }
 
       .cs-content {
-          order: 2;
-          text-align: left;
+          text-align: center;
           width: 100%;
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
+          align-items: center;
       }
 
       .cs-title {
@@ -50,52 +84,60 @@
           /* 16px - 20px */
           font-size: clamp(1rem, 2vw, 1.25rem);
           line-height: 1.5em;
-          margin-bottom: clamp(1.25rem, 2vw, 1.75rem);
+          margin-bottom: 4rem;
           color: #fff;
           opacity: 0.85;
       }
 
       .cs-ul {
           list-style: none;
-          margin: 0 0 clamp(1.5rem, 3vw, 2rem) 0;
+          margin: 0 0 clamp(4rem, 5vw, 2.5rem) 0;
           padding: 0;
-          display: flex;
+          display: inline-flex;
           flex-direction: column;
-          gap: calc(10/16 * 1rem);
+          align-items: flex-start;
+          gap: clamp(0.875rem, 2.5vw, 1.125rem);
       }
 
       .cs-li {
-          font-size: clamp(0.875rem, 1.5vw, 1rem);
+          font-size: clamp(1rem, 2vw, 1.125rem);
           font-weight: 600;
           color: #fff;
           display: flex;
           align-items: center;
-          gap: calc(8/16 * 1rem);
+          gap: calc(10/16 * 1rem);
 
           img {
-              width: calc(20/16 * 1rem);
+              width: clamp(1.375rem, 3vw, 1.5rem);
               height: auto;
               flex: none;
           }
       }
 
       .cs-cta-phone {
-          /* 18px - 22px */
-          font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+          font-size: clamp(1.25rem, 5vw, 1.5rem);
           font-weight: 700;
           text-decoration: none;
           color: #1a1a1a;
           background-color: var(--primary);
-          padding: calc(12/16 * 1rem) clamp(1.5rem, 3vw, 2.5rem);
+          padding: calc(16/16 * 1rem) clamp(2rem, 6vw, 3rem);
           border-radius: calc(8/16 * 1rem);
-          display: inline-flex;
+          display: flex;
+          justify-content: center;
           align-items: center;
           gap: calc(10/16 * 1rem);
+          width: 100%;
+          max-width: calc(400/16 * 1rem);
+          align-self: center;
           transition: 0.3s;
 
           img {
-              width: calc(20/16 * 1rem);
+              width: calc(24/16 * 1rem);
               height: auto;
+          }
+
+          .cs-cta-desktop-text {
+              display: none;
           }
 
           &:hover {
@@ -113,10 +155,12 @@
           color: #fff;
           opacity: 0.7;
           margin-top: calc(10/16 * 1rem);
+          align-self: center;
       }
 
       .cs-form-card {
           width: 100%;
+          margin-top: clamp(2rem, 4vw, 3rem);
           /* 24px - 40px */
           padding: clamp(1.5rem, 3vw, 2rem);
           background-color: #fff;
@@ -128,7 +172,7 @@
               width: clamp(7rem, 10vw, 9rem);
               height: auto;
               margin-bottom: 1.5rem;
-              display: block;
+              display: none;
           }
 
           .cs-topper {
@@ -241,9 +285,7 @@
               content: '';
               width: 100%;
               height: 100%;
-              background:
-                  linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.85) 55%),
-                  linear-gradient(90deg, rgba(26, 26, 26, 0.6) 0%, rgba(26, 26, 26, 0) 60%);
+              background: rgba(26, 26, 26, 0.85);
               pointer-events: none;
               display: block;
               position: absolute;
@@ -268,22 +310,82 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero-1950 {
+      min-height: 100dvh;
+      padding: clamp(2rem, 8vw, 8rem) calc(16/16 * 1rem) clamp(3rem, 5vw, 4rem) calc(16/16 * 1rem);
+      align-items: center;
+
       .cs-container {
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
+          gap: clamp(2rem, 4vw, 3rem);
       }
 
       .cs-content {
+          text-align: left;
+          align-items: flex-start;
           order: initial;
           width: 50%;
           flex: none;
+      }
+
+      .cs-ul {
+          display: flex;
+          align-items: flex-start;
+          gap: calc(10/16 * 1rem);
+          margin-bottom: clamp(1.5rem, 3vw, 2rem);
+      }
+
+      .cs-li {
+          font-size: clamp(0.875rem, 1.5vw, 1rem);
+          gap: calc(8/16 * 1rem);
+
+          img {
+              width: calc(20/16 * 1rem);
+          }
       }
 
       .cs-form-card {
           width: 45%;
           max-width: calc(480/16 * 1rem);
           flex: none;
+
+          .cs-form-logo {
+              display: block;
+          }
+      }
+
+      .cs-cta-phone {
+          font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+          padding: calc(12/16 * 1rem) clamp(1.5rem, 3vw, 2.5rem);
+          display: inline-flex;
+          width: auto;
+          max-width: none;
+          align-self: flex-start;
+
+          img {
+              width: calc(20/16 * 1rem);
+          }
+
+          .cs-cta-mobile-text {
+              display: none;
+          }
+
+          .cs-cta-desktop-text {
+              display: inline;
+          }
+      }
+
+      .cs-cta-sub {
+          align-self: flex-start;
+      }
+
+      .cs-background {
+          &:before {
+              background:
+                  linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.85) 55%),
+                  linear-gradient(90deg, rgba(26, 26, 26, 0.6) 0%, rgba(26, 26, 26, 0) 60%);
+          }
       }
   }
 }
@@ -910,6 +1012,124 @@
     #process-steps {
         .cs-container {
             max-width: calc(800 / 16 * 1rem);
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---      Recent Projects       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #recent-projects {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(2rem, 5vw, 3rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            max-width: calc(800 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-title {
+            .cs-accent {
+                color: var(--primary);
+            }
+        }
+
+        .cs-text {
+            margin-bottom: 0;
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            background-color: #f7f7f7;
+            border-radius: calc(12 / 16 * 1rem);
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+
+        .cs-picture {
+            width: 100%;
+            height: clamp(12.5rem, 30vw, 15rem);
+            display: block;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-item-content {
+            padding: clamp(1rem, 2vw, 1.5rem);
+        }
+
+        .cs-h3 {
+            font-size: clamp(1rem, 1.8vw, 1.25rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: 0 0 calc(6 / 16 * 1rem) 0;
+            color: var(--headerColor);
+        }
+
+        .cs-item-text {
+            font-size: clamp(0.8125rem, 1.4vw, 0.9375rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #recent-projects {
+        .cs-card-group {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #recent-projects {
+        .cs-card-group {
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 }
