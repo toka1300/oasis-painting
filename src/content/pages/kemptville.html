@@ -13,6 +13,8 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+    <link rel="stylesheet" href="/assets/css/badges.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}"/>
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
@@ -41,30 +43,50 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
+
 <!-- ============================================ -->
-<!--                   Banner                     -->
+<!--                    Hero                      -->
 <!-- ============================================ -->
 
-<div id="banner-1519">
+<section id="hero-219">
     <div class="cs-container">
-        <span class="cs-int-title">Kemptville</span>
+        <h1 class="cs-title">Professional Painters in Kemptville</h1>
+        <p class="cs-text">
+            Interior, exterior, and commercial painting services for homes and businesses in Kemptville and the surrounding North Grenville area.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <p class="cs-free-estimate">Free estimates available.</p>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Fully Licensed & Insured
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/brush.svg" alt="" width="20" height="20" aria-hidden="true">
+                Premium Sherwin-Williams Paint
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/map-pin.svg" alt="" width="20" height="20" aria-hidden="true">
+                Local Ottawa Painters
+            </li>
+        </ul>
     </div>
-    <!--Background Image-->
+
+    <!-- Background Image -->
     <picture class="cs-background">
        <!--Mobile Image-->
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}" type="image/avif">
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 })  | webp %}" type="image/webp">
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 })  | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 983 }) | extend({ top: 550 }) | avif %}" type="image/avif">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 982 }) | extend({ top: 550 }) | webp %}" type="image/webp">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 982 }) | extend({ top: 550 }) | jpeg %}" type="image/jpeg">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 983 }) | extend({ top: 250 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | jpeg %}" type="image/jpeg">
        <img src="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Green house" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
     </picture>
-    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="white"/>
-    </svg>
-</div>
+</section>
+
+{% include 'components/badges.html' %}
 
 <!-- ============================================ -->
 <!--                Side By Side                  -->
@@ -91,12 +113,12 @@ eleventyNavigation:
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <h1 class="cs-title">Professional Painting Services in Kemptville</h1>
+            <h1 class="cs-title">Professional House Painters in Kemptville</h1>
             <p class="cs-text">
-                Oasis Painting's origins in the painting industry start in the Kemptville and North Grenville area. That is why we are proud to be some of the most trusted painters in the town of Kemptville. From staining decks to complete home refreshes, our painting company has helped Kemptville residents transform their spaces for years. Whether you are looking to change the look of your home's interior, clean up your outside look or bring life to a commercial space - our painters can help you achieve your dream space in Kemptville!
+                Our Kemptville painters provide interior and exterior painting services for homeowners and businesses throughout Kemptville and the surrounding North Grenville communities. Our team handles <a href="/interior-painting-ottawa/">interior painting</a>, <a href="/exterior-painting-ottawa/">exterior painting</a>, <a href="/deck-staining-ottawa/">deck staining</a>, and <a href="/commercial-painting-ottawa/">commercial painting</a> projects using materials suited for Ontario's changing seasons.
             </p>
             <p class="cs-text">
-                When you choose Oasis Painting, you are getting top-of-the-line customer service, attention to detail, and some of the finest craftsmanship in our industry. That is how again and again Oasis Painting is chosen for repeat business  and consistently generates excellent reviews. Give us a chance and you won't be disappointed!
+                Many homes in the Kemptville area feature larger properties, wood siding, and outdoor living spaces that require careful surface preparation and durable finishes. Our team works with many of the home styles found across Kemptville and North Grenville, from newer subdivisions to rural properties.
             </p>
             <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
         </div>
@@ -128,12 +150,15 @@ eleventyNavigation:
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <h2 class="cs-title">Our Roots in Kemptville</h2>
+            <h2 class="cs-title">Painting Homes in Kemptville</h2>
             <p class="cs-text">
-                The founders of Oasis Painting, Matt and Will, both grew up and went to school in Kemptville. From the time as a child playing in Riverside Park to high-school years at St. Michael's High School, our founders have lived and breathed Kemptville life. As such, Oasis Painting commits to providing a superior painting service to North Grenville and all of its residents. Locally owned, and operated, we are a business you can rely on again and again because we are more than just painters, we are neighbours. We understand your painting needs and are always close by if anything is needed!
+                Kemptville and the surrounding North Grenville communities include a mix of newer subdivisions, older homes, and rural properties. Many homes in the area feature wood siding, large decks, fences, and outdoor spaces that require proper preparation before painting.
             </p>
             <p class="cs-text">
-                Choosing Oasis Painting isn't just about choosing top-quality and customer service, but supporting a local business with deep roots in the area. Don't hesitate to reach out to get started on your project!
+                Because of Ontario's climate, exterior surfaces in this region experience freezing winters, humid summers, and seasonal temperature changes. Proper preparation, quality primers, and durable paint products help deliver lasting results and protect surfaces from weather damage.
+            </p>
+            <p class="cs-text">
+                Kemptville has also seen steady residential growth in recent years, with new homes and renovation projects throughout the area. Painting projects often range from refreshing interior spaces to maintaining exterior siding, trim, and outdoor structures.
             </p>
             <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
         </div>
@@ -165,32 +190,517 @@ eleventyNavigation:
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <h2 class="cs-title">Kemptville Painting Services</h2>
-            <h3 class="cs-h3">Interior Painting Services</h3>
+            <h2 class="cs-title">House Painters in Kemptville</h2>
             <p class="cs-text">
-                Ready to refresh your Kemptville home's interior? Oasis Painting delivers flawless interior painting results that transform your living spaces with premium materials and expert craftsmanship. Our professional Kemptville painters bring new life to every room, creating beautiful, long-lasting finishes you'll love coming home to. Contact us today for your free, no-obligation quote!
-            </p>
-            <h3 class="cs-h3">Exterior Painting Services</h3>
-            <p class="cs-text">
-                Rejuvenate the look of your home with our expert and quality exterior painting services across the Ottawa region. Let our skilled painters help you transform the aesthetic of your home's exterior and increase its curb appeal and value!
+                If you're looking for house painters in Kemptville, our team works with homeowners throughout the area to repaint interior rooms, refresh exterior siding, and maintain outdoor spaces like decks and fences.
             </p>
             <p class="cs-text">
-                Our exterior painters can be a game-changer for your home's curb appeal and overall value. If you're aiming to refresh your Kemptville property and boost its market appeal, Oasis Painting has you covered. Our team specializes in transforming exteriors with precision and care to ensure that you get long-term, aesthetically pleasing results. 
-            </p>
-            <h3 class="cs-h3">Deck Staining Services</h3>
-            <p class="cs-text">
-                Your trusted deck staining professionals will help protect your exterior from the elements of Kemptville weather! From pressure washing to sanding and staining, we do it all to make sure you get the most out of your deck investment. Winters in Kemptville are harsh, extend the lifespan and improve the look of your deck with Oasis Painting!
-            </p>
-            <h3 class="cs-h3">Commercial Painting Services</h3>
-            <p class="cs-text">
-                Oasis Painting is your best choice for a reliable commercial painting company in Kemptville. Our commercial painters are known for great craftsmanship, attention to detail and customer service across the Kemptville area. Our team of experts would be happy to get you started today, reach out!
+                Homes across Kemptville and nearby North Grenville communities vary widely, from modern subdivisions to older homes and rural properties. Each project requires proper preparation and attention to detail to ensure a clean and durable finish.
             </p>
             <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
         </div>
     </div>
 </section>
 
+<!-- ============================================ -->
+<!--              Services Detail                -->
+<!-- ============================================ -->
+
+<section id="services-detail">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Kemptville Painting Services</h2>
+            <p class="cs-text">
+                Oasis Painting offers a full range of residential and commercial painting services for properties throughout Kemptville and North Grenville.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/brush-black.svg" alt="paint roller icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Interior Painting Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Interior painting is one of the easiest ways to refresh a home. We help homeowners across Kemptville update living rooms, bedrooms, kitchens, and entire homes with clean, consistent finishes. Learn more about our <a href="/interior-painting-ottawa/">interior painting services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Walls, ceilings, and trim painting</li>
+                        <li class="cs-li">Crown moulding and door refinishing</li>
+                        <li class="cs-li">Staircases and railings</li>
+                        <li class="cs-li">Drywall repair and surface preparation</li>
+                        <li class="cs-li">Premium low-VOC Sherwin-Williams paints</li>
+                        <li class="cs-li">Furniture protection and full cleanup</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Freshly painted interior room in Kemptville" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item cs-reverse">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/house.svg" alt="exterior painting icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Exterior Painting Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Exterior painting helps protect siding, trim, and other surfaces from weather while improving the overall appearance of a home or building. Our <a href="/exterior-painting-ottawa/">exterior painting services</a> use durable materials suited for the seasonal climate in North Grenville.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Siding painting (vinyl, aluminum, fibre cement)</li>
+                        <li class="cs-li">Trim, soffits, fascia, and shutters</li>
+                        <li class="cs-li">Garage doors and entry doors</li>
+                        <li class="cs-li">Surface preparation and repairs</li>
+                        <li class="cs-li">Weather-resistant Sherwin-Williams coatings</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Exterior house painting in Kemptville" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/tree.svg" alt="deck staining icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Deck Staining Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Many homes in Kemptville have decks, fences, and outdoor living spaces that require regular maintenance to prevent weather damage. Our <a href="/deck-staining-ottawa/">deck staining services</a> help protect wood surfaces from moisture, sun exposure, and seasonal weather.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Deck washing and preparation</li>
+                        <li class="cs-li">Sanding and wood repair</li>
+                        <li class="cs-li">Professional staining and sealing</li>
+                        <li class="cs-li">Fence and railing staining</li>
+                        <li class="cs-li">Weather protection treatments</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Deck staining project in Kemptville" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item cs-reverse">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/building-black.svg" alt="commercial building icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Commercial Painting Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        We also work with local businesses and property managers on commercial painting projects, including offices, retail spaces, and other commercial properties. Learn more about our <a href="/commercial-painting-ottawa/">commercial painting services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Office painting</li>
+                        <li class="cs-li">Retail and storefront painting</li>
+                        <li class="cs-li">Property management projects</li>
+                        <li class="cs-li">Commercial interiors and exteriors</li>
+                        <li class="cs-li">Flexible scheduling to minimize disruption</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Commercial painting project in Kemptville" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-285">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Residential & Commercial Painting in Kemptville</h2>
+            <p class="cs-text">
+                Our team works with both homeowners and local businesses throughout Kemptville, delivering reliable painting services for residential and commercial properties.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/interior-painting-ottawa/" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="/assets/svgs/house.svg" loading="lazy" decoding="async" alt="house icon" width="38" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Residential Painting</h3>
+                    <p class="cs-item-text">
+                        Interior and exterior painting for houses, townhomes, and properties across Kemptville and North Grenville.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/commercial-painting-ottawa/" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="/assets/svgs/building-black.svg" loading="lazy" decoding="async" alt="building icon" width="38" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Commercial Painting</h3>
+                    <p class="cs-item-text">
+                        Professional painting for offices, retail spaces, and commercial buildings.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--            Painting Process                  -->
+<!-- ============================================ -->
+
+<section id="process-steps">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Simple, Professional <span class="cs-accent">Painting Process</span></h2>
+            <p class="cs-text">
+                We've refined our approach after years of serving Ottawa homeowners. Here's what you can expect when working with Oasis Painting.
+            </p>
+        </div>
+        <ol class="cs-step-group">
+            <li class="cs-step">
+                <span class="cs-number">1</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clipboard-check.svg" loading="lazy" decoding="async" alt="consultation icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Free On-Site Consultation</h3>
+                    <p class="cs-step-text">We visit your home to assess the project, discuss your vision, and provide a clear, transparent estimate.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">2</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/palette.svg" loading="lazy" decoding="async" alt="paint can icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Colour Selection & Planning</h3>
+                    <p class="cs-step-text">We help you choose colours, finishes, and products that match your space and style.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">3</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="surface prep icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Surface Preparation</h3>
+                    <p class="cs-step-text">We repair surfaces, sand walls, clean areas, and apply primers to ensure lasting results.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">4</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/briefcase.svg" loading="lazy" decoding="async" alt="briefcase icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Professional Painting</h3>
+                    <p class="cs-step-text">Our experienced painters apply your chosen colours with precision for smooth, even coverage.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">5</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/zoom-check.svg" loading="lazy" decoding="async" alt="inspection icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Quality Inspection</h3>
+                    <p class="cs-step-text">Every surface is inspected carefully and touched up if needed.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">6</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="cleanup icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Cleanup &amp; Final Walkthrough</h3>
+                    <p class="cs-step-text">We clean the workspace and walk through the project with you to confirm everything meets expectations.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">7</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/mail-heart.svg" loading="lazy" decoding="async" alt="support icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Follow-Up Support</h3>
+                    <p class="cs-step-text">We're always available if you have questions after the project is completed.</p>
+                </div>
+            </li>
+        </ol>
+        <p class="cs-footer-text">
+            Talk with our team about your upcoming painting project.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+</section>
+
+<!-- ============================================ -->
+<!--            Recent Projects                   -->
+<!-- ============================================ -->
+
+<section id="recent-projects">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Recent Interior Painting Projects in <span class="cs-accent">Kemptville</span></h2>
+            <p class="cs-text">
+                See recent painting projects completed for homeowners across Kemptville and North Grenville.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-exterior-project.jpg" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-exterior-project.jpg" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-exterior-project.jpg" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-exterior-project.jpg" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-exterior-project.jpg" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-exterior-project.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/kemptville-exterior-project.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Freshly painted bedroom in Kanata" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Exterior Home Painting</h3>
+                    <p class="cs-item-text">Kemptville</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-kitchen.jpg" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-kitchen.jpg" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-kitchen.jpg" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-kitchen.jpg" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-kitchen.jpg" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-kitchen.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/kemptville-kitchen.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Refinished front entry door in Barrhaven" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Kitchen Cabinet Painting</h3>
+                    <p class="cs-item-text">North Grenville</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-deck.webp" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-deck.webp" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-deck.webp" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-deck.webp" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-deck.webp" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-deck.webp" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/kemptville-deck.webp" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="White staircase repaint in Orléans" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Deck Staining & Refinishing</h3>
+                    <p class="cs-item-text">Oxford Mills</p>
+                </div>
+            </li>
+        </ul>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <p class="cs-footer-text">See something you like? Request your free painting estimate today.</p>
+    </div>
+</section>
+
 {% include 'components/why-choose-us.html' %}
 {% include 'components/reviews.html' %}
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1458" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" alt="Living room with gold and white paint" width="1196" height="1782" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How much does house painting cost in Kemptville?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    The cost of house painting in Kemptville depends on the size of the area, the condition of surfaces, and the type of paint selected. We offer free on-site estimates to provide an accurate quote tailored to your project.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long does interior painting take?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Most interior painting projects are completed within 2-5 days depending on the number of rooms and the scope of preparation required. We'll provide a detailed timeline during your consultation.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you offer free painting estimates in Kemptville?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes! Oasis Painting offers free, no-obligation painting estimates for homeowners in Kemptville and North Grenville. Contact us to schedule a convenient time for your on-site consultation.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What paint brands do you use?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We use premium paint products from trusted brands like Benjamin Moore and Sherwin-Williams. We can also work with specific brands if you have a preference.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How should I prepare my home for painting?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We recommend clearing furniture away from walls and removing wall hangings. Our team handles all surface preparation, taping, and floor protection as part of our service.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you guarantee your work?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Absolutely. We stand behind every project with a workmanship guarantee. If you notice any issues after completion, contact us and we'll make it right.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you offer painting services outside Kemptville?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes. In addition to Kemptville, we regularly provide painting services for homeowners in nearby communities including Oxford Mills, Oxford Station, Burritts Rapids, and other areas throughout North Grenville.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What should I look for when hiring painters in Kemptville?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    When hiring painters in Kemptville, Ontario, it's important to look for proper insurance, experience with both interior and exterior painting, and clear communication about timelines and project expectations. Professional painters should also explain how weather conditions such as temperature, humidity, and rain can affect exterior painting projects.
+                </p>
+            </li>
+        </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--               Service Areas                  -->
+<!-- ============================================ -->
+
+<section id="service-areas">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Neighbourhoods We Serve in <span class="cs-accent">Kemptville</span></h2>
+            <p class="cs-text">
+                Our professional painters serve homeowners throughout Kemptville and the surrounding North Grenville communities, delivering quality results in every neighbourhood.
+            </p>
+        </div>
+        <ul class="cs-area-group">
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Kemptville
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Oxford Mills
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Oxford Station
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Burritts Rapids
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                North Grenville
+            </li>
+        </ul>
+        <a href="/contact" class="cs-button-solid">Get My Free Painting Estimate</a>
+    </div>
+</section>
+
+<section id="location-map">
+    <div class="cs-container">
+        <div class="cs-about">
+            <span class="cs-topper">Our Location</span>
+            <h2 class="cs-title">Serving Kemptville from Our Ottawa Location</h2>
+            <p class="cs-text">
+                Kemptville is one of the fastest-growing communities in the North Grenville region, located just south of Ottawa along Highway 416. The area is known for its historic downtown, nearby Rideau River corridor, and growing residential neighbourhoods that attract homeowners looking for a quieter lifestyle while staying close to the city.
+            </p>
+            <p class="cs-text">
+                Homes throughout Kemptville and nearby communities such as Oxford Mills, Oxford Station, and Burritts Rapids range from modern subdivisions to heritage homes and rural properties. Many homes feature large yards, wood siding, and outdoor decks that require proper maintenance to withstand Ontario's seasonal weather.
+            </p>
+            <p class="cs-text">
+                As a local painting business serving the Ottawa region, we work with homeowners and businesses throughout Kemptville and nearby North Grenville communities, providing <a href="/interior-painting-ottawa/">interior painting</a>, <a href="/exterior-painting-ottawa/">exterior painting</a>, <a href="/deck-staining-ottawa/">deck staining</a>, and <a href="/commercial-painting-ottawa/">commercial painting</a> services to help maintain and improve residential and commercial properties.
+            </p>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+        <div class="cs-map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89674.93498566686!2d-75.5456!3d44.9984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0548a4b0e47b%3A0x5036ae25f3258e0!2sKemptville%2C%20ON%20K0G%201J0!5e0!3m2!1sen!2sca!4v1711810000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Kemptville, Ontario service area"></iframe>
+        </div>
+    </div>
+</section>
+
 
 {% endblock %}
