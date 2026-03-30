@@ -75,9 +75,9 @@ eleventyNavigation:
     <!-- Background Image -->
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 })  | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 })  | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 983 }) | extend({ top: 250 }) | avif %}" type="image/avif">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-banner.png" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | webp %}" type="image/webp">

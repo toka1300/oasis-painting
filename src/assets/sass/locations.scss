@@ -220,8 +220,8 @@
     #hero-219 {
         /* Centers button */
         text-align: left;
-        /* 144px - 300px - leaving extra space for the navigation */
-        padding: clamp(9rem, 25.95vw, 18.75rem) calc(16 / 16 * 1rem) 0;
+        /* 180px - 300px - leaving extra space for the navigation */
+        padding: clamp(11.25rem, 25.95vw, 18.75rem) calc(24 / 16 * 1rem) 0;
         /* 130px - 200px */
         padding-bottom: clamp(8.125rem, 12.5vw, 25rem);
         position: relative;
@@ -377,7 +377,7 @@
 
         .cs-container {
             width: 100%;
-            max-width: calc(1280 / 16 * 1rem);
+            max-width: calc(550 / 16 * 1rem);
             margin: auto;
         }
 
@@ -420,7 +420,7 @@
         .cs-item {
             display: flex;
             flex-direction: column;
-            gap: clamp(1.5rem, 3vw, 2rem);
+            gap: clamp(1.5rem, 5vw, 7rem);
         }
 
         .cs-item-content {
@@ -544,13 +544,17 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #services-detail {
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+        }
+
         .cs-item {
             flex-direction: row;
             align-items: center;
         }
 
         .cs-item-content {
-            width: 55%;
+            width: 45%;
             flex: none;
         }
 
