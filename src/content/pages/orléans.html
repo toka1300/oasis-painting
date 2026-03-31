@@ -13,7 +13,8 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
-    <link rel="stylesheet" href="/assets/css/orleans.css">
+    <link rel="stylesheet" href="/assets/css/badges.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}"/>
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
@@ -44,29 +45,48 @@ eleventyNavigation:
 {% block body %}
 
 <!-- ============================================ -->
-<!--                   Banner                     -->
+<!--                    Hero                      -->
 <!-- ============================================ -->
 
-<div id="banner-1519">
+<section id="hero-219">
     <div class="cs-container">
-        <span class="cs-int-title">Orléans</span>
+        <h1 class="cs-title">Professional Painters in Orléans</h1>
+        <p class="cs-text">
+            Interior and exterior house painting services in Orléans for homeowners and local businesses. Local painting services in Orléans for homeowners, property managers, and businesses throughout the Ottawa area.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <p class="cs-free-estimate">Free estimates available.</p>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Fully Licensed & Insured
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/brush.svg" alt="" width="20" height="20" aria-hidden="true">
+                Premium Sherwin-Williams Paint
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/map-pin.svg" alt="" width="20" height="20" aria-hidden="true">
+                Local Ottawa Painters
+            </li>
+        </ul>
     </div>
-    <!--Background Image-->
+
+    <!-- Background Image -->
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 })  | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 })  | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 2800, height: 983 }) | extend({ top: 550 }) | avif %}" type="image/avif">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 2800, height: 982 }) | extend({ top: 550 }) | webp %}" type="image/webp">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 2800, height: 982 }) | extend({ top: 550 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="View of suburb from above" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 2800, height: 982 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 2800, height: 982 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Freshly painted interior room in Orléans home" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
     </picture>
-    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="white"/>
-    </svg>
-</div>
+</section>
+
+{% include 'components/badges.html' %}
 
 <!-- ============================================ -->
 <!--                Side By Side                  -->
@@ -78,14 +98,14 @@ eleventyNavigation:
             <!--Top left image-->
             <picture class="cs-picture">
                <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-kitchen-2.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-kitchen-2.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-kitchen-2.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
                <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/orleans-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Kemptville town sign" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-kitchen-2.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-kitchen-2.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-kitchen-2.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/orleans-kitchen-2.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Professional house painters in Orléans" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
             <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
@@ -95,12 +115,55 @@ eleventyNavigation:
         <div class="cs-content">
             <h1 class="cs-title">Professional House Painters in Orléans</h1>
             <p class="cs-text">
-                Oasis Painting stands as the premier choice for Orléans property owners, and businesses seeking quality painting work. We are happy to extend our expertise in the house painting industry to the vibrant community of Orléans. As a leading painting company in town, we have earned a solid reputation for our ability to breathe new life into spaces, whether through staining decks, painting siding, or providing complete home makeovers. Orléans residents have come to rely on Oasis Painting for our years of experience and dedication to transforming spaces with care.
+                Our painters work with homeowners and businesses throughout Orléans, providing <a href="/interior-painting-ottawa/">interior painting</a>, <a href="/exterior-painting-ottawa/">exterior painting</a>, <a href="/deck-staining-ottawa/">deck staining</a>, and <a href="/commercial-painting-ottawa/">commercial painting</a> services across the community.
             </p>
             <p class="cs-text">
-                Our experienced and friendly teams are known for their attention to detail, ensuring that each project is handled with professionalism and expertise. Oasis Painting commits to using eco-friendly paint brands. This offers a healthy and environmentally aware painting approach with low or no VOCs. Our commitment to excellence is not just a promise; it is a guarantee shown in our amazing customer service, keen eye for detail, and great craftsmanship. This commitment has earned Oasis Painting repeat business, referrals, and glowing reviews from satisfied clients in Orléans and beyond. Choose Oasis Painting for a painting experience that exceeds what is expected. We provide incredible results and refresh your space with passion.
+                Located in Ottawa's east end, Orléans is known for its growing residential neighbourhoods, family homes, and proximity to the Ottawa River. Many homes in the area feature siding, brick exteriors, trim work, and outdoor spaces that require proper preparation and durable finishes to withstand Ottawa's changing seasons.
             </p>
-            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
+            <p class="cs-text">
+                From updating interior rooms to repainting exterior siding or maintaining decks and fences, our team helps homeowners keep their properties looking clean and well maintained.
+            </p>
+            <p class="cs-text">
+                Many homeowners in the Ottawa area look for reliable Orléans painters when planning interior updates, exterior repaints, or general home improvement projects. Homeowners searching for reliable Orléans painters often look for a painting company that offers clear communication, proper preparation, and consistent results.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side Reverse          -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="reverse grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Painting homes in Orléans" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Painting Homes in Orléans</h2>
+            <p class="cs-text">
+                Orléans includes a mix of established neighbourhoods and newer residential developments throughout Ottawa's east end. Many homes feature vinyl siding, brick exteriors, and outdoor spaces such as decks, patios, and fences that require regular maintenance to keep them looking their best.
+            </p>
+            <p class="cs-text">
+                Exterior surfaces in Ottawa's climate are exposed to freezing winters, humid summers, and seasonal temperature changes. Proper preparation and high-quality paint products help protect surfaces and maintain a clean appearance over time.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
         </div>
     </div>
 </section>
@@ -109,20 +172,20 @@ eleventyNavigation:
 <!--                Side By Side                  -->
 <!-- ============================================ -->
 
-<section id="sbs-1095" class="grey reverse">
+<section id="sbs-1095">
     <div class="cs-container">
         <div class="cs-image-group">
             <!--Top left image-->
             <picture class="cs-picture">
                <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
                <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Man rolling white paint onto wall" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="House painters in Orléans" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
             <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
@@ -130,32 +193,543 @@ eleventyNavigation:
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <h2 class="cs-title">Orléans Painting Services</h2>
-            <h3 class="cs-h3">Interior Painting Services</h3>
+            <h2 class="cs-title">House Painters in Orléans</h2>
             <p class="cs-text">
-                Ready to refresh your Orléans home's interior? Oasis Painting delivers flawless interior painting results that transform your living spaces with premium materials and expert craftsmanship. Our professional Orléans painters bring new life to every room, creating beautiful, long-lasting finishes you'll love coming home to. Contact us today for your free, no-obligation quote!
-            </p>
-            <h3 class="cs-h3">Exterior Painting Services</h3>
-            <p class="cs-text">
-                Rejuvenate the look of your home with our expert and quality exterior painting services across the Ottawa region. Let our skilled painters help you transform the aesthetic of your home's exterior and increase its curb appeal and value!
+                If you're looking for house painters in Orléans, our team works with homeowners across the community to repaint interior spaces, refresh exterior siding, and maintain outdoor areas such as decks, fences, and trim.
             </p>
             <p class="cs-text">
-                Our exterior painters can be a game-changer for your home's curb appeal and overall value. If you're aiming to refresh your Orléans property and boost its market appeal, Oasis Painting has you covered. Our team specializes in transforming exteriors with precision and care to ensure that you get long-term, aesthetically pleasing results. 
+                Homes throughout Orléans range from modern townhouses and condominiums to larger single-family homes, and each project requires proper preparation and attention to detail to ensure a clean, durable finish.
             </p>
-            <h3 class="cs-h3">Deck Staining Services</h3>
-            <p class="cs-text">
-                Your trusted deck staining professionals will help protect your exterior from the elements of Orléans weather! From pressure washing to sanding and staining, we do it all to make sure you get the most out of your deck investment. Winters in Orléans are harsh, extend the lifespan and improve the look of your deck with Oasis Painting!
-            </p>
-            <h3 class="cs-h3">Commercial Painting Services</h3>
-            <p class="cs-text">
-                Oasis Painting is your best choice for a reliable commercial painting company in Orléans. Our commercial painters are known for great craftsmanship, attention to detail and customer service across the Orléans area. Our team of experts would be happy to get you started today, reach out!
-            </p>
-            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
         </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Services Detail                -->
+<!-- ============================================ -->
+
+<section id="services-detail">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Orléans Painting Services</h2>
+            <p class="cs-text">
+                We provide interior painting, exterior painting, deck staining, and commercial painting services for homes and businesses throughout Orléans.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/brush-black.svg" alt="paint roller icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Interior Painting Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Interior painting is one of the easiest ways to refresh a home. We help homeowners across Orléans update living rooms, bedrooms, kitchens, and entire homes with clean, consistent finishes. Our interior painters handle everything from single rooms to full homes, including ceilings, trim, doors, and walls. Our interior painters can also assist with light preparation work such as drywall repair, patching holes, and wallpaper removal before applying a fresh coat of paint. Learn more about our <a href="/interior-painting-ottawa/">interior painting services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Walls, ceilings, and trim painting</li>
+                        <li class="cs-li">Crown moulding and door refinishing</li>
+                        <li class="cs-li">Staircases, railings, and banisters</li>
+                        <li class="cs-li">Drywall repair and surface preparation</li>
+                        <li class="cs-li">Premium low-VOC Sherwin-Williams paints</li>
+                        <li class="cs-li">Furniture protection and full cleanup</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Bright interior room with freshly painted walls in Orléans home" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item cs-reverse">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/house.svg" alt="exterior painting icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Exterior Painting Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Exterior painting helps protect siding, trim, and other surfaces from weather while improving the overall appearance of homes and buildings throughout Orléans. Exterior house painting protects siding, trim, and other surfaces from weather while improving curb appeal. Our exterior painters may also prepare surfaces with cleaning or pressure washing when needed. See our <a href="/exterior-painting-ottawa/">exterior painting services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Siding painting (vinyl, aluminum, fibre cement)</li>
+                        <li class="cs-li">Trim, soffits, fascia, and shutters</li>
+                        <li class="cs-li">Garage doors and entry doors</li>
+                        <li class="cs-li">Wood repair and surface preparation</li>
+                        <li class="cs-li">Weather-resistant Sherwin-Williams coatings</li>
+                        <li class="cs-li">Fully insured and heights-certified crews</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/exterior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Professional painters working on home exterior in Orléans" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/tree.svg" alt="deck staining icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Deck Staining Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Many homes in Orléans include outdoor living spaces that require staining and sealing to protect wood from moisture and seasonal weather. Proper preparation ensures decks receive a long-lasting fresh coat that helps protect wood from weather and wear. Explore our <a href="/deck-staining-ottawa/">deck staining services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Deck washing and preparation</li>
+                        <li class="cs-li">Sanding and wood repair</li>
+                        <li class="cs-li">Professional staining and sealing</li>
+                        <li class="cs-li">Weather protection treatments</li>
+                        <li class="cs-li">Fence and railing staining</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Freshly stained wooden deck in an Orléans backyard" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item cs-reverse">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/building-black.svg" alt="commercial building icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Commercial Painting Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        We also work with offices, retail spaces, and other local businesses throughout the Orléans community. Our team also works as business painters for offices, retail locations, and commercial buildings throughout Orléans. Our team handles a range of commercial painting projects and works with property managers and business owners who need reliable scheduling and clean, consistent results. View our <a href="/commercial-painting-ottawa/">commercial painting services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Office painting</li>
+                        <li class="cs-li">Retail and storefront painting</li>
+                        <li class="cs-li">Property management projects</li>
+                        <li class="cs-li">Commercial hallways and common areas</li>
+                        <li class="cs-li">Flexible scheduling to minimize disruption</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Commercial office space being painted by professional painters" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-285">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Residential & Commercial Painting in Orléans</h2>
+            <p class="cs-text">
+                Our painters work with both homeowners and businesses throughout Orléans on a wide range of interior and exterior painting projects.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/interior-painting-ottawa/" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="/assets/svgs/house.svg" loading="lazy" decoding="async" alt="house icon" width="38" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Residential Painting</h3>
+                    <p class="cs-item-text">
+                        Interior and exterior painting for houses, townhomes, and condos across Orléans.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/commercial-painting-ottawa/" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="/assets/svgs/building-black.svg" loading="lazy" decoding="async" alt="building icon" width="38" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Commercial Painting</h3>
+                    <p class="cs-item-text">
+                        Professional painting for offices, retail spaces, and commercial buildings.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--            Painting Process                  -->
+<!-- ============================================ -->
+
+<section id="process-steps">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Proven <span class="cs-accent">Painting Process</span></h2>
+            <p class="cs-text">
+                A systematic approach ensures consistently outstanding results for every painting project in Orléans.
+            </p>
+        </div>
+        <ol class="cs-step-group">
+            <li class="cs-step">
+                <span class="cs-number">1</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clipboard-check.svg" loading="lazy" decoding="async" alt="consultation icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Free On-Site Consultation</h3>
+                    <p class="cs-step-text">We begin every project with a detailed consultation to understand the scope of work and ensure clear communication throughout the entire painting process.
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">2</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/palette.svg" loading="lazy" decoding="async" alt="paint can icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Colour Selection & Planning</h3>
+                    <p class="cs-step-text">Our team helps you choose the perfect colours and plan every detail.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">3</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="surface prep icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Surface Preparation</h3>
+                    <p class="cs-step-text">We thoroughly prep all surfaces for a smooth, lasting finish.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">4</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/briefcase.svg" loading="lazy" decoding="async" alt="briefcase icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Professional Painting</h3>
+                    <p class="cs-step-text">Our skilled painters apply premium products with precision and care.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">5</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/zoom-check.svg" loading="lazy" decoding="async" alt="inspection icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Quality Inspection</h3>
+                    <p class="cs-step-text">Every surface is inspected to ensure it meets our high standards.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">6</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="cleanup icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Cleanup &amp; Final Walkthrough</h3>
+                    <p class="cs-step-text">We clean up completely and walk through the results with you.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">7</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/mail-heart.svg" loading="lazy" decoding="async" alt="support icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Follow-Up Support</h3>
+                    <p class="cs-step-text">We stand behind our work and follow up to ensure your satisfaction.</p>
+                </div>
+            </li>
+        </ol>
+        <p class="cs-footer-text">
+            Talk with our team about your upcoming painting project.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+</section>
+
+<!-- ============================================ -->
+<!--            Recent Projects                   -->
+<!-- ============================================ -->
+
+<section id="recent-projects">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Recent Painting Projects in Orléans</h2>
+            <p class="cs-text">
+                See recent painting projects completed for homeowners across Orléans.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-exterior.avif" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-exterior.avif" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-exterior.avif" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-exterior.avif" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-exterior.avif" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-exterior.avif" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/orleans-exterior.avif" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Freshly painted home exterior in Fallingbrook, Orléans" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Exterior Home Painting</h3>
+                    <p class="cs-item-text">Fallingbrook, Orléans</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-kitchen.jpg" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-kitchen.jpg" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-kitchen.jpg" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-kitchen.jpg" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-kitchen.jpg" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-kitchen.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/orleans-kitchen.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Freshly painted interior room in Chapel Hill, Orléans" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Interior Room Painting</h3>
+                    <p class="cs-item-text">Chapel Hill, Orléans</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-deck.jpg" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-deck.jpg" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-deck.jpg" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-deck.jpg" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-deck.jpg" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-deck.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/orleans-deck.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Freshly stained deck in Avalon, Orléans" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Deck Staining & Refinishing</h3>
+                    <p class="cs-item-text">Avalon, Orléans</p>
+                </div>
+            </li>
+        </ul>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <p class="cs-footer-text">See something you like? Request your free painting estimate today.</p>
     </div>
 </section>
 
 {% include 'components/why-choose-us.html' %}
 {% include 'components/reviews.html' %}
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1458" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" alt="Living room with gold and white paint" width="1196" height="1782" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How much does house painting cost in Orléans?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    The cost of house painting in Orléans depends on the size of the area, the condition of surfaces, and the type of paint selected. We offer free on-site estimates to provide an accurate quote tailored to your project.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long does interior painting take?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Most interior painting projects are completed within 2-5 days depending on the number of rooms and the scope of preparation required. We'll provide a detailed timeline during your consultation.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you offer free painting estimates in Orléans?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes! Oasis Painting offers free, no-obligation painting estimates for homeowners in Orléans. Contact us to schedule a convenient time for your on-site consultation.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What paint brands do you use?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We use premium paint products from trusted brands like Benjamin Moore and Sherwin-Williams. We can also work with specific brands if you have a preference.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How should I prepare my home for painting?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We recommend clearing furniture away from walls and removing wall hangings. Our team handles all surface preparation, taping, and floor protection as part of our service.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you guarantee your work?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Absolutely. We stand behind every project with a workmanship guarantee. If you notice any issues after completion, contact us and we'll make it right.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What should I look for when hiring painters in Orléans?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    When hiring painters in Orléans, Ontario, it's important to look for proper insurance, experience with both interior and exterior painting, and clear communication about timelines and project expectations. Professional painters should also explain how weather conditions such as temperature, humidity, and rain can affect exterior painting projects.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do painters in Orléans offer color consultations?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes. Our team can help you choose colours and finishes that work well with your home's style and lighting. We're happy to provide guidance during the consultation process.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How do I choose the right painters in Orléans?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Look for painters who are fully insured, use quality materials, and provide clear estimates before starting work. Reading reviews and asking about their preparation process can also help you find a reliable team.
+                </p>
+            </li>
+        </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--               Service Areas                  -->
+<!-- ============================================ -->
+
+<section id="service-areas">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Neighbourhoods We Serve in Orléans</h2>
+            <p class="cs-text">
+                Our painters serve homeowners throughout Orléans's diverse neighbourhoods, delivering quality results in every community.
+            </p>
+        </div>
+        <ul class="cs-area-group">
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Fallingbrook
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Chapel Hill
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Avalon
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Queenswood Heights
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Convent Glen
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Notting Hill
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Cardinal Creek
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Orléans Village
+            </li>
+        </ul>
+        <a href="/contact" class="cs-button-solid">Get My Free Painting Estimate</a>
+    </div>
+</section>
+
+<section id="location-map">
+    <div class="cs-container">
+        <div class="cs-about">
+            <span class="cs-topper">Our Location</span>
+            <h2 class="cs-title">Serving Orléans from Our Ottawa Location</h2>
+            <p class="cs-subtitle">Conveniently located to serve all of Orléans and the surrounding Ottawa area.</p>
+            <p class="cs-text">
+                Orléans is a large suburban community in Ottawa's east end, located along the Ottawa River and known for its residential neighbourhoods, schools, parks, and growing commercial areas. The community has expanded significantly over the past few decades and now includes a mix of townhomes, condominiums, and larger single-family houses.
+            </p>
+            <p class="cs-text">
+                Neighbourhoods throughout Orléans such as Avalon, Fallingbrook, and Chapel Hill feature homes with siding, brick exteriors, trim, and outdoor spaces that benefit from regular maintenance and repainting.
+            </p>
+            <p class="cs-text">
+                Our team regularly works with homeowners and businesses throughout Orléans, providing <a href="/interior-painting-ottawa/">interior painting</a>, <a href="/exterior-painting-ottawa/">exterior painting</a>, <a href="/deck-staining-ottawa/">deck staining</a>, and <a href="/commercial-painting-ottawa/">commercial painting</a> services to help maintain and improve residential and commercial properties.
+            </p>
+            <p class="cs-text">
+                Our team is proud to be serving Orléans and the surrounding Ottawa communities with interior painting, exterior painting, deck staining, and commercial painting services.
+            </p>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+        <div class="cs-map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89674.93498566686!2d-75.5101!3d45.4765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce1144db16b06d%3A0x5036ae25f3258e0!2sOrl%C3%A9ans%2C%20Ottawa%2C%20ON!5e0!3m2!1sen!2sca!4v1711810000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Orléans, Ontario service area"></iframe>
+        </div>
+    </div>
+</section>
 
 {% endblock %}

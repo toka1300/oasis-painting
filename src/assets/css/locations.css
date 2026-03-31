@@ -924,12 +924,8 @@
     margin-bottom: 2rem;
   }
   #location-map .cs-text a {
-    color: var(--headerColor);
+    color: var(--primaryLight);
     text-decoration: underline;
-    transition: color 0.3s;
-  }
-  #location-map .cs-text a:hover {
-    color: var(--primary);
   }
   #location-map .cs-button-solid {
     font-size: clamp(0.8125rem, 2vw, 1rem);
@@ -1021,7 +1017,8 @@
   }
   #service-areas .cs-area-group {
     width: 100%;
-    margin: 0;
+    max-width: 42.5rem;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
     display: flex;
