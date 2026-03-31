@@ -15,6 +15,7 @@ eleventyNavigation:
 <link rel="stylesheet" href="/assets/css/local.css"/>
 <link rel="stylesheet" href="/assets/css/faq.css"/>
 <link rel="stylesheet" href="/assets/css/why-choose-us.css"/>
+<link rel="stylesheet" href="/assets/css/badges.css"/>
 <noscript>
     <link rel="stylesheet" href="/assets/css/local.css">
 </noscript>
@@ -170,36 +171,7 @@ eleventyNavigation:
     </picture>
 </section>
 
-<!-- ============================================ -->
-<!--                    Badges                    -->
-<!-- ============================================ -->
-
-<section id="hero-2335">
-    <section id="logos-2335">
-        <div class="cs-logo-container">
-            <div class="cs-logo-content">
-                <h2 class="cs-title cs-logo-title">Our Awards & Recognition</h2>
-            </div>
-            <div class="cs-logo-wrapper">
-                <a href="{{ client.mapLink }}" target="_blank" class="cs-logo">
-                    <img src="./assets/svgs/badge-google.svg" alt="5 Stars Google Maps logo" width="150" height="150" loading="lazy" decoding="async">
-                </a>
-                <a href="https://trustedpros.ca/company/oasis-painting" target="_blank" class="cs-logo">
-                    <img src="./assets/images/badge-trustedpros.png" alt="Best Of TrustedPros.ca 2025" width="125" height="125" loading="lazy" decoding="async">
-                </a>
-                <a href="https://www.bestinottawa.com/top-painters-ottawa/" target="_blank" class="cs-logo">
-                    <img src="./assets/images/badge-best-ottawa.png" alt="best in Ottawa logo" width="125" height="125" loading="lazy" decoding="async">
-                </a>
-                <a href="https://www.daslokalottawa.com/top-painters-ottawa/" target="_blank" class="cs-logo">
-                    <img src="./assets/images/badge-das-local.png" alt="Das Lokal logo" width="125" height="125" loading="lazy" decoding="async">
-                </a>
-                <a href="https://www.ottawalife.com/article/oasis-painting-finding-the-perfect-paint-colour/" target="_blank" class="cs-logo">
-                    <img src="./assets/images/badge-olm.png" alt="Ottawa Life logo" width="125" height="125" loading="lazy" decoding="async">
-                </a>
-            </div>
-        </div>
-    </section>
-</section>                      
+{% include 'components/badges.html' %}
 
 <!-- ============================================ -->
 <!--                   Services                   -->
@@ -478,7 +450,7 @@ eleventyNavigation:
                 <span class="cs-stat-text">Google Rating</span>
             </li>
             <li class="cs-item">
-                <span class="cs-number">40+</span>
+                <span class="cs-number">50+</span>
                 <span class="cs-stat-text">Google Reviews</span>
             </li>
             <li class="cs-item">

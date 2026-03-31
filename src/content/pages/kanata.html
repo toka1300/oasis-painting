@@ -13,8 +13,9 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/locations.css">
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
-    <link rel="stylesheet" href="/assets/css/kanata.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/badges.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982, position: "bottom" }) | avif %}"/>
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
         {
@@ -42,30 +43,50 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
+
 <!-- ============================================ -->
-<!--                   Banner                     -->
+<!--                    Hero                      -->
 <!-- ============================================ -->
 
-<div id="banner-1519">
+<section id="hero-219">
     <div class="cs-container">
-        <span class="cs-int-title">Kanata</span>
+        <h1 class="cs-title">Professional Painters in Kanata</h1>
+        <p class="cs-text">
+            Interior and exterior house painting services in Kanata for homeowners and local businesses.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <p class="cs-free-estimate">Free estimates available.</p>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Fully Licensed & Insured
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/brush.svg" alt="" width="20" height="20" aria-hidden="true">
+                Premium Sherwin-Williams Paint
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/map-pin.svg" alt="" width="20" height="20" aria-hidden="true">
+                Local Ottawa Painters
+            </li>
+        </ul>
     </div>
-    <!--Background Image-->
+
+    <!-- Background Image -->
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982, position: "bottom" }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982, position: "bottom" }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 1200, height: 982, position: "bottom" }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2000, height: 522, position: "bottom" }) | extend({ top: 100 }) | avif %}" type="image/avif">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2000, height: 522, position: "bottom" }) | extend({ top: 100 }) | webp %}" type="image/webp">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2000, height: 522, position: "bottom" }) | extend({ top: 100 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2000, height: 522 }) | jpeg %}" alt="Townhouses from the outside" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2800, height: 982, position: "bottom" }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2800, height: 982, position: "bottom" }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2800, height: 982, position: "bottom" }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/kanata-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Freshly painted interior room in Kanata home" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
     </picture>
-    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="white"/>
-    </svg>
-</div>
+</section>
+
+{% include 'components/badges.html' %}
 
 <!-- ============================================ -->
 <!--                Side By Side                  -->
@@ -77,14 +98,14 @@ eleventyNavigation:
             <!--Top left image-->
             <picture class="cs-picture">
                <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room-location.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room-location.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/living-room-location.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
                <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/kanata-house.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="House with Beige Siding" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room-location.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room-location.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/living-room-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/living-room-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Professional house painters in Kanata" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
             <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
@@ -94,12 +115,52 @@ eleventyNavigation:
         <div class="cs-content">
             <h1 class="cs-title">Professional House Painters in Kanata</h1>
             <p class="cs-text">
-                Oasis Painting stands as the premier choice for Kanata property owners and businesses seeking quality painting work. We are happy to extend our expertise in the house painting industry to the vibrant community of Kanata. As a leading painting company in town, we have earned a solid reputation for our ability to breathe new life into spaces, whether through staining decks, painting siding, or providing complete home makeovers. Kanata residents have come to rely on Oasis Painting for our years of experience and dedication to transforming spaces with care.
+                Our painters work with homeowners and businesses throughout Kanata, providing <a href="/interior-painting-ottawa/">interior painting</a>, <a href="/exterior-painting-ottawa/">exterior painting</a>, <a href="/deck-staining-ottawa/">deck staining</a>, and <a href="/commercial-painting-ottawa/">commercial painting</a> services across the area. Kanata is one of Ottawa's largest suburban communities and is home to landmarks such as the Canadian Tire Centre and the Kanata North technology hub.
             </p>
             <p class="cs-text">
-                Our experienced and friendly teams are known for their attention to detail, ensuring that each project is handled with professionalism and expertise. Oasis Painting commits to using eco-friendly paint brands. This offers a healthy and environmentally aware painting approach with low or no VOCs. Our commitment to excellence is not just a promise; it is a guarantee shown in our amazing customer service, keen eye for detail, and great craftsmanship. This commitment has earned Oasis Painting repeat business, referrals, and glowing reviews from satisfied clients in Kanata and beyond. Choose Oasis Painting for a painting experience that exceeds what is expected. We provide incredible results and refresh your space with passion.
+                Kanata includes a mix of established neighbourhoods, newer subdivisions, and growing commercial areas. Many homes in the community feature siding, trim, decks, and outdoor spaces that require proper preparation and durable finishes to handle Ottawa's changing seasons.
             </p>
-            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
+            <p class="cs-text">
+                From updating interior rooms to repainting exterior siding or maintaining decks and fences, our team helps homeowners keep their properties looking clean, well maintained, and protected over time. Many homeowners in the Ottawa area look for reliable Kanata painters when planning interior updates, exterior repaints, or general home improvement projects.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side Reverse          -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="reverse grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/kemptville-house-2.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Painting homes in Kanata" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Painting Homes in Kanata</h2>
+            <p class="cs-text">
+                Kanata includes a mix of established neighbourhoods and newer residential developments. Many homes feature vinyl siding, brick exteriors, trim work, and outdoor spaces such as decks and fences that require periodic maintenance to keep them looking their best.
+            </p>
+            <p class="cs-text">
+                Exterior surfaces in Ottawa's climate are exposed to freezing winters, humid summers, and significant seasonal temperature changes. Proper preparation and high-quality paint products help protect these surfaces and maintain a clean appearance over time.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
         </div>
     </div>
 </section>
@@ -108,20 +169,20 @@ eleventyNavigation:
 <!--                Side By Side                  -->
 <!-- ============================================ -->
 
-<section id="sbs-1095" class="grey reverse">
+<section id="sbs-1095">
     <div class="cs-container">
         <div class="cs-image-group">
             <!--Top left image-->
             <picture class="cs-picture">
                <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
                <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/painter-location.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Man rolling white paint onto wall" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/bedroom.png" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="House painters in Kanata" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
             <!--Eclipses-->
             <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
@@ -129,32 +190,530 @@ eleventyNavigation:
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
         <div class="cs-content">
-            <h2 class="cs-title">Kanata Painting Services</h2>
-            <h3 class="cs-h3">Interior Painting Services</h3>
+            <h2 class="cs-title">House Painters in Kanata</h2>
             <p class="cs-text">
-                Ready to refresh your Kanata home's interior? Oasis Painting delivers flawless interior painting results that transform your living spaces with premium materials and expert craftsmanship. Our professional Kanata painters bring new life to every room, creating beautiful, long-lasting finishes you'll love coming home to. Contact us today for your free, no-obligation quote!
-            </p>
-            <h3 class="cs-h3">Exterior Painting Services</h3>
-            <p class="cs-text">
-                Rejuvenate the look of your home with our expert and quality exterior painting services across the Ottawa region. Let our skilled painters help you transform the aesthetic of your home's exterior and increase its curb appeal and value!
+                If you're looking for house painters in Kanata, our team works with homeowners across the community to repaint interior spaces, refresh exterior siding, and maintain outdoor areas such as decks, fences, and trim.
             </p>
             <p class="cs-text">
-                Our exterior painters can be a game-changer for your home's curb appeal and overall value. If you're aiming to refresh your Kanata property and boost its market appeal, Oasis Painting has you covered. Our team specializes in transforming exteriors with precision and care to ensure that you get long-term, aesthetically pleasing results. 
+                Homes throughout Kanata range from modern townhomes to larger detached houses, and each project requires proper preparation and attention to detail to ensure a clean, durable finish.
             </p>
-            <h3 class="cs-h3">Deck Staining Services</h3>
-            <p class="cs-text">
-                Your trusted deck staining professionals will help protect your exterior from the elements of Kanata weather! From pressure washing to sanding and staining, we do it all to make sure you get the most out of your deck investment. Winters in Kanata are harsh, extend the lifespan and improve the look of your deck with Oasis Painting!
-            </p>
-            <h3 class="cs-h3">Commercial Painting Services</h3>
-            <p class="cs-text">
-                Oasis Painting is your best choice for a reliable commercial painting company in Kanata. Our commercial painters are known for great craftsmanship, attention to detail and customer service across the Kanata area. Our team of experts would be happy to get you started today, reach out!
-            </p>
-            <a href="/contact/"class="cs-button-solid">Get a Free Quote</a>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
         </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Services Detail                -->
+<!-- ============================================ -->
+
+<section id="services-detail">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Kanata Painting Services</h2>
+            <p class="cs-text">
+                We provide interior painting, exterior painting, deck staining, and commercial painting services for homes and businesses throughout Kanata.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/brush-black.svg" alt="paint roller icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Interior Painting Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Interior painting is one of the easiest ways to refresh a home. We help homeowners across Kanata update living rooms, bedrooms, kitchens, and entire homes with clean, consistent finishes. Our interior painters can also assist with light preparation work such as drywall repair, patching holes, and wallpaper removal before applying a fresh coat of paint. Learn more about our <a href="/interior-painting-ottawa/">interior painting services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Walls, ceilings, and trim painting</li>
+                        <li class="cs-li">Crown moulding and door refinishing</li>
+                        <li class="cs-li">Staircases, railings, and banisters</li>
+                        <li class="cs-li">Drywall repair and surface preparation</li>
+                        <li class="cs-li">Premium low-VOC Sherwin-Williams paints</li>
+                        <li class="cs-li">Furniture protection and full cleanup</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/interior-painting.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Bright interior room with freshly painted walls in Kanata home" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item cs-reverse">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/house.svg" alt="exterior painting icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Exterior Painting Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Exterior painting helps protect siding, trim, and other surfaces from weather while improving the overall appearance of a home or building. Our exterior painters also prepare surfaces with cleaning and pressure washing when necessary to help paint adhere properly. See our <a href="/exterior-painting-ottawa/">exterior painting services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Siding painting (vinyl, aluminum, fibre cement)</li>
+                        <li class="cs-li">Trim, soffits, fascia, and shutters</li>
+                        <li class="cs-li">Garage doors and entry doors</li>
+                        <li class="cs-li">Wood repair and surface preparation</li>
+                        <li class="cs-li">Weather-resistant Sherwin-Williams coatings</li>
+                        <li class="cs-li">Fully insured and heights-certified crews</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-exterior.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-exterior.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/orleans-exterior.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-exterior.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-exterior.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/orleans-exterior.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/orleans-exterior.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Professional painters working on suburban home exterior in Kanata" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/tree.svg" alt="deck staining icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Deck Staining Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        Many homes in Kanata have decks, fences, and outdoor spaces that need regular maintenance to prevent weather damage and wear over time. Proper preparation ensures decks receive a long-lasting fresh coat that protects wood from weather and moisture. Explore our <a href="/deck-staining-ottawa/">deck staining services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Deck washing and preparation</li>
+                        <li class="cs-li">Sanding and wood repair</li>
+                        <li class="cs-li">Professional staining and sealing</li>
+                        <li class="cs-li">Weather protection treatments</li>
+                        <li class="cs-li">Fence and railing staining</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/deck-staining.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Wooden deck being stained in a Kanata backyard" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+            <li class="cs-item cs-reverse">
+                <div class="cs-item-content">
+                    <div class="cs-heading-group">
+                        <img class="cs-icon" src="/assets/svgs/building-black.svg" alt="commercial building icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                        <h3 class="cs-h3">Commercial Painting Services</h3>
+                    </div>
+                    <p class="cs-item-text">
+                        We work with local businesses, property managers, and commercial property owners on painting projects throughout the Kanata community, including offices, retail spaces, and other commercial properties. View our <a href="/commercial-painting-ottawa/">commercial painting services</a>.
+                    </p>
+                    <p class="cs-bold">What's Included:</p>
+                    <ul class="cs-ul">
+                        <li class="cs-li">Office painting</li>
+                        <li class="cs-li">Retail and storefront painting</li>
+                        <li class="cs-li">Property management projects</li>
+                        <li class="cs-li">Commercial hallways and common areas</li>
+                        <li class="cs-li">Flexible scheduling to minimize disruption</li>
+                    </ul>
+                    <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+                </div>
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 848, height: 636 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 848, height: 636 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 848, height: 636 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/commercial-painting-2.jpg" | resize({ width: 630, height: 520 }) | jpeg %}" alt="Commercial office hallway being painted by professional painters" width="630" height="520" loading="lazy" decoding="async">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-285">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Residential & Commercial Painting in Kanata</h2>
+            <p class="cs-text">
+                Our team works with both homeowners and local businesses throughout Kanata, delivering reliable painting services for residential and commercial properties.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/interior-painting-ottawa/" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="/assets/svgs/house.svg" loading="lazy" decoding="async" alt="house icon" width="38" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Residential Painting</h3>
+                    <p class="cs-item-text">
+                        Interior and exterior painting for houses, townhomes, and condos across Kanata.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/commercial-painting-ottawa/" class="cs-link">
+                    <picture class="cs-picture">
+                        <img class="cs-icon" src="/assets/svgs/building-black.svg" loading="lazy" decoding="async" alt="building icon" width="38" height="52" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Commercial Painting</h3>
+                    <p class="cs-item-text">
+                        Professional painting for offices, retail spaces, and commercial buildings.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--            Painting Process                  -->
+<!-- ============================================ -->
+
+<section id="process-steps">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Proven <span class="cs-accent">Painting Process</span></h2>
+            <p class="cs-text">
+                A systematic approach ensures consistently outstanding results for every painting project in Kanata.
+            </p>
+        </div>
+        <ol class="cs-step-group">
+            <li class="cs-step">
+                <span class="cs-number">1</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clipboard-check.svg" loading="lazy" decoding="async" alt="consultation icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Free On-Site Consultation</h3>
+                    <p class="cs-step-text">We visit your home in Kanata to assess the project and discuss your vision. We begin every project with a detailed consultation to understand the scope of work and keep communication clear from start to finish. During the estimate we discuss your painting needs, expected timeline, and preparation requirements.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">2</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/palette.svg" loading="lazy" decoding="async" alt="paint can icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Colour Selection & Planning</h3>
+                    <p class="cs-step-text">Our team helps you choose the perfect colours and plan every detail.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">3</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="surface prep icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Surface Preparation</h3>
+                    <p class="cs-step-text">We thoroughly prep all surfaces for a smooth, lasting finish.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">4</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/briefcase.svg" loading="lazy" decoding="async" alt="briefcase icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Professional Painting</h3>
+                    <p class="cs-step-text">Our skilled painters apply premium products with precision and care.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">5</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/zoom-check.svg" loading="lazy" decoding="async" alt="inspection icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Quality Inspection</h3>
+                    <p class="cs-step-text">Every surface is inspected to ensure it meets our high standards.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">6</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="cleanup icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Cleanup &amp; Final Walkthrough</h3>
+                    <p class="cs-step-text">We clean up completely and walk through the results with you.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">7</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/mail-heart.svg" loading="lazy" decoding="async" alt="support icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Follow-Up Support</h3>
+                    <p class="cs-step-text">We stand behind our work and follow up to ensure your satisfaction.</p>
+                </div>
+            </li>
+        </ol>
+        <p class="cs-footer-text">
+            Talk with our team about your upcoming painting project.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+</section>
+
+<!-- ============================================ -->
+<!--            Recent Projects                   -->
+<!-- ============================================ -->
+
+<section id="recent-projects">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Recent Painting Projects in Kanata</h2>
+            <p class="cs-text">
+                See recent painting projects completed for homeowners across Kanata.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-exterior.jpg" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-exterior.jpg" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-exterior.jpg" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-exterior.jpg" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-exterior.jpg" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-exterior.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/kanata-exterior.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Freshly painted home exterior in Kanata Lakes" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Exterior Home Painting</h3>
+                    <p class="cs-item-text">Kanata Lakes, Kanata</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-kitchen.jpg" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-kitchen.jpg" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-kitchen.jpg" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-kitchen.jpg" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-kitchen.jpg" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-kitchen.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/kanata-kitchen.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="White kitchen cabinets freshly painted in Bridlewood" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Kitchen Cabinet Painting</h3>
+                    <p class="cs-item-text">Bridlewood, Kanata</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-deck.jpg" | resize({ width: 1200, height: 900 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-deck.jpg" | resize({ width: 1200, height: 900 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/kanata-deck.jpg" | resize({ width: 1200, height: 900 }) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image-->
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-deck.jpg" | resize({ width: 1000, height: 750 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-deck.jpg" | resize({ width: 1000, height: 750 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/kanata-deck.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/kanata-deck.jpg" | resize({ width: 1000, height: 750 }) | jpeg %}" alt="Freshly stained deck in Morgan's Grant, Kanata" width="1000" height="750" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-item-content">
+                    <h3 class="cs-h3">Deck Staining & Refinishing</h3>
+                    <p class="cs-item-text">Morgan's Grant, Kanata</p>
+                </div>
+            </li>
+        </ul>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <p class="cs-footer-text">See something you like? Request your free painting estimate today.</p>
     </div>
 </section>
 
 {% include 'components/why-choose-us.html' %}
 {% include 'components/reviews.html' %}
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1458" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" alt="Living room with gold and white paint" width="1196" height="1782" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How much does house painting cost in Kanata?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    The cost of house painting in Kanata depends on the size of the area, the condition of surfaces, and the type of paint selected. We offer free on-site estimates to provide an accurate quote tailored to your project.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long does interior painting take?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Most interior painting projects are completed within 2-5 days depending on the number of rooms and the scope of preparation required. We'll provide a detailed timeline during your consultation.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you offer free painting estimates in Kanata?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes! Oasis Painting offers free, no-obligation painting estimates for homeowners in Kanata. Contact us to schedule a convenient time for your on-site consultation.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What paint brands do you use?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We use premium paint products from trusted brands like Benjamin Moore and Sherwin-Williams. We can also work with specific brands if you have a preference.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How should I prepare my home for painting?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We recommend clearing furniture away from walls and removing wall hangings. Our team handles all surface preparation, taping, and floor protection as part of our service.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you guarantee your work?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Absolutely. We stand behind every project with a workmanship guarantee. If you notice any issues after completion, contact us and we'll make it right.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What should I look for when hiring painters in Kanata?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    When hiring painters in Kanata, Ontario, it's important to look for proper insurance, experience with both interior and exterior painting, and clear communication about timelines and project expectations. Professional painters should also explain how weather conditions such as temperature, humidity, and rain can affect exterior painting projects.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do painters in Kanata offer colour consultations?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes. Our team can help you choose colours and finishes that work well with your home's style and lighting. We're happy to provide guidance during the consultation process.
+                </p>
+            </li>
+        </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--               Service Areas                  -->
+<!-- ============================================ -->
+
+<section id="service-areas">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Neighbourhoods We Serve in Kanata</h2>
+            <p class="cs-text">
+                Our professional painters serve homeowners throughout Kanata's diverse neighbourhoods, delivering quality results in every community.
+            </p>
+        </div>
+        <ul class="cs-area-group">
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Kanata Lakes
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Bridlewood
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Morgan's Grant
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Katimavik
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Glen Cairn
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Beaverbrook
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Marchwood
+            </li>
+            <li class="cs-area">
+                <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                Emerald Meadows
+            </li>
+        </ul>
+        <a href="/contact" class="cs-button-solid">Get My Free Painting Estimate</a>
+    </div>
+</section>
+
+<section id="location-map">
+    <div class="cs-container">
+        <div class="cs-about">
+            <span class="cs-topper">Our Location</span>
+            <h2 class="cs-title">Serving Kanata from Our Ottawa Location</h2>
+            <p class="cs-subtitle">Conveniently located to serve all of Kanata and the surrounding Ottawa area.</p>
+            <p class="cs-text">
+                Kanata is one of Ottawa's largest suburban communities, located west of downtown and known for its residential neighbourhoods, growing commercial areas, and technology sector. The area includes a mix of established communities, newer developments, and busy commercial corridors that continue to expand as Ottawa grows.
+            </p>
+            <p class="cs-text">
+                Neighbourhoods throughout Kanata, including Beaverbrook, Bridlewood, Kanata Lakes, and Morgan's Grant, feature a variety of homes ranging from townhouses to larger detached properties. Many homes include exterior siding, decks, and trim that require regular maintenance and repainting over time.
+            </p>
+            <p class="cs-text">
+                Kanata is also home to well-known landmarks such as the Canadian Tire Centre and the Kanata North technology hub. As a local painting business serving the Ottawa region, our team regularly works with homeowners and businesses across the area, providing <a href="/interior-painting-ottawa/">interior painting</a>, <a href="/exterior-painting-ottawa/">exterior painting</a>, <a href="/deck-staining-ottawa/">deck staining</a>, and <a href="/commercial-painting-ottawa/">commercial painting</a> services to help keep properties looking clean and well maintained.
+            </p>
+            <a href="/contact" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+        <div class="cs-map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89674.93498566686!2d-75.9001!3d45.3088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd200e48d5602ab%3A0x4c077e779fbe4869!2sKanata%2C%20Ottawa%2C%20ON!5e0!3m2!1sen!2sca!4v1711810000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Kanata, Ontario service area"></iframe>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
