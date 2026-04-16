@@ -1,4 +1,14 @@
 /*-- -------------------------- -->
+<---  Why Choose Us Override      -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #why-choose-12,
+  #location-map {
+    background: #fff;
+  }
+}
+/*-- -------------------------- -->
 <---  Seamless Finish Section     -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
@@ -409,6 +419,7 @@
 @media only screen and (min-width: 37.5rem) {
   #drywall-problems .cs-card-grid {
     grid-template-columns: 1fr 1fr;
+    max-width: unset;
   }
 }
 /* Desktop - 1024px */
@@ -434,6 +445,7 @@
 @media only screen and (min-width: 0rem) {
   #drywall-costs {
     padding: var(--sectionPadding);
+    background-color: #f7f7f7;
   }
   #drywall-costs .cs-container {
     width: 100%;
