@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/*-- -------------------------- -->
+<---    Popular Finishes         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #popular-finishes {
+    padding: var(--sectionPadding);
+    background: #f7f7f7;
+  }
+  #popular-finishes .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(2rem, 4vw, 3rem);
+  }
+  #popular-finishes .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 43.75rem;
+  }
+  #popular-finishes .cs-title {
+    font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0 0 1rem;
+    color: var(--headerColor);
+  }
+  #popular-finishes .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    margin: 0;
+  }
+  #popular-finishes .cs-finish-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  #popular-finishes .cs-finish-card {
+    background: #fff;
+    border-radius: 0.75rem;
+    padding: clamp(1.25rem, 2.5vw, 1.75rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.3s;
+  }
+  #popular-finishes .cs-finish-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+  #popular-finishes .cs-finish-swatch {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  #popular-finishes .cs-finish-name {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    color: var(--headerColor);
+    margin: 0;
+  }
+  #popular-finishes .cs-finish-desc {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    margin: 0;
+  }
+}
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #popular-finishes .cs-finish-group {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #popular-finishes .cs-finish-group {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+/*-- -------------------------- -->
+<---    Good Candidate Section    -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #good-candidate {
+    padding: var(--sectionPadding);
+    background: #f7f7f7;
+  }
+  #good-candidate .cs-container {
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(1.5rem, 3vw, 2rem);
+  }
+  #good-candidate .cs-title {
+    font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--headerColor);
+    text-align: center;
+  }
+  #good-candidate .cs-columns {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    border: 1px solid #e8e8e8;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: #fff;
+  }
+  #good-candidate .cs-column {
+    padding: clamp(1.25rem, 3vw, 2rem);
+  }
+  #good-candidate .cs-column:first-child {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  #good-candidate .cs-column-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.3em;
+    margin: 0 0 1rem;
+    color: var(--headerColor);
+  }
+  #good-candidate .cs-column-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #good-candidate .cs-column-item {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+  #good-candidate .cs-column-item::before {
+    font-size: 0.875rem;
+    flex-shrink: 0;
+  }
+  #good-candidate .cs-column-item.cs-good::before {
+    content: "✓";
+    color: var(--primary);
+  }
+  #good-candidate .cs-column-item.cs-bad::before {
+    content: "✗";
+    color: #e53e3e;
+  }
+  #good-candidate .cs-note {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    margin: 0;
+    text-align: center;
+  }
+  #good-candidate .cs-subtext {
+    font-size: 0.875rem;
+    color: var(--bodyTextColor);
+    margin: -0.5rem 0 0;
+    text-align: center;
+  }
+}
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #good-candidate .cs-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+  #good-candidate .cs-column:first-child {
+    border-bottom: none;
+    border-right: 1px solid #e8e8e8;
+  }
+}
+
+/*# sourceMappingURL=cabinet-painting.css.map */

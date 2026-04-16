@@ -1,0 +1,793 @@
+---
+title: 'Drywall Repair Ottawa - Professional Patching & Finishing | Oasis Painting'
+description: 'Professional drywall repair and patching in Ottawa. Expert ceiling repair, texture matching, and smooth finishes. Free estimates available!'
+permalink: 'drywall-repair-ottawa/'
+eleventyNavigation:
+    key: Drywall Repair
+    order: 500
+    parent: Services
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+    <link rel="stylesheet" href="/assets/css/badges.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
+    <link rel="stylesheet" href="/assets/css/drywall-repair.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/drywall-hero.jpg" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <!-- JSON Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Ottawa Drywall Repair Services",
+            "url": "https://oasispainting.ca/drywall-repair-ottawa/",
+            "serviceType": "Drywall Repair",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Oasis Painting",
+                "url": "https://oasispainting.ca/",
+                "telephone": "(613) 408-4432",
+                "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "17 Aberdeen St",
+                    "addressLocality": "Ottawa",
+                    "addressRegion": "ON",
+                    "postalCode": "K1S 3J3",
+                    "addressCountry": "CA"
+                }
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Ottawa, ON, Canada"
+            }
+        }
+    </script>
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How long does drywall repair take?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most minor drywall repair jobs can be completed within a few hours. Larger drywall patching or ceiling repairs may take 1–2 days depending on drying time between coats."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Will the repair be visible?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "When done properly, drywall repairs should be invisible. We use professional finishing techniques including careful feathering, proper compound application, and accurate texture matching to ensure repaired areas blend seamlessly with your existing walls and ceilings."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Will there be dust or mess?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We use a clean, controlled process with minimal dust and disruption. Our team protects your floors and furniture, and we clean up thoroughly after every project so your home is left spotless."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you repair ceilings as well?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, we handle all types of ceiling repairs including popcorn ceiling repair, stipple ceiling repair, water damage restoration, cracks, and general patching. We match existing ceiling textures so the repair blends naturally."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you paint after the repair?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We prepare all repaired surfaces to be fully paint-ready with proper priming and finishing. We can also paint the repaired area or the entire room as part of the project. Learn more about our interior painting services."
+                    }
+                }
+            ]
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-219">
+    <div class="cs-container">
+        <h1 class="cs-title">Drywall Repair Services in Ottawa</h1>
+        <p class="cs-text">
+            Professional drywall repair and patching that restores your walls and ceilings with smooth, seamless results.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <p class="cs-free-estimate">Free estimates available.</p>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Seamless, Invisible Repairs
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/brush.svg" alt="" width="20" height="20" aria-hidden="true">
+                Clean, Low-Dust Process
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/map-pin.svg" alt="" width="20" height="20" aria-hidden="true">
+                Expert Texture Matching
+            </li>
+        </ul>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-hero.jpg" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-hero.jpg" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-hero.jpg" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-hero.jpg" | resize({ width: 2800, height: 983 }) | extend({ top: 250 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-hero.jpg" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-hero.jpg" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/drywall-hero.jpg" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Drywall repair in progress" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+
+{% include 'components/badges.html' %}
+
+<!-- ============================================ -->
+<!--            What Results to Expect             -->
+<!-- ============================================ -->
+
+<section id="drywall-results">
+    <div class="cs-container">
+        <h2 class="cs-title">What Results Can You Expect?</h2>
+        <p class="cs-text">
+            Looking for <strong>professional drywall repair in Ottawa</strong>? <a href="/">Oasis Painting</a> provides expert drywall patching, ceiling repair, and surface restoration for homes across Ottawa. From small holes and cracks to larger damaged drywall areas, we deliver <strong>smooth, paint-ready finishes</strong> that blend seamlessly with your existing walls.
+        </p>
+        <ul class="cs-card-group">
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/magnifying-glass.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Invisible Repairs</h3>
+                <p class="cs-item-text">Damage is blended seamlessly so it looks like nothing ever happened.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/clean.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Smooth, Paint-Ready Finish</h3>
+                <p class="cs-item-text">Surfaces are properly prepared for consistent final painting.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/clipboard-check.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Clean, Controlled Process</h3>
+                <p class="cs-item-text">Minimal dust and disruption inside your home.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-intro.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-intro.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-intro.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-intro.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-intro.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-intro.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/drywall-intro.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Professional drywall repair" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Restore Your Walls and Ceilings</h2>
+            <p class="cs-text">
+                Drywall is the foundation of most interior walls and ceilings, offering a smooth, durable surface that enhances insulation, reduces noise, and improves fire resistance.
+            </p>
+            <p class="cs-text">
+                From small holes and dents to larger damaged drywall and ceiling issues, our team delivers <strong>smooth, flawless finishes</strong> that blend naturally with your existing surfaces.
+            </p>
+            <p class="cs-text">
+                Ottawa homeowners trust us for <strong>professional drywall repair, patching, and finishing</strong> that eliminates imperfections—without the mess or frustration of DIY fixes.
+            </p>
+            <p class="cs-text">
+                We've worked on everything from quick wall patching in newer <a href="/house-painters-kanata/">Kanata</a> homes to detailed ceiling repairs in older Glebe properties, where matching existing textures takes extra care. No matter the project, the goal is always the same: <strong>make the repair invisible</strong>.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side Reverse          -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="reverse grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-why-professional.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-why-professional.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-why-professional.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-why-professional.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-why-professional.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-why-professional.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/drywall-why-professional.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Why professional drywall repair matters" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Why Professional Drywall Repair Matters</h2>
+            <p class="cs-text">
+                Drywall damage is common—and when it's in a visible area, it's surprisingly hard to ignore. Small holes, cracks, and dents might seem easy to fix, but <strong>poor repairs often leave behind visible patches</strong>, uneven textures, or paint that doesn't blend properly.
+            </p>
+            <p class="cs-text">
+                We often see cracks form where <strong>drywall seams meet</strong>—especially in Ottawa homes where seasonal humidity changes and cold winters cause materials to expand and contract.
+            </p>
+            <p class="cs-text">
+                Professional repair ensures:
+            </p>
+            <ul class="cs-list cs-check-list">
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Smooth, seamless finish that blends with your existing wall</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Proper drywall compound application to prevent cracking or shrinkage</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Accurate texture matching, including popcorn ceiling and stipple ceiling repair</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Long-lasting results that won't peel or stand out over time</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Clean, controlled process with minimal dust and disruption</li>
+            </ul>
+            <p class="cs-text">
+                <em>Done right, your walls shouldn't look "fixed"—they should look untouched.</em>
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-patching-closeup.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-patching-closeup.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-patching-closeup.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-patching-closeup.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-patching-closeup.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-patching-closeup.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/drywall-patching-closeup.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Drywall patching closeup" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <!--Eclipses-->
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <!--Stripe background-->
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Our Drywall Repair Services in Ottawa</h2>
+            <p class="cs-text">
+                Our drywall services go beyond basic patching—we restore the entire surface so everything looks <strong>uniform and finished</strong>.
+            </p>
+            <ul class="cs-list cs-check-list">
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Drywall patching for small holes and larger damage</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Full wall and ceiling repair</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Texture matching for existing finishes</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Popcorn ceiling and stipple ceiling repair</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Joint compound application and finishing</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Smooth, paint-ready surface preparation</li>
+            </ul>
+            <p class="cs-text">
+                Whether you need <strong>drywall patching for small holes</strong> or full drywall services for larger damaged areas, we tailor each repair to match your home's existing finish.
+            </p>
+            <p class="cs-text">
+                Learn more about our full range of <a href="/interior-painting-ottawa/">interior painting services in Ottawa</a>.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--          Common Drywall Problems              -->
+<!-- ============================================ -->
+
+<section id="drywall-problems">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Common Drywall Problems We Fix</h2>
+            <p class="cs-text">
+                We handle a wide range of <strong>drywall repair and patching</strong> issues across Ottawa homes, including both minor repairs and more extensive surface restoration.
+            </p>
+        </div>
+        <div class="cs-grid-wrapper">
+            <ul class="cs-card-grid">
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/circle.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Small Holes &amp; Dents</h3>
+                        <p class="cs-card-text">From nails, anchors, or accidental damage.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/large.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Large Drywall Damage</h3>
+                        <p class="cs-card-text">Requiring full drywall patching and finishing.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/crack.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Cracks &amp; Seam Separation</h3>
+                        <p class="cs-card-text">From natural settling or structural movement.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/droplets.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Water Damage</h3>
+                        <p class="cs-card-text">Water-damaged drywall and ceiling areas.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/hammer.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Nail Pops</h3>
+                        <p class="cs-card-text">Joint separation and fastener issues.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/texture.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Ceiling Texture Issues</h3>
+                        <p class="cs-card-text">Popcorn ceiling and stipple ceiling repair and blending.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cs-image-grid">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/damage.jpg" | resize({ width: 340, height: 260 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/damage.jpg" | resize({ width: 340, height: 260 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/damage.jpg" | resize({ width: 340, height: 260 }) | jpeg %}" alt="Drywall patching closeup" width="340" height="260" loading="lazy" decoding="async">
+                </picture>
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/peeling.jpg" | resize({ width: 340, height: 260 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/peeling.jpg" | resize({ width: 340, height: 260 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/peeling.jpg" | resize({ width: 340, height: 260 }) | jpeg %}" alt="Professional drywall repair" width="340" height="260" loading="lazy" decoding="async">
+                </picture>
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/cracks.jpg" | resize({ width: 340, height: 260 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/cracks.jpg" | resize({ width: 340, height: 260 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/cracks.jpg" | resize({ width: 340, height: 260 }) | jpeg %}" alt="Drywall sanding work" width="340" height="260" loading="lazy" decoding="async">
+                </picture>
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/holes.jpg" | resize({ width: 340, height: 260 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/holes.jpg" | resize({ width: 340, height: 260 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/holes.jpg" | resize({ width: 340, height: 260 }) | jpeg %}" alt="Seamless drywall finish" width="340" height="260" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+        <p class="cs-bottom-text">
+            Different types of damage require <strong>specific repair techniques</strong>. In older homes—especially in areas like the Glebe—we often deal with variations in texture and surface finishes that require a more careful approach to match properly.
+        </p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--        Professional Drywall Repair Process     -->
+<!-- ============================================ -->
+
+<section id="process-steps">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Professional <span class="cs-accent">Drywall Repair Process</span></h2>
+        </div>
+        <ol class="cs-step-group">
+            <li class="cs-step">
+                <span class="cs-number">1</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clipboard-check.svg" loading="lazy" decoding="async" alt="assessment icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Damage Assessment</h3>
+                    <p class="cs-step-text">We evaluate the damage and determine the best approach for a long-lasting repair.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">2</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="patching icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Drywall Patching &amp; Preparation</h3>
+                    <p class="cs-step-text">Damaged sections are cut, secured, and patched properly&mdash;creating a solid base before finishing begins.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">3</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/palette.svg" loading="lazy" decoding="async" alt="compound icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Compound Application</h3>
+                    <p class="cs-step-text">We apply multiple layers of drywall compound, carefully feathering edges to blend into the surrounding surface.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">4</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clean.svg" loading="lazy" decoding="async" alt="sanding icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Sanding &amp; Smoothing</h3>
+                    <p class="cs-step-text">Each layer is sanded to create a smooth, even finish. Poor sanding is one of the main reasons repairs remain visible.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">5</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/zoom-check.svg" loading="lazy" decoding="async" alt="texture icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Texture Matching</h3>
+                    <p class="cs-step-text">We match the existing texture&mdash;whether smooth drywall, stipple, or popcorn ceiling&mdash;so the repair disappears into the surface.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">6</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="finish icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Prime &amp; Paint-Ready Finish</h3>
+                    <p class="cs-step-text">The area is fully prepared for painting, ensuring a consistent, clean final result.</p>
+                </div>
+            </li>
+        </ol>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+</section>
+
+<!-- ============================================ -->
+<!--      Seamless Finish & Texture Matching        -->
+<!-- ============================================ -->
+
+<section id="seamless-finish">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Seamless Finish &amp; Texture Matching</h2>
+            <p class="cs-text">
+                The goal of drywall repair isn't just fixing damage&mdash;it's restoring the surface so it looks complete again. This includes <strong>precise drywall finishing techniques</strong> that ensure repaired areas don't stand out after painting.
+            </p>
+        </div>
+        <div class="cs-layout">
+            <div class="cs-left">
+                <ul class="cs-list cs-check-list">
+                    <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Matching existing wall and ceiling textures</li>
+                    <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Blending repaired areas into surrounding surfaces</li>
+                    <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Eliminating visible patch lines</li>
+                    <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Preparing surfaces for a smooth, consistent finish</li>
+                </ul>
+                <p class="cs-text">
+                    Many homeowners are surprised at how <strong>invisible a proper repair can be</strong>&mdash;especially after seeing before-and-after results from similar projects.
+                </p>
+            </div>
+            <div class="cs-right">
+                <picture class="cs-picture">
+                    <source srcset="{% getUrl "/assets/images/drywall-seamless-finish.jpg" | resize({ width: 520, height: 400 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/drywall-seamless-finish.jpg" | resize({ width: 520, height: 400 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/drywall-seamless-finish.jpg" | resize({ width: 520, height: 400 }) | jpeg %}" alt="Seamless drywall finish and texture matching" width="520" height="400" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--           Drywall Repair Costs                -->
+<!-- ============================================ -->
+
+<section id="drywall-costs">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Drywall Repair Costs in Ottawa</h2>
+            <p class="cs-text">
+                Drywall repair costs in Ottawa can vary depending on the size and complexity of the damage. Here's a general overview to help set expectations.
+            </p>
+        </div>
+        <ul class="cs-tier-group">
+            <li class="cs-tier">
+                <div class="cs-tier-icon-wrap">
+                    <img class="cs-tier-icon" src="/assets/svgs/target-dark.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-tier-title">Small Repairs</h3>
+                <p class="cs-tier-desc">Patching minor holes from nails, anchors, or small dents.</p>
+                <p class="cs-tier-price">Starting around $120-$250</p>
+            </li>
+            <li class="cs-tier">
+                <div class="cs-tier-icon-wrap">
+                    <img class="cs-tier-icon" src="/assets/svgs/large.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-tier-title">Medium Repairs</h3>
+                <p class="cs-tier-desc">Multiple areas, crack repair, or moderate drywall patching.</p>
+                <p class="cs-tier-price">Varies by scope</p>
+            </li>
+            <li class="cs-tier">
+                <div class="cs-tier-icon-wrap">
+                    <img class="cs-tier-icon" src="/assets/svgs/texture.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-tier-title">Large / Complex Repairs</h3>
+                <p class="cs-tier-desc">Extensive damage, ceiling work, or detailed texture matching across multiple rooms.</p>
+                <p class="cs-tier-price">Custom quote required</p>
+            </li>
+        </ul>
+        <div class="cs-factors">
+            <p class="cs-factors-title">Factors that influence pricing:</p>
+            <ul class="cs-factors-list">
+                <li class="cs-factor">Size and number of damaged areas</li>
+                <li class="cs-factor">Type of repair (minor repairs vs large patches)</li>
+                <li class="cs-factor">Wall versus ceiling repair</li>
+                <li class="cs-factor">Texture matching requirements</li>
+                <li class="cs-factor">Overall surface condition</li>
+            </ul>
+        </div>
+        <p class="cs-closing">
+            You'll know exactly what to expect before we begin—<strong>clear pricing, no surprises</strong>.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+    </div>
+</section>
+
+{% include 'components/why-choose-us.html' %}
+
+<!-- ============================================ -->
+<!--        Why Repairs Often Look Bad             -->
+<!-- ============================================ -->
+
+<section id="sbs-2295" class="reverse-order">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Before Image-->
+            <div class="cs-picture-wrapper1">
+                <picture class="cs-picture cs-picture1">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-before.jpg" | resize({ width: 566, height: 566 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-before.jpg" | resize({ width: 566, height: 566 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-before.jpg" | resize({ width: 566, height: 566 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-before.jpg" | resize({ width: 800, height: 800 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-before.jpg" | resize({ width: 800, height: 800 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-before.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/drywall-before.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Damaged drywall before repair" width="800" height="800" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <span class="cs-tag">Before</span>
+            </div>
+            <!--After Image-->
+            <div class="cs-picture-wrapper2">
+                <picture class="cs-picture cs-picture2">
+                   <!--Mobile Image-->
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-after.jpg" | resize({ width: 566, height: 566 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-after.jpg" | resize({ width: 566, height: 566 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-after.jpg" | resize({ width: 566, height: 566 }) | jpeg %}" type="image/jpeg">
+                   <!--Desktop Image-->
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-after.jpg" | resize({ width: 800, height: 800 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-after.jpg" | resize({ width: 800, height: 800 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/drywall-after.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/drywall-after.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Smooth drywall after professional repair" width="800" height="800" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <span class="cs-tag">After</span>
+            </div>
+            <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/svgs/before-after-arrow.svg" alt="arrow" width="148" height="54">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">The Difference Is Clear</span>
+            <h2 class="cs-title">Why Drywall Repairs Often Look Bad</h2>
+            <p class="cs-text">
+                Many drywall repairs fail for a few common reasons:
+            </p>
+            <ul class="cs-list">
+                <li class="cs-li"><img src="/assets/svgs/alert-circle.svg" alt="" width="20" height="20" aria-hidden="true">Edges aren't feathered properly, leaving visible patch lines</li>
+                <li class="cs-li"><img src="/assets/svgs/alert-circle.svg" alt="" width="20" height="20" aria-hidden="true">Drywall compound is applied incorrectly, causing shrinkage or cracking</li>
+                <li class="cs-li"><img src="/assets/svgs/alert-circle.svg" alt="" width="20" height="20" aria-hidden="true">Texture doesn't match the surrounding surface</li>
+                <li class="cs-li"><img src="/assets/svgs/alert-circle.svg" alt="" width="20" height="20" aria-hidden="true">Paint doesn't blend evenly with existing walls</li>
+            </ul>
+            <p class="cs-text">
+                We avoid these issues by focusing on <strong>proper preparation</strong>, multiple finishing layers, and careful blending techniques.
+            </p>
+            <p class="cs-text">
+                <strong>The result: a smooth, consistent finish that looks original—not repaired.</strong>
+            </p>
+        </div>
+    </div>
+</section>
+
+{% include 'components/reviews.html' %}
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1458" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" alt="Living room with gold and white paint" width="1196" height="1782" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long does drywall repair take?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Most minor drywall repair jobs can be completed within a few hours. Larger drywall patching or ceiling repairs may take 1–2 days depending on drying time between coats.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Will the repair be visible?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    No. When done properly, drywall repair blends seamlessly into the surrounding surface. Our goal is to make the repair completely unnoticeable.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Will there be dust or mess?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We use controlled sanding and protective measures to minimize dust and keep your space clean throughout the process.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you repair ceilings as well?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes. We handle all types of ceiling repair, including popcorn ceiling and stipple texture matching.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you paint after the repair?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We can prepare the surface for painting or apply a fresh coat to ensure a consistent final finish.
+                </p>
+            </li>
+        </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--               Service Areas                  -->
+<!-- ============================================ -->
+
+<section id="location-map">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Drywall Repair Services Across Ottawa</h2>
+            <p class="cs-text">
+                We provide <strong>drywall repair services</strong> across Ottawa including <a href="/house-painters-kanata/">Kanata</a>, the Glebe, <a href="/house-painters-orleans/">Orléans</a>, and surrounding areas.
+            </p>
+        </div>
+        <div class="cs-layout">
+            <div class="cs-map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89674.93498566686!2d-75.69719724129688!3d45.421530451918025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1711810000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Ottawa, Ontario service area for drywall repair"></iframe>
+            </div>
+            <div class="cs-areas">
+                <h3 class="cs-areas-title">Drywall Repair Service Areas</h3>
+                <ul class="cs-area-group">
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Downtown Ottawa
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Orléans
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Nepean
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        The Glebe
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Centretown
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Riverside South
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Kanata
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Barrhaven
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Westboro
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Alta Vista
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Sandy Hill
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Vanier
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
