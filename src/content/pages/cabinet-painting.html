@@ -1,4 +1,507 @@
+---
+title: 'Cabinet Painting Ottawa - Professional Kitchen & Vanity Refinishing | Oasis Painting'
+description: 'Professional cabinet painting in Ottawa. Transform your kitchen cabinets and bathroom vanities with a smooth, durable finish. Free estimates available!'
+permalink: 'cabinet-painting-ottawa/'
+eleventyNavigation:
+    key: Cabinet Painting
+    order: 700
+    parent: Services
+---
 
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+    <link rel="stylesheet" href="/assets/css/badges.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
+    <link rel="stylesheet" href="/assets/css/cabinet-painting.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinet-kitchen.jpg" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <!-- JSON Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Ottawa Cabinet Painting Services",
+            "url": "https://oasispainting.ca/cabinet-painting-ottawa/",
+            "serviceType": "Cabinet Painting",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Oasis Painting",
+                "url": "https://oasispainting.ca/",
+                "telephone": "(613) 408-4432",
+                "image": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "17 Aberdeen St",
+                    "addressLocality": "Ottawa",
+                    "addressRegion": "ON",
+                    "postalCode": "K1S 3J3",
+                    "addressCountry": "CA"
+                }
+            },
+            "areaServed": {
+                "@type": "Place",
+                "name": "Ottawa, ON, Canada"
+            }
+        }
+    </script>
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "How long does cabinet painting take in Ottawa?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Most kitchen cabinet painting projects take 3-5 days depending on the number of cabinets and complexity. We work in stages so your kitchen stays functional throughout the process."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I need to empty my cabinets before painting?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We recommend clearing the contents of your cabinets before we begin. This protects your belongings and allows us to work efficiently. We'll let you know exactly what to prepare before our first visit."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Will my kitchen be usable during the process?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. We work in stages so you're never without access to your kitchen. Your countertops, sink, and appliances remain usable throughout the project."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does cabinet painting create strong odours?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We use low-VOC, premium cabinet-grade coatings that produce minimal odour. Proper ventilation during application keeps your home comfortable."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long before I can use my cabinets normally?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Light use is typically fine within a few days. Full curing takes approximately 2–3 weeks, during which we recommend gentle handling to ensure maximum durability."
+                    }
+                }
+            ]
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-219">
+    <div class="cs-container">
+        <h1 class="cs-title">Cabinet Painting Services in Ottawa</h1>
+        <p class="cs-text">
+            Professional cabinet painting that transforms your kitchen and bathroom cabinets with a smooth, durable factory-style finish.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Fast Turnaround
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/brush.svg" alt="" width="20" height="20" aria-hidden="true">
+                Long-Lasting Finish
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/map-pin.svg" alt="" width="20" height="20" aria-hidden="true">
+                Trusted Locally
+            </li>
+        </ul>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-intro.jpg" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-intro.jpg" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-intro.jpg" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-intro.jpg" | resize({ width: 2800, height: 983 }) | extend({ top: 250 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-intro.jpg" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-intro.jpg" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/cabinet-intro.jpg" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Professional cabinet painting in Ottawa kitchen" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+
+{% include 'components/badges.html' %}
+
+<!-- ============================================ -->
+<!--            What Results to Expect             -->
+<!-- ============================================ -->
+
+<section id="cabinet-results">
+    <div class="cs-container">
+        <h2 class="cs-title">What Results Can You Expect?</h2>
+        <p>
+            Looking for professional cabinet painting in Ottawa? <a href="/">Oasis Painting</a> specializes in transforming kitchen cabinets with a smooth, durable finish&mdash;without the cost and disruption of full replacement. We serve homeowners across Ottawa, including Kanata, Barrhaven, Orleans, and Westboro, delivering high-quality cabinet refinishing designed to last.
+        </p>
+        <ul class="cs-card-group">
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/shield-check.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Smooth, Even Finish</h3>
+                <p class="cs-item-text">Every surface &mdash; doors, drawers, and frames &mdash; receives a consistent, uniform coating with no brush marks or imperfections.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/eye.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Updated Modern Look</h3>
+                <p class="cs-item-text">Refresh the entire feel of your kitchen with a new colour, without changing your cabinet layout or hardware.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Professional-Grade Application</h3>
+                <p class="cs-item-text">Consistent colour coverage and precise edges throughout, matching the quality you'd expect from factory-finished cabinetry.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-kitchen.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-kitchen.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-kitchen.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-kitchen.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-kitchen.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-kitchen.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/cabinet-kitchen.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="White painted kitchen cabinets" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Why Cabinet Painting is the Smart Choice for Ottawa Homes</h2>
+            <p class="cs-text">
+                When your cabinets are structurally sound, cabinet painting offers a cost-effective, efficient alternative to replacement. If you're already updating your space, many homeowners pair cabinet refinishing with <a href="/interior-painting-ottawa/">interior painting</a> for a more complete refresh.
+            </p>
+            <p class="cs-text"><strong>Significant Cost Savings:</strong> Painting typically costs 30&ndash;50% less than full cabinet replacement, with repaints for most Ottawa kitchens falling between $3,000&ndash;$8,000 versus $15,000&ndash;$30,000+ for new cabinetry.</p>
+            <p class="cs-text"><strong>Minimal Disruption &amp; Quick Turnaround:</strong> Most projects complete within 3&ndash;5 days, allowing your family to return to normal quickly without the weeks-long upheaval of a remodel.</p>
+            <p class="cs-text"><strong>Durable, Factory-Quality Finish:</strong> We use premium-grade polyurethane and waterborne alkyd enamels like Sherwin-Williams Emerald Trim Enamel, ensuring a finish that withstands Ottawa's humidity and daily wear for 10+ years.</p>
+            <p class="cs-text"><strong>Eco-Friendly Renovation:</strong> Refinishing keeps perfectly good cabinet boxes out of landfills and uses low-VOC paints to protect your family and pets.</p>
+            <p class="cs-text"><strong>Increased Home Value:</strong> A refreshed kitchen is a proven way to boost your home's appeal in Ottawa's competitive real estate market.</p>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--         Common Concerns                       -->
+<!-- ============================================ -->
+
+<section id="cabinet-concerns">
+    <div class="cs-container">
+        <h2 class="cs-title">Common Concerns About Cabinet Painting</h2>
+        <ul class="cs-card-group">
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/home.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Will my kitchen be out of commission?</h3>
+                <p class="cs-item-text">Your kitchen stays functional throughout. We work in stages so you're never without access.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/shield-check.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Will it hold up to daily use?</h3>
+                <p class="cs-item-text">The coatings we use are formulated for high-traffic surfaces and resist chipping, scuffing, and moisture.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Will it actually look professional?</h3>
+                <p class="cs-item-text">Our application method produces a smooth, even surface &mdash; no brush marks, drips, or uneven coverage.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Will the process be messy?</h3>
+                <p class="cs-item-text">We protect all surrounding surfaces and keep the workspace clean and controlled throughout.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--          Our Cabinet Services                 -->
+<!-- ============================================ -->
+
+<section id="cabinet-services-heading">
+    <div class="cs-container">
+        <h2 class="cs-title">Our Cabinet Services</h2>
+    </div>
+</section>
+
+<section id="sbs-1095" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-projects.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-projects.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-projects.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-projects.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-projects.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-projects.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/cabinet-projects.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Navy blue painted kitchen cabinets" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h3 class="cs-title">Residential Kitchen Cabinet Painting</h3>
+            <p class="cs-text">
+                We handle all cabinet types &mdash; flat panels, shaker, raised panels, and glass-front doors. Whether you're updating builder-grade oak in Kanata, refinishing MDF in Barrhaven, or modernizing laminate surfaces in an Ottawa townhome, we tailor our approach to your specific cabinet material and condition.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="sbs-1095" class="reverse">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-vanity.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-vanity.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinet-vanity.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-vanity.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-vanity.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/cabinet-vanity.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/cabinet-vanity.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Painted bathroom vanity cabinet" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h3 class="cs-title">Bathroom Vanity Painting</h3>
+            <p class="cs-text">
+                Bathrooms require coatings designed for humid environments. We select products that resist moisture, prevent peeling, and hold up in high-humidity spaces &mdash; keeping your vanity looking fresh for years.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Comparison Table                 -->
+<!-- ============================================ -->
+
+<section id="cabinet-comparison">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Cabinet Painting vs Cabinet Replacement in Ottawa</h2>
+            <p class="cs-text">
+                Most homeowners choose cabinet painting to avoid the cost and disruption of full replacement.
+            </p>
+        </div>
+        <table class="cs-table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th><span class="cs-check">&#10003;</span> Painting</th>
+                    <th><span class="cs-x">&#10005;</span> Replacement</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cost</td>
+                    <td>$3,000&ndash;$8,000</td>
+                    <td>$15,000&ndash;$30,000+</td>
+                </tr>
+                <tr>
+                    <td>Timeline</td>
+                    <td>3&ndash;5 days</td>
+                    <td>Weeks to months</td>
+                </tr>
+                <tr>
+                    <td>Disruption</td>
+                    <td>Minimal &mdash; kitchen stays functional</td>
+                    <td>Demolition, construction, extended downtime</td>
+                </tr>
+                <tr>
+                    <td>Final Results</td>
+                    <td>Smooth, consistent finish</td>
+                    <td>Brand-new cabinets at much higher cost</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--          Popular Finishes                     -->
+<!-- ============================================ -->
+
+<section id="popular-finishes">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Popular Cabinet Finishes for Ottawa Homes</h2>
+            <p class="cs-text">
+                Choose the right colour to match your kitchen's style and your home's character.
+            </p>
+        </div>
+        <ul class="cs-finish-group">
+            <li class="cs-finish-card">
+                <div class="cs-finish-swatch" style="background: #fff; border: 1px solid #e0e0e0;"></div>
+                <h3 class="cs-finish-name">Classic White &ndash; Chantilly Lace (OC-65)</h3>
+                <p class="cs-finish-desc">Bright and timeless &mdash; opens up smaller kitchens and pairs with any countertop.</p>
+            </li>
+            <li class="cs-finish-card">
+                <div class="cs-finish-swatch" style="background: #b3b5b8;"></div>
+                <h3 class="cs-finish-name">Soft Gray &ndash; Agreeable Gray (SW 7029)</h3>
+                <p class="cs-finish-desc">A modern neutral that complements most countertops and flooring.</p>
+            </li>
+            <li class="cs-finish-card">
+                <div class="cs-finish-swatch" style="background: #2b3a67;"></div>
+                <h3 class="cs-finish-name">Navy Blue &ndash; In the Navy (SW 9178)</h3>
+                <p class="cs-finish-desc">Bold and contemporary &mdash; a timeless choice that adds depth and sophistication to any kitchen.</p>
+            </li>
+            <li class="cs-finish-card">
+                <div class="cs-finish-swatch" style="background: #8a9a6b;"></div>
+                <h3 class="cs-finish-name">Sage Green &ndash; Evergreen Fog (SW 9130)</h3>
+                <p class="cs-finish-desc">Warm and calming, inspired by natural tones.</p>
+            </li>
+            <li class="cs-finish-card">
+                <div class="cs-finish-swatch" style="background: #4a4e50;"></div>
+                <h3 class="cs-finish-name">Charcoal &ndash; Iron Ore (SW 7069)</h3>
+                <p class="cs-finish-desc">Elegant and dramatic for upscale, modern kitchens.</p>
+            </li>
+            <li class="cs-finish-card">
+                <div class="cs-finish-swatch" style="background: linear-gradient(135deg, #e8a0b4 25%, #a8d8a0 50%, #a0c4e8 75%);"></div>
+                <h3 class="cs-finish-name">Custom Colour Match</h3>
+                <p class="cs-finish-desc">We can match any sample to your unique vision.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--        Cabinet Painting Process               -->
+<!-- ============================================ -->
+
+<section id="process-steps">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our <span class="cs-accent">Cabinet Painting Process</span></h2>
+        </div>
+        <ol class="cs-step-group">
+            <li class="cs-step">
+                <span class="cs-number">1</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clipboard-check.svg" loading="lazy" decoding="async" alt="assessment icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">In-Home Assessment &amp; Quote</h3>
+                    <p class="cs-step-text">We evaluate your cabinet material, condition, and any needed repairs. You receive a detailed, transparent quote with timeline and material recommendations.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">2</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clean.svg" loading="lazy" decoding="async" alt="preparation icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Preparation &amp; Setup</h3>
+                    <p class="cs-step-text">We remove and label all doors, drawers, and hardware, then deep clean, sand, fill imperfections, apply bonding primer, and protect surrounding areas.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">3</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/palette.svg" loading="lazy" decoding="async" alt="painting icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Professional Paint Application</h3>
+                    <p class="cs-step-text">Multiple thin coats of premium cabinet-grade coatings are applied with light sanding between layers for proper adhesion and a smooth, uniform surface.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">4</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="curing icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Drying &amp; Curing</h3>
+                    <p class="cs-step-text">We allow adequate drying time between coats, working within optimal conditions. Light use is typically fine within a few days; full curing takes approximately 2&ndash;3 weeks.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">5</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/zoom-check.svg" loading="lazy" decoding="async" alt="inspection icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Final Inspection &amp; Cleanup</h3>
+                    <p class="cs-step-text">Every surface undergoes a thorough quality check. We touch up any imperfections, reinstall hardware with precise alignment, and leave your kitchen clean and ready for use.</p>
+                </div>
+            </li>
+        </ol>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--     Why Homeowners Choose Cabinet Painting    -->
+<!-- ============================================ -->
+
+<section id="cabinet-advantages">
+    <div class="cs-container">
+        <h2 class="cs-title">Why Homeowners Choose Cabinet Painting Instead of Replacing</h2>
+        <ul class="cs-card-group">
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/building.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Keep Your Existing Layout</h3>
+                <p class="cs-item-text">Your cabinet boxes, countertops, and plumbing stay exactly where they are &mdash; no reconfiguration needed.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/home.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Avoid Full Renovation Disruption</h3>
+                <p class="cs-item-text">No demolition, no construction dust, no weeks without a functional kitchen.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Achieve an Updated Look Efficiently</h3>
+                <p class="cs-item-text">A new colour and finish can modernize your entire kitchen in a matter of days.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/competitive-pricing.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Better Short-Term ROI</h3>
+                <p class="cs-item-text">Spend less upfront while still increasing your home's visual appeal and perceived value.</p>
+            </li>
+        </ul>
+    </div>
+</section>
 
 <!-- ============================================ -->
 <!--        Good Candidate Section                 -->
@@ -26,106 +529,164 @@
         </div>
         <p class="cs-note"><em>We'll tell you honestly if painting isn't the right option for your cabinets.</em></p>
         <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
-        <p class="cs-subtext">Not sure if your cabinets qualify? We'll assess them for free.</p>
     </div>
 </section>
 
+{% include 'components/why-choose-us.html' %}
+
+{% include 'components/reviews.html' %}
+
 <!-- ============================================ -->
-<!--        Comparison Table                       -->
+<!--                     FAQ                      -->
 <!-- ============================================ -->
 
-<section id="drywall-comparison">
+<section id="faq-1458">
     <div class="cs-container">
-        <div class="cs-content">
-            <h2 class="cs-title">Professional Drywall Repair vs DIY in Ottawa</h2>
-            <p class="cs-text">
-                Most homeowners choose professional repair to avoid the frustration and visible results of a DIY attempt.
-            </p>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" alt="Living room with gold and white paint" width="1196" height="1782" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
         </div>
-        <table class="cs-table">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th><span class="cs-check">&#10003;</span> Professional Repair</th>
-                    <th><span class="cs-x">&#10005;</span> DIY Repair</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Cost</td>
-                    <td>$120–$500+</td>
-                    <td>$30–$100 in materials + your time</td>
-                </tr>
-                <tr>
-                    <td>Timeline</td>
-                    <td>Same day to 2 days</td>
-                    <td>Multiple weekends</td>
-                </tr>
-                <tr>
-                    <td>Finish Quality</td>
-                    <td>Smooth, invisible repair</td>
-                    <td>Visible patches, uneven texture</td>
-                </tr>
-                <tr>
-                    <td>Texture Matching</td>
-                    <td>Exact match to existing surface</td>
-                    <td>Difficult without experience</td>
-                </tr>
-                <tr>
-                    <td>Final Results</td>
-                    <td>Paint-ready, seamless finish</td>
-                    <td>Often requires a redo</td>
-                </tr>
-            </tbody>
-        </table>
-        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
-        <p class="cs-subtext">Find out how much you can save. Free estimates available.</p>
-    </div>
-</section>
-
-<!-- ============================================ -->
-<!--          Popular Finishes                     -->
-<!-- ============================================ -->
-
-<section id="popular-finishes">
-    <div class="cs-container">
         <div class="cs-content">
-            <h2 class="cs-title">Popular Cabinet Finishes for Ottawa Homes</h2>
-            <p class="cs-text">
-                Choose the right colour to match your kitchen's style and your home's character.
-            </p>
-        </div>
-        <ul class="cs-finish-group">
-            <li class="cs-finish-card">
-                <div class="cs-finish-swatch" style="background: #e8e4dd;"></div>
-                <h3 class="cs-finish-name">Classic White &ndash; Chantilly Lace (OC-65)</h3>
-                <p class="cs-finish-desc">Bright and timeless &mdash; opens up smaller kitchens and pairs with any countertop.</p>
+            <span class="cs-topper">Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long does cabinet painting take in Ottawa?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Most kitchens with 10-15 doors and 6-8 drawers take 3-5 days. Larger kitchens or those needing repairs may take 7-10 days. We provide a clear timeline in your free quote.
+                </p>
             </li>
-            <li class="cs-finish-card">
-                <div class="cs-finish-swatch" style="background: #b3b5b8;"></div>
-                <h3 class="cs-finish-name">Soft Gray &ndash; Agreeable Gray (SW 7029)</h3>
-                <p class="cs-finish-desc">A modern neutral that complements most countertops and flooring.</p>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do I need to empty my cabinets before painting?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes, we ask that you clear your cabinets before work begins to protect your belongings and allow easy access for removal and refinishing.
+                </p>
             </li>
-            <li class="cs-finish-card">
-                <div class="cs-finish-swatch" style="background: #2b3a67;"></div>
-                <h3 class="cs-finish-name">Navy Blue &ndash; In the Navy (SW 9178)</h3>
-                <p class="cs-finish-desc">Bold and contemporary &mdash; a timeless choice that adds depth and sophistication to any kitchen.</p>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Will my kitchen be usable during the process?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes, since we remove and refinish doors and drawers off-site or in controlled areas, your kitchen remains mostly functional throughout the project.
+                </p>
             </li>
-            <li class="cs-finish-card">
-                <div class="cs-finish-swatch" style="background: #8a9a6b;"></div>
-                <h3 class="cs-finish-name">Sage Green &ndash; Evergreen Fog (SW 9130)</h3>
-                <p class="cs-finish-desc">Warm and calming, inspired by natural tones.</p>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Does cabinet painting create strong odours?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    We use low-VOC, waterborne alkyd paints that produce minimal odor, making the process comfortable for your family and pets.
+                </p>
             </li>
-            <li class="cs-finish-card">
-                <div class="cs-finish-swatch" style="background: #4a4e50;"></div>
-                <h3 class="cs-finish-name">Charcoal &ndash; Iron Ore (SW 7069)</h3>
-                <p class="cs-finish-desc">Elegant and dramatic for upscale, modern kitchens.</p>
-            </li>
-            <li class="cs-finish-card">
-                <div class="cs-finish-swatch" style="background: linear-gradient(135deg, #e8a0b4 25%, #a8d8a0 50%, #a0c4e8 75%); border: 2px dashed #999;"></div>
-                <h3 class="cs-finish-name">Custom Colour Match</h3>
-                <p class="cs-finish-desc">We can match any sample to your unique vision.</p>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long before I can use my cabinets normally?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    While cabinets are usable once reinstalled, full curing can take up to 2-3 weeks for maximum hardness. We provide care instructions to help maintain your finish during this time.
+                </p>
             </li>
         </ul>
+        </div>
     </div>
 </section>
+
+<!-- ============================================ -->
+<!--               Service Areas                  -->
+<!-- ============================================ -->
+
+<section id="location-map">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Proudly Serving Ottawa and Surrounding Areas</h2>
+            <p class="cs-text">
+                From urban kitchens in the Glebe and Westboro to family homes in Kanata, Orleans, and Barrhaven &mdash; we bring the same level of care and precision to every cabinet painting project across the region. Our team also serves as <a href="/house-painters-kanata/">house painters in Kanata</a>, <a href="/house-painters-kemptville/">house painters in Kemptville</a>, and <a href="/house-painters-orleans/">house painters in Orl&eacute;ans</a>.
+            </p>
+        </div>
+        <div class="cs-layout">
+            <div class="cs-map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89674.93498566686!2d-75.69719724129688!3d45.421530451918025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1711810000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Ottawa, Ontario service area for cabinet painting"></iframe>
+            </div>
+            <div class="cs-areas">
+                <h3 class="cs-areas-title">Cabinet Painting Service Areas</h3>
+                <ul class="cs-area-group">
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Ottawa
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Orleans
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Nepean
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        The Glebe
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Stittsville
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Riverside South
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Kanata
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Barrhaven
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Westboro
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Alta Vista
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Manotick
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Kemptville
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
