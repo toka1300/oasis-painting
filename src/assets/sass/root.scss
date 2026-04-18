@@ -1786,6 +1786,30 @@
 
         /* Navigation Links */
 
+        .cs-services-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+
+            > .cs-header {
+                margin-bottom: calc(8 / 16 * 1rem);
+            }
+
+            .cs-services-columns {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                gap: clamp(1.5rem, 4vw, 3rem);
+            }
+
+            .cs-nav {
+                width: auto;
+                max-width: none;
+            }
+        }
+
         .cs-nav {
             width: 45%;
             max-width: calc(180 / 16 * 1rem);
@@ -1963,6 +1987,16 @@
             flex-wrap: nowrap;
             column-gap: calc(88 / 16 * 1rem);
             row-gap: calc(40 / 16 * 1rem);
+        }
+
+        .cs-services-group {
+            width: auto;
+            align-items: center;
+
+            .cs-services-columns {
+                justify-content: center;
+                gap: clamp(1.5rem, 3vw, 3rem);
+            }
         }
 
         .cs-nav {

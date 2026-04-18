@@ -1,10 +1,10 @@
 /*-- -------------------------- -->
-<---  Why Choose Us Override      -->
+<---  Section Background Overrides -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #why-choose-12,
-  #location-map {
+  #location-map,
+  #process-steps {
     background: #fff;
   }
 }
@@ -110,7 +110,6 @@
 @media only screen and (min-width: 0rem) {
   #condo-concerns {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
   }
   #condo-concerns .cs-container {
     width: 100%;
@@ -204,6 +203,7 @@
 @media only screen and (min-width: 0rem) {
   #condo-services {
     padding: var(--sectionPadding);
+    background-color: #f7f7f7;
   }
   #condo-services .cs-container {
     width: 100%;
@@ -316,7 +316,7 @@
 @media only screen and (min-width: 0rem) {
   #condo-clients {
     padding: var(--sectionPadding);
-    background-color: white;
+    background-color: #f7f7f7;
   }
   #condo-clients .cs-container {
     width: 100%;
@@ -404,7 +404,6 @@
 @media only screen and (min-width: 0rem) {
   #condo-costs {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
   }
   #condo-costs .cs-container {
     width: 100%;
@@ -553,5 +552,3 @@
     flex: 0 0 26.25rem;
   }
 }
-
-/*# sourceMappingURL=condo-painting.css.map */

@@ -10,6 +10,9 @@
   #reviews-864 {
     background: #f7f7f7;
   }
+  #faq-1458 {
+    background: #fff;
+  }
   #location-map {
     background: #f7f7f7;
   }
@@ -268,32 +271,6 @@
     font-size: 0.875rem;
     color: var(--bodyTextColor);
     margin: 0.5rem 0 0;
-  }
-}
-/*-- -------------------------- -->
-<---  Cabinet Services Heading   -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #cabinet-services-heading {
-    padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem 0;
-    background: #f7f7f7;
-  }
-  #cabinet-services-heading .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  #cabinet-services-heading .cs-title {
-    font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    font-weight: 900;
-    line-height: 1.2em;
-    margin: 0;
-    color: var(--headerColor);
   }
 }
 /*-- -------------------------- -->

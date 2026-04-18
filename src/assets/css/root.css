@@ -1488,6 +1488,26 @@
   #cs-footer-1292 .cs-link:hover {
     color: var(--primary);
   }
+  #cs-footer-1292 .cs-services-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  #cs-footer-1292 .cs-services-group > .cs-header {
+    margin-bottom: 0.5rem;
+  }
+  #cs-footer-1292 .cs-services-group .cs-services-columns {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+  #cs-footer-1292 .cs-services-group .cs-nav {
+    width: auto;
+    max-width: none;
+  }
   #cs-footer-1292 .cs-nav {
     width: 45%;
     max-width: 11.25rem;
@@ -1646,6 +1666,14 @@
     flex-wrap: nowrap;
     column-gap: 5.5rem;
     row-gap: 2.5rem;
+  }
+  #cs-footer-1292 .cs-services-group {
+    width: auto;
+    align-items: center;
+  }
+  #cs-footer-1292 .cs-services-group .cs-services-columns {
+    justify-content: center;
+    gap: clamp(1.5rem, 3vw, 3rem);
   }
   #cs-footer-1292 .cs-nav {
     width: auto;

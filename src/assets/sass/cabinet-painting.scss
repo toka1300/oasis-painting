@@ -12,6 +12,10 @@
         background: #f7f7f7;
     }
 
+    #faq-1458 {
+        background: #fff;
+    }
+
     #location-map {
         background: #f7f7f7;
     }
@@ -319,35 +323,6 @@
     }
 }
 
-/*-- -------------------------- -->
-<---  Cabinet Services Heading   -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #cabinet-services-heading {
-        padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem 0;
-        background: #f7f7f7;
-
-        .cs-container {
-            width: 100%;
-            max-width: calc(1280 / 16 * 1rem);
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .cs-title {
-            font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
-            font-weight: 900;
-            line-height: 1.2em;
-            margin: 0;
-            color: var(--headerColor);
-        }
-    }
-}
 
 /*-- -------------------------- -->
 <---    Popular Finishes         -->

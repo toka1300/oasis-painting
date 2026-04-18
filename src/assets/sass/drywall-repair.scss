@@ -625,7 +625,6 @@
         .cs-factors {
             width: 100%;
             max-width: calc(700 / 16 * 1rem);
-            text-align: center;
         }
 
         .cs-factors-title {
@@ -633,6 +632,7 @@
             font-weight: 700;
             color: var(--headerColor);
             margin: 0 0 calc(16 / 16 * 1rem);
+            text-align: center;
         }
 
         .cs-factors-list {
@@ -641,7 +641,7 @@
             padding: 0;
             display: grid;
             grid-template-columns: 1fr;
-            gap: calc(8 / 16 * 1rem) calc(24 / 16 * 1rem);
+            gap: calc(8 / 16 * 1rem);
         }
 
         .cs-factor {
@@ -649,7 +649,7 @@
             line-height: 1.5em;
             color: var(--bodyTextColor);
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: calc(8 / 16 * 1rem);
 
             &::before {
@@ -657,6 +657,7 @@
                 flex: none;
                 width: calc(6 / 16 * 1rem);
                 height: calc(6 / 16 * 1rem);
+                margin-top: calc(8 / 16 * 1rem);
                 background: var(--primary);
                 border-radius: 50%;
             }
@@ -688,6 +689,9 @@
 
         .cs-factors-list {
             grid-template-columns: 1fr 1fr;
+            gap: calc(10 / 16 * 1rem) calc(48 / 16 * 1rem);
+            max-width: calc(600 / 16 * 1rem);
+            margin: 0 auto;
         }
     }
 }
