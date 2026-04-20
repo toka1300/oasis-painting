@@ -1,0 +1,662 @@
+/*-- -------------------------- -->
+<---  Section Background Overrides -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #location-map,
+    #process-steps {
+        background: #fff;
+    }
+}
+
+/*-- -------------------------- -->
+<---       Condo Results         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #condo-results {
+        padding: var(--sectionPadding);
+        padding-top: 4rem;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(2rem, 4vw, 3rem);
+        }
+
+        .cs-title {
+            font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: center;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-text {
+            font-size: var(--bodyFontSize);
+            line-height: 1.7em;
+            color: var(--bodyTextColor);
+            margin: calc(-8 / 16 * 1rem) 0 0;
+            text-align: center;
+            max-width: calc(900 / 16 * 1rem);
+
+            a {
+                color: var(--primary);
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: calc(16 / 16 * 1rem);
+        }
+
+        .cs-card {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: calc(12 / 16 * 1rem);
+            padding: clamp(1.5rem, 3vw, 2rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(12 / 16 * 1rem);
+            transition: box-shadow 0.3s;
+
+            &:hover {
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            }
+        }
+
+        .cs-card-icon-wrap {
+            width: calc(48 / 16 * 1rem);
+            height: calc(48 / 16 * 1rem);
+            background: #fef7e8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cs-card-icon {
+            width: calc(24 / 16 * 1rem);
+            height: calc(24 / 16 * 1rem);
+        }
+
+        .cs-h3 {
+            font-size: calc(18 / 16 * 1rem);
+            font-weight: 700;
+            line-height: 1.3em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-item-text {
+            font-size: calc(14 / 16 * 1rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+    #condo-results {
+        .cs-card-group {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---     Condo Concerns          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #condo-concerns {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(2rem, 4vw, 3rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-title {
+            font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: calc(16 / 16 * 1rem);
+        }
+
+        .cs-card {
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: calc(12 / 16 * 1rem);
+            padding: clamp(1.5rem, 3vw, 2rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(12 / 16 * 1rem);
+            transition: box-shadow 0.3s;
+
+            &:hover {
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            }
+        }
+
+        .cs-card-icon-wrap {
+            width: calc(48 / 16 * 1rem);
+            height: calc(48 / 16 * 1rem);
+            background: #fef7e8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cs-card-icon {
+            width: calc(24 / 16 * 1rem);
+            height: calc(24 / 16 * 1rem);
+        }
+
+        .cs-card-title {
+            font-size: calc(16 / 16 * 1rem);
+            font-weight: 700;
+            line-height: 1.3em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-card-text {
+            font-size: calc(14 / 16 * 1rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+    }
+}
+
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+    #condo-concerns {
+        .cs-card-group {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #condo-concerns {
+        .cs-card-group {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---     Condo Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #condo-services {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            max-width: calc(800 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-title {
+            font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            margin: 0 0 calc(16 / 16 * 1rem);
+            color: var(--headerColor);
+        }
+
+        .cs-text {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            margin: 0;
+        }
+
+        .cs-service-list {
+            width: 100%;
+            max-width: calc(900 / 16 * 1rem);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: calc(12 / 16 * 1rem);
+        }
+
+        .cs-service-item {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            background: #fff;
+            border: 1px solid #e8e8e8;
+            border-radius: calc(8 / 16 * 1rem);
+            padding: calc(16 / 16 * 1rem) calc(20 / 16 * 1rem);
+            display: flex;
+            align-items: center;
+            gap: calc(12 / 16 * 1rem);
+            transition: box-shadow 0.3s;
+
+            &:hover {
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            }
+
+            img {
+                width: calc(20 / 16 * 1rem);
+                height: calc(20 / 16 * 1rem);
+                flex: none;
+            }
+        }
+
+        .cs-closing {
+            text-align: center;
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            max-width: calc(700 / 16 * 1rem);
+            margin: 0;
+
+            a {
+                color: var(--primary);
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+
+        .cs-subtext {
+            font-size: calc(14 / 16 * 1rem);
+            color: var(--bodyTextColor);
+            margin: calc(8 / 16 * 1rem) 0 0;
+        }
+    }
+}
+
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+    #condo-services {
+        .cs-service-list {
+            grid-template-columns: 1fr 1fr;
+            gap: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #condo-services {
+        .cs-service-list {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---  Process Steps Override      -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #process-steps {
+        .cs-subtext {
+            font-size: calc(14 / 16 * 1rem);
+            color: var(--bodyTextColor);
+            margin: calc(8 / 16 * 1rem) 0 0;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---     Condo Clients           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #condo-clients {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(2rem, 4vw, 3rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cs-title {
+            font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-client-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        .cs-client {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: calc(8 / 16 * 1rem);
+        }
+
+        .cs-client-icon-wrap {
+            width: calc(56 / 16 * 1rem);
+            height: calc(56 / 16 * 1rem);
+            background: #fef7e8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cs-client-icon {
+            width: calc(28 / 16 * 1rem);
+            height: calc(28 / 16 * 1rem);
+        }
+
+        .cs-client-title {
+            font-size: calc(16 / 16 * 1rem);
+            font-weight: 700;
+            line-height: 1.3em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-client-text {
+            font-size: calc(14 / 16 * 1rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+            max-width: calc(200 / 16 * 1rem);
+        }
+    }
+}
+
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+    #condo-clients {
+        .cs-client-group {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #condo-clients {
+        .cs-client-group {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---       Condo Costs           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #condo-costs {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(2rem, 4vw, 3rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            max-width: calc(800 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: calc(16 / 16 * 1rem);
+        }
+
+        .cs-title {
+            font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-text {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            margin: 0;
+        }
+
+        .cs-subtext {
+            font-size: calc(14 / 16 * 1rem);
+            color: var(--bodyTextColor);
+            margin: calc(8 / 16 * 1rem) 0 0;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---  Check SVG List Override     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-1095 .cs-check-list.cs-list,
+    .cs-check-list.cs-list {
+        overflow: visible;
+
+        .cs-li {
+            &:before {
+                display: none;
+            }
+
+            img {
+                width: calc(20 / 16 * 1rem);
+                height: calc(20 / 16 * 1rem);
+                flex: none;
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---  Location Map Override       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #location-map {
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .cs-title {
+                margin-bottom: calc(16 / 16 * 1rem);
+            }
+
+            .cs-text {
+                margin: 0;
+
+                a {
+                    color: var(--primary);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .cs-layout {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: clamp(2rem, 4vw, 3rem);
+        }
+
+        .cs-map-wrapper {
+            width: 100%;
+            border-radius: calc(8 / 16 * 1rem);
+            overflow: hidden;
+
+            iframe {
+                width: 100%;
+                height: clamp(16rem, 40vw, 28rem);
+                display: block;
+            }
+        }
+
+        .cs-areas {
+            width: 100%;
+        }
+
+        .cs-areas-title {
+            font-size: calc(20 / 16 * 1rem);
+            font-weight: 700;
+            line-height: 1.3em;
+            margin: 0 0 calc(20 / 16 * 1rem);
+            color: var(--headerColor);
+        }
+
+        .cs-area-group {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: calc(12 / 16 * 1rem) clamp(2rem, 5vw, 4rem);
+        }
+
+        .cs-area {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            display: flex;
+            align-items: center;
+            gap: calc(8 / 16 * 1rem);
+        }
+
+        .cs-area-icon {
+            width: calc(16 / 16 * 1rem);
+            height: calc(16 / 16 * 1rem);
+            flex: none;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #location-map {
+        .cs-container {
+            flex-direction: column;
+        }
+
+        .cs-layout {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .cs-map-wrapper {
+            flex: 1;
+
+            iframe {
+                height: 100%;
+                min-height: calc(380 / 16 * 1rem);
+            }
+        }
+
+        .cs-areas {
+            flex: 0 0 calc(420 / 16 * 1rem);
+        }
+    }
+}

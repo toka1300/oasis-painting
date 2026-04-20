@@ -1,0 +1,733 @@
+---
+title: 'Condo Painting Ottawa | Clean, Fast Interior Painters | Oasis Painting'
+description: 'Condo painting in Ottawa done right—clean, efficient, and stress-free. Ideal for move-ins or rentals. Trusted painters, free quotes.'
+permalink: 'interior-painting-ottawa/condos/'
+eleventyNavigation:
+    key: Condo Painting
+    order: 300
+    parent: Interior Painting
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+    <link rel="stylesheet" href="/assets/css/badges.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
+    <link rel="stylesheet" href="/assets/css/condo-painting.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/condo-hero.jpg" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://oasispainting.ca/#business",
+          "name": "Oasis Painting",
+          "url": "https://oasispainting.ca/",
+          "telephone": "+1-613-408-4432",
+          "description": "Oasis Painting provides professional condo painting, staircase painting, cabinet painting, drywall repair, and interior painting services in Ottawa and surrounding areas.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17 Aberdeen St",
+            "addressLocality": "Ottawa",
+            "addressRegion": "ON",
+            "postalCode": "K1S 3J3",
+            "addressCountry": "CA"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Ottawa" },
+            { "@type": "City", "name": "Nepean" },
+            { "@type": "City", "name": "Kanata" },
+            { "@type": "City", "name": "Stittsville" },
+            { "@type": "City", "name": "Orléans" },
+            { "@type": "City", "name": "Barrhaven" },
+            { "@type": "City", "name": "Westboro" },
+            { "@type": "City", "name": "Manotick" },
+            { "@type": "City", "name": "Alta Vista" },
+            { "@type": "City", "name": "The Glebe" },
+            { "@type": "City", "name": "Kemptville" }
+          ],
+          "priceRange": "$$"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/condo-painting/#service",
+          "name": "Condo Painting Services in Ottawa",
+          "serviceType": "Condo Painting",
+          "url": "https://oasispainting.ca/interior-painting-ottawa/condo-painting/",
+          "description": "Professional condo painting services in Ottawa for walls, ceilings, trim, doors, and other interior surfaces, delivered with clean prep, efficient scheduling, and a smooth, durable finish.",
+          "provider": {
+            "@id": "https://oasispainting.ca/#business"
+          },
+          "areaServed": {
+            "@type": "Place",
+            "name": "Ottawa, Ontario"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://oasispainting.ca/interior-painting-ottawa/condo-painting/",
+            "priceCurrency": "CAD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/condo-painting/#webpage",
+          "url": "https://oasispainting.ca/interior-painting-ottawa/condo-painting/",
+          "name": "Condo Painting Services in Ottawa",
+          "description": "Professional condo painting services in Ottawa for walls, ceilings, trim, and doors with clean, efficient project delivery.",
+          "about": {
+            "@id": "https://oasispainting.ca/interior-painting-ottawa/condo-painting/#service"
+          },
+          "isPartOf": {
+            "@id": "https://oasispainting.ca/#website"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://oasispainting.ca/#website",
+          "url": "https://oasispainting.ca/",
+          "name": "Oasis Painting"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/condo-painting/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is included in condo painting services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Condo painting services can include walls, ceilings, trim, doors, baseboards, and other interior surfaces depending on the scope of your project."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you work around condo building rules and schedules?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we coordinate work to align with condo building requirements, including permitted work hours, elevator bookings, and access procedures where needed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does condo painting take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most condo painting projects take 1 to 3 days depending on the size of the unit, the number of rooms, the amount of prep work required, and drying time between coats."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to move furniture before condo painting begins?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We recommend moving small valuables and personal items in advance. Larger furniture can often be shifted and protected on-site as part of the preparation process."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you help refresh a condo before selling or renting it out?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, condo painting is a common way to refresh a unit before listing it for sale or preparing it for new tenants, helping the space look clean, updated, and move-in ready."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/condo-painting/#breadcrumbs",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://oasispainting.ca/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Interior Painting",
+              "item": "https://oasispainting.ca/interior-painting-ottawa/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Condo Painting",
+              "item": "https://oasispainting.ca/interior-painting-ottawa/condo-painting/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-219">
+    <div class="cs-container">
+        <h1 class="cs-title">Condo &amp; Apartment Painting Services in Ottawa</h1>
+        <p class="cs-text">
+            Professional interior painting for condos and apartments&mdash;fast, clean, and built around tight timelines.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Fast Turnaround
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/brush.svg" alt="" width="20" height="20" aria-hidden="true">
+                Clean, Low-Disruption Process
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/door-enter.svg" alt="" width="20" height="20" aria-hidden="true">
+                Ideal for Tenant Turnover
+            </li>
+        </ul>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-hero.jpg" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-hero.jpg" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-hero.jpg" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-hero.jpg" | resize({ width: 2800, height: 983 }) | extend({ top: 250 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-hero.jpg" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-hero.jpg" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/condo-hero.jpg" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Professional condo painting in Ottawa" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+
+{% include 'components/badges.html' %}
+
+<!-- ============================================ -->
+<!--            What Results to Expect             -->
+<!-- ============================================ -->
+
+<section id="condo-results">
+    <div class="cs-container">
+        <h2 class="cs-title">What Results Can You Expect?</h2>
+        <p class="cs-text">
+            Looking for professional condo or apartment painting in Ottawa? <a href="/">Oasis Painting</a> delivers efficient, high-quality <a href="/interior-painting-ottawa/">interior painting services</a> designed specifically for smaller spaces, shared buildings, and tight timelines. We work with condo owners, landlords, and property managers across Ottawa to complete projects quickly and professionally.
+        </p>
+        <ul class="cs-card-group">
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Fast, Efficient Completion</h3>
+                <p class="cs-item-text">Most condo painting projects are completed in just a few days.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Clean, Professional Finish</h3>
+                <p class="cs-item-text">Smooth, consistent coverage with sharp edges and clean lines.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/shield-check.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Minimal Disruption</h3>
+                <p class="cs-item-text">Designed to work within building rules and shared environments.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-intro.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-intro.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-intro.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-intro.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-intro.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-intro.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/condo-intro.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Professional condo painting" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Painting Solutions Built for Condos &amp; Apartments</h2>
+            <p class="cs-text">
+                Painting a condo or apartment isn't the same as a typical house painting project. You're working with smaller, more visible spaces, shared walls and neighboring units, building rules and scheduling constraints, and limited time between tenants or move-ins.
+            </p>
+            <p class="cs-text">
+                We've painted everything from compact downtown studios to full floors of rental units near Carleton University&mdash;no two projects are exactly the same.
+            </p>
+            <p class="cs-text">
+                We know condo timelines can be tight&mdash;that's why we arrive on schedule, protect your space, and complete every painting project efficiently.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--          Why Professional Matters            -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="reverse">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-why-professional.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-why-professional.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-why-professional.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-why-professional.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-why-professional.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-why-professional.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/condo-why-professional.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Why professional condo painting matters" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Why Professional Condo Painting Matters</h2>
+            <p class="cs-text">
+                In smaller living spaces, details stand out more. Uneven coverage, visible roller marks, or messy edges are much harder to ignore in a condo or apartment setting. Professional painters understand how to work within tight spaces while maintaining clean lines and consistent finishes.
+            </p>
+            <ul class="cs-list cs-check-list">
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Clean, sharp lines in tight spaces</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Even, consistent coverage across all surfaces</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Proper preparation for long-lasting durability</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Minimal disruption to neighbours and shared spaces</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">A polished, move-in ready finish</li>
+            </ul>
+            <p class="cs-text">
+                For landlords and property managers, this often means faster turnovers and better presentation to new tenants.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--       Condo Turnover Painting                -->
+<!-- ============================================ -->
+
+<section id="sbs-1095" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-turnover.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-turnover.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/condo-turnover.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-turnover.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-turnover.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/condo-turnover.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/condo-turnover.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Condo turnover painting" width="1082" height="1216" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title">Condo &amp; Apartment Painting for Turnovers</h2>
+            <p class="cs-text">
+                For landlords and property managers, repainting between tenants is one of the most effective ways to maintain property value and keep units competitive.
+            </p>
+            <ul class="cs-list cs-check-list">
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Repaint units quickly between tenants</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Touch up high-traffic areas</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Ensure units are move-in ready</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Maintain consistency across multiple units</li>
+            </ul>
+            <p class="cs-text">
+                A fresh coat of paint can significantly improve how a space shows&mdash;helping attract tenants faster and maintain long-term value.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--         Common Concerns About Condo          -->
+<!-- ============================================ -->
+
+<section id="condo-concerns">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Common Concerns About Condo Painting</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/volume.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-card-title">Will painting disrupt neighbours?</h3>
+                <p class="cs-card-text">We work cleanly and respect building rules and schedules.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/clock.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-card-title">Can you work within tight timelines?</h3>
+                <p class="cs-card-text">Yes, we specialize in fast turnaround projects.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/home.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-card-title">Do you handle occupied units?</h3>
+                <p class="cs-card-text">Yes, we minimize disruption and maintain a clean workspace.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/building.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-card-title">Can you paint multiple units?</h3>
+                <p class="cs-card-text">Yes, we handle multi-unit and turnover projects efficiently.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--       Our Condo Painting Services            -->
+<!-- ============================================ -->
+
+<section id="condo-services">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Condo &amp; Apartment Painting Services</h2>
+            <p class="cs-text">
+                Our condo and apartment painting services are part of our broader residential painting expertise, tailored specifically for smaller spaces and shared living environments.
+            </p>
+        </div>
+        <ul class="cs-service-list">
+            <li class="cs-service-item">
+                <img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Full interior painting (walls, ceilings, trim)
+            </li>
+            <li class="cs-service-item">
+                <img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Apartment painting between tenants
+            </li>
+            <li class="cs-service-item">
+                <img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Touch-ups and partial repaints
+            </li>
+            <li class="cs-service-item">
+                <img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Feature walls and colour updates
+            </li>
+            <li class="cs-service-item">
+                <img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Ceiling repainting and minor drywall repair
+            </li>
+            <li class="cs-service-item">
+                <img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Surface preparation and light drywall patching
+            </li>
+        </ul>
+        <p class="cs-closing">
+            Whether it's a fresh coat to modernize a space or a quick refresh before listing or renting, we deliver high-quality painting services with consistent, professional results. Every painting project is completed with careful preparation and attention to detail to ensure a smooth, long-lasting finish.
+        </p>
+        <p class="cs-closing">
+            Learn more about our full range of <a href="/interior-painting-ottawa/">interior painting services in Ottawa</a>.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--      Condo Painting Process                  -->
+<!-- ============================================ -->
+
+<section id="process-steps">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Our Condo &amp; Apartment <span class="cs-accent">Painting Process</span></h2>
+        </div>
+        <ol class="cs-step-group">
+            <li class="cs-step">
+                <span class="cs-number">1</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clipboard-check.svg" loading="lazy" decoding="async" alt="preparation icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Thorough Preparation</h3>
+                    <p class="cs-step-text">We protect your space, repair minor imperfections, and prepare all surfaces to ensure proper adhesion.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">2</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/palette.svg" loading="lazy" decoding="async" alt="materials icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Premium Materials</h3>
+                    <p class="cs-step-text">We use high-quality interior painting products selected for durability and performance in condo and apartment environments.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">3</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="application icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Expert Application</h3>
+                    <p class="cs-step-text">Our professional painters apply each coat with precision, ensuring even coverage, clean lines, and a flawless finish.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">4</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/zoom-check.svg" loading="lazy" decoding="async" alt="inspection icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Detailed Inspection</h3>
+                    <p class="cs-step-text">We conduct a comprehensive quality check to ensure every surface meets our standards before completion.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">5</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="cleanup icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Complete Cleanup</h3>
+                    <p class="cs-step-text">We leave your space clean and ready to use, removing all materials and equipment once the job is done.</p>
+                </div>
+            </li>
+        </ol>
+        <p class="cs-subtext">We also coordinate with property managers when needed, ensuring compliance with building rules such as elevator bookings, working hours, and site cleanliness.</p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        <p class="cs-subtext">Book your free estimate today.</p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Who We Work With                  -->
+<!-- ============================================ -->
+
+<section id="condo-clients">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Who We Work With</h2>
+        </div>
+        <ul class="cs-client-group">
+            <li class="cs-client">
+                <div class="cs-client-icon-wrap">
+                    <img class="cs-client-icon" src="/assets/svgs/home.svg" loading="lazy" decoding="async" alt="" width="28" height="28" aria-hidden="true">
+                </div>
+                <h3 class="cs-client-title">Condo Owners</h3>
+                <p class="cs-client-text">Refreshing your personal space with a modern, clean finish.</p>
+            </li>
+            <li class="cs-client">
+                <div class="cs-client-icon-wrap">
+                    <img class="cs-client-icon" src="/assets/svgs/door-enter.svg" loading="lazy" decoding="async" alt="" width="28" height="28" aria-hidden="true">
+                </div>
+                <h3 class="cs-client-title">Landlords</h3>
+                <p class="cs-client-text">Fast turnovers and consistent quality across units.</p>
+            </li>
+            <li class="cs-client">
+                <div class="cs-client-icon-wrap">
+                    <img class="cs-client-icon" src="/assets/svgs/building.svg" loading="lazy" decoding="async" alt="" width="28" height="28" aria-hidden="true">
+                </div>
+                <h3 class="cs-client-title">Property Managers</h3>
+                <p class="cs-client-text">Multi-unit projects completed on schedule and within budget.</p>
+            </li>
+            <li class="cs-client">
+                <div class="cs-client-icon-wrap">
+                    <img class="cs-client-icon" src="/assets/svgs/realtor-icon.svg" loading="lazy" decoding="async" alt="" width="28" height="28" aria-hidden="true">
+                </div>
+                <h3 class="cs-client-title">Real Estate Agents</h3>
+                <p class="cs-client-text">Pre-listing touch-ups that help units show better.</p>
+            </li>
+            <li class="cs-client">
+                <div class="cs-client-icon-wrap">
+                    <img class="cs-client-icon" src="/assets/svgs/hammer-light.svg" loading="lazy" decoding="async" alt="" width="28" height="28" aria-hidden="true">
+                </div>
+                <h3 class="cs-client-title">Builders &amp; Developers</h3>
+                <p class="cs-client-text">New-build and renovation painting at scale.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--         Condo Painting Costs                 -->
+<!-- ============================================ -->
+
+<section id="condo-costs">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Condo &amp; Apartment Painting Costs in Ottawa</h2>
+            <p class="cs-text">
+                The cost of a condo or apartment painting project in Ottawa can vary depending on several factors: the size of the unit (studio, 1-bedroom, 2-bedroom+), the condition of walls and ceilings, the amount of preparation required, and the number of units for multi-unit projects.
+            </p>
+            <p class="cs-text">
+                For landlords and property managers, scheduling multiple units at once can improve efficiency and reduce overall costs. We understand the pressure of quick turnovers, so our scheduling and pricing structure helps you stay on budget and on schedule.
+            </p>
+            <p class="cs-text">
+                You'll always know what to expect&mdash;clear pricing, no surprises. Free estimates are available for all condo and apartment painting services.
+            </p>
+        </div>
+        <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+    </div>
+</section>
+
+{% include 'components/why-choose-us.html' %}
+
+{% include 'components/reviews.html' %}
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1458" class="grey">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1088, height: 1232 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/faq.png" | resize({ width: 1196, height: 1782 }) | jpeg %}" alt="Living room with gold and white paint" width="1196" height="1782" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long does condo painting take?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Most condo and apartment painting projects are completed in just a few days. Timelines depend on unit size, scope of work, and building access rules. We plan around your schedule to minimize disruption.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you handle occupied units?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes. We take care to minimize disruption and maintain a clean, respectful work environment.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Can you paint multiple units?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Yes. We regularly complete multi-unit painting projects for landlords and property managers across Ottawa.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Do you offer free estimates?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                   Yes. We provide free estimates so you can understand the scope, timeline, and cost of your painting project before getting started.
+                </p>
+            </li>
+        </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--               Service Areas                  -->
+<!-- ============================================ -->
+
+<section id="location-map">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Serving Condo &amp; Apartment Buildings Across Ottawa</h2>
+            <p class="cs-text">
+                We serve condo owners, landlords, and property managers across Ottawa including downtown, <a href="/house-painters-kanata/">Kanata</a>, <a href="/house-painters-orl&eacute;ans/">Orléans</a>, and surrounding areas.
+            </p>
+        </div>
+        <div class="cs-layout">
+            <div class="cs-map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89674.93498566686!2d-75.69719724129688!3d45.421530451918025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1711810000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Ottawa, Ontario service area for condo painting"></iframe>
+            </div>
+            <div class="cs-areas">
+                <h3 class="cs-areas-title">Condo Painting Service Areas</h3>
+                <ul class="cs-area-group">
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Downtown Ottawa
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Orléans
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Nepean
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        The Glebe
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Centretown
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Riverside South
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Kanata
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Barrhaven
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Westboro
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Alta Vista
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Sandy Hill
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Vanier
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
