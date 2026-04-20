@@ -1,11 +1,11 @@
 ---
-title: 'Cabinet Painting Ottawa - Professional Kitchen & Vanity Refinishing | Oasis Painting'
-description: 'Professional cabinet painting in Ottawa. Transform your kitchen cabinets and bathroom vanities with a smooth, durable finish. Free estimates available!'
-permalink: 'cabinet-painting-ottawa/'
+title: 'Cabinet Painting Ottawa | Top-Rated Kitchen Experts | Oasis Painting'
+description: 'Top-rated cabinet painting in Ottawa. Get a smooth, durable finish with trusted local experts. Free estimates and fast turnaround.'
+permalink: 'interior-painting-ottawa/cabinets/'
 eleventyNavigation:
     key: Cabinet Painting
-    order: 700
-    parent: Services
+    order: 200
+    parent: Interior Painting
 ---
 
 {% extends "layouts/base.html" %}
@@ -18,84 +18,153 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/cabinet-painting.css">
     <link rel="stylesheet" href="/assets/css/services.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinet-kitchen.jpg" | resize({ width: 1200, height: 982 }) | avif %}"/>
-    <!-- JSON Schema Markup -->
+    <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
         {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Ottawa Cabinet Painting Services",
-            "url": "https://oasispainting.ca/cabinet-painting-ottawa/",
-            "serviceType": "Cabinet Painting",
-            "provider": {
-                "@type": "LocalBusiness",
-                "name": "Oasis Painting",
-                "url": "https://oasispainting.ca/",
-                "telephone": "(613) 408-4432",
-                "image": "https://oasispainting.ca/assets/svgs/logo.svg",
-                "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "17 Aberdeen St",
-                    "addressLocality": "Ottawa",
-                    "addressRegion": "ON",
-                    "postalCode": "K1S 3J3",
-                    "addressCountry": "CA"
-                }
+          "@type": "LocalBusiness",
+          "@id": "https://oasispainting.ca/#business",
+          "name": "Oasis Painting",
+          "url": "https://oasispainting.ca/",
+          "telephone": "+1-613-408-4432",
+          "description": "Oasis Painting provides professional cabinet painting and interior painting services in Ottawa and surrounding areas.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17 Aberdeen St",
+            "addressLocality": "Ottawa",
+            "addressRegion": "ON",
+            "postalCode": "K1S 3J3",
+            "addressCountry": "CA"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Ottawa" },
+            { "@type": "City", "name": "Nepean" },
+            { "@type": "City", "name": "Kanata" },
+            { "@type": "City", "name": "Stittsville" },
+            { "@type": "City", "name": "Orléans" },
+            { "@type": "City", "name": "Barrhaven" },
+            { "@type": "City", "name": "Westboro" },
+            { "@type": "City", "name": "Manotick" },
+            { "@type": "City", "name": "Alta Vista" },
+            { "@type": "City", "name": "The Glebe" },
+            { "@type": "City", "name": "Kemptville" }
+          ],
+          "priceRange": "$$"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/cabinet-painting/#service",
+          "name": "Cabinet Painting Services in Ottawa",
+          "serviceType": "Cabinet Painting",
+          "url": "https://oasispainting.ca/interior-painting-ottawa/cabinet-painting/",
+          "description": "Professional cabinet painting services that transform kitchen and bathroom cabinets with a smooth, durable factory-style finish.",
+          "provider": {
+            "@id": "https://oasispainting.ca/#business"
+          },
+          "areaServed": {
+            "@type": "Place",
+            "name": "Ottawa, Ontario"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://oasispainting.ca/interior-painting-ottawa/cabinet-painting/",
+            "priceCurrency": "CAD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/cabinet-painting/#webpage",
+          "url": "https://oasispainting.ca/interior-painting-ottawa/cabinet-painting/",
+          "name": "Cabinet Painting Services in Ottawa",
+          "description": "Professional cabinet painting services in Ottawa for kitchens and bathrooms.",
+          "about": {
+            "@id": "https://oasispainting.ca/interior-painting-ottawa/cabinet-painting/#service"
+          },
+          "isPartOf": {
+            "@id": "https://oasispainting.ca/#website"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://oasispainting.ca/#website",
+          "url": "https://oasispainting.ca/",
+          "name": "Oasis Painting"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/cabinet-painting/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How long does cabinet painting take in Ottawa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most kitchens with 10-15 doors and 6-8 drawers take 3-5 days. Larger kitchens or those needing repairs may take 7-10 days. We provide a clear timeline in your free quote."
+              }
             },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Ottawa, ON, Canada"
+            {
+              "@type": "Question",
+              "name": "Do I need to empty my cabinets before painting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we ask that you clear your cabinets before work begins to protect your belongings and allow easy access for removal and refinishing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will my kitchen be usable during the process?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, since we remove and refinish doors and drawers off-site or in controlled areas, your kitchen remains mostly functional throughout the project."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does cabinet painting create strong odours?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We use low-VOC, waterborne alkyd paints that produce minimal odour, making the process comfortable for your family and pets."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long before I can use my cabinets normally?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While cabinets are usable once reinstalled, full curing can take up to 2-3 weeks for maximum hardness. We provide care instructions to help maintain your finish during this time."
+              }
             }
-        }
-    </script>
-    <!-- FAQ Schema Markup -->
-    <script type="application/ld+json">
+          ]
+        },
         {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "How long does cabinet painting take in Ottawa?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Most kitchen cabinet painting projects take 3-5 days depending on the number of cabinets and complexity. We work in stages so your kitchen stays functional throughout the process."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Do I need to empty my cabinets before painting?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "We recommend clearing the contents of your cabinets before we begin. This protects your belongings and allows us to work efficiently. We'll let you know exactly what to prepare before our first visit."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Will my kitchen be usable during the process?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes. We work in stages so you're never without access to your kitchen. Your countertops, sink, and appliances remain usable throughout the project."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Does cabinet painting create strong odours?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "We use low-VOC, premium cabinet-grade coatings that produce minimal odour. Proper ventilation during application keeps your home comfortable."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "How long before I can use my cabinets normally?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Light use is typically fine within a few days. Full curing takes approximately 2–3 weeks, during which we recommend gentle handling to ensure maximum durability."
-                    }
-                }
-            ]
+          "@type": "BreadcrumbList",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/cabinet-painting/#breadcrumbs",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://oasispainting.ca/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Interior Painting",
+              "item": "https://oasispainting.ca/interior-painting-ottawa/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Cabinet Painting",
+              "item": "https://oasispainting.ca/interior-painting-ottawa/cabinet-painting/"
+            }
+          ]
         }
+      ]
+    }
     </script>
 {% endblock %}
 

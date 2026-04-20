@@ -1,6 +1,6 @@
 ---
-title: 'House Painters Orléans - Trusted Local Painters | Oasis Painting'
-description: 'Expert painters in Orléans providing flawless finishes, premium materials, and reliable residential and commercial painting. Get a free quote!'
+title: 'House Painters Orléans | Top-Rated Local Painters | Oasis Painting'
+description: 'Top-rated house painters in Orléans offering interior and exterior services. Reliable, clean work with durable finishes. Free quotes.'
 permalink: 'house-painters-orléans/'
 eleventyNavigation:
     key: Orléans
@@ -16,29 +16,198 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/badges.css">
     <link rel="stylesheet" href="/assets/css/faq.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/orleans-banner.png" | resize({ width: 1200, height: 982 }) | extend({ top: 300 }) | avif %}"/>
-    <!-- JSON Schema Markup -->
+    <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
         {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Oasis Painting - Orléans",
-            "url": "https://oasispainting.ca/house-painters-orléans/",
-            "telephone": "(613) 408-4432",
-            "image": "https://oasispainting.ca/assets/svgs/logo.svg",
-            "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "17 Aberdeen St",
-                "addressLocality": "Ottawa",
-                "addressRegion": "ON",
-                "postalCode": "K1S 3J3",
-                "addressCountry": "CA"
+          "@type": "HousePainter",
+          "@id": "https://oasispainting.ca/#business",
+          "name": "Oasis Painting",
+          "url": "https://oasispainting.ca/",
+          "telephone": "+1-613-408-4432",
+          "description": "Oasis Painting provides professional residential and commercial painting services in Ottawa and surrounding areas, including Orléans.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17 Aberdeen St",
+            "addressLocality": "Ottawa",
+            "addressRegion": "ON",
+            "postalCode": "K1S 3J3",
+            "addressCountry": "CA"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Orléans"
             },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Orléans, Ottawa, ON, Canada"
+            {
+              "@type": "City",
+              "name": "Ottawa"
             }
+          ],
+          "priceRange": "$$"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://oasispainting.ca/house-painters-orleans/#service",
+          "name": "House Painters in Orléans",
+          "serviceType": "House Painting",
+          "url": "https://oasispainting.ca/house-painters-orleans/",
+          "description": "Professional house painting services in Orléans for interior and exterior painting, wall painting, trim painting, and residential repainting projects.",
+          "provider": {
+            "@id": "https://oasispainting.ca/#business"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Orléans"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Painting Services in Orléans",
+            "itemListElement": [
+              {
+                "@type": "OfferCatalog",
+                "name": "Interior Painting"
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Exterior Painting"
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Residential Painting"
+              },
+              {
+                "@type": "OfferCatalog",
+                "name": "Commercial Painting"
+              }
+            ]
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://oasispainting.ca/house-painters-orleans/",
+            "priceCurrency": "CAD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://oasispainting.ca/house-painters-orleans/#webpage",
+          "url": "https://oasispainting.ca/house-painters-orleans/",
+          "name": "House Painters in Orléans",
+          "description": "Professional house painters in Orléans offering interior and exterior painting services for homes and businesses.",
+          "about": {
+            "@id": "https://oasispainting.ca/house-painters-orleans/#service"
+          },
+          "isPartOf": {
+            "@id": "https://oasispainting.ca/#website"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://oasispainting.ca/#website",
+          "url": "https://oasispainting.ca/",
+          "name": "Oasis Painting"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://oasispainting.ca/house-painters-orleans/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does house painting cost in Orléans?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The cost of house painting in Orléans depends on the size of the area, the condition of surfaces, and the type of paint selected. We offer free on-site estimates to provide an accurate quote tailored to your project."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does interior painting take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most interior painting projects are completed within 2-5 days depending on the number of rooms and the scope of preparation required. We'll provide a detailed timeline during your consultation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer free painting estimates in Orléans?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Oasis Painting offers free, no-obligation painting estimates for homeowners in Orléans. Contact us to schedule a convenient time for your on-site consultation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What paint brands do you use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We use premium paint products from trusted brands like Benjamin Moore and Sherwin-Williams. We can also work with specific brands if you have a preference."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How should I prepare my home for painting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We recommend clearing furniture away from walls and removing wall hangings. Our team handles all surface preparation, taping, and floor protection as part of our service."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you guarantee your work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We stand behind every project with a workmanship guarantee. If you notice any issues after completion, contact us and we'll make it right."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should I look for when hiring painters in Orléans?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When hiring painters in Orléans, Ontario, it's important to look for proper insurance, experience with both interior and exterior painting, and clear communication about timelines and project expectations. Professional painters should also explain how weather conditions such as temperature, humidity, and rain can affect exterior painting projects."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do painters in Orléans offer colour consultations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Our team can help you choose colours and finishes that work well with your home's style and lighting. We're happy to provide guidance during the consultation process."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I choose the right painters in Orléans?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Look for painters who are fully insured, use quality materials, and provide clear estimates before starting work. Reading reviews and asking about their preparation process can also help you find a reliable team."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://oasispainting.ca/house-painters-orleans/#breadcrumbs",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://oasispainting.ca/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "House Painters in Orléans",
+              "item": "https://oasispainting.ca/house-painters-orleans/"
+            }
+          ]
         }
+      ]
+    }
     </script>
 {% endblock %}
 

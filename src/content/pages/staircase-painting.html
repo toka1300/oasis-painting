@@ -1,11 +1,11 @@
 ---
-title: 'Staircase Painting Ottawa - Professional Staircase Refinishing | Oasis Painting'
-description: 'Professional staircase painting and refinishing in Ottawa. Durable, high-traffic finishes for treads, risers, railings, and spindles. Free estimates available!'
-permalink: 'staircase-painting-ottawa/'
+title: 'Staircase Painting Ottawa | Railings & Trim Experts | Oasis Painting'
+description: 'Professional staircase painting in Ottawa for railings, balusters, and trim. Durable finishes from a top-rated local painting team.'
+permalink: 'interior-painting-ottawa/staircase/'
 eleventyNavigation:
     key: Staircase Painting
-    order: 600
-    parent: Services
+    order: 100
+    parent: Interior Painting
 ---
 
 {% extends "layouts/base.html" %}
@@ -18,84 +18,153 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/staircase-painting.css">
     <link rel="stylesheet" href="/assets/css/services.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/staircase-hero.jpg" | resize({ width: 1200, height: 982 }) | avif %}"/>
-    <!-- JSON Schema Markup -->
+    <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
         {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Ottawa Staircase Painting Services",
-            "url": "https://oasispainting.ca/staircase-painting-ottawa/",
-            "serviceType": "Staircase Painting",
-            "provider": {
-                "@type": "LocalBusiness",
-                "name": "Oasis Painting",
-                "url": "https://oasispainting.ca/",
-                "telephone": "(613) 408-4432",
-                "image": "https://oasispainting.ca/assets/svgs/logo.svg",
-                "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "17 Aberdeen St",
-                    "addressLocality": "Ottawa",
-                    "addressRegion": "ON",
-                    "postalCode": "K1S 3J3",
-                    "addressCountry": "CA"
-                }
+          "@type": "LocalBusiness",
+          "@id": "https://oasispainting.ca/#business",
+          "name": "Oasis Painting",
+          "url": "https://oasispainting.ca/",
+          "telephone": "+1-613-408-4432",
+          "description": "Oasis Painting provides professional staircase painting, cabinet painting, drywall repair, and interior painting services in Ottawa and surrounding areas.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17 Aberdeen St",
+            "addressLocality": "Ottawa",
+            "addressRegion": "ON",
+            "postalCode": "K1S 3J3",
+            "addressCountry": "CA"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Ottawa" },
+            { "@type": "City", "name": "Nepean" },
+            { "@type": "City", "name": "Kanata" },
+            { "@type": "City", "name": "Stittsville" },
+            { "@type": "City", "name": "Orléans" },
+            { "@type": "City", "name": "Barrhaven" },
+            { "@type": "City", "name": "Westboro" },
+            { "@type": "City", "name": "Manotick" },
+            { "@type": "City", "name": "Alta Vista" },
+            { "@type": "City", "name": "The Glebe" },
+            { "@type": "City", "name": "Kemptville" }
+          ],
+          "priceRange": "$$"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/staircase-painting/#service",
+          "name": "Staircase Painting Services in Ottawa",
+          "serviceType": "Staircase Painting",
+          "url": "https://oasispainting.ca/interior-painting-ottawa/staircase-painting/",
+          "description": "Professional staircase painting services in Ottawa for railings, balusters, handrails, risers, stringers, and stair trim, finished with a smooth, durable coating.",
+          "provider": {
+            "@id": "https://oasispainting.ca/#business"
+          },
+          "areaServed": {
+            "@type": "Place",
+            "name": "Ottawa, Ontario"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://oasispainting.ca/interior-painting-ottawa/staircase-painting/",
+            "priceCurrency": "CAD",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/staircase-painting/#webpage",
+          "url": "https://oasispainting.ca/interior-painting-ottawa/staircase-painting/",
+          "name": "Staircase Painting Services in Ottawa",
+          "description": "Professional staircase painting services in Ottawa for railings, balusters, handrails, risers, and stair trim.",
+          "about": {
+            "@id": "https://oasispainting.ca/interior-painting-ottawa/staircase-painting/#service"
+          },
+          "isPartOf": {
+            "@id": "https://oasispainting.ca/#website"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://oasispainting.ca/#website",
+          "url": "https://oasispainting.ca/",
+          "name": "Oasis Painting"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/staircase-painting/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What parts of a staircase can be painted?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We can paint railings, balusters, handrails, risers, stringers, trim, and other staircase components depending on the material and condition."
+              }
             },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Ottawa, ON, Canada"
+            {
+              "@type": "Question",
+              "name": "Do you sand and prep the staircase before painting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, proper prep is essential. We clean, sand, repair minor imperfections, and prime surfaces as needed to ensure a smooth and durable finish."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you paint stained wood stair railings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, stained wood stair railings and other wood components can be painted with the right preparation, bonding primer, and finish coat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does staircase painting take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most staircase painting projects take 2 to 5 days depending on the size of the staircase, surface condition, prep requirements, and drying time between coats."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Will the paint hold up on high-touch staircase surfaces?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we use durable coatings designed for interior trim and high-touch surfaces to help railings and staircase components resist wear and maintain their finish."
+              }
             }
-        }
-    </script>
-    <!-- FAQ Schema Markup -->
-    <script type="application/ld+json">
+          ]
+        },
         {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "How long does staircase painting take?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Most staircase painting projects take 1–2 days. Refinishing or projects involving spindles, railings, and trim detail may take 2–4 days depending on the scope of work and curing time required."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Can I still use my stairs during the project?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "In most cases, we can work in stages so you maintain access to at least part of your staircase. We'll plan the schedule with you in advance to minimize disruption."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What type of paint do you use on stairs?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "We use high-performance coatings designed specifically for high-traffic surfaces. These include durable floor and porch paints, semi-gloss and satin finishes that resist scuffing, and optional anti-slip additives for improved traction."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Do you offer anti-slip finishes?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes. We offer optional anti-slip additives that can be mixed into the final coat, providing improved traction on treads without affecting the look of the finish."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Can you paint spindles and railings too?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Absolutely. We handle all staircase components including spindles, balusters, railings, banisters, newel posts, and stair trim. Each element is sanded, primed, and painted for a cohesive, polished result."
-                    }
-                }
-            ]
+          "@type": "BreadcrumbList",
+          "@id": "https://oasispainting.ca/interior-painting-ottawa/staircase-painting/#breadcrumbs",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://oasispainting.ca/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Interior Painting",
+              "item": "https://oasispainting.ca/interior-painting-ottawa/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Staircase Painting",
+              "item": "https://oasispainting.ca/interior-painting-ottawa/staircase-painting/"
+            }
+          ]
         }
+      ]
+    }
     </script>
 {% endblock %}
 

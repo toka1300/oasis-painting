@@ -47,12 +47,9 @@
     {% set navPages = collections.all | eleventyNavigation %}
 
     {# Loop through all pages with a eleventyNavigation in the frontmatter #}
-    {% for entry in navPages %}
-
-        {# Define a hasChild variable to make it easier to test what navigation items are have child dropdown pages #}
+    {% macro renderEntry(entry, page, depth) %}
         {% set hasChild = entry.children.length %}
 
-        {# Check the frontmatter for hideOnMobile/hideOnDesktop. Form a list of classes to be joined when the item is rendered #}
         {% set hideClasses = [] %}
         {% if entry.hideOnMobile %}
             {% set hideClasses = (hideClasses.push("cs-hide-on-mobile"), hideClasses) %}
@@ -61,48 +58,75 @@
             {% set hideClasses = (hideClasses.push("cs-hide-on-desktop"), hideClasses) %}
         {% endif %}
 
-        {# If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes #}
-        <li class="cs-li {% if hasChild %} cs-dropdown {% endif %} {{ hideClasses | join(" ") }}" role="none">
+        {% set liClass = "cs-li" %}
+        {% if depth > 0 %}{% set liClass = "cs-drop-li" %}{% endif %}
+        {% set nestedClass = "" %}
+        {% if depth > 0 and hasChild %}{% set nestedClass = "cs-dropdown-nested" %}{% endif %}
 
-            {# If the page has child dropdown pages, render it as a div with proper ARIA attributes #}
+        <li class="{{ liClass }} {% if hasChild %} cs-dropdown {{ nestedClass }} {% endif %} {{ hideClasses | join(" ") }}" role="none">
+
             {% if hasChild %}
-
-                {# Check to see if the user's current page is one of the child pages. If so, apply the cs-active class to the dropdown parent #}
                 {% set activeClass = "" %}
+                {% if entry.url == page.url %}{% set activeClass = "cs-active" %}{% endif %}
                 {% for child in entry.children %}
-                    {% if child.url == page.url %}
-                        {% set activeClass = "cs-active" %}
-                    {% endif %}
+                    {% if child.url == page.url %}{% set activeClass = "cs-active" %}{% endif %}
+                    {% for grandchild in child.children %}
+                        {% if grandchild.url == page.url %}{% set activeClass = "cs-active" %}{% endif %}
+                    {% endfor %}
                 {% endfor %}
 
-                {# Keep as div but with proper ARIA role and attributes #}
-                <div 
-                    class="cs-li-link cs-dropdown-button {{ activeClass }}"
-                    aria-expanded="false"
-                    aria-controls="dropdown-{{ entry.key }}"
-                    aria-haspopup="true"
-                    role="menuitem"
-                    tabindex="0"
-                >
-                    {{ entry.key }}
-                    <img class="cs-drop-icon" src="../../assets/svgs/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                </div>
+                {% set triggerClass = "cs-li-link cs-dropdown-button" %}
+                {% if depth > 0 %}{% set triggerClass = triggerClass + " cs-drop-link" %}{% endif %}
 
-                {# Dropdowns have another ul/li set up within the parent li #}
-                <ul class="cs-drop-ul" id="dropdown-{{ entry.key }}" role="menu">
+                {% if entry.url %}
+                    <a
+                        href="{{ entry.url }}"
+                        class="{{ triggerClass }} {{ activeClass }}"
+                        aria-expanded="false"
+                        aria-controls="dropdown-{{ entry.key | slug }}"
+                        aria-haspopup="true"
+                        role="menuitem"
+                        {% if entry.url == page.url %} aria-current="page" {% endif %}
+                    >
+                        {{ entry.key }}
+                        <img class="cs-drop-icon" src="../../assets/svgs/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                    </a>
+                {% else %}
+                    <div
+                        class="{{ triggerClass }} {{ activeClass }}"
+                        aria-expanded="false"
+                        aria-controls="dropdown-{{ entry.key | slug }}"
+                        aria-haspopup="true"
+                        role="menuitem"
+                        tabindex="0"
+                    >
+                        {{ entry.key }}
+                        <img class="cs-drop-icon" src="../../assets/svgs/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                    </div>
+                {% endif %}
+
+                <ul class="cs-drop-ul {% if depth > 0 %} cs-drop-ul-nested {% endif %}" id="dropdown-{{ entry.key | slug }}" role="menu">
                     {% for child in entry.children %}
-                        <li class="cs-drop-li" role="none">
-                            <a href="{{ child.url }}" role="menuitem" class="cs-li-link cs-drop-link">{{ child.key }}</a>
-                        </li>
+                        {{ renderEntry(child, page, depth + 1) }}
                     {% endfor %}
                 </ul>
             {% else %}
-                {# Normal pages are rendered as <a> tags #}
-                <a href="{{ entry.url }}" role="menuitem" class="cs-li-link {% if entry.url == page.url %} cs-active {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
+                {% set linkClass = "cs-li-link" %}
+                {% if depth > 0 %}{% set linkClass = linkClass + " cs-drop-link" %}{% endif %}
+                <a
+                    href="{{ entry.url }}"
+                    role="menuitem"
+                    class="{{ linkClass }} {% if entry.url == page.url %} cs-active {% endif %}"
+                    {% if entry.url == page.url %} aria-current="page" {% endif %}
+                >
                     {{ entry.key }}
                 </a>
             {% endif %}
         </li>
+    {% endmacro %}
+
+    {% for entry in navPages %}
+        {{ renderEntry(entry, page, 0) }}
     {% endfor %}
 </ul>
             </div>
