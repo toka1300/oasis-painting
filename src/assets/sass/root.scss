@@ -810,11 +810,21 @@
                 transform-origin: top left;
             }
 
-            > .cs-dropdown-button {
+            // Extra class selectors bump specificity above .cs-li-link.cs-drop-link
+            // so the nested trigger lays out as a flex row with the chevron
+            // anchored to the right edge.
+            > .cs-li-link.cs-dropdown-button {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                gap: calc(8 / 16 * 1rem);
+                gap: calc(12 / 16 * 1rem);
+
+                .cs-drop-icon {
+                    margin-left: auto;
+                    /* Rotate the chevron to point right, since the flyout
+                       opens to the side. */
+                    transform: rotate(-90deg);
+                }
             }
         }
 
