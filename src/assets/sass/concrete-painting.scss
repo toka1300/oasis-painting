@@ -43,59 +43,38 @@
 }
 
 /*-- -------------------------- -->
-<---  Before/After Pills          -->
+<---  Before/After Checklist       -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #sbs-2295 {
-        .cs-pill-group {
+        .cs-check-list.cs-list {
             width: 100%;
-            margin: calc(16 / 16 * 1rem) 0 calc(32 / 16 * 1rem);
+            margin: 0 0 calc(32 / 16 * 1rem);
             padding: 0;
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: calc(12 / 16 * 1rem);
-        }
+            overflow: visible;
 
-        .cs-pill {
-            font-size: calc(14 / 16 * 1rem);
-            line-height: 1.4em;
-            color: var(--headerColor);
-            background: #fff;
-            border-radius: calc(8 / 16 * 1rem);
-            padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
-            display: flex;
-            align-items: flex-start;
-            gap: calc(10 / 16 * 1rem);
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+            .cs-li {
+                list-style: none;
+                margin: 0 0 calc(8 / 16 * 1rem) 0;
+                color: var(--bodyTextColor);
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: calc(12 / 16 * 1rem);
 
-            &::before {
-                content: "";
-                flex: none;
-                width: calc(6 / 16 * 1rem);
-                height: calc(6 / 16 * 1rem);
-                margin-top: calc(7 / 16 * 1rem);
-                background: var(--primary);
-                border-radius: 50%;
+                &:before {
+                    display: none;
+                }
+
+                img {
+                    width: calc(20 / 16 * 1rem);
+                    height: calc(20 / 16 * 1rem);
+                    margin-top: calc(3 / 16 * 1rem);
+                    flex: none;
+                }
             }
-        }
-    }
-}
-
-@media only screen and (min-width: 37.5rem) {
-    #sbs-2295 {
-        .cs-pill-group {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
-
-@media only screen and (min-width: 64rem) {
-    #sbs-2295 {
-        .cs-pill-group {
-            grid-template-columns: repeat(4, 1fr);
         }
     }
 }
@@ -394,6 +373,8 @@
         .cs-content {
             text-align: center;
             width: 100%;
+            max-width: calc(1024 / 16 * 1rem);
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -403,6 +384,10 @@
             }
 
             .cs-text {
+                text-align: left;
+                width: 100%;
+                max-width: 100%;
+                align-self: stretch;
                 margin: 0 0 calc(12 / 16 * 1rem);
 
                 &:last-child {
@@ -418,6 +403,8 @@
 
         .cs-layout {
             width: 100%;
+            max-width: calc(1024 / 16 * 1rem);
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             gap: clamp(2rem, 4vw, 3rem);
@@ -465,8 +452,12 @@
             gap: calc(8 / 16 * 1rem);
 
             a {
-                color: var(--primary);
+                color: var(--primaryLight);
                 text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
 

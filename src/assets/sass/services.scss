@@ -1776,17 +1776,20 @@
             max-width: calc(800 / 16 * 1rem);
             display: flex;
             flex-direction: column;
+            align-items: center;
             gap: calc(12 / 16 * 1rem);
         }
 
         .cs-topper {
             margin-bottom: 0;
+            text-align: center;
         }
 
         .cs-title {
             font-size: clamp(1.9375rem, 3.9vw, 3.0625rem);
             font-weight: 900;
             line-height: 1.2em;
+            text-align: center;
             margin: 0;
             color: var(--headerColor);
         }
@@ -1794,6 +1797,7 @@
         .cs-text {
             font-size: var(--bodyFontSize);
             line-height: 1.5em;
+            text-align: center;
             color: var(--bodyTextColor);
             margin: 0;
         }

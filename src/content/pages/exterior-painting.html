@@ -1,6 +1,7 @@
 ---
-title: 'Exterior Painting Ottawa | Oasis Painting Services'
-description: 'Need exterior painting in Ottawa? Oasis Painting offers professional exterior painting services for siding, decks, concrete, trim, doors, and full home exteriors. Get a free quote today.'
+title: 'Exterior Painting Ottawa | Oasis Painting'
+description: 'Professional exterior painting in Ottawa for siding, stucco, brick, trim, and wood surfaces. Get a free exterior painting quote today.'
+ogImage: '/assets/images/exterior-hero.jpg'
 permalink: 'exterior-painting-ottawa/'
 eleventyNavigation:
     key: Exterior Painting
@@ -15,159 +16,140 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/why-choose-us.css">
     <link rel="stylesheet" href="/assets/css/badges.css">
     <link rel="stylesheet" href="/assets/css/faq.css">
-    <link rel="stylesheet" href="/assets/css/exterior-painting.css">
     <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="stylesheet" href="/assets/css/exterior-painting.css">
     <link rel="preload" as="image" href="{% getUrl "/assets/images/exterior-hero.jpg" | resize({ width: 1200, height: 982 }) | avif %}"/>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
+      "@type": "PaintingContractor",
+      "name": "Oasis Painting",
+      "@id": "https://www.oasispainting.ca/#business",
+      "url": "https://www.oasispainting.ca/exterior-painting-ottawa",
+      "image": "https://www.oasispainting.ca/assets/images/exterior-hero.jpg",
+      "telephone": "+1-613-408-4432",
+      "email": "manager@oasispainting.ca",
+      "priceRange": "$$",
+      "description": "Oasis Painting provides exterior painting and exterior house painting in Ottawa, including siding painting, stucco painting, brick painting, trim painting, and exterior wood painting.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ottawa",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Ottawa" },
+        { "@type": "City", "name": "Kanata" },
+        { "@type": "City", "name": "Barrhaven" },
+        { "@type": "City", "name": "Orleans" },
+        { "@type": "City", "name": "Nepean" },
+        { "@type": "City", "name": "Gloucester" },
+        { "@type": "City", "name": "Stittsville" },
+        { "@type": "City", "name": "Westboro" },
+        { "@type": "City", "name": "Manotick" },
+        { "@type": "City", "name": "Kemptville" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Exterior Painting",
+      "name": "Exterior Painting Ottawa",
+      "description": "Residential exterior painting in Ottawa, including exterior house painting, siding painting, stucco painting, brick painting, trim painting, exterior wood surfaces, and exterior surface preparation.",
+      "url": "https://www.oasispainting.ca/exterior-painting-ottawa",
+      "provider": {
+        "@type": "PaintingContractor",
+        "name": "Oasis Painting",
+        "@id": "https://www.oasispainting.ca/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ottawa"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "LocalBusiness",
-          "@id": "https://oasispainting.ca/#business",
-          "name": "Oasis Painting",
-          "url": "https://oasispainting.ca/",
-          "telephone": "+1-613-408-4432",
-          "description": "Oasis Painting provides professional exterior painting, deck staining, and concrete coating services in Ottawa and surrounding areas.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "17 Aberdeen St",
-            "addressLocality": "Ottawa",
-            "addressRegion": "ON",
-            "postalCode": "K1S 3J3",
-            "addressCountry": "CA"
-          },
-          "areaServed": [
-            { "@type": "City", "name": "Ottawa" },
-            { "@type": "City", "name": "Kanata" },
-            { "@type": "City", "name": "Orléans" },
-            { "@type": "City", "name": "Kemptville" },
-            { "@type": "City", "name": "Nepean" },
-            { "@type": "City", "name": "Barrhaven" },
-            { "@type": "City", "name": "Westboro" },
-            { "@type": "City", "name": "The Glebe" }
-          ],
-          "priceRange": "$$"
-        },
-        {
-          "@type": "Service",
-          "@id": "https://oasispainting.ca/exterior-painting-ottawa/#service",
-          "name": "Exterior Painting Services in Ottawa",
-          "serviceType": "Exterior Painting",
-          "url": "https://oasispainting.ca/exterior-painting-ottawa/",
-          "description": "Professional exterior painting in Ottawa for siding, trim, decks, doors, concrete, and full home exteriors.",
-          "provider": {
-            "@id": "https://oasispainting.ca/#business"
-          },
-          "areaServed": {
-            "@type": "Place",
-            "name": "Ottawa, Ontario"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "https://oasispainting.ca/exterior-painting-ottawa/",
-            "priceCurrency": "CAD",
-            "availability": "https://schema.org/InStock"
+          "@type": "Question",
+          "name": "How much should it cost to paint the exterior of a 2,000 square foot house?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 2,000 square foot house can cost approximately $5,000 to $12,000 to paint, depending on the exterior surface, prep work, number of coats, paint quality, and project complexity."
           }
         },
         {
-          "@type": "WebPage",
-          "@id": "https://oasispainting.ca/exterior-painting-ottawa/#webpage",
-          "url": "https://oasispainting.ca/exterior-painting-ottawa/",
-          "name": "Exterior Painting Ottawa | Oasis Painting Services",
-          "description": "Need exterior painting in Ottawa? Oasis Painting offers professional exterior painting services for siding, decks, concrete, trim, doors, and full home exteriors. Get a free quote today.",
-          "about": {
-            "@id": "https://oasispainting.ca/exterior-painting-ottawa/#service"
-          },
-          "isPartOf": {
-            "@id": "https://oasispainting.ca/#website"
+          "@type": "Question",
+          "name": "Is October too late to paint outside in Ottawa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "October can sometimes work for exterior painting in Ottawa if temperatures are stable, surfaces are dry, and rain is not expected. However, exterior painting depends more on conditions than the calendar. Painters need dry surfaces, suitable temperatures, and enough curing time for the coating to perform properly. In general, late spring, summer, and early fall are the most reliable periods for exterior painting in Ottawa."
           }
         },
         {
-          "@type": "WebSite",
-          "@id": "https://oasispainting.ca/#website",
-          "url": "https://oasispainting.ca/",
-          "name": "Oasis Painting"
+          "@type": "Question",
+          "name": "How much paint do I need for a 2,000 sq ft house exterior?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 2,000 sq ft exterior may need about 12 to 18 gallons of paint, depending on surface texture, number of coats, and colour change."
+          }
         },
         {
-          "@type": "FAQPage",
-          "@id": "https://oasispainting.ca/exterior-painting-ottawa/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How much should it cost to paint the exterior of a 2,000 square foot house?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A 2,000 square foot house can cost approximately $5,000 to $12,000 to paint, depending on the exterior surface, prep work, number of coats, paint quality, and project complexity."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is October too late to paint outside in Ottawa?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "October can sometimes work for exterior painting in Ottawa if temperatures are stable, surfaces are dry, and rain is not expected. However, exterior painting depends more on conditions than the calendar. Painters need dry surfaces, suitable temperatures, and enough curing time for the coating to perform properly. In general, late spring, summer, and early fall are the most reliable periods for exterior painting in Ottawa."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How much paint do I need for a 2,000 sq ft house exterior?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A 2,000 sq ft exterior may need about 12 to 18 gallons of paint, depending on surface texture, number of coats, and colour change."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do you also offer interior painting?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Oasis Painting offers interior painting, professional interior painting, cabinet painting, kitchen cabinet painting, and other professional interior services."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can you paint siding, decks, and concrete?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. We offer siding painting, deck staining and painting, and concrete painting for Ottawa homes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What preparation is needed before exterior painting?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Most exterior painting projects require prep work such as power washing, scraping loose paint, sanding rough areas, caulking gaps, priming bare surfaces, and protecting nearby landscaping, furniture, windows, and doors."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How long does an exterior painting project take?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The timeline depends on the size of the property, surface condition, weather, materials, and project details. Smaller exterior painting projects may take a few days, while larger projects may take 5+ days."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Do you also offer interior painting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Oasis Painting offers interior painting, professional interior painting, cabinet painting, kitchen cabinets painting, and other professional interior services."
+          }
         },
         {
-          "@type": "BreadcrumbList",
-          "@id": "https://oasispainting.ca/exterior-painting-ottawa/#breadcrumbs",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://oasispainting.ca/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Exterior Painting",
-              "item": "https://oasispainting.ca/exterior-painting-ottawa/"
-            }
-          ]
+          "@type": "Question",
+          "name": "Can you paint siding, decks, and concrete?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer siding painting, deck staining and painting, and concrete painting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What preparation is needed before exterior painting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most exterior painting projects require prep work such as power washing, scraping loose paint, sanding rough areas, caulking gaps, priming bare surfaces, and protecting nearby landscaping, furniture, windows, and doors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does an exterior painting project take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The timeline depends on the size of the property, surface condition, weather, materials, and project details. Smaller exterior painting projects may take a few days, while larger projects may take 5+ days."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.oasispainting.ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Exterior Painting Ottawa",
+          "item": "https://www.oasispainting.ca/exterior-painting-ottawa"
         }
       ]
     }
@@ -339,18 +321,14 @@ eleventyNavigation:
             <p class="cs-text">
                 This Ottawa home received a dramatic exterior refresh with updated siding colour, clean trim contrast, and a sharper overall finish. Real project photos like this help show how professional exterior painting can transform curb appeal while protecting the home's exterior surfaces.
             </p>
-            <div class="cs-highlights-card">
-                <h3 class="cs-highlights-title">Project Highlights</h3>
-                <ul class="cs-highlights-list">
-                    <li>Residential exterior painting project in Ottawa</li>
-                    <li>Siding colour transformation</li>
-                    <li>Clean contrast with dark trim and windows</li>
-                    <li>Improved curb appeal</li>
-                    <li>Professional prep and exterior paint application</li>
-                </ul>
-            </div>
+            <ul class="cs-list cs-check-list">
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Residential exterior painting project in Ottawa</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Siding colour transformation</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Clean contrast with dark trim and windows</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Improved curb appeal</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Professional prep and exterior paint application</li>
+            </ul>
             <div class="cs-cta-wrap">
-                <p class="cs-cta-subtext">Want to see what a fresh exterior paint job could do for your home?</p>
                 <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
             </div>
         </div>

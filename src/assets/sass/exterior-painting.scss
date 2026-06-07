@@ -4,84 +4,61 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+    /* white */
     #sbs-1095,
     #sbs-2295,
     #exterior-surfaces,
     #exterior-paint-quality,
     #exterior-costs,
-    #why-choose-12 {
-        background: #fff;
+    #why-choose-12,
+    #exterior-maintenance {
+        background-color: #fff;
     }
 
+    /* #f7f7f7 */
     #exterior-protect,
     #services-342,
     #process-steps,
     #exterior-residential,
     #location-map,
-    #reviews-864 {
-        background: #f7f7f7;
-    }
-
-    #exterior-maintenance {
-        background: #fff;
-    }
-
+    #reviews-864,
     #faq-1458 {
-        background: #f7f7f7;
+        background-color: #f7f7f7;
     }
 }
 
 /*-- -------------------------- -->
-<---  Before/After Highlights     -->
+<---  Before/After Checklist       -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #sbs-2295 {
-        .cs-highlights-card {
+        .cs-check-list.cs-list {
             width: 100%;
-            margin: calc(16 / 16 * 1rem) 0 calc(24 / 16 * 1rem);
-            padding: calc(24 / 16 * 1rem);
-            background: #fff;
-            border: 1px solid #e8e8e8;
-            border-radius: calc(12 / 16 * 1rem);
-            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-        }
-
-        .cs-highlights-title {
-            font-size: calc(20 / 16 * 1rem);
-            font-weight: 700;
-            line-height: 1.3em;
-            margin: 0 0 calc(16 / 16 * 1rem);
-            color: var(--headerColor);
-        }
-
-        .cs-highlights-list {
-            width: 100%;
-            margin: 0;
+            margin: 0 0 calc(24 / 16 * 1rem);
             padding: 0;
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: calc(12 / 16 * 1rem) calc(32 / 16 * 1rem);
-        }
+            overflow: visible;
 
-        .cs-highlights-list li {
-            font-size: calc(16 / 16 * 1rem);
-            line-height: 1.5em;
-            color: var(--headerColor);
-            display: flex;
-            align-items: flex-start;
-            gap: calc(12 / 16 * 1rem);
+            .cs-li {
+                list-style: none;
+                margin: 0 0 calc(8 / 16 * 1rem) 0;
+                color: var(--bodyTextColor);
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: calc(12 / 16 * 1rem);
 
-            &::before {
-                content: "";
-                flex: none;
-                width: calc(8 / 16 * 1rem);
-                height: calc(8 / 16 * 1rem);
-                margin-top: calc(8 / 16 * 1rem);
-                background: var(--primary);
-                border-radius: 50%;
+                &:before {
+                    display: none;
+                }
+
+                img {
+                    width: calc(20 / 16 * 1rem);
+                    height: calc(20 / 16 * 1rem);
+                    margin-top: calc(3 / 16 * 1rem);
+                    flex: none;
+                }
             }
         }
 
@@ -108,14 +85,6 @@
             line-height: calc(48 / 16 * 1rem);
             padding: 0 calc(24 / 16 * 1rem);
             border-radius: calc(8 / 16 * 1rem);
-        }
-    }
-}
-
-@media only screen and (min-width: 37.5rem) {
-    #sbs-2295 {
-        .cs-highlights-list {
-            grid-template-columns: 1fr 1fr;
         }
     }
 }
@@ -333,6 +302,54 @@
             flex-direction: row-reverse;
         }
     }
+
+    #exterior-residential {
+        .cs-container {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---  Surface Cards Mobile Type   -->
+<--- -------------------------- -*/
+
+@media only screen and (min-width: 0rem) {
+    #exterior-surfaces {
+        .cs-photo-card-content {
+            padding: calc(12 / 16 * 1rem);
+            gap: calc(4 / 16 * 1rem);
+        }
+
+        .cs-photo-card-title {
+            font-size: calc(12 / 16 * 1rem);
+            line-height: 1.25em;
+        }
+
+        .cs-photo-card-text {
+            font-size: calc(11 / 16 * 1rem);
+            line-height: 1.4em;
+        }
+    }
+}
+
+@media only screen and (min-width: 37.5rem) {
+    #exterior-surfaces {
+        .cs-photo-card-content {
+            padding: calc(20 / 16 * 1rem);
+            gap: calc(6 / 16 * 1rem);
+        }
+
+        .cs-photo-card-title {
+            font-size: calc(14 / 16 * 1rem);
+            line-height: 1.3em;
+        }
+
+        .cs-photo-card-text {
+            font-size: calc(12 / 16 * 1rem);
+            line-height: 1.5em;
+        }
+    }
 }
 
 /*-- -------------------------- -->
@@ -431,6 +448,8 @@
         .cs-content {
             text-align: center;
             width: 100%;
+            max-width: calc(1024 / 16 * 1rem);
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -440,6 +459,10 @@
             }
 
             .cs-text {
+                text-align: center;
+                width: 100%;
+                max-width: 100%;
+                align-self: stretch;
                 margin: 0 0 calc(12 / 16 * 1rem);
 
                 &:last-child {
@@ -520,12 +543,12 @@
             gap: calc(8 / 16 * 1rem);
 
             a {
-                color: var(--bodyTextColor);
+                color: var(--primaryLight);
                 text-decoration: none;
                 font-weight: 600;
 
                 &:hover {
-                    color: var(--primary);
+                    text-decoration: underline;
                 }
             }
         }
