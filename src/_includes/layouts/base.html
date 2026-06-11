@@ -19,15 +19,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{ description }}">
         <meta name="keywords" content="">
-        <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
+        {% set canonicalPath = page.url %}
+        {% if canonicalPath != '/' and canonicalPath.endsWith('/') %}
+            {% set canonicalPath = canonicalPath.slice(0, -1) %}
+        {% endif %}
+        <link rel="canonical" href="{{ client.domain }}{{ canonicalPath }}">
 
         <!--Social Media Display-->
+        {% set ogImagePath = ogImage | default('/assets/images/og-image.png') %}
         <meta property="og:title" content="{{ title }}"/>
         <meta property="og:description" content="{{ description }}"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-        <meta property="og:image" content="/assets/images/og-image.png"/>
-        <meta property="og:image:secure_url" content="/assets/images/og-image.png"/>
+        <meta property="og:url" content="{{ client.domain }}{{ canonicalPath }}"/>
+        <meta property="og:site_name" content="Oasis Painting"/>
+        <meta property="og:image" content="{{ client.domain }}{{ ogImagePath }}"/>
+        <meta property="og:locale" content="en_CA"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="{{ title }}"/>
+        <meta name="twitter:description" content="{{ description }}"/>
+        <meta name="twitter:image" content="{{ client.domain }}{{ ogImagePath }}"/>
 
         <!--Favicons-->
         <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />

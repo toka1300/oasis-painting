@@ -1,6 +1,7 @@
 ---
-title: 'Deck Staining Ottawa - Professional Staining Services | Oasis Painting'
-description: 'Protect and refresh your outdoor space with expert deck staining in Ottawa. Premium stains, skilled prep, and lasting results. Get a free quote!'
+title: 'Deck Staining Ottawa | Oasis Painting'
+description: 'Professional deck staining in Ottawa. Protect faded wood, improve curb appeal, and get a free quote from Oasis Painting.'
+ogImage: '/assets/images/deck-hero.png'
 permalink: 'deck-staining-ottawa/'
 eleventyNavigation:
     key: Deck Staining
@@ -11,99 +12,215 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+    <link rel="stylesheet" href="/assets/css/badges.css">
     <link rel="stylesheet" href="/assets/css/faq.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
-    <!-- JSON Schema Markup -->
+    <link rel="stylesheet" href="/assets/css/deck-staining.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/deck-hero.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <!-- JSON-LD Schema Markup -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Deck Staining Ottawa",
-            "url": "https://oasispainting.ca/deck-staining-ottawa/",
-            "serviceType": "Deck Staining",
-            "provider": {
-                "@type": "LocalBusiness",
-                "name": "Oasis Painting",
-                "url": "https://oasispainting.ca/",
-                "telephone": "(613) 408-4432",
-                "image": "https://oasispainting.ca/assets/svgs/logo.svg",
-                "logo": "https://oasispainting.ca/assets/svgs/logo.svg",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "17 Aberdeen St",
-                    "addressLocality": "Ottawa",
-                    "addressRegion": "ON",
-                    "postalCode": "K1S 3J3",
-                    "addressCountry": "CA"
-                }
-            },
-            "areaServed": {
-                "@type": "Place",
-                "name": "Ottawa, ON, Canada"
-            }
-        }
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Oasis Painting",
+      "@id": "https://www.oasispainting.ca/#business",
+      "url": "https://www.oasispainting.ca",
+      "image": "https://www.oasispainting.ca/assets/images/deck-hero.png",
+      "telephone": "+1-613-408-4432",
+      "email": "manager@oasispainting.ca",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ottawa",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ottawa"
+      }
+    }
     </script>
-    <!-- FAQ Schema Markup -->
     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Deck Staining",
+      "name": "Deck Staining Ottawa",
+      "description": "Professional deck staining, sealing, and restoration services for residential properties across Ottawa, Ontario.",
+      "url": "https://www.oasispainting.ca/deck-staining-ottawa",
+      "provider": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Oasis Painting",
+        "@id": "https://www.oasispainting.ca/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ottawa"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Why should I stain my deck?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Staining or painting your deck, with a quality product, is very beneficial to the long-term durability of the wood. Harsh Canadian winters, moisture and summer sun break down the structural integrity of wood surfaces that aren't protected. Having your deck stained gives your wood an added layer of protection from the sun and moisture. Not to mention, a newly painted or beautifully stained deck or fence is a splendid sight to behold!"
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "What is the difference between staining and painting my deck?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Wood stain will permeate into the wood, while paint sits on the surface to seal it. There are two common types of stain: semi-transparent stain and solid stain. Semi-transparent stain tints the wood but still allows the grain of the wood to be seen. Solid stain looks more like paint in its solid colour appearance but permeates the wood like stain. For older, more damaged decks and fences we would recommend a paint or solid stain to seal up the wood as best as possible from the elements and hide its imperfections. Newer or less-weathered decks are great candidates for semi-transparent staining that will highlight its natural wood texture!"
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Should I stay off my deck after staining or painting?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Yes, it is important to stay off a freshly painted or stained deck! If your deck has been stained, it is ideal to avoid walking on it for 24-48 hours after stain application. If your deck has been painted, you can walk on it a little sooner than if it was stained, but you should still wait 10-12 hours. While the deck may be dry to the touch after staining or painting within these timeframes, the curing process that hardens the paint or stain takes longer!"
-                    }
-                }
-            ]
+          "@type": "Question",
+          "name": "How much does deck staining cost in Ottawa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost depends on the size of the deck, wood condition, prep work, stain type, railings, stairs, fences, siding, and whether sanding or restoration is required. Oasis Painting provides free quotes based on your actual project."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does deck stain last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The lifespan depends on the stain type, wood condition, sun exposure, moisture, foot traffic, and maintenance. Semi-transparent stains often last around 2 to 3 years, while solid stains may last around 3 to 5 years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the best time to stain a deck in Ottawa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best time is usually late spring through early fall when temperatures are stable and the wood is dry. Ideal staining conditions are generally between 10°C and 30°C with humidity under 70%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should a deck dry after washing before staining?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A deck should usually dry for at least 24 to 48 hours after washing before stain is applied. If the wood is still damp, the stain may not penetrate or cure properly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you stain pressure treated wood right away?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "New pressure treated wood typically needs time to dry before staining. In many cases, homeowners should wait around 2 to 6 months, depending on the wood and moisture level."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between transparent, semi-transparent, and solid stain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Transparent stains show the most natural wood grain. Semi-transparent stains add colour while still allowing some grain to show. Solid stains provide a more uniform, paint-like appearance with little to no visible wood grain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is oil stain or water-based stain better for decks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oil-based stains can penetrate deeper and offer strong moisture protection, while water-based stains may offer lower odour, easier cleanup, and good colour consistency. The best choice depends on the deck condition, wood type, and desired finish."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you power wash before staining?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Power washing is often part of the prep process because it helps remove dirt, mildew, algae, and surface buildup. Pressure should be controlled carefully to avoid damaging the wood."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you sand decks before staining?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sanding may be recommended for rough boards, peeling stain, bare wood, or surfaces that need better stain penetration. It helps smooth the surface and open the wood pores."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you stain fences and wood siding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Oasis Painting can help with fences, panels, wood siding, vertical surfaces, and other exterior wood restoration projects."
+          }
         }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.oasispainting.ca"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Deck Staining Ottawa",
+          "item": "https://www.oasispainting.ca/deck-staining-ottawa"
+        }
+      ]
+    }
     </script>
 {% endblock %}
 
 {% block body %}
+
 <!-- ============================================ -->
-<!--                   Banner                     -->
+<!--                    Hero                      -->
 <!-- ============================================ -->
 
-<div id="banner-1519">
+<section id="hero-219">
     <div class="cs-container">
-        <span class="cs-int-title">Deck Staining</span>
+        <h1 class="cs-title">Deck Staining Ottawa</h1>
+        <p class="cs-text">
+            Restore and protect your deck with professional staining, sanding, and exterior wood care designed for Ottawa weather.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Exterior Wood Restoration
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/brush.svg" alt="" width="20" height="20" aria-hidden="true">
+                Deck Staining and Sealing
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/clean.svg" alt="" width="20" height="20" aria-hidden="true">
+                Power Washing and Sanding Prep
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/shield-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Fully Insured &amp; WSIB Compliant
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Free Quote Available
+            </li>
+        </ul>
     </div>
-    <!--Background Image-->
+
     <picture class="cs-background">
-       <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
-       <!--Desktop Image-->
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 2800, height: 983 }) | avif %}" type="image/avif">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 2800, height: 982 }) | webp %}" type="image/webp">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" type="image/jpeg">
-       <img src="{% getUrl "/assets/images/deck-staining-banner.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Water resistant deck with stain" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-hero.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-hero.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-hero.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-hero.png" | resize({ width: 2800, height: 983 }) | extend({ top: 250 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-hero.png" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-hero.png" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/deck-hero.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Freshly stained Ottawa backyard deck with honey-brown finish and black aluminum railings" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
     </picture>
-    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="white"/>
-    </svg>
-</div>
+</section>
+
+{% include 'components/badges.html' %}
 
 <!-- ============================================ -->
 <!--                Side By Side                  -->
@@ -112,46 +229,41 @@ eleventyNavigation:
 <section id="sbs-1095">
     <div class="cs-container">
         <div class="cs-image-group">
-            <!--Top left image-->
             <picture class="cs-picture">
-               <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/deck-staining.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/deck-staining.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/deck-staining.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/deck-staining.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/deck-staining.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/deck-staining.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/deck/deck-staining.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Deck in the back of a house" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-intro.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-intro.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-intro.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-intro.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-intro.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-intro.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/deck-intro.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Stained wooden deck with warm honey brown finish" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
             </picture>
-            <!--Eclipses-->
             <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="yellow elipsis" width="184" height="184" aria-hidden="true">
-            <!--Stripe background-->
             <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="522" height="608" aria-hidden="true">
         </div>
         <div class="cs-content">
             <span class="cs-topper">Protect Your Deck</span>
-            <h1 class="cs-title"><span class="highlight">Deck Staining</span> Ottawa</h1>
+            <h2 class="cs-title">Professional <span class="highlight">Deck Staining &amp; Sealing</span> for Ottawa Homes</h2>
             <p class="cs-text">
-                Your trusted deck staining professionals will help protect your exterior from the elements of Ottawa weather! From pressure washing to sanding and staining, we do it all to make sure you get the most out of your deck investment. Winters in Ottawa are harsh, extend the lifespan and improve the look of your deck with Oasis Painting!
+                Your trusted deck staining professionals will help protect your exterior from the elements of Ottawa weather! From pressure washing to sanding and staining, we do it all to make sure you get the most out of your deck investment. Winters in Ottawa are harsh&mdash;extend the lifespan and improve the look of your deck with Oasis Painting!
             </p>
-            <ul class="cs-list">
-                <li class="cs-li">Thorough preparation process for maximum stain adhesion and longevity</li>
-                <li class="cs-li">Weather-resistant formulations designed for Ottawa's harsh climate</li>
-                <li class="cs-li">Premium penetrating stains that protect from within the wood</li>
-                <li class="cs-li">5-star rated Ottawa painting professionals</li>
-                <li class="cs-li">100% satisfaction guarantee on all work</li>
+            <ul class="cs-list cs-check-list">
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Thorough preparation process for maximum stain adhesion and longevity</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Weather-resistant formulations designed for Ottawa's harsh climate</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Premium penetrating stains that protect from within the wood</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">5-star rated Ottawa painting professionals</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">100% satisfaction guarantee on all work</li>
             </ul>
-            <div class="cs-info">
+            <div class="cs-headshots">
                 <div class="cs-flex">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/matt.jpeg" | resize({ width: 104, height: 104 }) | avif %}" type="image/jpg" alt="Headshot of co-owner, Matt">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/matt-mcnamee.avif" | resize({ width: 104, height: 104 }) | avif %}" alt="Headshot of co-owner, Matt">
                     <div class="cs-name-desc">
                         <span class="cs-name">Matt McNamee</span>
                         <span class="cs-desc">Co-owner of Oasis Painting</span>
                     </div>
                 </div>
                 <div class="cs-flex">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/will.jpg" | resize({ width: 104, height: 104, position: "top" }) | avif %}" type="image/jpg" alt="Headshot of co-owner, Will">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/will-dorken.avif" | resize({ width: 104, height: 104 }) | avif %}" alt="Headshot of co-owner, Will">
                     <div class="cs-name-desc">
                         <span class="cs-name">William Dorken</span>
                         <span class="cs-desc">Co-owner of Oasis Painting</span>
@@ -164,232 +276,709 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
-<!--                  Side By Side                -->
+<!--                  Before/After                -->
 <!-- ============================================ -->
 
 <section id="sbs-2295">
     <div class="cs-container">
         <div class="cs-image-group">
-            <!--Main Image-->
             <div class="cs-picture-wrapper1">
                 <picture class="cs-picture cs-picture1">
-                   <!--Mobile Image-->
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-before.png" | resize({ width: 566, height: 566 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-before.png" | resize({ width: 566, height: 566 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-before.png" | resize({ width: 566, height: 566 }) | jpeg %}" type="image/jpeg">
-                   <!--Desktop Image-->
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-before.png" | resize({ width: 800, height: 800 }) | avif %}" type="image/avif">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-before.png" | resize({ width: 800, height: 800 }) | webp %}" type="image/webp">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-before.png" | resize({ width: 800, height: 800 }) | jpeg %}" type="image/jpeg">
-                   <img src="{% getUrl "/assets/images/deck-before.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Deck before stain" width="800" height="800" loading="lazy" decoding="async" aria-hidden="true">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-before-cedar.png" | resize({ width: 566, height: 566 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-before-cedar.png" | resize({ width: 566, height: 566 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-before-cedar.png" | resize({ width: 566, height: 566 }) | jpeg %}" type="image/jpeg">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-before-cedar.png" | resize({ width: 800, height: 800 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-before-cedar.png" | resize({ width: 800, height: 800 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-before-cedar.png" | resize({ width: 800, height: 800 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/deck-before-cedar.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Ottawa backyard cedar deck before staining" width="800" height="800" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
                 <span class="cs-tag">Before</span>
             </div>
-            <!--Small Image-->
             <div class="cs-picture-wrapper2">
                 <picture class="cs-picture cs-picture2">
-                   <!--Mobile Image-->
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-after.png" | resize({ width: 566, height: 566 }) | avif %}" type="image/avif">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-after.png" | resize({ width: 566, height: 566 }) | webp %}" type="image/webp">
-                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-after.png" | resize({ width: 566, height: 566 }) | jpeg %}" type="image/jpeg">
-                   <!--Desktop Image-->
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-after.png" | resize({ width: 800, height: 800 }) | avif %}" type="image/avif">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-after.png" | resize({ width: 800, height: 800 }) | webp %}" type="image/webp">
-                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-after.png" | resize({ width: 800, height: 800 }) | jpeg %}" type="image/jpeg">
-                   <img src="{% getUrl "/assets/images/deck-after.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Deck after stain" width="800" height="800" loading="lazy" decoding="async" aria-hidden="true">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-after-cedar.png" | resize({ width: 566, height: 566 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-after-cedar.png" | resize({ width: 566, height: 566 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck-after-cedar.png" | resize({ width: 566, height: 566 }) | jpeg %}" type="image/jpeg">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-after-cedar.png" | resize({ width: 800, height: 800 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-after-cedar.png" | resize({ width: 800, height: 800 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck-after-cedar.png" | resize({ width: 800, height: 800 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/deck-after-cedar.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Ottawa backyard cedar deck after professional staining with honey brown finish" width="800" height="800" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
                 <span class="cs-tag">After</span>
             </div>
             <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/svgs/before-after-arrow.svg" alt="arrow" width="148" height="54">
         </div>
         <div class="cs-content">
-            <span class="cs-topper">Your Trusted Partners</span>
-            <h2 class="cs-title">Ottawa's Trusted Deck Staining Professionals</h2>
+            <span class="cs-topper">Deck Transformation</span>
+            <h2 class="cs-title">See the Difference a Professional Deck Staining Makes</h2>
             <p class="cs-text">
-                Staining your deck is an effective way to protect it from the sun and moisture, while also getting a beautiful look! Ottawa winters are harsh on exterior wood surfaces - bring your deck or fence to its full potential with Oasis Painting! Our expert team takes proper care of deck surfaces with a thorough sanding, cleaning and staining process that yields long-term results time and again for our Ottawa clients!
+                From faded, weathered boards to a clean, protected finish, proper prep and staining can completely transform your outdoor space.
             </p>
+            <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+        </div>
+    </div>
+</section>
+
+{% include 'components/why-choose-us.html' %}
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-342" class="grey">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Deck Staining Services</span>
+            <h2 class="cs-title">Complete Deck Staining Services for Ottawa Homes</h2>
             <p class="cs-text">
-                A beautifully stained deck, or fence, is one of the first things noticed on a home's exterior! Whether you are looking to sell, or want to add value to your property - Oasis Painting can help you get the most out of your deck or fence!
+                Whether your deck needs a simple refresh or a more detailed exterior wood restoration, Oasis Painting provides deck staining services designed around proper preparation, product selection, and long-lasting protection.
             </p>
-            <a href="/contact/" class="cs-button-solid">Book a Free Quote</a>
+        </div>
+        <ul class="cs-card-group cs-card-group-4">
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-staining.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-staining.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-staining.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-staining.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-staining.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-staining.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/deck/stock-deck-staining.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Deck staining service" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Deck Staining</h3>
+                    <p class="cs-item-text">Restore faded or weathered decks with a fresh stain system designed to protect exterior wood and enhance your outdoor space.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-sealing.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-sealing.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-sealing.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-sealing.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-sealing.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-sealing.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/deck/stock-deck-sealing.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Deck protection and sealing" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Deck Protection &amp; Sealing</h3>
+                    <p class="cs-item-text">Protect your deck from moisture, snow, sun, and seasonal wear with the right sealing system for your wood surface.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-solid-stain.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-solid-stain.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-solid-stain.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-solid-stain.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-solid-stain.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-solid-stain.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/deck/stock-deck-solid-stain.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Solid stain application on deck" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Solid Stain Application</h3>
+                    <p class="cs-item-text">For decks that need stronger coverage, solid stain creates a uniform look while protecting horizontal surfaces from moisture and wear.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-oil-stain.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-oil-stain.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-oil-stain.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-oil-stain.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-oil-stain.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-oil-stain.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/deck/stock-deck-oil-stain.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Deep penetrating oil stain on deck" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Deep Penetrating Oil Stains</h3>
+                    <p class="cs-item-text">Oil-based stains can soak deep into wood pores to improve moisture protection and help reduce peeling.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-cedar.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-cedar.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-cedar.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-cedar.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-cedar.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-cedar.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/deck/stock-deck-cedar.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Cedar deck staining" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Cedar Deck Staining</h3>
+                    <p class="cs-item-text">Cedar decks benefit from stain options that protect the wood while preserving its natural warmth and character.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-pressure-treated.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-pressure-treated.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-pressure-treated.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-pressure-treated.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-pressure-treated.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-pressure-treated.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/deck/stock-deck-pressure-treated.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Pressure treated wood deck staining" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Pressure Treated Wood Staining</h3>
+                    <p class="cs-item-text">New pressure treated wood usually needs time to dry before staining. We can assess whether your deck is ready.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-fence-siding.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-fence-siding.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-fence-siding.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-fence-siding.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-fence-siding.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-fence-siding.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/deck/stock-deck-fence-siding.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Fence and wood siding staining" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Fence &amp; Wood Siding Staining</h3>
+                    <p class="cs-item-text">Refresh fences, wood siding, panels, and vertical surfaces with stain options designed to protect against sun, mildew, and moisture.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-restoration.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-restoration.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/stock-deck-restoration.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-restoration.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-restoration.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/stock-deck-restoration.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/deck/stock-deck-restoration.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Exterior wood restoration" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Exterior Wood Restoration</h3>
+                    <p class="cs-item-text">Restore bare, grey, faded, or peeling wood through proper cleaning, sanding, prep, and stain application.</p>
+                </div>
+            </li>
+        </ul>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Deck Prep Section               -->
+<!-- ============================================ -->
+
+<section id="deck-prep">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Prep Matters</span>
+            <h2 class="cs-title">How We Prepare Your Deck Before Staining</h2>
+            <p class="cs-text">
+                The difference between a stained deck that lasts and one that peels too soon often comes down to preparation. Our team reviews wood condition, removes surface buildup, and prepares boards so the stain can bond properly.
+            </p>
+        </div>
+        <div class="cs-grid-wrapper">
+            <ul class="cs-card-grid stack">
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/magnifying-glass.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Deck Inspection</h3>
+                        <p class="cs-card-text">We review boards, railings, stairs, previous stain, peeling areas, cracks, moisture, and high-traffic floor areas.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/droplets-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Deck Cleaning / Stripping</h3>
+                        <p class="cs-card-text">For decks with previous stain or product buildup, we apply a stripping solution and rinse with a hose or controlled pressure washer to help break down the existing coating before sanding.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/clock.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Drying Time</h3>
+                        <p class="cs-card-text">After washing, the deck usually dries 24 to 48 hours. Staining is only done once moisture levels are suitable to support proper adhesion and curing.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/hammer-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Sanding &amp; Surface Prep</h3>
+                        <p class="cs-card-text">Sanding smooths rough boards, opens wood pores, and improves stain penetration on bare wood and weathered surfaces.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Stain Application</h3>
+                        <p class="cs-card-text">We apply the selected stain system carefully across boards, railings, stairs, panels, and other surfaces.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cs-image-grid single">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/deck-prep.jpg" | resize({ width: 640, height: 800 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/deck-prep.jpg" | resize({ width: 640, height: 800 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/deck-prep.jpg" | resize({ width: 640, height: 800 }) | jpeg %}" alt="Power washing a wooden deck in preparation for staining" width="640" height="800" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Stain Types Section              -->
+<!-- ============================================ -->
+
+<section id="deck-stain-types">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Stain Options</span>
+            <h2 class="cs-title">Choosing the Right Stain for Your Deck</h2>
+            <p class="cs-text">
+                The wrong stain choice is one of the main reasons decks peel or fail early. The best stain depends on your wood type, deck condition, desired colour, maintenance expectations, and how much natural wood grain you want to show.
+            </p>
+        </div>
+        <div class="cs-grid-wrapper reverse">
+            <ul class="cs-card-grid stack">
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/droplets-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Transparent / Translucent</h3>
+                        <p class="cs-card-label">Best for natural wood grain</p>
+                        <p class="cs-card-text">Often oil-based, these stains penetrate deep into wood while leaving the most natural grain visible.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/target.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Semi-Transparent</h3>
+                        <p class="cs-card-label">Best for colour with visible grain</p>
+                        <p class="cs-card-text">Adds colour and protection while allowing some wood grain to show through. Typically lasts around 2 to 3 years depending on exposure.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/shield-check.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Solid Stains</h3>
+                        <p class="cs-card-label">Best for more coverage</p>
+                        <p class="cs-card-text">Creates a more paint-like appearance with little to no visible grain. Often more durable than paint for walking surfaces and may last around 3 to 5 years.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/paint-can-open.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Oil-Based Stains</h3>
+                        <p class="cs-card-label">Best for deep penetration</p>
+                        <p class="cs-card-text">Offers strong moisture protection and can soak deep into wood pores, though some products may have higher VOCs.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cs-image-grid single">
+                <div class="cs-image-wrap">
+                    <picture>
+                        <source srcset="{% getUrl "/assets/images/deck-stain-application.jpg" | resize({ width: 640, height: 640 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl "/assets/images/deck-stain-application.jpg" | resize({ width: 640, height: 640 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/deck-stain-application.jpg" | resize({ width: 640, height: 640 }) | jpeg %}" alt="Wood stain being applied to a deck board" width="640" height="640" loading="lazy" decoding="async">
+                    </picture>
+                    <div class="cs-pro-tip">
+                        <span class="cs-pro-tip-label">Pro Tip</span>
+                        <p class="cs-pro-tip-text">The right stain system depends on your wood type, sun exposure, and how much grain you want to show.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cs-callout">
+            <img class="cs-callout-icon" src="/assets/svgs/alert-circle.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+            <p class="cs-callout-text"><strong>Not sure what your deck needs?</strong> Our team can assess the wood condition and recommend the right stain system during your quote.</p>
+        </div>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Process Steps                   -->
+<!-- ============================================ -->
+
+<section id="process-steps">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Process</span>
+            <h2 class="cs-title">We're Committed to Maintaining a Standard Work Process</h2>
+            <p class="cs-text">
+                A great deck staining project starts with the right preparation, timing, and stain system. Our process is designed to help your exterior wood look better and stay protected longer.
+            </p>
+        </div>
+        <ol class="cs-step-group">
+            <li class="cs-step">
+                <span class="cs-number">1</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clipboard-check.svg" loading="lazy" decoding="async" alt="quote icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Request Your Quote</h3>
+                    <p class="cs-step-text">Tell us about your deck, fence, siding, or exterior wood project and what you'd like refreshed or restored.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">2</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/magnifying-glass.svg" loading="lazy" decoding="async" alt="review icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Wood Review &amp; Estimate</h3>
+                    <p class="cs-step-text">We review wood condition, previous coatings, peeling, cracks, moisture exposure, and prep work needed for a clear estimate.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">3</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/clean.svg" loading="lazy" decoding="async" alt="cleaning icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Cleaning &amp; Prep</h3>
+                    <p class="cs-step-text">We clean the surface, remove dirt and mildew, sand rough areas where needed, and prepare the wood for stain.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">4</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="stain icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Stain Application</h3>
+                    <p class="cs-step-text">Our team applies the selected stain system based on your deck's condition, desired finish, and protection needs.</p>
+                </div>
+            </li>
+            <li class="cs-step">
+                <span class="cs-number">5</span>
+                <div class="cs-step-card">
+                    <img class="cs-step-icon" src="/assets/svgs/zoom-check.svg" loading="lazy" decoding="async" alt="review icon" width="24" height="24" aria-hidden="true">
+                    <h3 class="cs-h3">Final Review</h3>
+                    <p class="cs-step-text">We review the finished deck, check coverage, and make sure the project is complete before wrapping up.</p>
+                </div>
+            </li>
+        </ol>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Timing Section                  -->
+<!-- ============================================ -->
+
+<section id="deck-timing">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Weather &amp; Timing</span>
+            <h2 class="cs-title">When Is the Best Time to Stain a Deck in Ottawa?</h2>
+            <p class="cs-text">
+                Deck staining depends heavily on weather. The best results happen when the wood is dry, temperatures are stable, and rain isn't expected. In Ottawa, late spring through early fall is usually the best window.
+            </p>
+        </div>
+        <div class="cs-timing-layout">
+            <div class="cs-image-grid single">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/deck-timing.png" | resize({ width: 640, height: 480 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/deck-timing.png" | resize({ width: 640, height: 480 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/deck-timing.png" | resize({ width: 640, height: 480 }) | jpeg %}" alt="Freshly stained Ottawa deck with honey brown finish and black aluminum railings" width="640" height="480" loading="lazy" decoding="async">
+                </picture>
+            </div>
+            <div class="cs-timing-panel">
+                <ul class="cs-card-grid">
+                    <li class="cs-card">
+                        <div class="cs-card-icon-wrap">
+                            <img class="cs-card-icon" src="/assets/svgs/thermometer-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                        </div>
+                        <div class="cs-card-content">
+                            <h3 class="cs-card-title">Ideal Temperature</h3>
+                            <p class="cs-card-text">Best results between 10&deg;C and 30&deg;C with stable temperatures.</p>
+                        </div>
+                    </li>
+                    <li class="cs-card">
+                        <div class="cs-card-icon-wrap">
+                            <img class="cs-card-icon" src="/assets/svgs/droplets-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                        </div>
+                        <div class="cs-card-content">
+                            <h3 class="cs-card-title">Low Humidity</h3>
+                            <p class="cs-card-text">Humidity under 70% and no rain forecast within 12 to 24 hours.</p>
+                        </div>
+                    </li>
+                    <li class="cs-card">
+                        <div class="cs-card-icon-wrap">
+                            <img class="cs-card-icon" src="/assets/svgs/sun-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                        </div>
+                        <div class="cs-card-content">
+                            <h3 class="cs-card-title">Best Window</h3>
+                            <p class="cs-card-text">Late spring through early fall &mdash; the summer months are typically ideal.</p>
+                        </div>
+                    </li>
+                    <li class="cs-card">
+                        <div class="cs-card-icon-wrap">
+                            <img class="cs-card-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                        </div>
+                        <div class="cs-card-content">
+                            <h3 class="cs-card-title">Pre-Winter Sealer</h3>
+                            <p class="cs-card-text">A fresh coat of sealer in early fall helps wood withstand snow and freeze-thaw cycles.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cs-info-box">
+                    <h3 class="cs-info-box-title">New Pressure Treated Wood?</h3>
+                    <p class="cs-info-box-text">New pressure treated wood usually needs time to dry before staining. In many cases, homeowners should wait around 2 to 6 months, depending on the wood, exposure, and moisture level.</p>
+                </div>
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- ============================================ -->
-<!--                    Steps                     -->
+<!--           Maintenance Section                -->
 <!-- ============================================ -->
 
-<section id="steps-1376">
+<section id="deck-maintenance">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Quality in Every Step</span>
-            <h2 class="cs-title">Our Expert Deck Staining Process For Ottawa Homes</h2>
+            <span class="cs-topper">Deck Care Tips</span>
+            <h2 class="cs-title">How to Maintain a Stained Deck</h2>
+            <p class="cs-text">
+                A stained deck needs regular care to stay protected. Simple maintenance can help prevent moisture damage, peeling, mildew, and premature fading.
+            </p>
         </div>
-       <div class="cs-card-group">
-       <div class="cs-group1">
-            <div class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async"
-                        src="../../assets/svgs/clipboard.svg" alt="Clipboard icon"
-                        width="48" height="48"/>
+        <div class="cs-grid-wrapper">
+            <div class="cs-image-grid single">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/deck-maintenance.png" | resize({ width: 640, height: 480 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/deck-maintenance.png" | resize({ width: 640, height: 480 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/deck-maintenance.png" | resize({ width: 640, height: 480 }) | jpeg %}" alt="Freshly stained Ottawa deck steps with rich brown wood finish and black aluminum railings" width="640" height="480" loading="lazy" decoding="async">
                 </picture>
-                <h3 class="cs-h3">Thorough Preparation</h3>
-                <p class="cs-item-text">
-                    All areas are properly sanded, cleaned and prepared so they are ready for all Canadian seasons
-                </p>
             </div>
-            <div class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async"
-                        src="../../assets/svgs/target.svg" alt="target icon" width="32" height="32"/>
-                </picture>
-                <h3 class="cs-h3">Expert Application</h3>
-                <p class="cs-item-text">
-                    Our experienced team applies staining with precision, ensuring even coverage and clean lines.
-                </p>
-            </div>
-            <div class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async"
-                        src="../../assets/svgs/clean.svg" alt="sparkling icon" width="32" height="32"/>
-                </picture>
-                <h3 class="cs-h3">Complete Cleanup</h3>
-                <p class="cs-item-text">
-                    We leave your space spotless, removing all painting materials and equipment.
-                </p>
-            </div>
-        </div>
-        <div class="cs-group2">
-            <div class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async"
-                        src="../../assets/svgs/paint-can-open.svg" alt="Open paint can icon" width="32" height="32"/>
-                </picture>
-                <h3 class="cs-h3">Premium Materials</h3>
-                <p class="cs-item-text">
-                    We use only high-quality stains and primers specially selected for Ottawa's climate conditions.
-                </p>
-            </div>
-            <div class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" loading="lazy" decoding="async"
-                        src="../../assets/svgs/magnifying-glass.svg" alt="Magnifying glass icon" width="32" height="32"/>
-                </picture>
-                <h3 class="cs-h3">Detailed Inspection</h3>
-                <p class="cs-item-text">
-                    We conduct a comprehensive quality check before considering the job complete.
-                </p>
-            </div>
-            <picture class="cs-waves">
-                <!--Mobile Image-->
-                <source media="(max-width: 1023px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-tablet.svg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-desktop.svg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/wave-desktop.svg" alt="wave" width="1280" height="568">
-            </picture>
+            <ul class="cs-card-grid stack">
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/droplets-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Use the Water Test</h3>
+                        <p class="cs-card-text">Place a small amount of water on the surface. If it beads up, the sealant is still protecting the wood. If it soaks in, it may be time to reseal or restain.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/leaf-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Keep the Surface Clean</h3>
+                        <p class="cs-card-text">Remove leaves, dirt, mould, mildew, and algae before they sit too long. Organic buildup traps moisture and wears down the finish.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/snowflake-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Use a Plastic Shovel in Winter</h3>
+                        <p class="cs-card-text">Use plastic shovels rather than metal for snow removal to help prevent scratching or damaging the stain.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/alert-circle-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Watch for Peeling or Grey Wood</h3>
+                        <p class="cs-card-text">If your deck starts peeling, cracking, fading, or turning grey, it may need cleaning, sanding, or a new stain system.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/calendar-check-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Plan Seasonal Maintenance</h3>
+                        <p class="cs-card-text">A fresh coat of sealer in early fall can help your deck withstand Ottawa's winter freeze-thaw cycles and heavy snow.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 
 <!-- ============================================ -->
-<!--             Side By Side Reverse             -->
+<!--              Deck Costs Section              -->
 <!-- ============================================ -->
 
-<section id="sbsr-1100" class="grey">
+<section id="deck-costs">
     <div class="cs-container">
-        <div class="cs-image-group">
-            <picture class="cs-picture cs-picture2">
-               <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/sanding.png" | resize({ width: 488, height: 707 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/sanding.png" | resize({ width: 488, height: 707 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/sanding.png" | resize({ width: 488, height: 707 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/sanding.png" | resize({ width: 610, height: 882 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/sanding.png" | resize({ width: 610, height: 882 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/sanding.png" | resize({ width: 610, height: 882 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/deck/sanding.png" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Person sanding a piece of wood" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <picture class="cs-picture cs-picture1">
-               <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/cleaning.png" | resize({ width: 488, height: 707 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/cleaning.png" | resize({ width: 488, height: 707 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/cleaning.png" | resize({ width: 488, height: 707 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/cleaning.png" | resize({ width: 610, height: 882 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/cleaning.png" | resize({ width: 610, height: 882 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/cleaning.png" | resize({ width: 610, height: 882 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/deck/cleaning.png" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Person cleaning a piece of wood" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <!--Stripe background-->
-            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes" width="548" height="487" aria-hidden="true">
-            <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="elipsis graphic" width="140" height="140" aria-hidden="true">
-        </div>
+        <picture class="cs-picture">
+            <source srcset="{% getUrl "/assets/images/deck-cost.jpg" | resize({ width: 800, height: 600 }) | avif %}" type="image/avif">
+            <source srcset="{% getUrl "/assets/images/deck-cost.jpg" | resize({ width: 800, height: 600 }) | webp %}" type="image/webp">
+            <img src="{% getUrl "/assets/images/deck-cost.jpg" | resize({ width: 800, height: 600 }) | jpeg %}" alt="Newly stained wooden deck with railings and stairs" width="800" height="600" loading="lazy" decoding="async">
+        </picture>
         <div class="cs-content">
-            <span class="cs-topper">The Foundation of Quality Results</span>
-            <h2 class="cs-title">Preparation is Key to Long-Lasting Deck Finishes</h2>
+            <span class="cs-topper">Deck Staining Prices</span>
+            <h2 class="cs-title">Deck Staining Costs in Ottawa: What to Expect</h2>
             <p class="cs-text">
-                Oasis Painting takes pride in doing our work right. With each project, our process is specific to your needs, as well as the needs of the project. We make sure that with each deck project the sanding phase, washing phase and staining phase are all handled with the utmost attention to detail. 
+                Deck staining costs in Ottawa vary depending on the size of the deck, wood condition, previous stain or paint, sanding, repairs, product choice, railings, stairs, and overall project complexity.
             </p>
             <p class="cs-text">
-                Oftentimes the most overlooked, yet most critical aspect of a painting project comes before painting or staining, in the preparation. This is critical to the longevity of the painting or staining service itself. Wood surfaces are often the most tedious to deal with when it comes to painting and staining projects. Our deck preparation process is thorough to ensure that before painting or staining, the surface is sanded, washed and cleaned. All of this is to ensure that the wood surface is in an ideal state to absorb the stain or to provide adhesion to the paint.
+                A newer deck that needs only light cleaning and staining will be simpler than a weathered deck with peeling stain, grey boards, cracks, mildew, or old coatings that need more prep.
             </p>
             <p class="cs-text">
-                 Our attention to detail in the deck sanding and cleaning phase promotes long-term results in decks to get the maximum number of years between needed re-applications. Choose Oasis Painting, your trusted deck painting company in Ottawa - ensure that your project is done the right way!
+                We provide clear, detailed estimates outlining prep, materials, stain options, and project scope so you know what is included before work begins.
             </p>
-            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+            <p class="cs-factors-title">What Impacts the Cost?</p>
+            <ul class="cs-factors-grid">
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/ruler-light.svg" alt="" width="20" height="20" aria-hidden="true">Deck size and layout</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/wrench-light.svg" alt="" width="20" height="20" aria-hidden="true">Condition of boards and railings</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/droplet-light.svg" alt="" width="20" height="20" aria-hidden="true">Bare wood, grey wood, or peeling stain</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/hammer-sanding-light.svg" alt="" width="20" height="20" aria-hidden="true">Amount of sanding required</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/layers-light.svg" alt="" width="20" height="20" aria-hidden="true">Stain type and number of coats</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/cloud-sun-light.svg" alt="" width="20" height="20" aria-hidden="true">Weather, scheduling, and drying time</li>
+            </ul>
+            <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
         </div>
     </div>
 </section>
 
 <!-- ============================================ -->
-<!--             Side By Side standard            -->
+<!--            Related Services Section          -->
 <!-- ============================================ -->
 
-<section id="sbsr-1100" class="standard" class="grey">
+<section id="deck-related">
     <div class="cs-container">
-        <div class="cs-image-group">
-            <picture class="cs-picture cs-picture2">
-               <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/deck-staining.png" | resize({ width: 488, height: 707 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/deck-staining.png" | resize({ width: 488, height: 707 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/deck-staining.png" | resize({ width: 488, height: 707 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/deck-staining.png" | resize({ width: 610, height: 882 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/deck-staining.png" | resize({ width: 610, height: 882 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/deck-staining.png" | resize({ width: 610, height: 882 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/deck/deck-staining.png" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Before and after stain is applied to wood" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <picture class="cs-picture cs-picture1">
-               <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/staining-products.jpg" | resize({ width: 488, height: 707 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/staining-products.jpg" | resize({ width: 488, height: 707 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deck/staining-products.jpg" | resize({ width: 488, height: 707 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/staining-products.jpg" | resize({ width: 610, height: 882 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/staining-products.jpg" | resize({ width: 610, height: 882 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/deck/staining-products.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/deck/staining-products.jpg" | resize({ width: 610, height: 882 }) | jpeg %}" alt="Various deck-staining products" width="610" height="882" loading="lazy" decoding="async" aria-hidden="true">
-            </picture>
-            <!--Stripe background-->
-            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="stripes graphic" width="548" height="487" aria-hidden="true">
-            <!--Eclipses-->
-            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="elipsis graphic" width="140" height="140" aria-hidden="true">
-        </div>
         <div class="cs-content">
-            <span class="cs-topper">Superior Materials For Exceptional Results</span>
-            <h2 class="cs-title">Premium Deck Staining Products That Outperform the Rest</h2>
+            <span class="cs-topper">More From Oasis Painting</span>
+            <h2 class="cs-title">More Services for Your Outdoor Wood</h2>
             <p class="cs-text">
-                Many stains that are sold in box stores today, are not true 'stains'. They often dry and cure on top of the wood as a film. These stains are not quality products and as such result in widespread peeling which can require a complete refinishing. The good news, there are other options out there and we are proud supporters of these products!
+                Along with deck staining, Oasis Painting can help with related exterior wood surfaces and home painting needs.
+            </p>
+        </div>
+        <ul class="cs-card-group cs-card-group-4">
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/deck-icon.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Fence Staining</h3>
+                <p class="cs-item-text">Protect and refresh fences, panels, gates, and exterior wood surfaces exposed to sun, moisture, and mildew.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/home.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Wood Siding Staining</h3>
+                <p class="cs-item-text">Maintain wood siding and vertical exterior surfaces with stain options designed to protect against weather and fading.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/palette.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Deck Painting &amp; Solid Stain</h3>
+                <p class="cs-item-text">For decks needing more coverage, solid stain creates a clean, uniform look with better durability than traditional paint.</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/exterior-icon.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                </div>
+                <h3 class="cs-h3">Exterior Painting</h3>
+                <p class="cs-item-text">Planning a larger exterior refresh? Our team can also help with exterior painting services for your home.</p>
+                <a href="/exterior-painting-ottawa/" class="cs-card-link">Learn more<svg class="cs-card-link-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--               Service Areas                  -->
+<!-- ============================================ -->
+
+<section id="location-map">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Local Ottawa Painters</span>
+            <h2 class="cs-title">Deck Staining Services Across Ottawa and Nearby Communities</h2>
+            <p class="cs-text">
+                Oasis Painting provides deck staining services across Ottawa and surrounding communities. Our team works with homeowners looking to restore, protect, and maintain exterior wood surfaces.
             </p>
             <p class="cs-text">
-                Oasis Painting only uses premium-quality stains including Cutek Extreme, Sansin SDF/Dec and Cloverdale Sharkskin. Cutek Extreme oil stain is the closest you can come to a true 'oil stain' in Canada (due to VOC regulations) and demonstrates great penetration deep into wood surfaces for long-lasting results. Sansin SDF and Dec Enviro Stain are environmentally friendly stains whose oils and resins penetrate wood surfaces. Sansin, a Canadian company, is trusted by Parks Canada for numerous large-scale projects in Ottawa, and beyond. Cloverdale Sharkskin oil stain is another Canadian-made stain, that is built for rugged winters and offers fantastic durability and aesthetic.
+                Whether you are restoring a faded deck, staining new pressure treated wood, refreshing a fence, or protecting cedar wood, Oasis Painting brings local experience and professional care to your outdoor project.
             </p>
             <p class="cs-text">
-                 All of these stains provide great results that are much more durable when compared to their competitors - we have done our research! When you choose Oasis Painting, you choose quality. We want to help you get the most out of your deck staining projects, please don't hesitate to ask us if you have any questions about our products or process! Reach out today!
+                We regularly complete deck staining projects in <a href="/house-painters-kanata/">Kanata</a>, <a href="/house-painters-kemptville/">Kemptville</a>, <a href="/house-painters-orl&eacute;ans/">Orléans</a>, and across Ottawa neighbourhoods.
             </p>
-            <a href="/contact/" class="cs-button-solid">Get a Free Quote</a>
+        </div>
+        <div class="cs-layout">
+            <div class="cs-map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89674.93498566686!2d-75.69719724129688!3d45.421530451918025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1711810000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Ottawa, Ontario service area for deck staining"></iframe>
+            </div>
+            <div class="cs-areas">
+                <h3 class="cs-areas-title">Service Areas</h3>
+                <ul class="cs-area-group">
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Alta Vista
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Barrhaven
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Centretown
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Gloucester
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        <a href="/house-painters-kanata/">Kanata</a>
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        <a href="/house-painters-kemptville/">Kemptville</a>
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Manotick
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Nepean
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        <a href="/house-painters-orl&eacute;ans/">Orléans</a>
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Rockcliffe
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Stittsville
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        The Glebe
+                    </li>
+                    <li class="cs-area">
+                        <img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Westboro
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cs-cta-wrap">
+            <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
         </div>
     </div>
 </section>
@@ -416,37 +1005,67 @@ eleventyNavigation:
         <div class="cs-content">
             <span class="cs-topper">Questions</span>
             <h2 class="cs-title">Frequently Asked Questions</h2>
-            
+
         <ul class="cs-faq-group">
             <li class="cs-faq-item active">
                 <button class="cs-button">
-                    <span class="cs-button-text">
-                        Why should I stain my deck?
-                    </span>
+                    <span class="cs-button-text">How much does deck staining cost in Ottawa?</span>
                 </button>
-                <p class="cs-item-p">
-                    Staining or painting your deck, with a quality product, is very beneficial to the long-term durability of the wood. Harsh Canadian winters, moisture and summer sun break down the structural integrity of wood surfaces that aren't protected. Having your deck stained gives your wood an added layer of protection from the sun and moisture. Not to mention, a newly painted or beautifully stained deck or fence is a splendid sight to behold!
-                </p>
+                <p class="cs-item-p">The cost depends on the size of the deck, wood condition, prep work, stain type, railings, stairs, fences, siding, and whether sanding or restoration is required. Oasis Painting provides free quotes based on your actual project.</p>
             </li>
             <li class="cs-faq-item">
                 <button class="cs-button">
-                    <span class="cs-button-text">
-                        What is the difference between staining and painting my deck?
-                    </span>
+                    <span class="cs-button-text">How long does deck stain last?</span>
                 </button>
-                <p class="cs-item-p">
-                    Wood stain will permeate into the wood, while paint sits on the surface to seal it. There are two common types of stain: semi-transparent stain and solid stain. Semi-transparent stain tints the wood but still allows the grain of the wood to be seen. Solid stain,  looks more like paint in its solid colour appearance but permeates the wood like stain. For older, more damaged decks and fences we would recommend a paint or solid stain to seal up the wood as best as possible from the elements and hide its imperfections. Newer or less-weathered decks are great candidates for semi-transparent staining that will highlight its natural wood texture!
-                </p>
+                <p class="cs-item-p">The lifespan depends on the stain type, wood condition, sun exposure, moisture, foot traffic, and maintenance. Semi-transparent stains often last around 2 to 3 years, while solid stains may last around 3 to 5 years.</p>
             </li>
             <li class="cs-faq-item">
                 <button class="cs-button">
-                    <span class="cs-button-text">
-                        Should I stay off my deck after staining or painting?
-                    </span>
+                    <span class="cs-button-text">When is the best time to stain a deck in Ottawa?</span>
                 </button>
-                <p class="cs-item-p">
-                    Yes, it is important to stay off a freshly painted or stained deck! If your deck has been stained, it is ideal to avoid walking on it for 24-48 hours after stain application. If your deck has been painted, you can walk on it a little sooner than if it was stained, but still should wait 10-12 hours. While the deck may be dry to the touch after staining or painting within these timeframes, the curing process that hardens the paint or stain takes longer!
-                </p>
+                <p class="cs-item-p">The best time is usually late spring through early fall when temperatures are stable and the wood is dry. Ideal staining conditions are generally between 10&deg;C and 30&deg;C with humidity under 70%.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">How long should a deck dry after washing before staining?</span>
+                </button>
+                <p class="cs-item-p">A deck should usually dry for at least 24 to 48 hours after washing before stain is applied. If the wood is still damp, the stain may not penetrate or cure properly.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Can you stain pressure treated wood right away?</span>
+                </button>
+                <p class="cs-item-p">New pressure treated wood typically needs time to dry before staining. In many cases, homeowners should wait around 2 to 6 months, depending on the wood and moisture level.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">What is the difference between transparent, semi-transparent, and solid stain?</span>
+                </button>
+                <p class="cs-item-p">Transparent stains show the most natural wood grain. Semi-transparent stains add colour while still allowing some grain to show. Solid stains provide a more uniform, paint-like appearance with little to no visible wood grain.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Is oil stain or water-based stain better for decks?</span>
+                </button>
+                <p class="cs-item-p">Oil-based stains can penetrate deeper and offer strong moisture protection, while water-based stains may offer lower odour, easier cleanup, and good colour consistency. The best choice depends on the deck condition, wood type, and desired finish.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Do you power wash before staining?</span>
+                </button>
+                <p class="cs-item-p">Power washing is often part of the prep process because it helps remove dirt, mildew, algae, and surface buildup. Pressure should be controlled carefully to avoid damaging the wood.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Do you sand decks before staining?</span>
+                </button>
+                <p class="cs-item-p">Sanding may be recommended for rough boards, peeling stain, bare wood, or surfaces that need better stain penetration. It helps smooth the surface and open the wood pores.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Do you stain fences and wood siding?</span>
+                </button>
+                <p class="cs-item-p">Yes. Oasis Painting can help with fences, panels, wood siding, vertical surfaces, and other exterior wood restoration projects.</p>
             </li>
         </ul>
         </div>

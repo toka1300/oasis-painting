@@ -10,5 +10,5 @@ module.exports = {
         "instagram": "https://www.instagram.com/oasispainting",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://oasispainting.ca"
+    "domain": "https://www.oasispainting.ca"
 };

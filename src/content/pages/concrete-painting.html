@@ -1,0 +1,1273 @@
+---
+title: 'Concrete Painting Ottawa | Oasis Painting'
+description: 'Professional concrete painting and coating services in Ottawa for garages, basements, patios, and walkways. Get a free quote today.'
+ogImage: '/assets/images/concrete-hero.jpg'
+permalink: 'concrete-painting-ottawa/'
+eleventyNavigation:
+    key: Concrete Painting
+    order: 310
+    parent: Services
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/why-choose-us.css">
+    <link rel="stylesheet" href="/assets/css/badges.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
+    <link rel="stylesheet" href="/assets/css/concrete-painting.css">
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/concrete-hero.jpg" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PaintingContractor",
+      "name": "Oasis Painting",
+      "@id": "https://www.oasispainting.ca/#business",
+      "url": "https://www.oasispainting.ca/concrete-painting-ottawa",
+      "image": "https://www.oasispainting.ca/assets/images/concrete-hero.jpg",
+      "telephone": "+1-613-408-4432",
+      "email": "manager@oasispainting.ca",
+      "priceRange": "$$",
+      "description": "Oasis Painting provides concrete painting and concrete coatings in Ottawa, including garage floor coatings, basement floor coatings, patio concrete coatings, and concrete restoration.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ottawa",
+        "addressRegion": "ON",
+        "addressCountry": "CA"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Ottawa" },
+        { "@type": "City", "name": "Kanata" },
+        { "@type": "City", "name": "Barrhaven" },
+        { "@type": "City", "name": "Orleans" },
+        { "@type": "City", "name": "Nepean" },
+        { "@type": "City", "name": "Gloucester" },
+        { "@type": "City", "name": "Stittsville" },
+        { "@type": "City", "name": "Westboro" },
+        { "@type": "City", "name": "Manotick" },
+        { "@type": "City", "name": "Kemptville" }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Concrete Painting",
+      "name": "Concrete Painting Ottawa",
+      "description": "Residential concrete painting in Ottawa, including garage floor coatings, basement floor coatings, patio coatings, concrete sealing, concrete restoration, and epoxy floor coatings.",
+      "url": "https://www.oasispainting.ca/concrete-painting-ottawa",
+      "provider": {
+        "@type": "PaintingContractor",
+        "name": "Oasis Painting",
+        "@id": "https://www.oasispainting.ca/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Ottawa"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is painting outdoor concrete a good idea?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Painting outdoor concrete can be a good idea when the surface is properly prepared and the right paint or coating is used. It can improve appearance, protect against moisture and salt, and help extend the life of patios, walkways, driveways, and other exterior concrete surfaces."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I paint straight over concrete?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Concrete should be cleaned, repaired, and primed before painting. Proper prep may include deep cleaning, crack repair, moisture testing, etching or grinding, and applying a masonry primer for better adhesion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long will painted concrete last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With proper preparation and high-quality products, painted concrete can last 5 to 10 years or more depending on traffic, moisture exposure, weather, salt, and maintenance."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it worth painting a concrete driveway?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can be worth painting or coating a concrete driveway if the right product is used and the surface is properly prepared. Driveways are exposed to vehicles, salt, moisture, and weather, so durability and product selection matter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best coating for garage floors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Epoxy coatings are often a strong option for garage floors because they provide durability, a polished appearance, and resistance to wear, stains, and moisture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you repair cracks before concrete painting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Cracks and damaged areas should be repaired before paint or coating is applied. Repairing cracks helps prevent moisture from getting under the coating."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can concrete be painted in cold weather?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Concrete painting depends on temperature and humidity. Ideal conditions are usually between 10°C and 25°C, and nighttime temperatures should stay above 10°C for at least 48 hours after application."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do concrete surfaces need to be sealed after painting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In many cases, a clear durable concrete sealer can help protect the painted surface from stains, moisture, wear, and daily use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is concrete paint slippery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Concrete paint or coating can become slippery in some conditions. For stairs, patios, walkways, and wet areas, an anti-slip aggregate can be added to the final coat or sealer to improve safety."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you paint brick or masonry surfaces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Oasis Painting can help with brick, masonry, concrete walls, and other related surfaces using products designed for those materials."
+          }
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.oasispainting.ca/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Concrete Painting Ottawa",
+          "item": "https://www.oasispainting.ca/concrete-painting-ottawa"
+        }
+      ]
+    }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-219">
+    <div class="cs-container">
+        <h1 class="cs-title">Concrete Painting Ottawa</h1>
+        <p class="cs-text">
+            Durable concrete coating solutions designed to withstand Ottawa winters, moisture, salt, and everyday wear.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Garage &amp; Basement Concrete Coatings
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/brush.svg" alt="" width="20" height="20" aria-hidden="true">
+                Epoxy and Protective Finishes
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/hammer-light.svg" alt="" width="20" height="20" aria-hidden="true">
+                Crack Repair &amp; Surface Prep
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/shield-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Ottawa Weather Protection
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Free Quote Available
+            </li>
+        </ul>
+    </div>
+
+    <picture class="cs-background">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-hero.jpg" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-hero.jpg" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-hero.jpg" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-hero.jpg" | resize({ width: 2800, height: 983 }) | extend({ top: 250 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-hero.jpg" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-hero.jpg" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/concrete-hero.jpg" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Residential garage floor with glossy grey epoxy concrete coating" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+
+{% include 'components/badges.html' %}
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-1095">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-intro.jpg" | resize({ width: 848, height: 950 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-intro.jpg" | resize({ width: 848, height: 950 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-intro.jpg" | resize({ width: 848, height: 950 }) | jpeg %}" type="image/jpeg">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-intro.jpg" | resize({ width: 1082, height: 1216 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-intro.jpg" | resize({ width: 1082, height: 1216 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-intro.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/concrete-intro.jpg" | resize({ width: 1082, height: 1216 }) | jpeg %}" alt="Freshly painted light grey basement concrete floor in a residential home" width="1082" height="1216" loading="eager" decoding="async" aria-hidden="true">
+            </picture>
+            <img class="cs-graphic" loading="lazy" decoding="async" src="../../assets/svgs/elipsis.svg" alt="" width="184" height="184" aria-hidden="true">
+            <img class="cs-stripes" loading="lazy" decoding="async" src="../../assets/svgs/stripes.svg" alt="" width="522" height="608" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Ottawa Concrete Painting Professionals</span>
+            <h2 class="cs-title">Durable <span class="highlight">Concrete Painting &amp; Coating</span> Services in Ottawa</h2>
+            <p class="cs-text">
+                Concrete surfaces in Ottawa homes take a beating from freeze-thaw cycles, road salt, winter moisture, and daily traffic. Without proper protection, concrete can crack, spall, and stain over time.
+            </p>
+            <p class="cs-text">
+                Our concrete coating services use epoxy, polyaspartic, polyurethane, and industrial-grade sealers chosen to match the surface and how it gets used &mdash; from garage floors and basements to patios, walkways, and exterior masonry.
+            </p>
+            <p class="cs-text">
+                It's a cost-effective way to upgrade your space and protect it from salt, moisture, dust, and seasonal wear common to Ottawa winters.
+            </p>
+            <div class="cs-headshots">
+                <div class="cs-flex">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/matt-mcnamee.avif" | resize({ width: 104, height: 104 }) | avif %}" alt="Headshot of co-owner, Matt">
+                    <div class="cs-name-desc">
+                        <span class="cs-name">Matt McNamee</span>
+                        <span class="cs-desc">Co-owner of Oasis Painting</span>
+                    </div>
+                </div>
+                <div class="cs-flex">
+                    <img class="cs-icon" loading="lazy" decoding="async" src="{% getUrl "/assets/images/will-dorken.avif" | resize({ width: 104, height: 104 }) | avif %}" alt="Headshot of co-owner, Will">
+                    <div class="cs-name-desc">
+                        <span class="cs-name">William Dorken</span>
+                        <span class="cs-desc">Co-owner of Oasis Painting</span>
+                    </div>
+                </div>
+            </div>
+            <a href="/contact/" class="cs-button-solid">Get Started Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Before/After                -->
+<!-- ============================================ -->
+
+<section id="sbs-2295">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-picture-wrapper1">
+                <picture class="cs-picture cs-picture1">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-before.jpg" | resize({ width: 566, height: 566 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-before.jpg" | resize({ width: 566, height: 566 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-before.jpg" | resize({ width: 566, height: 566 }) | jpeg %}" type="image/jpeg">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-before.jpg" | resize({ width: 800, height: 800 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-before.jpg" | resize({ width: 800, height: 800 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-before.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/concrete-before.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Before: worn, stained residential garage concrete floor needing surface preparation and coating" width="800" height="800" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <span class="cs-tag">Before</span>
+            </div>
+            <div class="cs-picture-wrapper2">
+                <picture class="cs-picture cs-picture2">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-after.jpg" | resize({ width: 566, height: 566 }) | avif %}" type="image/avif">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-after.jpg" | resize({ width: 566, height: 566 }) | webp %}" type="image/webp">
+                   <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-after.jpg" | resize({ width: 566, height: 566 }) | jpeg %}" type="image/jpeg">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-after.jpg" | resize({ width: 800, height: 800 }) | avif %}" type="image/avif">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-after.jpg" | resize({ width: 800, height: 800 }) | webp %}" type="image/webp">
+                   <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-after.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/concrete-after.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" alt="After: residential garage floor with a clean, durable grey epoxy concrete coating" width="800" height="800" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <span class="cs-tag">After</span>
+            </div>
+            <img class="cs-arrow" loading="lazy" decoding="async" src="/assets/svgs/before-after-arrow.svg" alt="" width="148" height="54" aria-hidden="true">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Before &amp; After</span>
+            <h2 class="cs-title">See the Difference a Professional Concrete Coating Makes</h2>
+            <p class="cs-text">
+                From worn, stained concrete to a clean, durable finish &mdash; proper preparation makes all the difference.
+            </p>
+            <ul class="cs-list cs-check-list">
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Stronger, more durable surface</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Easier to clean</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Moisture protection</li>
+                <li class="cs-li"><img src="/assets/svgs/circle-check.svg" alt="" width="20" height="20" aria-hidden="true">Cleaner, more polished look</li>
+            </ul>
+            <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Common Problems                   -->
+<!-- ============================================ -->
+
+<section id="concrete-problems">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Common Issues</span>
+            <h2 class="cs-title">Common Concrete Problems We Help Fix</h2>
+            <p class="cs-text">
+                Ottawa weather, moisture, road salt, and daily wear can damage concrete surfaces over time. Our coating systems help restore and protect residential concrete surfaces.
+            </p>
+        </div>
+        <ul class="cs-photo-grid">
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-peeling-coating.jpg" | resize({ width: 512, height: 384 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-peeling-coating.jpg" | resize({ width: 512, height: 384 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/concrete/problem-peeling-coating.jpg" | resize({ width: 512, height: 384 }) | jpeg %}" alt="Peeling concrete coating" width="512" height="384" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Peeling coatings</h3>
+                    <p class="cs-photo-card-text">Old paint or coatings that flake and lift from years of moisture and poor adhesion.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-salt-damage.jpg" | resize({ width: 512, height: 384 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-salt-damage.jpg" | resize({ width: 512, height: 384 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/concrete/problem-salt-damage.jpg" | resize({ width: 512, height: 384 }) | jpeg %}" alt="Salt damage on concrete" width="512" height="384" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Salt damage</h3>
+                    <p class="cs-photo-card-text">Road salt tracked in over Ottawa winters slowly breaks down unprotected concrete.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-oil-stains.jpg" | resize({ width: 512, height: 384 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-oil-stains.jpg" | resize({ width: 512, height: 384 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/concrete/problem-oil-stains.jpg" | resize({ width: 512, height: 384 }) | jpeg %}" alt="Oil stains on garage concrete floor" width="512" height="384" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Oil &amp; vehicle stains</h3>
+                    <p class="cs-photo-card-text">Garage floors take a beating from oil drips, tire marks, and chemical spills.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-cracked-concrete.jpg" | resize({ width: 512, height: 384 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-cracked-concrete.jpg" | resize({ width: 512, height: 384 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/concrete/problem-cracked-concrete.jpg" | resize({ width: 512, height: 384 }) | jpeg %}" alt="Cracked concrete surface" width="512" height="384" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Cracked concrete</h3>
+                    <p class="cs-photo-card-text">Hairline and structural cracks that need repair before any coating goes down.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-dusty-garage.jpg" | resize({ width: 512, height: 384 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-dusty-garage.jpg" | resize({ width: 512, height: 384 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/concrete/problem-dusty-garage.jpg" | resize({ width: 512, height: 384 }) | jpeg %}" alt="Dusty garage concrete floor" width="512" height="384" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Dusty garage floors</h3>
+                    <p class="cs-photo-card-text">Bare concrete constantly releases fine dust that settles on tools, cars, and storage.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-moisture-issues.jpg" | resize({ width: 512, height: 384 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-moisture-issues.jpg" | resize({ width: 512, height: 384 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/concrete/problem-moisture-issues.jpg" | resize({ width: 512, height: 384 }) | jpeg %}" alt="Moisture issues on concrete" width="512" height="384" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Moisture issues</h3>
+                    <p class="cs-photo-card-text">Damp basements and patios that need a moisture-tolerant system to coat properly.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-surface-fading.jpg" | resize({ width: 512, height: 384 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-surface-fading.jpg" | resize({ width: 512, height: 384 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/concrete/problem-surface-fading.jpg" | resize({ width: 512, height: 384 }) | jpeg %}" alt="Faded exterior concrete surface" width="512" height="384" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Surface fading</h3>
+                    <p class="cs-photo-card-text">Exterior patios and walkways that lose colour from sun and weather exposure.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-freeze-thaw.jpg" | resize({ width: 512, height: 384 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-freeze-thaw.jpg" | resize({ width: 512, height: 384 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/concrete/problem-freeze-thaw.jpg" | resize({ width: 512, height: 384 }) | jpeg %}" alt="Freeze-thaw damage on concrete" width="512" height="384" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Freeze-thaw wear</h3>
+                    <p class="cs-photo-card-text">Ottawa's freeze-thaw cycles cause spalling, pitting, and surface breakdown over time.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Right For You                   -->
+<!-- ============================================ -->
+
+<section id="concrete-right">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Is It Right For You?</span>
+            <h2 class="cs-title">Is Concrete Painting Right for Your Space?</h2>
+            <p class="cs-text">
+                Concrete painting is a great fit for surfaces that take regular wear or need extra protection. Common situations include:
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/car.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+                </div>
+                <p class="cs-card-text">Garage floors with stains or wear</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/home.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+                </div>
+                <p class="cs-card-text">Basements with dust or unfinished concrete</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+                </div>
+                <p class="cs-card-text">Patios and walkways exposed to weather</p>
+            </li>
+            <li class="cs-card">
+                <div class="cs-card-icon-wrap">
+                    <img class="cs-card-icon" src="/assets/svgs/walk.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+                </div>
+                <p class="cs-card-text">Driveways needing protection and a cleaner look</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+{% include 'components/why-choose-us.html' %}
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-342" class="grey">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Concrete Painting Services</span>
+            <h2 class="cs-title">Complete Concrete Painting Services for Ottawa Homes</h2>
+            <p class="cs-text">
+                We offer a full range of concrete painting services for residential and commercial spaces &mdash; from garage floors and basements to patios, walkways, driveways, brick, and masonry surfaces.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/garage-floor-epoxy-coating.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/garage-floor-epoxy-coating.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/garage-floor-epoxy-coating.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/garage-floor-epoxy-coating.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/garage-floor-epoxy-coating.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/garage-floor-epoxy-coating.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/concrete/garage-floor-epoxy-coating.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Glossy grey epoxy coating on a residential garage floor" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Garage Floor Coatings</h3>
+                    <p class="cs-item-text">Protect your garage concrete floor with durable epoxy or paint systems designed to handle vehicles, stains, moisture, and wear.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/basement-concrete-floor-coating.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/basement-concrete-floor-coating.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/basement-concrete-floor-coating.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/basement-concrete-floor-coating.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/basement-concrete-floor-coating.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/basement-concrete-floor-coating.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/concrete/basement-concrete-floor-coating.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Painted light grey basement concrete floor" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Basement Floor Painting</h3>
+                    <p class="cs-item-text">Transform your basement space with a fresh coat of paint that improves appearance, reduces dust, and makes the floor easier to maintain.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/exterior-concrete-walkway-painting.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/exterior-concrete-walkway-painting.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/exterior-concrete-walkway-painting.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/exterior-concrete-walkway-painting.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/exterior-concrete-walkway-painting.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/exterior-concrete-walkway-painting.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/concrete/exterior-concrete-walkway-painting.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Painted exterior concrete walkway and patio in front of an Ottawa residential home" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Exterior Concrete Painting</h3>
+                    <p class="cs-item-text">Protect patios, walkways, and driveways from moisture, salt, stains, and weather damage with the right coating system.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/concrete-floor-sealing.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/concrete-floor-sealing.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/concrete-floor-sealing.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/concrete-floor-sealing.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/concrete-floor-sealing.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/concrete-floor-sealing.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/concrete/concrete-floor-sealing.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Clear sealer being applied to a concrete floor surface" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Concrete Protection &amp; Sealing</h3>
+                    <p class="cs-item-text">Apply protective coating and sealing systems that help protect concrete from stains, chipping, moisture, and surface breakdown.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/brick-masonry-painting.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/brick-masonry-painting.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/brick-masonry-painting.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/brick-masonry-painting.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/brick-masonry-painting.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/brick-masonry-painting.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/concrete/brick-masonry-painting.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Freshly painted red brick exterior wall on a residential Ottawa home" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Masonry &amp; Brick Painting</h3>
+                    <p class="cs-item-text">Enhance brick, masonry, and concrete walls while maintaining durability and long-term protection.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/concrete-crack-repair-prep.jpg" | resize({ width: 1000, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/concrete-crack-repair-prep.jpg" | resize({ width: 1000, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete/concrete-crack-repair-prep.jpg" | resize({ width: 1000, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/concrete-crack-repair-prep.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/concrete-crack-repair-prep.jpg" | resize({ width: 816, height: 480 }) | webp %}" type="image/webp">
+                       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete/concrete-crack-repair-prep.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" type="image/jpeg">
+                       <img src="{% getUrl "/assets/images/concrete/concrete-crack-repair-prep.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Professional applying concrete crack filler to a garage floor" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Concrete Repair &amp; Prep</h3>
+                    <p class="cs-item-text">We repair cracks, clean surfaces, and prepare concrete properly before any paint, epoxy, or coating is applied.</p>
+                </div>
+            </li>
+        </ul>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Garage Focus                    -->
+<!-- ============================================ -->
+
+<section id="concrete-garage">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source srcset="{% getUrl "/assets/images/concrete-garage-winter.jpg" | resize({ width: 800, height: 600 }) | avif %}" type="image/avif">
+            <source srcset="{% getUrl "/assets/images/concrete-garage-winter.jpg" | resize({ width: 800, height: 600 }) | webp %}" type="image/webp">
+            <img src="{% getUrl "/assets/images/concrete-garage-winter.jpg" | resize({ width: 800, height: 600 }) | jpeg %}" alt="Residential garage floor with a durable coating designed for winter salt and moisture" width="800" height="600" loading="lazy" decoding="async">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Garage Floor Coatings</span>
+            <h2 class="cs-title">Garage Floor Coatings Built for Ottawa Winters</h2>
+            <p class="cs-text">
+                Ottawa garages face road salt, moisture, freeze-thaw cycles, and hot tires every winter. We use epoxy, polyaspartic, and polyurethane systems chosen for these conditions &mdash; not generic floor paint.
+            </p>
+            <ul class="cs-check-list">
+                <li class="cs-check-item">
+                    <div class="cs-check-icon-wrap">
+                        <img class="cs-check-icon" src="/assets/svgs/shield-check.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+                    </div>
+                    <div>
+                        <p class="cs-check-title">Salt-resistant finishes</p>
+                        <p class="cs-check-text">Polyaspartic and epoxy systems shrug off the salt brought in from Ottawa winters.</p>
+                    </div>
+                </li>
+                <li class="cs-check-item">
+                    <div class="cs-check-icon-wrap">
+                        <img class="cs-check-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+                    </div>
+                    <div>
+                        <p class="cs-check-title">Easy-to-clean surfaces</p>
+                        <p class="cs-check-text">Sealed floors wipe clean &mdash; no more dust, tire marks, or stains soaking into bare concrete.</p>
+                    </div>
+                </li>
+                <li class="cs-check-item">
+                    <div class="cs-check-icon-wrap">
+                        <img class="cs-check-icon" src="/assets/svgs/droplets-light.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+                    </div>
+                    <div>
+                        <p class="cs-check-title">Moisture-resistant systems</p>
+                        <p class="cs-check-text">Coatings selected for cold garages and basements that see seasonal humidity swings.</p>
+                    </div>
+                </li>
+                <li class="cs-check-item">
+                    <div class="cs-check-icon-wrap">
+                        <img class="cs-check-icon" src="/assets/svgs/shield-check.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+                    </div>
+                    <div>
+                        <p class="cs-check-title">Durable high-traffic protection</p>
+                        <p class="cs-check-text">Built to handle vehicles, hot tires, dropped tools, and daily wear without chipping.</p>
+                    </div>
+                </li>
+                <li class="cs-check-item">
+                    <div class="cs-check-icon-wrap">
+                        <img class="cs-check-icon" src="/assets/svgs/paint-can-open.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+                    </div>
+                    <div>
+                        <p class="cs-check-title">Reduced dust and staining</p>
+                        <p class="cs-check-text">A proper coating locks down the surface so your garage stays cleaner all year.</p>
+                    </div>
+                </li>
+            </ul>
+            <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Concrete Surfaces                 -->
+<!-- ============================================ -->
+
+<section id="concrete-surfaces">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Concrete Surfaces</span>
+            <h2 class="cs-title">Concrete Surfaces We Work With</h2>
+            <p class="cs-text">
+                Every concrete surface requires the right preparation, product, and finishing approach. Oasis Painting can help with interior and exterior concrete surfaces across Ottawa.
+            </p>
+            <p class="cs-text">
+                Each surface is different. A concrete floor in a garage needs a different coating system than exterior walkways, patios, or vertical masonry walls. Our team can assess the space and recommend the best choice for your project.
+            </p>
+        </div>
+        <ul class="cs-photo-grid">
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/surface-garage-floor.jpg" | resize({ width: 400, height: 300 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/surface-garage-floor.jpg" | resize({ width: 400, height: 300 }) | jpeg %}" alt="Glossy grey epoxy coating on a residential garage floor" width="400" height="300" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Garage floors</h3>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/surface-basement-floor.jpg" | resize({ width: 400, height: 300 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/surface-basement-floor.jpg" | resize({ width: 400, height: 300 }) | jpeg %}" alt="Freshly painted light grey basement concrete floor" width="400" height="300" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Basement floors</h3>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/surface-walkway.jpg" | resize({ width: 400, height: 300 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/surface-walkway.jpg" | resize({ width: 400, height: 300 }) | jpeg %}" alt="Painted concrete walkway" width="400" height="300" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Walkways</h3>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/surface-patio.jpg" | resize({ width: 400, height: 300 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/surface-patio.jpg" | resize({ width: 400, height: 300 }) | jpeg %}" alt="Backyard concrete patio with a clean painted finish" width="400" height="300" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Patios</h3>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/surface-driveway.jpg" | resize({ width: 400, height: 300 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/surface-driveway.jpg" | resize({ width: 400, height: 300 }) | jpeg %}" alt="Sealed residential concrete driveway" width="400" height="300" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Driveways</h3>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/surface-concrete-wall.jpg" | resize({ width: 400, height: 300 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/surface-concrete-wall.jpg" | resize({ width: 400, height: 300 }) | jpeg %}" alt="Smooth painted grey exterior concrete wall" width="400" height="300" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Concrete walls</h3>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/surface-brick-masonry.jpg" | resize({ width: 400, height: 300 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/surface-brick-masonry.jpg" | resize({ width: 400, height: 300 }) | jpeg %}" alt="Painted brick and masonry exterior wall" width="400" height="300" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Brick &amp; masonry</h3>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/surface-commercial.jpg" | resize({ width: 400, height: 300 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/surface-commercial.jpg" | resize({ width: 400, height: 300 }) | jpeg %}" alt="Bright commercial space with a painted concrete floor" width="400" height="300" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Commercial spaces</h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Winter Damage                   -->
+<!-- ============================================ -->
+
+<section id="concrete-winter">
+    <div class="cs-container">
+        <div class="cs-header-split">
+            <picture class="cs-header-picture">
+                <source srcset="{% getUrl "/assets/images/concrete-winter.jpg" | resize({ width: 800, height: 640 }) | avif %}" type="image/avif">
+                <source srcset="{% getUrl "/assets/images/concrete-winter.jpg" | resize({ width: 800, height: 640 }) | webp %}" type="image/webp">
+                <img src="{% getUrl "/assets/images/concrete-winter.jpg" | resize({ width: 800, height: 640 }) | jpeg %}" alt="Cracked residential driveway with road salt residue and snowbanks in winter" width="800" height="640" loading="lazy" decoding="async">
+            </picture>
+            <div class="cs-header-content">
+                <span class="cs-topper">Ottawa Climate Damage</span>
+                <h2 class="cs-title">How Ottawa Winters Damage Concrete Surfaces</h2>
+                <p class="cs-text">
+                    Ottawa winters can be extremely hard on concrete surfaces. Road salt, moisture, freeze-thaw cycles, and temperature fluctuations gradually break down unprotected concrete over time.
+                </p>
+            </div>
+        </div>
+        <ul class="cs-photo-grid">
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-salt-damage.jpg" | resize({ width: 512, height: 320 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/problem-salt-damage.jpg" | resize({ width: 512, height: 320 }) | jpeg %}" alt="Road salt damage on concrete" width="512" height="320" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Road Salt Damage</h3>
+                    <p class="cs-photo-card-text">Road salt and de-icing chemicals can penetrate concrete pores and gradually weaken the surface, especially in garages and driveways.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-freeze-thaw.jpg" | resize({ width: 512, height: 320 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/problem-freeze-thaw.jpg" | resize({ width: 512, height: 320 }) | jpeg %}" alt="Freeze-thaw cracking on concrete" width="512" height="320" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Freeze-Thaw Cracking</h3>
+                    <p class="cs-photo-card-text">Water trapped inside concrete expands when frozen, leading to cracks, surface deterioration, and long-term structural wear.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-moisture-issues.jpg" | resize({ width: 512, height: 320 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/problem-moisture-issues.jpg" | resize({ width: 512, height: 320 }) | jpeg %}" alt="Moisture intrusion on concrete" width="512" height="320" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Moisture Intrusion</h3>
+                    <p class="cs-photo-card-text">Basements, garages, and outdoor concrete surfaces can absorb moisture over time, increasing the risk of peeling coatings and surface breakdown.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-oil-stains.jpg" | resize({ width: 512, height: 320 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/problem-oil-stains.jpg" | resize({ width: 512, height: 320 }) | jpeg %}" alt="Garage floor wear from winter traffic" width="512" height="320" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Garage Floor Wear</h3>
+                    <p class="cs-photo-card-text">Winter vehicle traffic brings snow, slush, salt, and debris into garages, causing abrasion and premature surface deterioration.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-peeling-coating.jpg" | resize({ width: 512, height: 320 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/problem-peeling-coating.jpg" | resize({ width: 512, height: 320 }) | jpeg %}" alt="Peeling and flaking concrete coating" width="512" height="320" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Peeling &amp; Flaking Coatings</h3>
+                    <p class="cs-photo-card-text">Low-quality coatings or poorly prepared surfaces often fail under Ottawa's seasonal temperature changes.</p>
+                </div>
+            </li>
+            <li class="cs-photo-card">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete/problem-dusty-garage.jpg" | resize({ width: 512, height: 320 }) | avif %}" type="image/avif">
+                    <img src="{% getUrl "/assets/images/concrete/problem-dusty-garage.jpg" | resize({ width: 512, height: 320 }) | jpeg %}" alt="Surface dusting and erosion on concrete" width="512" height="320" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-photo-card-content">
+                    <h3 class="cs-photo-card-title">Surface Dusting &amp; Erosion</h3>
+                    <p class="cs-photo-card-text">Older concrete surfaces may begin to powder, chip, or wear down due to years of exposure and moisture penetration.</p>
+                </div>
+            </li>
+        </ul>
+        <div class="cs-callout">
+            <img class="cs-callout-icon" src="/assets/svgs/target.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+            <p class="cs-callout-text"><strong>Pro Tip:</strong> Concrete coatings last significantly longer when proper grinding, moisture testing, and surface preparation are completed before application.</p>
+        </div>
+        <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Prep Process                    -->
+<!-- ============================================ -->
+
+<section id="concrete-prep">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Prep Matters</span>
+            <h2 class="cs-title">Proper Surface Preparation is Key</h2>
+            <p class="cs-text">
+                The durability of any concrete painting project depends on preparation. Poor prep is one of the main reasons paint, epoxy, or coating systems fail. Proper surface preparation helps create a smoother finish, better adhesion, and longer-lasting results.
+            </p>
+        </div>
+        <div class="cs-grid-wrapper">
+            <ul class="cs-card-grid stack">
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/sparkles.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Deep Cleaning</h3>
+                        <p class="cs-card-text">We remove dirt, dust, grease, mould, and salt residue using proper cleaning methods before any paint or coating is applied.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/droplets-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Moisture Testing</h3>
+                        <p class="cs-card-text">A moisture test confirms whether the concrete surface is ready. One method is taping a plastic sheet to the concrete for 24 hours to check for dampness.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/hammer-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Crack Repair</h3>
+                        <p class="cs-card-text">We repair cracks and damaged areas using concrete crack filler, then allow repairs to dry properly before coating.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/target.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Etching or Grinding</h3>
+                        <p class="cs-card-text">Smooth or power-troweled concrete may need etching or grinding to create the right texture for better paint adhesion.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/paint-can-open.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Masonry Primer</h3>
+                        <p class="cs-card-text">A high-quality masonry bonding primer can improve adhesion on porous or previously painted surfaces.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Paint &amp; Coating Application</h3>
+                        <p class="cs-card-text">We apply the right paint, epoxy, sealer, or coating system designed for concrete &mdash; usually with at least two coats when recommended by the manufacturer.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cs-image-grid single">
+                <picture>
+                    <source srcset="{% getUrl "/assets/images/concrete-prep.jpg" | resize({ width: 640, height: 800 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/concrete-prep.jpg" | resize({ width: 640, height: 800 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/concrete-prep.jpg" | resize({ width: 640, height: 800 }) | jpeg %}" alt="Professional painter cleaning and prepping a residential concrete garage floor before coating" width="640" height="800" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Coating Types                    -->
+<!-- ============================================ -->
+
+<section id="concrete-coatings">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Coating Options</span>
+            <h2 class="cs-title">Choosing the Right Concrete Coating</h2>
+            <p class="cs-text">
+                The right coating depends on how the space is used, the condition of the concrete, and exposure to moisture, traffic, and weather.
+            </p>
+        </div>
+        <div class="cs-grid-wrapper reverse">
+            <ul class="cs-card-grid stack">
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/paint-can-open.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Epoxy Coatings</h3>
+                        <p class="cs-card-label">Best for garage &amp; high-use floors</p>
+                        <p class="cs-card-text">Ideal for garage floors and high-use concrete floors. Epoxy creates a durable, polished, and long-lasting finish.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/brush.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Concrete Paint</h3>
+                        <p class="cs-card-label">Best for basements &amp; utility spaces</p>
+                        <p class="cs-card-text">A cost-effective option for lighter-use areas such as basements, concrete walls, or interior utility spaces.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/droplets-light.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Concrete Sealers</h3>
+                        <p class="cs-card-label">Best for long-term protection</p>
+                        <p class="cs-card-text">A clear, durable concrete sealer can help protect paint from stains, moisture, wear, and surface breakdown.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/building.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Masonry Paint</h3>
+                        <p class="cs-card-label">Best for brick &amp; vertical surfaces</p>
+                        <p class="cs-card-text">Specialized masonry paint is designed for concrete, brick, and masonry surfaces where ordinary house paint would not perform well.</p>
+                    </div>
+                </li>
+                <li class="cs-card">
+                    <div class="cs-card-icon-wrap">
+                        <img class="cs-card-icon" src="/assets/svgs/walk.svg" loading="lazy" decoding="async" alt="" width="24" height="24" aria-hidden="true">
+                    </div>
+                    <div class="cs-card-content">
+                        <h3 class="cs-card-title">Anti-Slip Finishes</h3>
+                        <p class="cs-card-label">Best for stairs, patios &amp; walkways</p>
+                        <p class="cs-card-text">For stairs, patios, walkways, and slippery surfaces, an anti-slip aggregate can be added to the final coat to improve safety.</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cs-image-grid single">
+                <div class="cs-image-wrap">
+                    <picture>
+                        <source srcset="{% getUrl "/assets/images/concrete-coating.jpg" | resize({ width: 640, height: 640 }) | avif %}" type="image/avif">
+                        <source srcset="{% getUrl "/assets/images/concrete-coating.jpg" | resize({ width: 640, height: 640 }) | webp %}" type="image/webp">
+                        <img src="{% getUrl "/assets/images/concrete-coating.jpg" | resize({ width: 640, height: 640 }) | jpeg %}" alt="Professional applying glossy clear epoxy coating with a roller on a smooth concrete garage floor" width="640" height="640" loading="lazy" decoding="async">
+                    </picture>
+                    <div class="cs-pro-tip">
+                        <span class="cs-pro-tip-label">Pro Tip</span>
+                        <p class="cs-pro-tip-text">Ordinary house paint is not recommended for concrete. Always use products specifically designed for concrete or masonry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cs-callout">
+            <img class="cs-callout-icon" src="/assets/svgs/alert-circle.svg" loading="lazy" decoding="async" alt="" width="16" height="16" aria-hidden="true">
+            <p class="cs-callout-text"><strong>Not sure which coating fits your project?</strong> Our team can assess the surface and recommend the right system during your quote.</p>
+        </div>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Benefits                    -->
+<!-- ============================================ -->
+
+<section id="concrete-benefits">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Benefits</span>
+            <h2 class="cs-title">Benefits of Professional Concrete Painting</h2>
+            <p class="cs-text">
+                A properly prepared and painted concrete surface can improve the look, durability, and function of your space.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl "/assets/images/concrete/durable-garage-floor-coating.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <img src="{% getUrl "/assets/images/concrete/durable-garage-floor-coating.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Durable grey epoxy coating on a residential garage floor" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Stronger, More Durable Surface</h3>
+                    <p class="cs-item-text">High-quality coatings help concrete stand up to foot traffic, weather changes, salt, and daily wear.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl "/assets/images/concrete/easy-clean-sealed-concrete-floor.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <img src="{% getUrl "/assets/images/concrete/easy-clean-sealed-concrete-floor.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Smooth sealed polished light grey concrete floor that is easy to clean" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Easier Cleaning</h3>
+                    <p class="cs-item-text">A painted or sealed surface reduces dust and makes concrete floors easier to maintain.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl "/assets/images/concrete/painted-concrete-patio-backyard.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <img src="{% getUrl "/assets/images/concrete/painted-concrete-patio-backyard.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Refreshed grey painted concrete patio" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Cleaner, More Polished Look</h3>
+                    <p class="cs-item-text">A fresh coat of paint creates a cleaner, smoother, and more polished appearance.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl "/assets/images/concrete/sealed-concrete-driveway-moisture-protection.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <img src="{% getUrl "/assets/images/concrete/sealed-concrete-driveway-moisture-protection.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Sealed exterior concrete driveway protected from moisture" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Moisture Protection</h3>
+                    <p class="cs-item-text">Paint, epoxy, and sealing systems help protect concrete from moisture and stains.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl "/assets/images/concrete/long-lasting-concrete-walkway.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <img src="{% getUrl "/assets/images/concrete/long-lasting-concrete-walkway.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Long-lasting painted exterior concrete walkway" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Longer Surface Life</h3>
+                    <p class="cs-item-text">With the right prep and coating, painted concrete can last 5 to 10 years or more depending on use and conditions.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-link">
+                    <picture class="cs-picture">
+                       <source srcset="{% getUrl "/assets/images/concrete/protective-concrete-coating-application.jpg" | resize({ width: 816, height: 480 }) | avif %}" type="image/avif">
+                       <img src="{% getUrl "/assets/images/concrete/protective-concrete-coating-application.jpg" | resize({ width: 816, height: 480 }) | jpeg %}" alt="Professional applying protective coating with a roller on a prepped concrete surface" width="816" height="480" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Reduced Chipping &amp; Staining</h3>
+                    <p class="cs-item-text">The right coating system helps reduce chipping, stains, and surface wear over time.</p>
+                </div>
+            </li>
+        </ul>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Concrete Costs                  -->
+<!-- ============================================ -->
+
+<section id="concrete-costs">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source srcset="{% getUrl "/assets/images/concrete-cost.jpg" | resize({ width: 800, height: 600 }) | avif %}" type="image/avif">
+            <source srcset="{% getUrl "/assets/images/concrete-cost.jpg" | resize({ width: 800, height: 600 }) | webp %}" type="image/webp">
+            <img src="{% getUrl "/assets/images/concrete-cost.jpg" | resize({ width: 800, height: 600 }) | jpeg %}" alt="Beautifully finished grey painted concrete patio in a residential backyard" width="800" height="600" loading="lazy" decoding="async">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Concrete Painting Prices</span>
+            <h2 class="cs-title">Concrete Painting Costs in Ottawa: What to Expect</h2>
+            <p class="cs-text">
+                Concrete painting costs in Ottawa depend on the size of the surface, current condition, level of preparation, repair work, coating type, and whether the project is interior, exterior, residential, or commercial.
+            </p>
+            <p class="cs-text">
+                Every project is different &mdash; especially when surface prep, crack repair, or coating type is involved. A small basement concrete floor will usually be simpler than a larger garage floor, driveway, walkway, patio, or commercial space that needs more cleaning, crack repair, etching, or epoxy coating.
+            </p>
+            <p class="cs-factors-title">What Impacts the Cost?</p>
+            <ul class="cs-factors-grid">
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/target.svg" alt="" width="16" height="16" aria-hidden="true">Surface size</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/hammer-light.svg" alt="" width="16" height="16" aria-hidden="true">Concrete condition</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/crack-light.svg" alt="" width="16" height="16" aria-hidden="true">Crack repair required</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/clean.svg" alt="" width="16" height="16" aria-hidden="true">Deep cleaning needed</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/droplets-light.svg" alt="" width="16" height="16" aria-hidden="true">Moisture issues</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/paint-can-open.svg" alt="" width="16" height="16" aria-hidden="true">Etching or grinding</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/brush.svg" alt="" width="16" height="16" aria-hidden="true">Coating or epoxy type</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/sparkles.svg" alt="" width="16" height="16" aria-hidden="true">Interior vs exterior surface</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/walk.svg" alt="" width="16" height="16" aria-hidden="true">Driveways, walkways, patios, garages</li>
+                <li class="cs-factor"><img class="cs-factor-icon" src="/assets/svgs/briefcase.svg" alt="" width="16" height="16" aria-hidden="true">Residential vs commercial spaces</li>
+            </ul>
+            <p class="cs-text">
+                The cost depends on the surface, prep work, paint or coating system, and overall project scope. The most accurate way to price your project is to request a free quote from Oasis Painting.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+            <p class="cs-subtext">Free estimates available. No obligation.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--               Service Areas                  -->
+<!-- ============================================ -->
+
+<section id="location-map">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Local Ottawa Painters</span>
+            <h2 class="cs-title">Concrete Painting Services Across Ottawa and Nearby Communities</h2>
+            <p class="cs-text">
+                Oasis Painting provides concrete painting services across Ottawa and nearby communities. Our team works with homeowners, businesses, and property owners looking to protect and enhance concrete surfaces.
+            </p>
+            <p class="cs-text">
+                We regularly complete concrete painting projects in <a href="/house-painters-kanata/">Kanata</a>, <a href="/house-painters-orl&eacute;ans/">Orléans</a>, <a href="/house-painters-kemptville/">Kemptville</a>, and across Ottawa neighbourhoods.
+            </p>
+            <p class="cs-text">
+                Whether your project involves a garage floor, basement, patio, walkway, driveway, brick wall, or commercial space, our team brings local experience and professional care to the job.
+            </p>
+        </div>
+        <div class="cs-layout">
+            <div class="cs-map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89674.93498566686!2d-75.69719724129688!3d45.421530451918025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON!5e0!3m2!1sen!2sca!4v1711810000000" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Ottawa, Ontario service area for concrete painting"></iframe>
+            </div>
+            <div class="cs-areas">
+                <h3 class="cs-areas-title">Service Areas</h3>
+                <ul class="cs-area-group">
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">Alta Vista</li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">Barrhaven</li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">Centretown</li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">Gloucester</li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true"><a href="/house-painters-kanata/">Kanata</a></li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true"><a href="/house-painters-kemptville/">Kemptville</a></li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">Manotick</li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">Nepean</li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true"><a href="/house-painters-orl&eacute;ans/">Orléans</a></li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">Rockcliffe</li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">Stittsville</li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">The Glebe</li>
+                    <li class="cs-area"><img class="cs-area-icon" src="/assets/svgs/yellow-pin.svg" alt="" width="16" height="16" aria-hidden="true">Westboro</li>
+                </ul>
+            </div>
+        </div>
+        <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-1458">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-faq.jpg" | resize({ width: 1088, height: 1232 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-faq.jpg" | resize({ width: 1088, height: 1232 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/concrete-faq.jpg" | resize({ width: 1088, height: 1232 }) | jpeg %}" type="image/jpeg">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-faq.jpg" | resize({ width: 1196, height: 1782 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-faq.jpg" | resize({ width: 1196, height: 1782 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/concrete-faq.jpg" | resize({ width: 1196, height: 1782 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/concrete-faq.jpg" | resize({ width: 1196, height: 1782 }) | jpeg %}" alt="Freshly coated residential basement concrete floor with smooth grey epoxy finish" width="1196" height="1782" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <p class="cs-text">Have questions before painting or coating concrete? Here are some common things Ottawa homeowners ask before starting a concrete painting project.</p>
+
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">Is painting outdoor concrete a good idea?</span>
+                </button>
+                <p class="cs-item-p">Yes. Painting outdoor concrete can be a good idea when the surface is properly prepared and the right paint or coating is used. It can improve appearance, protect against moisture and salt, and help extend the life of patios, walkways, driveways, and other exterior concrete surfaces.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Can I paint straight over concrete?</span>
+                </button>
+                <p class="cs-item-p">No. Concrete should be cleaned, repaired, and primed before painting. Proper prep may include deep cleaning, crack repair, moisture testing, etching or grinding, and applying a masonry primer for better adhesion.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">How long will painted concrete last?</span>
+                </button>
+                <p class="cs-item-p">With proper preparation and high-quality products, painted concrete can last 5 to 10 years or more depending on traffic, moisture exposure, weather, salt, and maintenance.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Is it worth painting a concrete driveway?</span>
+                </button>
+                <p class="cs-item-p">It can be worth painting or coating a concrete driveway if the right product is used and the surface is properly prepared. Driveways are exposed to vehicles, salt, moisture, and weather, so durability and product selection matter.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">What is the best coating for garage floors?</span>
+                </button>
+                <p class="cs-item-p">Epoxy coatings are often a strong option for garage floors because they provide durability, a polished appearance, and resistance to wear, stains, and moisture.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Do you repair cracks before concrete painting?</span>
+                </button>
+                <p class="cs-item-p">Yes. Cracks and damaged areas should be repaired before paint or coating is applied. Repairing cracks helps prevent moisture from getting under the coating.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Can concrete be painted in cold weather?</span>
+                </button>
+                <p class="cs-item-p">Concrete painting depends on temperature and humidity. Ideal conditions are usually between 10&deg;C and 25&deg;C, and nighttime temperatures should stay above 10&deg;C for at least 48 hours after application.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Do concrete surfaces need to be sealed after painting?</span>
+                </button>
+                <p class="cs-item-p">In many cases, a clear durable concrete sealer can help protect the painted surface from stains, moisture, wear, and daily use.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Is concrete paint slippery?</span>
+                </button>
+                <p class="cs-item-p">Concrete paint or coating can become slippery in some conditions. For stairs, patios, walkways, and wet areas, an anti-slip aggregate can be added to the final coat or sealer to improve safety.</p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">Do you paint brick or masonry surfaces?</span>
+                </button>
+                <p class="cs-item-p">Yes. Oasis Painting can help with brick, masonry, concrete walls, and other related surfaces using products designed for those materials.</p>
+            </li>
+        </ul>
+        </div>
+    </div>
+</section>
+
+{% include 'components/reviews.html' %}
+
+{% endblock %}
