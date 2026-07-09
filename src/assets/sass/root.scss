@@ -1847,7 +1847,12 @@
                 width: 100%;
                 display: flex;
                 justify-content: flex-start;
+                align-items: flex-start;
                 gap: clamp(1.5rem, 4vw, 3rem);
+
+                .cs-nav {
+                    justify-content: flex-start;
+                }
             }
 
             .cs-nav {
@@ -2038,6 +2043,7 @@
         .cs-services-group {
             width: auto;
             align-items: center;
+            gap: 1rem;
 
             .cs-services-columns {
                 justify-content: center;
