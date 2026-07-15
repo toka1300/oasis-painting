@@ -4,57 +4,6 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #gallery-stats {
-        padding: calc(24 / 16 * 1rem) calc(16 / 16 * 1rem);
-        background-color: var(--headerColor);
-
-        .cs-container {
-            width: 100%;
-            max-width: calc(1280 / 16 * 1rem);
-            margin: auto;
-        }
-
-        .cs-stat-group {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: calc(16 / 16 * 1rem);
-        }
-
-        .cs-stat-item {
-            display: flex;
-            align-items: center;
-            gap: calc(12 / 16 * 1rem);
-            justify-content: center;
-            text-align: left;
-        }
-
-        .cs-stat-icon-wrap {
-            width: calc(40 / 16 * 1rem);
-            height: calc(40 / 16 * 1rem);
-            border-radius: 50%;
-            background-color: rgba(251, 195, 36, 0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: none;
-        }
-
-        .cs-stat-icon {
-            width: calc(20 / 16 * 1rem);
-            height: calc(20 / 16 * 1rem);
-        }
-
-        .cs-stat-label {
-            font-size: clamp(0.8125rem, 1.5vw, 1rem);
-            font-weight: 700;
-            line-height: 1.3em;
-            color: #fff;
-        }
-    }
-
     #gallery-before-after,
     #gallery-intro,
     #gallery-projects,
@@ -646,12 +595,6 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #gallery-stats {
-        .cs-stat-group {
-            grid-template-columns: repeat(4, 1fr);
-        }
-    }
-
     #gallery-before-after {
         .cs-card-group {
             grid-template-columns: repeat(2, 1fr);

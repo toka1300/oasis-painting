@@ -99,6 +99,24 @@ eleventyNavigation:
             Explore interior painting, exterior painting, cabinet refinishing, staircase transformations, and commercial painting projects completed throughout Ottawa and surrounding communities.
         </p>
         <a href="/contact/" class="cs-button-solid">Get a Free Estimate</a>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/home.svg" alt="" width="20" height="20" aria-hidden="true">
+                500+ Homes Painted
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/star.svg" alt="" width="20" height="20" aria-hidden="true">
+                5-Star Rated Service
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/shield-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Fully Insured Team
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/clipboard-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Free Estimates
+            </li>
+        </ul>
     </div>
 
     <picture class="cs-background">
@@ -110,41 +128,6 @@ eleventyNavigation:
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | jpeg %}" type="image/jpeg">
        <img src="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Bright living room painting project in Ottawa" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
     </picture>
-</section>
-
-<!-- ============================================ -->
-<!--                 Trust Stats                  -->
-<!-- ============================================ -->
-
-<section id="gallery-stats" aria-label="Trust statistics">
-    <div class="cs-container">
-        <ul class="cs-stat-group">
-            <li class="cs-stat-item">
-                <span class="cs-stat-icon-wrap">
-                    <img class="cs-stat-icon" src="/assets/svgs/home.svg" alt="" width="20" height="20" aria-hidden="true">
-                </span>
-                <span class="cs-stat-label">500+ Homes Painted</span>
-            </li>
-            <li class="cs-stat-item">
-                <span class="cs-stat-icon-wrap">
-                    <img class="cs-stat-icon" src="/assets/svgs/star.svg" alt="" width="20" height="20" aria-hidden="true">
-                </span>
-                <span class="cs-stat-label">5-Star Rated Service</span>
-            </li>
-            <li class="cs-stat-item">
-                <span class="cs-stat-icon-wrap">
-                    <img class="cs-stat-icon" src="/assets/svgs/shield-check.svg" alt="" width="20" height="20" aria-hidden="true">
-                </span>
-                <span class="cs-stat-label">Fully Insured Team</span>
-            </li>
-            <li class="cs-stat-item">
-                <span class="cs-stat-icon-wrap">
-                    <img class="cs-stat-icon" src="/assets/svgs/clipboard-check.svg" alt="" width="20" height="20" aria-hidden="true">
-                </span>
-                <span class="cs-stat-label">Free Estimates</span>
-            </li>
-        </ul>
-    </div>
 </section>
 
 {% include 'components/badges.html' %}
