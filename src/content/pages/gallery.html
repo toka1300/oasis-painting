@@ -1,0 +1,408 @@
+---
+title: 'Gallery | Painting Projects Across Ottawa | Oasis Painting'
+description: 'Browse recent interior, exterior, cabinet, staircase, and commercial painting projects completed by Oasis Painting across Ottawa and surrounding communities.'
+permalink: 'gallery/'
+eleventyNavigation:
+    key: Gallery
+    order: 250
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/badges.css">
+    <link rel="stylesheet" href="/assets/css/gallery.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 1200, height: 982 }) | avif %}"/>
+    <script defer src="/assets/js/gallery.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://oasispainting.ca/#business",
+          "name": "Oasis Painting",
+          "url": "https://oasispainting.ca/",
+          "telephone": "+1-613-408-4432",
+          "description": "Oasis Painting provides professional interior, exterior, cabinet, staircase, and commercial painting services in Ottawa and surrounding areas.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "17 Aberdeen St",
+            "addressLocality": "Ottawa",
+            "addressRegion": "ON",
+            "postalCode": "K1S 3J3",
+            "addressCountry": "CA"
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Ottawa" },
+            { "@type": "City", "name": "Kanata" },
+            { "@type": "City", "name": "Orléans" },
+            { "@type": "City", "name": "Barrhaven" },
+            { "@type": "City", "name": "Nepean" },
+            { "@type": "City", "name": "Stittsville" },
+            { "@type": "City", "name": "Gloucester" },
+            { "@type": "City", "name": "Kemptville" }
+          ],
+          "priceRange": "$$"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://oasispainting.ca/gallery/#webpage",
+          "url": "https://oasispainting.ca/gallery/",
+          "name": "Gallery | Painting Projects Across Ottawa",
+          "description": "Browse recent interior, exterior, cabinet, staircase, and commercial painting projects completed by Oasis Painting across Ottawa and surrounding communities.",
+          "isPartOf": {
+            "@id": "https://oasispainting.ca/#website"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://oasispainting.ca/#website",
+          "url": "https://oasispainting.ca/",
+          "name": "Oasis Painting"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://oasispainting.ca/gallery/#breadcrumbs",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://oasispainting.ca/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Gallery",
+              "item": "https://oasispainting.ca/gallery/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-219">
+    <div class="cs-container">
+        <span class="cs-topper">Project Gallery</span>
+        <h1 class="cs-title">Real Painting Projects. Real Ottawa Homes.</h1>
+        <p class="cs-text">
+            Explore interior painting, exterior painting, cabinet refinishing, staircase transformations, and commercial painting projects completed throughout Ottawa and surrounding communities.
+        </p>
+        <a href="/contact/" class="cs-button-solid">Get a Free Estimate</a>
+        <ul class="cs-trust-badges">
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/home.svg" alt="" width="20" height="20" aria-hidden="true">
+                500+ Homes Painted
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/star.svg" alt="" width="20" height="20" aria-hidden="true">
+                5-Star Rated Service
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/shield-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Fully Insured Team
+            </li>
+            <li class="cs-trust-badge">
+                <img src="/assets/svgs/clipboard-check.svg" alt="" width="20" height="20" aria-hidden="true">
+                Free Estimates
+            </li>
+        </ul>
+    </div>
+
+    <picture class="cs-background">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 1200, height: 982 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 1200, height: 982 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 1200, height: 982 }) | jpeg %}" type="image/jpeg">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 2800, height: 983 }) | extend({ top: 250 }) | avif %}" type="image/avif">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | webp %}" type="image/webp">
+       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 2800, height: 982 }) | extend({ top: 250 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/ottawa-home-living-room-bright-finish.png" | resize({ width: 2800, height: 982 }) | jpeg %}" alt="Bright living room painting project in Ottawa" width="2000" height="982" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+
+{% include 'components/badges.html' %}
+
+<!-- ============================================ -->
+<!--               Before & After                 -->
+<!-- ============================================ -->
+
+<section id="gallery-before-after">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Before &amp; After</span>
+            <h2 class="cs-title">Transformations Worth Seeing</h2>
+            <p class="cs-text">
+                Side-by-side comparisons showing the difference careful prep and quality finishes can make.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-compare-grid">
+                    <picture class="cs-compare-picture">
+                        <img src="{% getUrl "/assets/images/ottawa-condo-interior-before-prep-drop-cloths.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Living and dining room repaint in Ottawa before painting" width="800" height="800" loading="lazy" decoding="async">
+                        <span class="cs-tag">Before</span>
+                    </picture>
+                    <picture class="cs-compare-picture after">
+                        <img src="{% getUrl "/assets/images/ottawa-condo-interior-after-bright-living-dining.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Living and dining room repaint in Ottawa after painting" width="800" height="800" loading="lazy" decoding="async">
+                        <span class="cs-tag">After</span>
+                    </picture>
+                </div>
+                <div class="cs-item-content">
+                    <div class="cs-item-meta">
+                        <span class="cs-category">Interior Painting</span>
+                        <span class="cs-location">Ottawa</span>
+                    </div>
+                    <h3 class="cs-h3">Living &amp; Dining Room Repaint - Ottawa</h3>
+                    <p class="cs-item-text">Open-concept condo refresh with full prep, bright walls, and clean trim.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-compare-grid">
+                    <picture class="cs-compare-picture">
+                        <img src="{% getUrl "/assets/images/gallery/westboro-wallpaper-before.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Wallpaper removal and painting in Westboro before" width="800" height="800" loading="lazy" decoding="async">
+                        <span class="cs-tag">Before</span>
+                    </picture>
+                    <picture class="cs-compare-picture after zoom">
+                        <img src="{% getUrl "/assets/images/gallery/westboro-wallpaper-after.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Wallpaper removal and painting in Westboro after" width="800" height="800" loading="lazy" decoding="async">
+                        <span class="cs-tag">After</span>
+                    </picture>
+                </div>
+                <div class="cs-item-content">
+                    <div class="cs-item-meta">
+                        <span class="cs-category">Interior Painting</span>
+                        <span class="cs-location">Westboro, Ottawa</span>
+                    </div>
+                    <h3 class="cs-h3">Wallpaper Removal &amp; Painting - Westboro</h3>
+                    <p class="cs-item-text">Removed dated floral wallpaper, repaired and skim-coated the walls, then repainted in a warm, modern neutral.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-compare-grid">
+                    <picture class="cs-compare-picture">
+                        <img src="{% getUrl "/assets/images/exterior-before.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Exterior home refresh in Orléans before painting" width="800" height="800" loading="lazy" decoding="async">
+                        <span class="cs-tag">Before</span>
+                    </picture>
+                    <picture class="cs-compare-picture after">
+                        <img src="{% getUrl "/assets/images/exterior-after.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Exterior home refresh in Orléans after painting" width="800" height="800" loading="lazy" decoding="async">
+                        <span class="cs-tag">After</span>
+                    </picture>
+                </div>
+                <div class="cs-item-content">
+                    <div class="cs-item-meta">
+                        <span class="cs-category">Exterior Painting</span>
+                        <span class="cs-location">Orléans</span>
+                    </div>
+                    <h3 class="cs-h3">Exterior Home Refresh - Orléans</h3>
+                    <p class="cs-item-text">Improved curb appeal with premium exterior coatings and detailed preparation.</p>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-compare-grid">
+                    <picture class="cs-compare-picture">
+                        <img src="{% getUrl "/assets/images/gallery/glebe-deck-before.jpg" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Front deck re-stain in Glebe before staining" width="800" height="800" loading="lazy" decoding="async">
+                        <span class="cs-tag">Before</span>
+                    </picture>
+                    <picture class="cs-compare-picture after">
+                        <img src="{% getUrl "/assets/images/gallery/glebe-deck-after.png" | resize({ width: 800, height: 800 }) | jpeg %}" alt="Front deck re-stain in Glebe after staining" width="800" height="800" loading="lazy" decoding="async">
+                        <span class="cs-tag">After</span>
+                    </picture>
+                </div>
+                <div class="cs-item-content">
+                    <div class="cs-item-meta">
+                        <span class="cs-category">Deck Staining</span>
+                        <span class="cs-location">Glebe, Ottawa</span>
+                    </div>
+                    <h3 class="cs-h3">Front Deck Re-Stain - Glebe</h3>
+                    <p class="cs-item-text">Faded cedar front porch and steps restored with a rich, warm wet-stain finish for lasting weather protection.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Intro                       -->
+<!-- ============================================ -->
+
+<section id="gallery-intro">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Painting Projects We're Proud Of</span>
+            <h2 class="cs-title">Real Painting Projects Across Ottawa &amp; Surrounding Communities</h2>
+            <p class="cs-text">
+                Explore real interior painting, exterior painting, cabinet refinishing, staircase refinishing, and commercial painting projects completed throughout Ottawa, Kanata, Orléans, Barrhaven, Nepean, Stittsville, Gloucester, and Kemptville. Every project showcases the preparation, craftsmanship, and attention to detail that Oasis Painting brings to homeowners and businesses across the region.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Featured Projects                -->
+<!-- ============================================ -->
+
+<section id="gallery-projects">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Featured Projects</span>
+            <h2 class="cs-title">Recent Painting Projects</h2>
+        </div>
+
+        <div class="cs-filter-group" role="group" aria-label="Filter projects by category">
+            {% for category in galleryProjects.categories %}
+            <button
+                type="button"
+                class="cs-filter-btn{% if category == 'All Projects' %} active{% endif %}"
+                data-filter="{{ category }}"
+                aria-pressed="{% if category == 'All Projects' %}true{% else %}false{% endif %}"
+            >
+                {{ category }}
+            </button>
+            {% endfor %}
+        </div>
+
+        <div class="cs-masonry">
+            {% for project in galleryProjects.projects %}
+            <div
+                class="cs-project-card"
+                role="button"
+                tabindex="0"
+                data-category="{{ project.category }}"
+                data-title="{{ project.title }}"
+                data-location="{{ project.location }}"
+                data-outcome="{{ project.outcome }}"
+                data-scope="{{ project.scope }}"
+                data-paint="{{ project.paint }}"
+                data-timeline="{{ project.timeline }}"
+                data-alt="{{ project.alt }}"
+                data-image-full="{% getUrl project.image | resize({ width: 1400, height: 1000 }) | jpeg %}"
+                {% if loop.index > 12 %}hidden{% endif %}
+            >
+                <picture class="cs-project-picture">
+                    <source media="(max-width: 600px)" srcset="{% getUrl project.image | resize({ width: 800, height: 1000 }) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl project.image | resize({ width: 800, height: 1000 }) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl project.image | resize({ width: 800, height: 1000 }) | jpeg %}" type="image/jpeg">
+                    <source media="(min-width: 601px)" srcset="{% getUrl project.image | resize({ width: 900, height: 1100 }) | avif %}" type="image/avif">
+                    <source media="(min-width: 601px)" srcset="{% getUrl project.image | resize({ width: 900, height: 1100 }) | webp %}" type="image/webp">
+                    <source media="(min-width: 601px)" srcset="{% getUrl project.image | resize({ width: 900, height: 1100 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl project.image | resize({ width: 900, height: 1100 }) | jpeg %}" alt="{{ project.alt }}" width="900" height="1100" loading="lazy" decoding="async">
+                </picture>
+                <div class="cs-project-content">
+                    <div class="cs-project-meta">
+                        <span class="cs-project-category">{{ project.category }}</span>
+                        <span class="cs-project-location">{{ project.location }}</span>
+                    </div>
+                    <h3 class="cs-project-title">{{ project.title }}</h3>
+                    <p class="cs-project-outcome">{{ project.outcome }}</p>
+                    <span class="cs-project-link">View Project →</span>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <button type="button" class="cs-load-more" hidden>Load More Projects</button>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Project Modal                   -->
+<!-- ============================================ -->
+
+<div id="gallery-modal" class="cs-gallery-modal" hidden role="dialog" aria-modal="true" aria-labelledby="gallery-modal-title">
+    <div class="cs-modal-panel">
+        <button type="button" class="cs-modal-close" aria-label="Close project details">&times;</button>
+        <img class="cs-modal-image" src="" alt="" width="1400" height="1000">
+        <div class="cs-modal-body">
+            <div class="cs-modal-meta">
+                <span class="cs-modal-category"></span>
+                <span class="cs-modal-location"></span>
+            </div>
+            <h2 class="cs-modal-title" id="gallery-modal-title"></h2>
+
+            <p class="cs-modal-label">Homeowner Outcome</p>
+            <p class="cs-modal-outcome"></p>
+
+            <p class="cs-modal-label">Quick Facts</p>
+            <div class="cs-fact-grid">
+                <div class="cs-fact-card">
+                    <p class="cs-fact-label">Location</p>
+                    <p class="cs-fact-value cs-modal-location-fact"></p>
+                </div>
+                <div class="cs-fact-card">
+                    <p class="cs-fact-label">Service</p>
+                    <p class="cs-fact-value cs-modal-service"></p>
+                </div>
+                <div class="cs-fact-card">
+                    <p class="cs-fact-label">Timeline</p>
+                    <p class="cs-fact-value cs-modal-timeline"></p>
+                </div>
+                <div class="cs-fact-card">
+                    <p class="cs-fact-label">Paint</p>
+                    <p class="cs-fact-value cs-modal-paint"></p>
+                </div>
+            </div>
+
+            <p class="cs-modal-label">Project Details</p>
+            <p class="cs-modal-scope"><strong>Scope of Work: </strong><span></span></p>
+
+            <div class="cs-modal-cta-wrap">
+                <a href="/contact/" class="cs-button-solid">Get Free Quote</a>
+                <p class="cs-modal-note">Free estimates available throughout Ottawa and surrounding communities.</p>
+            </div>
+
+            <div class="cs-modal-callout">
+                <h3 class="cs-modal-callout-title">Thinking About a Similar Project?</h3>
+                <p class="cs-modal-callout-text">
+                    Whether you're repainting your interior, refreshing your exterior, refinishing cabinets, or updating a staircase, Oasis Painting can provide a free estimate and expert recommendations.
+                </p>
+                <ul class="cs-trust-list">
+                    <li class="cs-trust-item">
+                        <img class="cs-trust-icon" src="/assets/svgs/circle-check.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Free Estimates
+                    </li>
+                    <li class="cs-trust-item">
+                        <img class="cs-trust-icon" src="/assets/svgs/circle-check.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Fully Insured Team
+                    </li>
+                    <li class="cs-trust-item">
+                        <img class="cs-trust-icon" src="/assets/svgs/circle-check.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Ottawa-Based Service
+                    </li>
+                    <li class="cs-trust-item">
+                        <img class="cs-trust-icon" src="/assets/svgs/circle-check.svg" alt="" width="16" height="16" aria-hidden="true">
+                        Professional Preparation Process
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'components/reviews.html' %}
+
+<!-- ============================================ -->
+<!--                SEO Content                   -->
+<!-- ============================================ -->
+
+<section id="gallery-seo">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Local Expertise</span>
+            <h2 class="cs-title">Ottawa Painting Projects That Speak for Themselves</h2>
+            <p class="cs-text">
+                Our gallery highlights interior painting, exterior painting, cabinet refinishing, staircase transformations, and commercial painting projects completed throughout Ottawa, Kanata, Orléans, Barrhaven, Nepean, Stittsville, Gloucester, and Kemptville. Every project reflects our commitment to quality craftsmanship, detailed preparation, and exceptional customer service.
+            </p>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
